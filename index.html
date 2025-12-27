@@ -8,5 +8,71 @@
         <script src="/lib/leaflet/dist/leaflet.js"></script>
         <title>SpotWork</title>
     </head>
-    <body></body>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-content">
+                    <img src="assets/spot_work_logo.svg" alt="SpotWork-logo" />
+                    <form>
+                        <input
+                            type="text"
+                            placeholder="Rechercher par villes, types de lieux, ..."
+                        />
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <div class="content-container">
+            <aside class="side-navigation">
+                <div class="filter-nav">
+                    <span>Filtres :</span>
+                    <div class="filter">
+                        <select id="city">
+                            <option value="">Villes</option>
+                            <option value="Paris">Paris</option>
+                            <option value="Lyon">Lyon</option>
+                            <option value="Marseille">Marseille</option>
+                            <option value="Toulouse">Toulouse</option>
+                            <option value="Nice">Nice</option>
+                        </select>
+                        <select id="type">
+                            <option value="">Type</option>
+                            <option value="restaurant">Restaurant</option>
+                            <option value="bar">Bar</option>
+                            <option value="cafe">Café</option>
+                        </select>
+                        <select id="wifi">
+                            <option value="">Wifi</option>
+                            <option value="available">Disponible</option>
+                            <option value="not-available">
+                                Non disponible
+                            </option>
+                        </select>
+                        <button id="reset">Réinitialiser les filtres</button>
+                    </div>
+                </div>
+                <div class="spots"></div>
+                <div id="comparison-tile">
+                    <div>
+                        <span id="comparison-count">0</span>
+                        <button>Vider</button>
+                    </div>
+                    <button>Effectuer une comparaison</button>
+                </div>
+            </aside>
+            <div id="map"></div>
+        </div>
+        <script>
+            window.onload = () => {
+                let map = L.map("map").setView([48.8566, 2.3522], 13);
+                L.tileLayer(
+                    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                    {
+                        attribution:
+                            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                    },
+                ).addTo(map);
+            };
+        </script>
+    </body>
 </html>
