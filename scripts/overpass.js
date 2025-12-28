@@ -62,7 +62,6 @@ async function fetchCoworkingSpots() {
   `;
 
   console.log("🔍 Récupération des spots de coworking...");
-  console.log(`   📍 ${GRANDES_VILLES.map((v) => v.name).join(", ")}`);
 
   const response = await fetch(OVERPASS_BASE_URL, {
     method: "POST",
