@@ -61,7 +61,7 @@ async function fetchCoworkingSpots() {
     out center;
   `;
 
-  console.log("🔍 Récupération des spots de coworking...");
+  console.log("Récupération des spots de coworking...");
 
   const response = await fetch(OVERPASS_BASE_URL, {
     method: "POST",
@@ -76,6 +76,12 @@ async function fetchCoworkingSpots() {
   return response.json();
 }
 
+function addTypeOfSites(data, type) {
+  data.features.forEach((feature) => {
+    feature.properties.spotType = type;
+  });
+}
+
 function saveToFile(data, filename) {
   const outputPath = path.join(__dirname, "..", "data", filename);
   fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
@@ -86,11 +92,12 @@ async function main() {
     const data = await fetchCoworkingSpots();
     console.log(`✅ ${data.elements.length} éléments récupérés`);
     const geojson = toGeoJSON(data.elements);
+    addTypeOfSites(geojson, "coworking");
     saveToFile(geojson, "coworking_france.geojson");
-    console.log(`📊 Total: ${geojson.features.length} features`);
-    console.log("🎉 Terminé !");
+    console.log(`Total: ${geojson.features.length} features`);
+    console.log("Terminé !");
   } catch (error) {
-    console.error("❌ Erreur:", error.message);
+    console.error("Erreur:", error.message);
     process.exit(1);
   }
 }

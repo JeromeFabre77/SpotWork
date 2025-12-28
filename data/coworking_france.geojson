@@ -25,7 +25,8 @@
         "name": "Koneko Work",
         "office": "coworking",
         "opening_hours": "Mo-Fr 09:00-19:00; Sa 10:00-18:00",
-        "website": "https://konekowork.com/"
+        "website": "https://konekowork.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -43,7 +44,8 @@
         "addr:housenumber": "9",
         "name": "Plan M",
         "office": "coworking",
-        "website": "https://planmsite.wordpress.com/"
+        "website": "https://planmsite.wordpress.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -67,7 +69,8 @@
         "name": "PSL Lab",
         "office": "coworking",
         "opening_hours": "Mo-Su 09:00-21:00",
-        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2010"
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2010",
+        "spotType": "coworking"
       }
     },
     {
@@ -89,7 +92,8 @@
         "name": "Heetch",
         "office": "coworking",
         "ref:FR:SIRET": "79469396000047",
-        "source": "survey 01/2022"
+        "source": "survey 01/2022",
+        "spotType": "coworking"
       }
     },
     {
@@ -108,7 +112,8 @@
         "addr:street": "Rue Laffitte",
         "amenity": "coworking_space",
         "name": "La pépite",
-        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "spotType": "coworking"
       }
     },
     {
@@ -131,7 +136,8 @@
         "name": "Engage City",
         "office": "coworking",
         "social_facility": "outreach",
-        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;http://www.engagecity.co/ Mise à jour 2020"
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;http://www.engagecity.co/ Mise à jour 2020",
+        "spotType": "coworking"
       }
     },
     {
@@ -156,7 +162,8 @@
         "opening_hours:signed": "no",
         "ref:FR:SIRET": "91874212300014",
         "website": "https://citedelarse.fr/",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -172,7 +179,8 @@
         "@id": "node/1490922357",
         "@type": "node",
         "name": "The Bureau",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -191,7 +199,8 @@
         "brand:wikidata": "Q761072",
         "name": "Regus",
         "office": "coworking",
-        "website": "https://www.regus.com/fr-fr/france/paris/28-rue-de-londres-812"
+        "website": "https://www.regus.com/fr-fr/france/paris/28-rue-de-londres-812",
+        "spotType": "coworking"
       }
     },
     {
@@ -211,7 +220,8 @@
         "addr:street": "Avenue Reille",
         "check_date": "2024-03-18",
         "name": "Morning Coworking",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -243,7 +253,8 @@
         "payment:credit_cards": "yes",
         "payment:debit_cards": "yes",
         "ref:FR:SIRET": "92876222800015",
-        "website": "https://www.instagram.com/cafelecomotive"
+        "website": "https://www.instagram.com/cafelecomotive",
+        "spotType": "coworking"
       }
     },
     {
@@ -268,7 +279,8 @@
         "phone": "+33 1 77 16 65 24",
         "source": "survey",
         "survey:date": "2013",
-        "website": "https://www.lelaptop.com"
+        "website": "https://www.lelaptop.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -289,7 +301,8 @@
         "check_date:opening_hours": "2025-08-27",
         "name": "Regus",
         "office": "coworking",
-        "opening_hours:signed": "no"
+        "opening_hours:signed": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -316,7 +329,8 @@
         "office": "coworking",
         "phone": "+33 5 64 88 01 30",
         "source": "website;local knowledge",
-        "website": "https://www.etincelle-coworking.com/"
+        "website": "https://www.etincelle-coworking.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -337,7 +351,8 @@
         "office": "coworking",
         "opening_hours": "Mo-Fr 08:00-18:00",
         "was:name": "L'imprimerie",
-        "website": "https://www.esquissecoworkshop.com/"
+        "website": "https://www.esquissecoworkshop.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -358,7 +373,8 @@
         "opening_hours": "Mo-Fr 07:00-21:00; Sa 09:00-12:00",
         "phone": "+33 6 33 04 18 04",
         "ref:FR:SIRET": "82330084300013",
-        "website": "https://www.coworking-piscine.com"
+        "website": "https://www.coworking-piscine.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -377,7 +393,8 @@
         "name": "Hej!Workshop",
         "note:fr": "aussi appareil auditif",
         "office": "coworking",
-        "source": "survey"
+        "source": "survey",
+        "spotType": "coworking"
       }
     },
     {
@@ -397,7 +414,8 @@
         "name": "Ecoworking Coworking",
         "office": "coworking",
         "opening_hours": "Mo,Tu,Th,Fr 09:00-12:00,14:00-18:00",
-        "website": "https://www.ecoworking.fr/"
+        "website": "https://www.ecoworking.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -425,7 +443,8 @@
         "survey:date": "2017-06-29",
         "website": "https://lapaillasse.org/",
         "wheelchair": "no",
-        "workshop": "fablab"
+        "workshop": "fablab",
+        "spotType": "coworking"
       }
     },
     {
@@ -448,7 +467,8 @@
         "office": "coworking",
         "ref:FR:SIRET": "52419699500020",
         "website": "https://locauxmotiv.fr/",
-        "wheelchair": "limited"
+        "wheelchair": "limited",
+        "spotType": "coworking"
       }
     },
     {
@@ -476,7 +496,8 @@
         "ref:FR:SIRET": "44371783000055",
         "smoking": "no",
         "website": "https://lacantine-toulouse.org/",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -505,7 +526,8 @@
         "opening_hours": "Tu-Sa 10:00-22:00; Su 10:00-15:00",
         "outdoor_seating": "yes",
         "phone": "+33 6 83 19 61 40",
-        "website": "https://lopenbarentrepreneurs.fr/"
+        "website": "https://lopenbarentrepreneurs.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -533,7 +555,8 @@
         "ref:FR:SIREN": "409978384",
         "ref:FR:SIRET": "40997838400074",
         "ref:vatin": "FR93409978384",
-        "website": "https://www.theoffice-paris.com"
+        "website": "https://www.theoffice-paris.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -551,7 +574,8 @@
         "amenity": "coworking_space",
         "description": "Hôtel d'entreprises",
         "name": "Studio",
-        "operator": "Mairie de Paris"
+        "operator": "Mairie de Paris",
+        "spotType": "coworking"
       }
     },
     {
@@ -575,7 +599,8 @@
         "internet_access": "wlan",
         "name": "Hubsy Café & Coworking",
         "opening_hours": "Mo-Th 09:00-22:00, Fr 09:00-21:00, Sa,Su 10:30-21:00",
-        "wheelchair": "limited"
+        "wheelchair": "limited",
+        "spotType": "coworking"
       }
     },
     {
@@ -598,7 +623,8 @@
         "name": "Be-Coworking",
         "office": "coworking",
         "phone": "+33 9 50 05 1919",
-        "website": "https://be-coworking.fr/espace/la-jonquiere/"
+        "website": "https://be-coworking.fr/espace/la-jonquiere/",
+        "spotType": "coworking"
       }
     },
     {
@@ -618,7 +644,8 @@
         "addr:postcode": "75010",
         "addr:street": "Rue Alexandre Parodi",
         "name": "Espace Freelance",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -638,7 +665,8 @@
         "name": "La Cordée Perrache",
         "opening_hours": "24/7",
         "operator": "La Cordée",
-        "website": "https://www.la-cordee.net/cordee/la-cordee-perrache/"
+        "website": "https://www.la-cordee.net/cordee/la-cordee-perrache/",
+        "spotType": "coworking"
       }
     },
     {
@@ -657,7 +685,8 @@
         "name": "Attom",
         "office": "coworking",
         "phone": "+33 6 59 40 80 01",
-        "website": "https://www.attom.eu/"
+        "website": "https://www.attom.eu/",
+        "spotType": "coworking"
       }
     },
     {
@@ -678,7 +707,8 @@
         "image": "https://www.joyalifestore.com/wp-content/uploads/2021/07/joya-lifestore-salon-vitre-salle-a-louernice-scaled.jpg",
         "name": "JOYA Lifestore",
         "takeaway": "no",
-        "website": "https://joyalifestore.com/"
+        "website": "https://joyalifestore.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -697,7 +727,8 @@
         "description": "Espace autogéré de travail dans le domaine agricole et de l'économie sociale et solidaire.",
         "name": "Association d'Animation du 58",
         "ref:FR:SIRET": "52057444300013",
-        "short_name": "AA58"
+        "short_name": "AA58",
+        "spotType": "coworking"
       }
     },
     {
@@ -715,7 +746,8 @@
         "addr:housenumber": "2a",
         "amenity": "coworking_space",
         "contact:website": "http://www.cosens.fr/",
-        "name": "Cosens"
+        "name": "Cosens",
+        "spotType": "coworking"
       }
     },
     {
@@ -734,7 +766,8 @@
         "amenity": "coworking_space",
         "contact:website": "http://leloft.co/",
         "name": "Le Loft",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -751,7 +784,8 @@
         "@type": "node",
         "name": "L'Inkub",
         "office": "coworking",
-        "opening_hours": "Mo-Fr 07:00-21:00"
+        "opening_hours": "Mo-Fr 07:00-21:00",
+        "spotType": "coworking"
       }
     },
     {
@@ -772,7 +806,8 @@
         "name": "Regus",
         "office": "coworking",
         "phone": "+33 1 70 38 51 00",
-        "website": "https://www.regus.fr/locations/office-space/paris-op%C3%A9ra"
+        "website": "https://www.regus.fr/locations/office-space/paris-op%C3%A9ra",
+        "spotType": "coworking"
       }
     },
     {
@@ -803,7 +838,8 @@
         "outdoor_seating": "no",
         "ref:FR:SIRET": "81126374800030",
         "takeaway": "yes",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -822,7 +858,8 @@
         "name": "Schoolab",
         "office": "coworking",
         "opening_hours": "Mo-Fr 09:00-17:00",
-        "website": "https://theschoolab.com/"
+        "website": "https://theschoolab.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -847,7 +884,8 @@
         "fee": "yes",
         "name": "WeWork",
         "office": "coworking",
-        "website": "https://www.wework.com/fr-FR/buildings/37-avenue-trudaine--paris"
+        "website": "https://www.wework.com/fr-FR/buildings/37-avenue-trudaine--paris",
+        "spotType": "coworking"
       }
     },
     {
@@ -878,7 +916,8 @@
         "name": "myCowork",
         "office": "coworking",
         "opening_hours": "24/7",
-        "wheelchair": "no"
+        "wheelchair": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -904,7 +943,8 @@
         "phone": "+33185090829",
         "survey:date": "2024-11-23",
         "website": "https://mycowork.fr/",
-        "wheelchair": "limited"
+        "wheelchair": "limited",
+        "spotType": "coworking"
       }
     },
     {
@@ -932,7 +972,8 @@
         "name": "Lobster / Pôle de Musiques Actuelles",
         "office": "coworking",
         "opening_hours": "Mo-Fr 08:00-19:00",
-        "source": "Grand Lyon - 10/2011"
+        "source": "Grand Lyon - 10/2011",
+        "spotType": "coworking"
       }
     },
     {
@@ -956,7 +997,8 @@
         "office": "coworking",
         "opening_hours": "Mo-Fr 09:00-18:00",
         "phone": "+33 6 75 43 56 69",
-        "website": "https://www.harrycow.com/"
+        "website": "https://www.harrycow.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -981,7 +1023,8 @@
         "office": "coworking",
         "old_name": "Paris Pionnières",
         "opening_hours": "24/7",
-        "wheelchair": "no"
+        "wheelchair": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -1000,7 +1043,8 @@
         "contact:website": "http://wereso-lyon.fr",
         "internet_access": "yes",
         "name": "weréso Lyon",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -1017,7 +1061,8 @@
         "@type": "node",
         "name": "Boost In Lyon",
         "office": "coworking",
-        "website": "https://boostinlyon.fr/"
+        "website": "https://boostinlyon.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1038,7 +1083,8 @@
         "contact:phone": "+331 42 72 53 86",
         "fee": "yes",
         "name": "Coworking Republic",
-        "opening_hours": "Mo-Fr 09:00-18:00; PH,Sa,Su off"
+        "opening_hours": "Mo-Fr 09:00-18:00; PH,Sa,Su off",
+        "spotType": "coworking"
       }
     },
     {
@@ -1056,7 +1102,8 @@
         "name": "The Bureau",
         "office": "coworking",
         "phone": "+33 1 83 75 62 00",
-        "website": "https://www.thebureau.club/"
+        "website": "https://www.thebureau.club/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1078,7 +1125,8 @@
         "opening_hours": "24/7",
         "ref:FR:SIRET": "53511306200066",
         "source": "survey",
-        "website": "https://www.la-cordee.net/cordee/paris/paris-gare-de-lyon/"
+        "website": "https://www.la-cordee.net/cordee/paris/paris-gare-de-lyon/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1098,7 +1146,8 @@
         "amenity": "coworking_space",
         "name": "smack coworking",
         "opening_hours": "Mo-Fr 09:00-18:30",
-        "wheelchair": "no"
+        "wheelchair": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -1117,7 +1166,8 @@
         "name": "Le Centsept",
         "phone": "+33 9 88 77 78 94",
         "ref:FR:SIRET": "80927261000027",
-        "website": "https://www.lecentsept.fr/"
+        "website": "https://www.lecentsept.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1137,7 +1187,8 @@
         "name": "Babel Community",
         "office": "coworking",
         "opening_hours": "Mo-Fr 08:30-22:00",
-        "outdoor_seating": "yes"
+        "outdoor_seating": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -1158,7 +1209,8 @@
         "contact:street": "Rue Breteuil",
         "contact:website": "http://www.makeitmarseille.com/",
         "name": "Make it Marseille",
-        "source:amenity": "survey"
+        "source:amenity": "survey",
+        "spotType": "coworking"
       }
     },
     {
@@ -1175,7 +1227,8 @@
         "@type": "node",
         "name": "HUB Institute",
         "office": "coworking",
-        "website": "https://hubinstitute.com"
+        "website": "https://hubinstitute.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -1197,7 +1250,8 @@
         "contact:street": "Rue Stephenson",
         "contact:website": "https://split-coworking.fr/",
         "name": "SPLIT Coworking",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -1216,7 +1270,8 @@
         "office": "coworking",
         "panoramax": "00938145-87fc-480a-87f8-b6fef0427ede",
         "survey:date": "2025-04-04",
-        "was:amenity": "fast_food"
+        "was:amenity": "fast_food",
+        "spotType": "coworking"
       }
     },
     {
@@ -1241,7 +1296,8 @@
         "name": "Espaces Réunion",
         "office": "coworking",
         "phone": "+33 1 84 79 01 90",
-        "website": "https://www.espacesreunion.com/"
+        "website": "https://www.espacesreunion.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1264,7 +1320,8 @@
         "opening_hours": "Mo-Sa 09:30-19:30",
         "phone": "+33 4 69 70 46 89",
         "ref:FR:SIRET": "81423475300022",
-        "website": "https://www.lesimone.fr/coworking-lyon/"
+        "website": "https://www.lesimone.fr/coworking-lyon/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1283,7 +1340,8 @@
         "description": "Café pour télétravail",
         "name": "Nuage Café",
         "ref:FR:SIRET": "80818902100021",
-        "website": "https://nuagecafe.fr/"
+        "website": "https://nuagecafe.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1301,7 +1359,8 @@
         "name": "Peexeo",
         "office": "coworking",
         "phone": "+33 4 28 29 59 99",
-        "website": "https://www.peexeo.com/"
+        "website": "https://www.peexeo.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1321,7 +1380,8 @@
         "addr:postcode": "69003",
         "addr:street": "Cours Lafayette",
         "name": "Mama Works",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -1341,7 +1401,8 @@
         "name": "Le Tank",
         "opening_hours": "Mo-Fr 09:00-19:00",
         "phone": "+33 1 43 14 71 23",
-        "website": "https://letank.fr/"
+        "website": "https://letank.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1362,7 +1423,8 @@
         "addr:street": "Cours Lafayette",
         "amenity": "coworking_space",
         "name": "HUB612",
-        "website": "https://www.hub612.com/"
+        "website": "https://www.hub612.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1383,7 +1445,8 @@
         "addr:street": "Rue Ordener",
         "name": "Morning Coworking - Marcadet",
         "office": "coworking",
-        "website": "https://morning-coworking.com/espaces-coworking-morning/marcadet/"
+        "website": "https://morning-coworking.com/espaces-coworking-morning/marcadet/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1408,7 +1471,8 @@
         "name": "La Cordée Valmy",
         "office": "coworking",
         "opening_hours": "24/7",
-        "website": "https://www.la-cordee.net/cordee/lyon/valmy"
+        "website": "https://www.la-cordee.net/cordee/lyon/valmy",
+        "spotType": "coworking"
       }
     },
     {
@@ -1426,7 +1490,8 @@
         "check_date:opening_hours": "2025-06-10",
         "name": "FLEX-O",
         "office": "coworking",
-        "opening_hours:signed": "no"
+        "opening_hours:signed": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -1447,7 +1512,8 @@
         "check_date": "2022-09-30",
         "fee": "yes",
         "name": "WeWork",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -1464,7 +1530,8 @@
         "@type": "node",
         "internet_access": "yes",
         "name": "La Résidence de l'Eau",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -1495,7 +1562,8 @@
         "name": "Spaces",
         "office": "coworking",
         "opening_hours": "24/7",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -1518,7 +1586,8 @@
         "opening_hours": "24/7",
         "survey:date": "2025-03-30",
         "website": "https://le13.space/",
-        "wheelchair": "no"
+        "wheelchair": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -1543,7 +1612,8 @@
         "name": "Mon atelier en ville",
         "office": "coworking",
         "phone": "+33 9 82 55 08 34",
-        "website": "https://monatelierenville.com/"
+        "website": "https://monatelierenville.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1559,7 +1629,8 @@
         "@id": "node/6934333944",
         "@type": "node",
         "name": "Flex-O",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -1579,7 +1650,8 @@
         "addr:postcode": "75013",
         "addr:street": "Rue Jean Antoine de Baïf",
         "name": "ESS'pace",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -1597,7 +1669,8 @@
         "amenity": "coworking_space",
         "check_date": "2023-06-06",
         "name": "Le 18",
-        "opening_hours": "Mo-Fr 08:30-12:30"
+        "opening_hours": "Mo-Fr 08:30-12:30",
+        "spotType": "coworking"
       }
     },
     {
@@ -1620,7 +1693,8 @@
         "outdoor_seating": "no",
         "ref:FR:SIRET": "85212391800017",
         "source": "survey",
-        "website": "http://helou.paris/"
+        "website": "http://helou.paris/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1643,7 +1717,8 @@
         "name:en": "Work In' Paris",
         "name:fr": "Work In' Paris",
         "name:ro": "Work In' Paris",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -1661,7 +1736,8 @@
         "name": "Maison de la Nouvelle Aquitaine",
         "office": "coworking",
         "tourism": "information",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -1683,7 +1759,8 @@
         "phone": "+33 1 43 44 30 19",
         "tourism": "hostel",
         "website": "https://www.le-coffice.fr/",
-        "wheelchair": "no"
+        "wheelchair": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -1701,7 +1778,8 @@
         "amenity": "coworking_space",
         "name": "Le 18 coworking",
         "ref:FR:SIRET": "84264588900010",
-        "website": "https://18coworking.com"
+        "website": "https://18coworking.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -1725,7 +1803,8 @@
         "check_date": "2025-05-28",
         "level": "0",
         "name": "Mitwit Office",
-        "website": "https://www.mitwitoffice.com"
+        "website": "https://www.mitwitoffice.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -1744,7 +1823,8 @@
         "level": "1",
         "name": "Entrepreneurial People",
         "ref:FR:SIRET": "81828850800026",
-        "website": "https://coworkinginlyon.fr/"
+        "website": "https://coworkinginlyon.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1761,7 +1841,8 @@
         "@type": "node",
         "amenity": "coworking_space",
         "name": "Wework",
-        "survey:date": "2020-09"
+        "survey:date": "2020-09",
+        "spotType": "coworking"
       }
     },
     {
@@ -1778,7 +1859,8 @@
         "@type": "node",
         "amenity": "coworking_space",
         "name": "La galerie",
-        "survey:date": "2020-10-10"
+        "survey:date": "2020-10-10",
+        "spotType": "coworking"
       }
     },
     {
@@ -1796,7 +1878,8 @@
         "amenity": "coworking_space",
         "name": "La Bulle",
         "ref:FR:SIRET": "83014612200015",
-        "survey:date": "2020-11-22"
+        "survey:date": "2020-11-22",
+        "spotType": "coworking"
       }
     },
     {
@@ -1822,7 +1905,8 @@
         "smoking": "no",
         "twitter": "hiptownlovesyou",
         "website": "https://hiptown.com/nos-espaces/hiptown-part-dieu/",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -1843,7 +1927,8 @@
         "addr:street": "Rue de la Clôture",
         "name": "Oasis 21",
         "office": "coworking",
-        "website": "https://oasis21.org/"
+        "website": "https://oasis21.org/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1860,7 +1945,8 @@
         "@type": "node",
         "amenity": "coworking_space",
         "check_date": "2025-05-05",
-        "name": "myWO"
+        "name": "myWO",
+        "spotType": "coworking"
       }
     },
     {
@@ -1877,7 +1963,8 @@
         "@type": "node",
         "check_date": "2024-01-02",
         "name": "Studio 33",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -1903,7 +1990,8 @@
         "name": "Agoranov",
         "office": "coworking",
         "phone": "+33 1 44 18 07 15",
-        "website": "https://www.agoranov.com/"
+        "website": "https://www.agoranov.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -1926,7 +2014,8 @@
         "fee": "yes",
         "name": "Urban Lab",
         "office": "coworking",
-        "operator": "RIVP"
+        "operator": "RIVP",
+        "spotType": "coworking"
       }
     },
     {
@@ -1948,7 +2037,8 @@
         "name": "Wojo",
         "office": "company",
         "opening_hours": "Mo-Su 09:00-19:00",
-        "website": "https://www.wojo.com/fr-FR/espaces-de-travail/wojo-paris-13e-bnf"
+        "website": "https://www.wojo.com/fr-FR/espaces-de-travail/wojo-paris-13e-bnf",
+        "spotType": "coworking"
       }
     },
     {
@@ -1965,7 +2055,8 @@
         "@type": "node",
         "amenity": "coworking_space",
         "check_date": "2023-07-10",
-        "name": "Krysalid"
+        "name": "Krysalid",
+        "spotType": "coworking"
       }
     },
     {
@@ -1984,7 +2075,8 @@
         "craft": "dressmaker",
         "name": "Le Textile Lab",
         "ref:FR:SIRET": "84761817000033",
-        "website": "https://letextilelab.com/"
+        "website": "https://letextilelab.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2005,7 +2097,8 @@
         "office": "coworking",
         "opening_hours": "24/7",
         "website": "https://www.la-cordee.net/cordee/lyon/jean-mace/",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -2022,7 +2115,8 @@
         "@type": "node",
         "check_date": "2024-02-24",
         "name": "La patronnerie",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2043,7 +2137,8 @@
         "addr:street": "Rue Albert Voisin",
         "check_date": "2025-03-08",
         "name": "Le Hub",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2060,7 +2155,8 @@
         "@type": "node",
         "name": "L'Aternative Coworking",
         "office": "coworking",
-        "ref:FR:SIRET": "75302909900011"
+        "ref:FR:SIRET": "75302909900011",
+        "spotType": "coworking"
       }
     },
     {
@@ -2086,7 +2182,8 @@
         "office": "coworking",
         "opening_hours": "Mo-Fr 09:00-19:00; Sa-Su 11:00-19:00",
         "phone": "+33 1 42 03 07 38",
-        "website": "https://www.levelcoworking.fr"
+        "website": "https://www.levelcoworking.fr",
+        "spotType": "coworking"
       }
     },
     {
@@ -2108,7 +2205,8 @@
         "office": "coworking",
         "opening_hours": "Mo-Fr 09:00-19:00",
         "website": "https://www.le10h10.com/",
-        "wheelchair": "limited"
+        "wheelchair": "limited",
+        "spotType": "coworking"
       }
     },
     {
@@ -2132,7 +2230,8 @@
         "office": "coworking",
         "opening_hours": "Mo-Fr 09:00-21:00; Sa,Su 10:30-21:00",
         "phone": "+33145960678",
-        "website": "https://www.hubsy.fr/shops/saint-lazare"
+        "website": "https://www.hubsy.fr/shops/saint-lazare",
+        "spotType": "coworking"
       }
     },
     {
@@ -2155,7 +2254,8 @@
         "internet_access": "wlan",
         "name": "La Manufacture",
         "office": "coworking",
-        "opening_hours": "Mo-Fr 09:00-18:00 \"visitors\", Mo-Sa 07:00-22:00 \"members\""
+        "opening_hours": "Mo-Fr 09:00-18:00 \"visitors\", Mo-Sa 07:00-22:00 \"members\"",
+        "spotType": "coworking"
       }
     },
     {
@@ -2176,7 +2276,8 @@
         "name": "Le colibri",
         "opening_hours:signed": "no",
         "phone": "+33 1 53 62 81 91",
-        "wheelchair": "limited"
+        "wheelchair": "limited",
+        "spotType": "coworking"
       }
     },
     {
@@ -2193,7 +2294,8 @@
         "@type": "node",
         "name": "Wellio",
         "office": "coworking",
-        "website": "https://wellio.com/fr/lyon-part-dieu/"
+        "website": "https://wellio.com/fr/lyon-part-dieu/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2209,7 +2311,8 @@
         "@id": "node/9280086876",
         "@type": "node",
         "name": "Centre d’affaires Georges 15",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2229,7 +2332,8 @@
         "contact:website": "https://www.locsallelyon.fr/",
         "name": "Locsallelyon.fr",
         "office": "coworking",
-        "opening_hours:signed": "no"
+        "opening_hours:signed": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -2247,7 +2351,8 @@
         "check_date": "2023-04-02",
         "name": "BURO Club",
         "office": "coworking",
-        "website": "https://www.buro.com/centre-affaires/paris-voltaire-2/"
+        "website": "https://www.buro.com/centre-affaires/paris-voltaire-2/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2262,7 +2367,8 @@
       "properties": {
         "@id": "node/9469292784",
         "@type": "node",
-        "amenity": "coworking_space"
+        "amenity": "coworking_space",
+        "spotType": "coworking"
       }
     },
     {
@@ -2287,7 +2393,8 @@
         "office": "coworking",
         "official_name": "Multiburo Paris Opéra",
         "opening_hours": "Mo-Th 09:00-19:00; Fr 09:00-18:00",
-        "ref:FR:SIRET": "34525015300276"
+        "ref:FR:SIRET": "34525015300276",
+        "spotType": "coworking"
       }
     },
     {
@@ -2309,7 +2416,8 @@
         "internet_access": "yes",
         "name": "oasis21",
         "office": "coworking",
-        "website": "https://oasis21.org/"
+        "website": "https://oasis21.org/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2328,7 +2436,8 @@
         "name": "Ô Local",
         "office": "coworking",
         "phone": "+33 952911010",
-        "website": "https://olocal.fr/"
+        "website": "https://olocal.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2350,7 +2459,8 @@
         "name": "Emergence +",
         "office": "coworking",
         "phone": "+335 34 51 63 70",
-        "website": "https://emergence-plus.com/nos-offres-a-toulouse"
+        "website": "https://emergence-plus.com/nos-offres-a-toulouse",
+        "spotType": "coworking"
       }
     },
     {
@@ -2376,7 +2486,8 @@
         "office": "coworking",
         "phone": "+33 4 78 11 94 37",
         "ref:FR:SIRET": "90854424000017",
-        "website": "https://dkgones.fr/"
+        "website": "https://dkgones.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2399,7 +2510,8 @@
         "office": "coworking",
         "opening_hours": "Mo-Fr 08:00-00:00",
         "phone": "+33 1 83 75 95 40",
-        "website": "https://leshack.fr"
+        "website": "https://leshack.fr",
+        "spotType": "coworking"
       }
     },
     {
@@ -2425,7 +2537,8 @@
         "name": "Regus",
         "office": "coworking",
         "phone": "+33178958702",
-        "website": "https://www.regus.com/fr-fr/france/paris/chatelet-5623"
+        "website": "https://www.regus.com/fr-fr/france/paris/chatelet-5623",
+        "spotType": "coworking"
       }
     },
     {
@@ -2450,7 +2563,8 @@
         "name": "La maison",
         "office": "coworking",
         "phone": "+33769214624",
-        "website": "http://lamaison-toulouse.fr/"
+        "website": "http://lamaison-toulouse.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2466,7 +2580,8 @@
         "@id": "node/9997195634",
         "@type": "node",
         "amenity": "coworking_space",
-        "name": "Wojo"
+        "name": "Wojo",
+        "spotType": "coworking"
       }
     },
     {
@@ -2485,7 +2600,8 @@
         "name": "BlackOffice",
         "office": "coworking",
         "phone": "+33582955277",
-        "website": "https://www.blackoffice.fr/"
+        "website": "https://www.blackoffice.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2504,7 +2620,8 @@
         "check_date:opening_hours": "2022-12-01",
         "name": "La Cordée - Opéra",
         "opening_hours:signed": "no",
-        "ref:FR:SIRET": "53511306200082"
+        "ref:FR:SIRET": "53511306200082",
+        "spotType": "coworking"
       }
     },
     {
@@ -2523,7 +2640,8 @@
         "contact:housenumber": "36",
         "contact:street": "Rue d'Alsace-Lorraine",
         "name": "Étincelle Coworking",
-        "website": "https://www.etincelle-coworking.com/espaces/alsace-lorraine/"
+        "website": "https://www.etincelle-coworking.com/espaces/alsace-lorraine/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2542,7 +2660,8 @@
         "name": "Wroom",
         "office": "coworking",
         "opening_hours": "PH,Mo-Su 00:00-24:00",
-        "opening_hours:signed": "no"
+        "opening_hours:signed": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -2558,7 +2677,8 @@
         "@id": "node/10154115896",
         "@type": "node",
         "name": "Wojo",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2578,7 +2698,8 @@
         "office": "coworking",
         "opening_hours": "24/7",
         "phone": "+33669673350",
-        "website": "https://coworking-cctv.xyz/"
+        "website": "https://coworking-cctv.xyz/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2596,7 +2717,8 @@
         "check_date": "2023-03-18",
         "name": "morning",
         "office": "coworking",
-        "website": "https://www.morning.fr/espaces-coworking-morning/republique"
+        "website": "https://www.morning.fr/espaces-coworking-morning/republique",
+        "spotType": "coworking"
       }
     },
     {
@@ -2618,7 +2740,8 @@
         "name": "Etincelle Coworking",
         "office": "coworking",
         "source": "local knowledge",
-        "website": "https://www.etincelle-coworking.com/"
+        "website": "https://www.etincelle-coworking.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2637,7 +2760,8 @@
         "brand:wikidata": "Q19995004",
         "fee": "yes",
         "name": "WeWork",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2653,7 +2777,8 @@
         "@id": "node/10737329599",
         "@type": "node",
         "name": "Partech Shaker",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2678,7 +2803,8 @@
         "name": "Spaces",
         "office": "coworking",
         "phone": "+33 805 08 63 59",
-        "website": "https://spaceswork.com"
+        "website": "https://spaceswork.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -2702,7 +2828,8 @@
         "name": "Imagin'Office Monceau",
         "office": "coworking",
         "opening_hours": "Mo-Fr 09:00-17:00",
-        "website": "https://imaginoffice.com/"
+        "website": "https://imaginoffice.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -2727,7 +2854,8 @@
         "office": "coworking",
         "opening_hours": "Mo-Fr 09:00-17:00",
         "phone": "+33 6 31 18 18 64",
-        "website": "https://www.imaginoffice.com/espaces/imagin-haussmann"
+        "website": "https://www.imaginoffice.com/espaces/imagin-haussmann",
+        "spotType": "coworking"
       }
     },
     {
@@ -2752,7 +2880,8 @@
         "office": "coworking",
         "phone": "+33695583689",
         "survey:date": "2023-11-14",
-        "website": "https://mitwitoffice.com/adresse/mitwit-paris-3-marais-republique"
+        "website": "https://mitwitoffice.com/adresse/mitwit-paris-3-marais-republique",
+        "spotType": "coworking"
       }
     },
     {
@@ -2768,7 +2897,8 @@
         "@id": "node/10805325063",
         "@type": "node",
         "amenity": "coworking_space",
-        "name": "Morning"
+        "name": "Morning",
+        "spotType": "coworking"
       }
     },
     {
@@ -2800,7 +2930,8 @@
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
         "tourism": "hostel",
         "website": "https://www.pilohotels.com",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -2817,7 +2948,8 @@
         "@type": "node",
         "check_date": "2025-09-14",
         "name": "Eurodom",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2837,7 +2969,8 @@
         "office": "coworking",
         "phone": "+33 9 88 52 55 98",
         "ref:FR:SIRET": "81102454600038",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -2861,7 +2994,8 @@
         "office": "coworking",
         "opening_hours": "Mo-Fr 09:00-19:00",
         "phone": "+33 1 40 33 40 05",
-        "website": "https://coolandworkers.com"
+        "website": "https://coolandworkers.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -2882,7 +3016,8 @@
         "name": "Now coworking",
         "office": "coworking",
         "phone": "+33428291881",
-        "website": "https://now-coworking.com"
+        "website": "https://now-coworking.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -2898,7 +3033,8 @@
         "@id": "node/10974324379",
         "@type": "node",
         "name": "Wojo",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2918,7 +3054,8 @@
         "addr:street": "Boulevard Voltaire",
         "check_date": "2023-06-28",
         "name": "Deskopolitan",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2942,7 +3079,8 @@
         "opening_hours": "24/7",
         "phone": "+33 4 28 29 56 95",
         "ref:FR:SIRET": "81148934300038",
-        "website": "https://www.now-coworking.com/coworking-lyon"
+        "website": "https://www.now-coworking.com/coworking-lyon",
+        "spotType": "coworking"
       }
     },
     {
@@ -2961,7 +3099,8 @@
         "internet_access": "wlan",
         "internet_access:fee": "customers",
         "name": "Morning Beaurepaire",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -2979,7 +3118,8 @@
         "amenity": "coworking_space",
         "level": "-1",
         "socket:device:USB-A": "yes",
-        "socket:typee": "yes"
+        "socket:typee": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -2996,7 +3136,8 @@
         "@type": "node",
         "name": "Wellio",
         "office": "coworking",
-        "ref:FR:SIRET": "83211740200046"
+        "ref:FR:SIRET": "83211740200046",
+        "spotType": "coworking"
       }
     },
     {
@@ -3012,7 +3153,8 @@
         "@id": "node/11144335261",
         "@type": "node",
         "amenity": "coworking_space",
-        "name": "morning"
+        "name": "morning",
+        "spotType": "coworking"
       }
     },
     {
@@ -3028,7 +3170,8 @@
         "@id": "node/11144335288",
         "@type": "node",
         "amenity": "coworking_space",
-        "name": "Wework"
+        "name": "Wework",
+        "spotType": "coworking"
       }
     },
     {
@@ -3044,7 +3187,8 @@
         "@id": "node/11144398431",
         "@type": "node",
         "name": "Le Loup – Coworking beauté",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3060,7 +3204,8 @@
         "@id": "node/11172416852",
         "@type": "node",
         "name": "La canopée",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3083,7 +3228,8 @@
         "internet_access": "wlan",
         "internet_access:fee": "customers",
         "name": "Regus",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3102,7 +3248,8 @@
         "contact:email": "nice-gare@start-way.com",
         "name": "Start Way",
         "phone": "+33 6 62 09 58 38",
-        "website": "https://www.start-way.com/project/coworking-nice-gare/"
+        "website": "https://www.start-way.com/project/coworking-nice-gare/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3125,7 +3272,8 @@
         "name": "Poly gones",
         "opening_hours": "Mo-Fr 08:00-19:00",
         "phone": "+33 6 87 07 77 52",
-        "website": "https://polygones-lyon.fr/"
+        "website": "https://polygones-lyon.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3141,7 +3289,8 @@
         "@id": "node/11261802890",
         "@type": "node",
         "amenity": "coworking_space",
-        "name": "Startway"
+        "name": "Startway",
+        "spotType": "coworking"
       }
     },
     {
@@ -3160,7 +3309,8 @@
         "contact:email": "lacuriositedesfeuillantines@gmail.com",
         "contact:phone": "+33 7 86 76 22 57",
         "name": "La Curiosité",
-        "website": "https://www.la-curiosite.com"
+        "website": "https://www.la-curiosite.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -3177,7 +3327,8 @@
         "@type": "node",
         "name": "Startway",
         "office": "coworking",
-        "survey:date": "2023-11-14"
+        "survey:date": "2023-11-14",
+        "spotType": "coworking"
       }
     },
     {
@@ -3194,7 +3345,8 @@
         "@type": "node",
         "name": "Off Road",
         "office": "coworking",
-        "ref:FR:SIRET": "79892917000024"
+        "ref:FR:SIRET": "79892917000024",
+        "spotType": "coworking"
       }
     },
     {
@@ -3213,7 +3365,8 @@
         "level": "2",
         "name:signed": "no",
         "socket:device:USB-A": "yes",
-        "socket:typee": "yes"
+        "socket:typee": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -3232,7 +3385,8 @@
         "brand:wikidata": "Q87629680",
         "name": "Spaces",
         "office": "coworking",
-        "wheelchair": "no"
+        "wheelchair": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -3249,7 +3403,8 @@
         "@type": "node",
         "name": "Corporatings",
         "office": "coworking",
-        "wheelchair": "no"
+        "wheelchair": "no",
+        "spotType": "coworking"
       }
     },
     {
@@ -3267,7 +3422,8 @@
         "check_date": "2025-10-30",
         "name": "Espace Saint Martin",
         "office": "coworking",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -3285,7 +3441,8 @@
         "amenity": "coworking_space",
         "name": "Générateur9",
         "office": "coworking",
-        "website": "http://generateur9.com/"
+        "website": "http://generateur9.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3306,7 +3463,8 @@
         "contact:phone": "+33 1 40 05 03 72",
         "contact:website": "https://bonjourbichat.fr",
         "name": "Bonjour Bichat",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3322,7 +3480,8 @@
         "@id": "node/11783642825",
         "@type": "node",
         "amenity": "coworking_space",
-        "name": "Patch Work"
+        "name": "Patch Work",
+        "spotType": "coworking"
       }
     },
     {
@@ -3346,7 +3505,8 @@
         "name": "Deskeo Part-Dieu",
         "office": "coworking",
         "opening_hours:signed": "no",
-        "website": "https://www.deskeo.com/fr/meetings-events/location-salles-de-reunion/part-dieu/"
+        "website": "https://www.deskeo.com/fr/meetings-events/location-salles-de-reunion/part-dieu/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3363,7 +3523,8 @@
         "@type": "node",
         "name": "Le Labo",
         "office": "coworking",
-        "website": "https://www.lelabocoworking.com/"
+        "website": "https://www.lelabocoworking.com/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3385,7 +3546,8 @@
         "contact:street": "Rue De Choiseul",
         "name": "Deskeo Quatre Septembre",
         "office": "coworking",
-        "website": "https://www.deskeo.com/fr/work-spaces/bureaux-privatifs/quatre-septembre/"
+        "website": "https://www.deskeo.com/fr/work-spaces/bureaux-privatifs/quatre-septembre/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3407,7 +3569,8 @@
         "contact:street": "Rue Saint-Maur",
         "name": "Deskeo Parmentier",
         "office": "coworking",
-        "website": "https://www.deskeo.com/fr/work-spaces/bureaux-privatifs/parmentier/"
+        "website": "https://www.deskeo.com/fr/work-spaces/bureaux-privatifs/parmentier/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3429,7 +3592,8 @@
         "level": "0",
         "name": "Espace Clery",
         "office": "coworking",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -3453,7 +3617,8 @@
         "operator:type": "private",
         "project:oif-dfen_carteinnov": "yes",
         "ref:FR:SIRET": "51049561700035",
-        "source": "oif-dfen_carteinnov"
+        "source": "oif-dfen_carteinnov",
+        "spotType": "coworking"
       }
     },
     {
@@ -3474,7 +3639,8 @@
         "brand:wikidata": "Q761072",
         "name": "Regus",
         "office": "coworking",
-        "opening_hours": "Mo-Fr 08:30-18:30"
+        "opening_hours": "Mo-Fr 08:30-18:30",
+        "spotType": "coworking"
       }
     },
     {
@@ -3491,7 +3657,8 @@
         "@type": "node",
         "name": "Smooth",
         "office": "coworking",
-        "opening_hours": "Mo-Fr 10:00-20:00; Sa 11:00-18:00"
+        "opening_hours": "Mo-Fr 10:00-20:00; Sa 11:00-18:00",
+        "spotType": "coworking"
       }
     },
     {
@@ -3511,7 +3678,8 @@
         "addr:postcode": "75009",
         "addr:street": "Rue de Milan",
         "name": "Schoolab",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3531,7 +3699,8 @@
         "addr:postcode": "13001",
         "addr:street": "Rue Sainte",
         "name": "Le Récif",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3552,7 +3721,8 @@
         "addr:street": "Rue La Boétie",
         "name": "Les Communicants",
         "office": "coworking",
-        "website": "https://lescommunicants.fr/fr/"
+        "website": "https://lescommunicants.fr/fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3573,7 +3743,8 @@
         "addr:street": "Quai Perrache",
         "name": "Lumen - Cardinal Workside",
         "office": "coworking",
-        "ref:FR:SIRET": "91404475500017"
+        "ref:FR:SIRET": "91404475500017",
+        "spotType": "coworking"
       }
     },
     {
@@ -3594,7 +3765,8 @@
         "office": "coworking",
         "opening_hours": "24/7",
         "ref:FR:SIRET": "53511306200058",
-        "website": "https://www.la-cordee.net/cordee/lyon/liberte-guillotiere/"
+        "website": "https://www.la-cordee.net/cordee/lyon/liberte-guillotiere/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3609,7 +3781,8 @@
       "properties": {
         "@id": "node/12192753457",
         "@type": "node",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3627,7 +3800,8 @@
         "check_date": "2025-11-13",
         "name": "Good News",
         "office": "coworking",
-        "opening_hours": "Mo-Fr 07:30-19:30; Sa,Su 09:00-19:30"
+        "opening_hours": "Mo-Fr 07:30-19:30; Sa,Su 09:00-19:30",
+        "spotType": "coworking"
       }
     },
     {
@@ -3644,7 +3818,8 @@
         "@type": "node",
         "check_date": "2024-11-08",
         "name": "Coco",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3665,7 +3840,8 @@
         "addr:street": "Rue de Bellechasse",
         "name": "Lab 110 Bis",
         "office": "coworking",
-        "website": "https://www.education.gouv.fr/110-bis-le-lab-d-innovation-publique-de-l-education-nationale-100157"
+        "website": "https://www.education.gouv.fr/110-bis-le-lab-d-innovation-publique-de-l-education-nationale-100157",
+        "spotType": "coworking"
       }
     },
     {
@@ -3682,7 +3858,8 @@
         "@type": "node",
         "name": "Ready Office",
         "office": "coworking",
-        "website": "http://www.ready-office.fr/"
+        "website": "http://www.ready-office.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3698,7 +3875,8 @@
         "@id": "node/12641073822",
         "@type": "node",
         "name": "Wojo",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3719,7 +3897,8 @@
         "addr:street": "Rue de Crimée",
         "name": "Le 99",
         "office": "coworking",
-        "ref:FR:SIRET": "82514089000013"
+        "ref:FR:SIRET": "82514089000013",
+        "spotType": "coworking"
       }
     },
     {
@@ -3738,7 +3917,8 @@
         "addr:street": "Rue Sedaine",
         "name": "Bohème Café Coworking",
         "office": "coworking",
-        "opening_hours": "Mo-Sa 08:30-18:30; Su 10:00-17:00"
+        "opening_hours": "Mo-Sa 08:30-18:30; Su 10:00-17:00",
+        "spotType": "coworking"
       }
     },
     {
@@ -3754,7 +3934,8 @@
         "@id": "node/12898946537",
         "@type": "node",
         "name": "Supra cowork",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3775,7 +3956,8 @@
         "office": "coworking",
         "short_name": "LICA",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
-        "website": "https://lica-europe.org/"
+        "website": "https://lica-europe.org/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3791,7 +3973,8 @@
         "@id": "node/12987337673",
         "@type": "node",
         "name": "Les Arches",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3810,7 +3993,8 @@
         "addr:street": "Rue du Mail",
         "amenity": "coworking_space",
         "check_date": "2025-10-01",
-        "name": "Comet"
+        "name": "Comet",
+        "spotType": "coworking"
       }
     },
     {
@@ -3831,7 +4015,8 @@
         "name": "Spaces",
         "office": "coworking",
         "opening_hours": "Mo-Su 08:30-18:30",
-        "website": "https://www.spacesworks.com/fr/lyon-fr/part-dieu"
+        "website": "https://www.spacesworks.com/fr/lyon-fr/part-dieu",
+        "spotType": "coworking"
       }
     },
     {
@@ -3851,7 +4036,8 @@
         "office": "coworking",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
         "website": "https://philanthro-lab.org/",
-        "wikidata": "Q3145456"
+        "wikidata": "Q3145456",
+        "spotType": "coworking"
       }
     },
     {
@@ -3876,7 +4062,8 @@
         "ref:FR:SIREN": "831236302",
         "ref:FR:SIRET": "83123630200012",
         "ref:vatin": "FR35831236302",
-        "website": "https://www.labullecoworking.com"
+        "website": "https://www.labullecoworking.com",
+        "spotType": "coworking"
       }
     },
     {
@@ -3897,7 +4084,8 @@
         "internet_access": "yes",
         "name": "D'un Siège à L'Autre",
         "office": "coworking",
-        "website": "https://www.dunsiegealautre-lyon.fr/nos3adresses/recamier"
+        "website": "https://www.dunsiegealautre-lyon.fr/nos3adresses/recamier",
+        "spotType": "coworking"
       }
     },
     {
@@ -3919,7 +4107,8 @@
         "name": "Morning Miromesnil",
         "office": "coworking",
         "ref:FR:SIRET": "81180621500455",
-        "website": "https://www.morning.fr/espaces-coworking-morning/miromesnil"
+        "website": "https://www.morning.fr/espaces-coworking-morning/miromesnil",
+        "spotType": "coworking"
       }
     },
     {
@@ -3936,7 +4125,8 @@
         "@type": "node",
         "name": "G7 Prom",
         "office": "coworking",
-        "ref:FR:SIRET": "92795797700014"
+        "ref:FR:SIRET": "92795797700014",
+        "spotType": "coworking"
       }
     },
     {
@@ -3957,7 +4147,8 @@
         "internet_access:fee": "customers",
         "name": "Liberté Living Lab",
         "office": "coworking",
-        "website": "https://www.liberte.paris/"
+        "website": "https://www.liberte.paris/",
+        "spotType": "coworking"
       }
     },
     {
@@ -3973,7 +4164,8 @@
         "@id": "node/13374176302",
         "@type": "node",
         "name": "L'Igloo",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -3988,7 +4180,8 @@
       "properties": {
         "@id": "node/13391064698",
         "@type": "node",
-        "office": "coworking"
+        "office": "coworking",
+        "spotType": "coworking"
       }
     },
     {
@@ -4018,7 +4211,8 @@
         "phone": "+33 4 26 78 24 69",
         "roof:shape": "hipped",
         "website": "http://etic.co/hevea/",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -4042,7 +4236,8 @@
         "contact:postcode": "75015",
         "contact:street": "Rue de Lourmel",
         "name": "Incubateur Boucicaut",
-        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre - mise à jour : 2015"
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre - mise à jour : 2015",
+        "spotType": "coworking"
       }
     },
     {
@@ -4067,7 +4262,8 @@
         "name": "Liberté Living-Lab",
         "office": "coworking",
         "short_name": "LLL",
-        "source": "BDortho IGN"
+        "source": "BDortho IGN",
+        "spotType": "coworking"
       }
     },
     {
@@ -4086,7 +4282,8 @@
         "building": "yes",
         "building:levels": "6",
         "name": "Swile",
-        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "spotType": "coworking"
       }
     },
     {
@@ -4120,7 +4317,8 @@
         "roof:shape": "flat",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;local knowledge",
         "start_date": "2018-03-01",
-        "website": "https://www.wework.com/fr-FR/buildings/198-avenue-de-france--paris"
+        "website": "https://www.wework.com/fr-FR/buildings/198-avenue-de-france--paris",
+        "spotType": "coworking"
       }
     },
     {
@@ -4145,7 +4343,8 @@
         "name": "Volumes",
         "phone": "+33 6 52 64 52 09",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
-        "website": "http://volumesparis.org/"
+        "website": "http://volumesparis.org/",
+        "spotType": "coworking"
       }
     },
     {
@@ -4165,7 +4364,8 @@
         "building": "yes",
         "contact:website": "http://www.groupunion.fr/",
         "name": "Group'Union",
-        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "spotType": "coworking"
       }
     },
     {
@@ -4183,7 +4383,8 @@
         "building": "yes",
         "name": "Patchwork Sainte-Cécile",
         "office": "coworking",
-        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "spotType": "coworking"
       }
     },
     {
@@ -4211,7 +4412,8 @@
         "fee": "yes",
         "name": "WeWork",
         "office": "coworking",
-        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "spotType": "coworking"
       }
     },
     {
@@ -4234,7 +4436,8 @@
         "previously": "node:11530458828",
         "roof:levels": "1",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
-        "website": "https://www.patchwork.co/places/montholon"
+        "website": "https://www.patchwork.co/places/montholon",
+        "spotType": "coworking"
       }
     },
     {
@@ -4261,7 +4464,8 @@
         "source:name": "survey",
         "wall": "no",
         "was:name": "Maison de l’air et de l’environnement du parc de Belleville",
-        "website": "https://i-cpc.org/actuext/12409"
+        "website": "https://i-cpc.org/actuext/12409",
+        "spotType": "coworking"
       }
     },
     {
@@ -4279,7 +4483,8 @@
         "amenity": "coworking_space",
         "building": "yes",
         "name": "Sensespace",
-        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "spotType": "coworking"
       }
     },
     {
@@ -4309,7 +4514,8 @@
         "opening_hours:signed": "no",
         "ref:FR:SIRET": "81180621500224",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
-        "website": "https://www.morning.fr/bureaux-coworking/ledru-rollin"
+        "website": "https://www.morning.fr/bureaux-coworking/ledru-rollin",
+        "spotType": "coworking"
       }
     },
     {
@@ -4329,7 +4535,8 @@
         "office": "coworking",
         "short_name": "H7",
         "start_date": "2019-05-14",
-        "website": "https://www.h-7.eu/"
+        "website": "https://www.h-7.eu/",
+        "spotType": "coworking"
       }
     },
     {
@@ -4358,7 +4565,8 @@
         "name": "Morning",
         "office": "coworking",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
-        "website": "https://www.morning.fr/"
+        "website": "https://www.morning.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -4383,7 +4591,8 @@
         "source": "survey 2018-08",
         "source:alt_name:oc": "ieo-bdtopoc",
         "surveillance": "offices",
-        "website": "https://www.le-carburateur.fr/"
+        "website": "https://www.le-carburateur.fr/",
+        "spotType": "coworking"
       }
     },
     {
@@ -4402,7 +4611,8 @@
         "office": "coworking",
         "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2013",
         "was:name": "Le Pier Toulouse;Ortus Hôtel",
-        "was:tourism": "hotel"
+        "was:tourism": "hotel",
+        "spotType": "coworking"
       }
     },
     {
@@ -4423,7 +4633,8 @@
         "name": "Digital Village",
         "office": "coworking",
         "roof:shape": "flat",
-        "website": "https://www.digital-village.com/se-reunir"
+        "website": "https://www.digital-village.com/se-reunir",
+        "spotType": "coworking"
       }
     },
     {
@@ -4464,7 +4675,8 @@
         "source:heritage": "Ministère de la Culture - 06/2019",
         "start_date": "1928",
         "wikidata": "Q3126064",
-        "wikipedia": "fr:Halle Freyssinet"
+        "wikipedia": "fr:Halle Freyssinet",
+        "spotType": "coworking"
       }
     },
     {
@@ -4485,7 +4697,8 @@
         "check_date": "2025-05-24",
         "description": "Espace de coworking innovant regroupant des sociétés nantaises telles que The Links, EXPLORE, Emotic et Kiplin ...",
         "name": "Le Hangar à Paname",
-        "website": "https://hap.paris"
+        "website": "https://hap.paris",
+        "spotType": "coworking"
       }
     },
     {
@@ -4503,7 +4716,8 @@
         "amenity": "coworking_space",
         "indoor": "room",
         "level": "1",
-        "name": "L'Usine"
+        "name": "L'Usine",
+        "spotType": "coworking"
       }
     },
     {
@@ -4528,7 +4742,8 @@
         "office": "coworking",
         "opening_hours": "24/7",
         "operator": "CROUS",
-        "website": "https://www.crous-nice.fr/co-learning-montebello/"
+        "website": "https://www.crous-nice.fr/co-learning-montebello/",
+        "spotType": "coworking"
       }
     },
     {
@@ -4566,7 +4781,8 @@
         "roof:levels": "0",
         "roof:shape": "gabled",
         "website": "https://onzieme-lieu.com/",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -4586,7 +4802,8 @@
         "name:signed": "no",
         "socket:device:USB-A": "yes",
         "socket:typee": "yes",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "spotType": "coworking"
       }
     },
     {
@@ -4616,7 +4833,8 @@
         "office": "estate_agent",
         "official_name": "Multiburo Paris Gare Montparnasse",
         "opening_hours": "Mo-Fr 08:30-18:00; Sa,Su,PH off",
-        "ref:FR:SIRET": "44317921300048"
+        "ref:FR:SIRET": "44317921300048",
+        "spotType": "coworking"
       }
     },
     {
@@ -4634,7 +4852,8 @@
         "amenity": "coworking_space",
         "indoor": "room",
         "level": "-1",
-        "name": "Weréso"
+        "name": "Weréso",
+        "spotType": "coworking"
       }
     },
     {
@@ -4651,7 +4870,8 @@
         "@type": "way",
         "amenity": "coworking_space",
         "indoor": "area",
-        "level": "-1"
+        "level": "-1",
+        "spotType": "coworking"
       }
     }
   ]
