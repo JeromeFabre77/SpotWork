@@ -53,11 +53,19 @@ function markLibrariesWithWifi(wifiData, libraryData) {
   });
 }
 
+function addTypeOfSites(data, type) {
+  data.features.forEach((feature) => {
+    feature.properties.spotType = type;
+  });
+}
+
 async function main() {
   const wifiSites = await fetchWifiSites();
   saveToFile(wifiSites, "pariswifi_sites.geojson");
+  addTypeOfSites(wifiSites, "wifi");
   const libraryData = await fetchBibliotheques();
   markLibrariesWithWifi(wifiSites, libraryData);
+  addTypeOfSites(libraryData, "library");
   saveToFile(libraryData, "bibliotheques.geojson");
 }
 

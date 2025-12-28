@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 #map {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow: hidden;
 }
@@ -51,16 +51,19 @@ header {
 .side-navigation {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    overflow: hidden;
 }
 
 .filter-nav {
     margin: 1rem;
+    flex-shrink: 0;
 }
 
 .filter {
     padding-top: 1rem;
     display: grid;
-    grid-template-columns: 2fr 0.5fr;
+    grid-template-columns: 2fr 1fr;
     gap: 0.5rem;
 }
 .filter select {
@@ -75,4 +78,72 @@ header {
 #reset {
     background: none;
     border: none;
+    grid-column: 1 / -1;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.spots {
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin: 0 0.5rem;
+}
+
+#comparison-tile {
+    flex-shrink: 0;
+    padding: 1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+#comparison-tile > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#comparison-tile button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+#comparison-tile > button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+}
+
+.tile {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.tile:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tile h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.tile p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.tile p:last-child {
+    margin-bottom: 0;
 }
