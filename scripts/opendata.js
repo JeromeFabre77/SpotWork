@@ -42,7 +42,6 @@ function markLibrariesWithWifi(wifiData, libraryData) {
     if (!library.geometry?.coordinates) return;
 
     const [libLon, libLat] = library.geometry.coordinates;
-
     library.properties.hasWifi = wifiData.features.some((wifi) => {
       if (!wifi.geometry?.coordinates) return false;
       const [wifiLon, wifiLat] = wifi.geometry.coordinates;
