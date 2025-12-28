@@ -4,11 +4,11 @@ const path = require("path");
 const OVERPASS_BASE_URL = "https://overpass.kumi.systems/api/interpreter";
 
 const GRANDES_VILLES = [
-  { name: "Paris", relation: 7444 },
-  { name: "Marseille", relation: 1684264 },
-  { name: "Lyon", relation: 2833469 },
+  { name: "Paris", relation: 71525 },
+  { name: "Marseille", relation: 76469 },
+  { name: "Lyon", relation: 120965 },
   { name: "Toulouse", relation: 35738 },
-  { name: "Nice", relation: 1641629 },
+  { name: "Nice", relation: 170100 },
 ];
 
 function toGeoJSON(elements) {

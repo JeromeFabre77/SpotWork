@@ -33,6 +33,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          5.3830791,
+          43.3004493
+        ]
+      },
+      "properties": {
+        "@id": "node/534690961",
+        "@type": "node",
+        "addr:housenumber": "9",
+        "name": "Plan M",
+        "office": "coworking",
+        "website": "https://planmsite.wordpress.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3525894,
           48.8401501
         ]
@@ -201,6 +219,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          5.3807815,
+          43.3013723
+        ]
+      },
+      "properties": {
+        "@id": "node/2368671376",
+        "@type": "node",
+        "addr:housenumber": "2",
+        "addr:postcode": "13001",
+        "addr:street": "Place des Marseillaises",
+        "amenity": "cafe",
+        "check_date": "2025-06-01",
+        "description": "Café Suspendu",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "name": "L'écomotive",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 08:30-19:00; Sa-Su 09:30-18:00",
+        "organic": "only",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "ref:FR:SIRET": "92876222800015",
+        "website": "https://www.instagram.com/cafelecomotive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3907515,
           48.8773972
         ]
@@ -295,6 +345,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8384803,
+          45.7535562
+        ]
+      },
+      "properties": {
+        "@id": "node/2478463616",
+        "@type": "node",
+        "internet_access": "yes",
+        "name": "En face de la piscine",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 07:00-21:00; Sa 09:00-12:00",
+        "phone": "+33 6 33 04 18 04",
+        "ref:FR:SIRET": "82330084300013",
+        "website": "https://www.coworking-piscine.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3557214,
           48.8302648
         ]
@@ -307,6 +378,26 @@
         "note:fr": "aussi appareil auditif",
         "office": "coworking",
         "source": "survey"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8344433,
+          45.7683587
+        ]
+      },
+      "properties": {
+        "@id": "node/2682137336",
+        "@type": "node",
+        "contact:phone": "+33 4 69 60 03 25",
+        "description": "Grand espace de coworking avec une dynamique écoresponsable. Lieu ouvert à toute personne souhaitant disposer d'un espace de travail professionnel, collaboratif et convivial.",
+        "name": "Ecoworking Coworking",
+        "office": "coworking",
+        "opening_hours": "Mo,Tu,Th,Fr 09:00-12:00,14:00-18:00",
+        "website": "https://www.ecoworking.fr/"
       }
     },
     {
@@ -335,6 +426,29 @@
         "website": "https://lapaillasse.org/",
         "wheelchair": "no",
         "workshop": "fablab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8424484,
+          45.7516899
+        ]
+      },
+      "properties": {
+        "@id": "node/3089397110",
+        "@type": "node",
+        "check_date": "2023-10-28",
+        "description": "Tiers-lieu associatif géré collectivement proposant notamment un espace de coworking et développant des coopérations, à destination de structures du quartier de l'économie sociale, solidaire et écologique",
+        "email": "contact@locauxmotiv.fr",
+        "internet_access": "wlan",
+        "name": "Locaux Motiv'",
+        "office": "coworking",
+        "ref:FR:SIRET": "52419699500020",
+        "website": "https://locauxmotiv.fr/",
+        "wheelchair": "limited"
       }
     },
     {
@@ -512,6 +626,139 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8255565,
+          45.7505599
+        ]
+      },
+      "properties": {
+        "@id": "node/3989498385",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "fee": "yes",
+        "name": "La Cordée Perrache",
+        "opening_hours": "24/7",
+        "operator": "La Cordée",
+        "website": "https://www.la-cordee.net/cordee/la-cordee-perrache/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7980414,
+          45.7710836
+        ]
+      },
+      "properties": {
+        "@id": "node/4197707415",
+        "@type": "node",
+        "description:en": "Shared workshop for local and roaming craftsmen",
+        "name": "Attom",
+        "office": "coworking",
+        "phone": "+33 6 59 40 80 01",
+        "website": "https://www.attom.eu/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2830792,
+          43.7005824
+        ]
+      },
+      "properties": {
+        "@id": "node/4498785610",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "delivery": "no",
+        "description": "Le concept store de Nice: coworking, séminaire, espaces bureau & business. JOYA c'est aussi un bar resto, un conrer boutique .",
+        "image": "https://www.joyalifestore.com/wp-content/uploads/2021/07/joya-lifestore-salon-vitre-salle-a-louernice-scaled.jpg",
+        "name": "JOYA Lifestore",
+        "takeaway": "no",
+        "website": "https://joyalifestore.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8337992,
+          45.746025
+        ]
+      },
+      "properties": {
+        "@id": "node/4607918492",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "description": "Espace autogéré de travail dans le domaine agricole et de l'économie sociale et solidaire.",
+        "name": "Association d'Animation du 58",
+        "ref:FR:SIRET": "52057444300013",
+        "short_name": "AA58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3780155,
+          43.295327
+        ]
+      },
+      "properties": {
+        "@id": "node/4756748286",
+        "@type": "node",
+        "addr:housenumber": "2a",
+        "amenity": "coworking_space",
+        "contact:website": "http://www.cosens.fr/",
+        "name": "Cosens"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3724472,
+          43.2933516
+        ]
+      },
+      "properties": {
+        "@id": "node/4824589360",
+        "@type": "node",
+        "addr:housenumber": "7",
+        "amenity": "coworking_space",
+        "contact:website": "http://leloft.co/",
+        "name": "Le Loft",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.401161,
+          43.3060574
+        ]
+      },
+      "properties": {
+        "@id": "node/4843381705",
+        "@type": "node",
+        "name": "L'Inkub",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 07:00-21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3336897,
           48.8668423
         ]
@@ -665,6 +912,34 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8277842,
+          45.746805
+        ]
+      },
+      "properties": {
+        "@id": "node/5196463430",
+        "@type": "node",
+        "contact:city": "Lyon",
+        "contact:email": "lobster.lyon@gmail.com",
+        "contact:housenumber": "11bis",
+        "contact:phone": "+33 4 78 38 89 29",
+        "contact:postcode": "69002",
+        "contact:street": "Rue Dugas-Montbel",
+        "contact:website": "http://www.lobster-lyon.com/",
+        "description": "LOBSTER est un espace de mutualisation créé pour et à l’initiative de professionnels de la musique.",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Lobster / Pôle de Musiques Actuelles",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 08:00-19:00",
+        "source": "Grand Lyon - 10/2011"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4416739,
           43.6023199
         ]
@@ -707,6 +982,42 @@
         "old_name": "Paris Pionnières",
         "opening_hours": "24/7",
         "wheelchair": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8457598,
+          45.7695883
+        ]
+      },
+      "properties": {
+        "@id": "node/5286328655",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "contact:website": "http://wereso-lyon.fr",
+        "internet_access": "yes",
+        "name": "weréso Lyon",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8418344,
+          45.756131
+        ]
+      },
+      "properties": {
+        "@id": "node/5423596041",
+        "@type": "node",
+        "name": "Boost In Lyon",
+        "office": "coworking",
+        "website": "https://boostinlyon.fr/"
       }
     },
     {
@@ -768,6 +1079,86 @@
         "ref:FR:SIRET": "53511306200066",
         "source": "survey",
         "website": "https://www.la-cordee.net/cordee/paris/paris-gare-de-lyon/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3764739,
+          43.2898178
+        ]
+      },
+      "properties": {
+        "@id": "node/5824912960",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:housenumber": "13",
+        "amenity": "coworking_space",
+        "name": "smack coworking",
+        "opening_hours": "Mo-Fr 09:00-18:30",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8362633,
+          45.7458106
+        ]
+      },
+      "properties": {
+        "@id": "node/5914357987",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "name": "Le Centsept",
+        "phone": "+33 9 88 77 78 94",
+        "ref:FR:SIRET": "80927261000027",
+        "website": "https://www.lecentsept.fr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3701664,
+          43.3014281
+        ]
+      },
+      "properties": {
+        "@id": "node/5954418134",
+        "@type": "node",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Babel Community",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 08:30-22:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3768855,
+          43.2860419
+        ]
+      },
+      "properties": {
+        "@id": "node/5989360187",
+        "@type": "node",
+        "addr:street": "Rue du Docteur François Morucci",
+        "amenity": "coworking_space",
+        "contact:housenumber": "108",
+        "contact:street": "Rue Breteuil",
+        "contact:website": "http://www.makeitmarseille.com/",
+        "name": "Make it Marseille",
+        "source:amenity": "survey"
       }
     },
     {
@@ -858,6 +1249,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8247536,
+          45.751766
+        ]
+      },
+      "properties": {
+        "@id": "node/6130970494",
+        "@type": "node",
+        "email": "gregoire@lesimone.fr",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Coworking Le Simone",
+        "office": "coworking",
+        "opening_hours": "Mo-Sa 09:30-19:30",
+        "phone": "+33 4 69 70 46 89",
+        "ref:FR:SIRET": "81423475300022",
+        "website": "https://www.lesimone.fr/coworking-lyon/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3474126,
           48.8493063
         ]
@@ -870,6 +1284,44 @@
         "name": "Nuage Café",
         "ref:FR:SIRET": "80818902100021",
         "website": "https://nuagecafe.fr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8627601,
+          45.7619395
+        ]
+      },
+      "properties": {
+        "@id": "node/6378217452",
+        "@type": "node",
+        "name": "Peexeo",
+        "office": "coworking",
+        "phone": "+33 4 28 29 59 99",
+        "website": "https://www.peexeo.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8493267,
+          45.7629315
+        ]
+      },
+      "properties": {
+        "@id": "node/6383792307",
+        "@type": "node",
+        "addr:city": "Lyon",
+        "addr:housenumber": "92",
+        "addr:postcode": "69003",
+        "addr:street": "Cours Lafayette",
+        "name": "Mama Works",
+        "office": "coworking"
       }
     },
     {
@@ -897,6 +1349,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8495369,
+          45.7632098
+        ]
+      },
+      "properties": {
+        "@id": "node/6504777869",
+        "@type": "node",
+        "addr:city": "Lyon",
+        "addr:housenumber": "90",
+        "addr:postcode": "69003",
+        "addr:street": "Cours Lafayette",
+        "amenity": "coworking_space",
+        "name": "HUB612",
+        "website": "https://www.hub612.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3527248,
           48.891094
         ]
@@ -911,6 +1384,49 @@
         "name": "Morning Coworking - Marcadet",
         "office": "coworking",
         "website": "https://morning-coworking.com/espaces-coworking-morning/marcadet/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8050993,
+          45.7726589
+        ]
+      },
+      "properties": {
+        "@id": "node/6578929442",
+        "@type": "node",
+        "addr:city": "Lyon",
+        "addr:housenumber": "6",
+        "addr:postcode": "69009",
+        "addr:street": "Place Dumas de Loire",
+        "check_date": "2025-03-18",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "La Cordée Valmy",
+        "office": "coworking",
+        "opening_hours": "24/7",
+        "website": "https://www.la-cordee.net/cordee/lyon/valmy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8585956,
+          45.7638284
+        ]
+      },
+      "properties": {
+        "@id": "node/6614658642",
+        "@type": "node",
+        "check_date:opening_hours": "2025-06-10",
+        "name": "FLEX-O",
+        "office": "coworking",
+        "opening_hours:signed": "no"
       }
     },
     {
@@ -987,6 +1503,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8327434,
+          45.7589876
+        ]
+      },
+      "properties": {
+        "@id": "node/6872888576",
+        "@type": "node",
+        "email": "contact@le13.space",
+        "internet_access": "wlan",
+        "level": "3",
+        "name": "Le Treize",
+        "office": "coworking",
+        "opening_hours": "24/7",
+        "survey:date": "2025-03-30",
+        "website": "https://le13.space/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3461524,
           48.8678829
         ]
@@ -1012,6 +1551,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8583603,
+          45.7638459
+        ]
+      },
+      "properties": {
+        "@id": "node/6934333944",
+        "@type": "node",
+        "name": "Flex-O",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3831178,
           48.8270088
         ]
@@ -1025,6 +1580,24 @@
         "addr:street": "Rue Jean Antoine de Baïf",
         "name": "ESS'pace",
         "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8298369,
+          45.752985
+        ]
+      },
+      "properties": {
+        "@id": "node/7149459796",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "check_date": "2023-06-06",
+        "name": "Le 18",
+        "opening_hours": "Mo-Fr 08:30-12:30"
       }
     },
     {
@@ -1118,6 +1691,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8427936,
+          45.7598702
+        ]
+      },
+      "properties": {
+        "@id": "node/7873752102",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "name": "Le 18 coworking",
+        "ref:FR:SIRET": "84264588900010",
+        "website": "https://18coworking.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3538264,
           48.8680396
         ]
@@ -1135,6 +1726,25 @@
         "level": "0",
         "name": "Mitwit Office",
         "website": "https://www.mitwitoffice.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8353119,
+          45.7442075
+        ]
+      },
+      "properties": {
+        "@id": "node/7936842569",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "level": "1",
+        "name": "Entrepreneurial People",
+        "ref:FR:SIRET": "81828850800026",
+        "website": "https://coworkinginlyon.fr/"
       }
     },
     {
@@ -1176,6 +1786,50 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8434371,
+          45.7643464
+        ]
+      },
+      "properties": {
+        "@id": "node/8151073918",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "name": "La Bulle",
+        "ref:FR:SIRET": "83014612200015",
+        "survey:date": "2020-11-22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8547644,
+          45.762656
+        ]
+      },
+      "properties": {
+        "@id": "node/8184541148",
+        "@type": "node",
+        "air_conditioning": "yes",
+        "description": "Espace de bureaux privés à faible impact et loyer modéré",
+        "internet_access": "yes",
+        "internet_access:ssid": "Hiptown",
+        "name": "Hiptown Part-Dieu",
+        "office": "coworking",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "operator": "Hiptown",
+        "smoking": "no",
+        "twitter": "hiptownlovesyou",
+        "website": "https://hiptown.com/nos-espaces/hiptown-part-dieu/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3956726,
           48.8967519
         ]
@@ -1190,6 +1844,40 @@
         "name": "Oasis 21",
         "office": "coworking",
         "website": "https://oasis21.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8412226,
+          45.7583148
+        ]
+      },
+      "properties": {
+        "@id": "node/8361065417",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "check_date": "2025-05-05",
+        "name": "myWO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8118002,
+          45.7708487
+        ]
+      },
+      "properties": {
+        "@id": "node/8390841621",
+        "@type": "node",
+        "check_date": "2024-01-02",
+        "name": "Studio 33",
+        "office": "coworking"
       }
     },
     {
@@ -1268,6 +1956,63 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8461081,
+          45.7624191
+        ]
+      },
+      "properties": {
+        "@id": "node/8635717717",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "check_date": "2023-07-10",
+        "name": "Krysalid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8351163,
+          45.770122
+        ]
+      },
+      "properties": {
+        "@id": "node/8709292436",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "craft": "dressmaker",
+        "name": "Le Textile Lab",
+        "ref:FR:SIRET": "84761817000033",
+        "website": "https://letextilelab.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8432509,
+          45.7496347
+        ]
+      },
+      "properties": {
+        "@id": "node/8795134202",
+        "@type": "node",
+        "check_date": "2024-09-02",
+        "internet_access": "wlan",
+        "name": "La cordée - Jean Macé",
+        "office": "coworking",
+        "opening_hours": "24/7",
+        "website": "https://www.la-cordee.net/cordee/lyon/jean-mace/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3734405,
           48.8681787
         ]
@@ -1278,6 +2023,44 @@
         "check_date": "2024-02-24",
         "name": "La patronnerie",
         "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2916984,
+          43.7094342
+        ]
+      },
+      "properties": {
+        "@id": "node/8844760795",
+        "@type": "node",
+        "addr:city": "Nice",
+        "addr:housenumber": "4",
+        "addr:postcode": "06300",
+        "addr:street": "Rue Albert Voisin",
+        "check_date": "2025-03-08",
+        "name": "Le Hub",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8387844,
+          45.7750771
+        ]
+      },
+      "properties": {
+        "@id": "node/8879921870",
+        "@type": "node",
+        "name": "L'Aternative Coworking",
+        "office": "coworking",
+        "ref:FR:SIRET": "75302909900011"
       }
     },
     {
@@ -1401,6 +2184,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.855901,
+          45.7588999
+        ]
+      },
+      "properties": {
+        "@id": "node/9186606616",
+        "@type": "node",
+        "name": "Wellio",
+        "office": "coworking",
+        "website": "https://wellio.com/fr/lyon-part-dieu/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.301126,
           48.8328221
         ]
@@ -1410,6 +2210,26 @@
         "@type": "node",
         "name": "Centre d’affaires Georges 15",
         "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.871346,
+          45.7535841
+        ]
+      },
+      "properties": {
+        "@id": "node/9393180114",
+        "@type": "node",
+        "check_date": "2025-04-26",
+        "check_date:opening_hours": "2023-04-11",
+        "contact:website": "https://www.locsallelyon.fr/",
+        "name": "Locsallelyon.fr",
+        "office": "coworking",
+        "opening_hours:signed": "no"
       }
     },
     {
@@ -1538,6 +2358,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8310708,
+          45.7306025
+        ]
+      },
+      "properties": {
+        "@id": "node/9772627599",
+        "@type": "node",
+        "addr:city": "Lyon",
+        "addr:housenumber": "36",
+        "addr:postcode": "69007",
+        "addr:street": "Allée de Fontenay",
+        "amenity": "cafe",
+        "internet_access": "yes",
+        "internet_access:fee": "yes",
+        "name": "DK Gones",
+        "office": "coworking",
+        "phone": "+33 4 78 11 94 37",
+        "ref:FR:SIRET": "90854424000017",
+        "website": "https://dkgones.fr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3297435,
           48.8716528
         ]
@@ -1647,6 +2493,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8377618,
+          45.7672643
+        ]
+      },
+      "properties": {
+        "@id": "node/10053499205",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "check_date:opening_hours": "2022-12-01",
+        "name": "La Cordée - Opéra",
+        "opening_hours:signed": "no",
+        "ref:FR:SIRET": "53511306200082"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4459098,
           43.6054991
         ]
@@ -1659,6 +2524,61 @@
         "contact:street": "Rue d'Alsace-Lorraine",
         "name": "Étincelle Coworking",
         "website": "https://www.etincelle-coworking.com/espaces/alsace-lorraine/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.836156,
+          45.7803021
+        ]
+      },
+      "properties": {
+        "@id": "node/10132442484",
+        "@type": "node",
+        "check_date:opening_hours": "2024-07-23",
+        "name": "Wroom",
+        "office": "coworking",
+        "opening_hours": "PH,Mo-Su 00:00-24:00",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8363188,
+          45.7585542
+        ]
+      },
+      "properties": {
+        "@id": "node/10154115896",
+        "@type": "node",
+        "name": "Wojo",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8696511,
+          45.7548091
+        ]
+      },
+      "properties": {
+        "@id": "node/10223413266",
+        "@type": "node",
+        "internet_access": "yes",
+        "name": "Coworking CCTV",
+        "office": "coworking",
+        "opening_hours": "24/7",
+        "phone": "+33669673350",
+        "website": "https://coworking-cctv.xyz/"
       }
     },
     {
@@ -1856,6 +2776,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8273553,
+          45.7716297
+        ]
+      },
+      "properties": {
+        "@id": "node/10844047842",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "contact:facebook": "Pilohotels",
+        "contact:instagram": "pilohotels",
+        "contact:linkedin": "https://www.linkedin.com/company/pilo-hotels/",
+        "cuisine": "local",
+        "guest_house": "hostel",
+        "internet_access": "wlan",
+        "lgbtq": "welcome",
+        "name": "Pilo",
+        "opening_date": "2023-01-02",
+        "opening_hours": "24/7",
+        "organic": "yes",
+        "phone": "+33 4 28 01 86 00",
+        "rooms": "45",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+        "tourism": "hostel",
+        "website": "https://www.pilohotels.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3423956,
           48.862052
         ]
@@ -1866,6 +2818,26 @@
         "check_date": "2025-09-14",
         "name": "Eurodom",
         "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8286986,
+          45.7752304
+        ]
+      },
+      "properties": {
+        "@id": "node/10924194916",
+        "@type": "node",
+        "internet_access": "yes",
+        "name": "EVOL",
+        "office": "coworking",
+        "phone": "+33 9 88 52 55 98",
+        "ref:FR:SIRET": "81102454600038",
+        "wheelchair": "yes"
       }
     },
     {
@@ -1897,6 +2869,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          5.3702429,
+          43.2929672
+        ]
+      },
+      "properties": {
+        "@id": "node/10943719705",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:housenumber": "19",
+        "internet_access": "yes",
+        "name": "Now coworking",
+        "office": "coworking",
+        "phone": "+33428291881",
+        "website": "https://now-coworking.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8555105,
+          45.7591796
+        ]
+      },
+      "properties": {
+        "@id": "node/10974324379",
+        "@type": "node",
+        "name": "Wojo",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3884294,
           48.852609
         ]
@@ -1910,6 +2919,30 @@
         "check_date": "2023-06-28",
         "name": "Deskopolitan",
         "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8398411,
+          45.7507727
+        ]
+      },
+      "properties": {
+        "@id": "node/11020511555",
+        "@type": "node",
+        "addr:city": "Lyon",
+        "addr:housenumber": "35",
+        "addr:postcode": "69007",
+        "addr:street": "Rue de Marseille",
+        "name": "Now Coworking",
+        "office": "coworking",
+        "opening_hours": "24/7",
+        "phone": "+33 4 28 29 56 95",
+        "ref:FR:SIRET": "81148934300038",
+        "website": "https://www.now-coworking.com/coworking-lyon"
       }
     },
     {
@@ -2058,6 +3091,48 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          7.2606831,
+          43.7033536
+        ]
+      },
+      "properties": {
+        "@id": "node/11222743844",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "contact:email": "nice-gare@start-way.com",
+        "name": "Start Way",
+        "phone": "+33 6 62 09 58 38",
+        "website": "https://www.start-way.com/project/coworking-nice-gare/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8258016,
+          45.7585811
+        ]
+      },
+      "properties": {
+        "@id": "node/11231975516",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "email": "contact@polygones-lyon.fr",
+        "fee": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "yes",
+        "name": "Poly gones",
+        "opening_hours": "Mo-Fr 08:00-19:00",
+        "phone": "+33 6 87 07 77 52",
+        "website": "https://polygones-lyon.fr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3279728,
           48.8417722
         ]
@@ -2103,6 +3178,23 @@
         "name": "Startway",
         "office": "coworking",
         "survey:date": "2023-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8363561,
+          45.7797891
+        ]
+      },
+      "properties": {
+        "@id": "node/11366190504",
+        "@type": "node",
+        "name": "Off Road",
+        "office": "coworking",
+        "ref:FR:SIRET": "79892917000024"
       }
     },
     {
@@ -2183,6 +3275,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.796605,
+          45.7731592
+        ]
+      },
+      "properties": {
+        "@id": "node/11703386555",
+        "@type": "node",
+        "amenity": "coworking_space",
+        "name": "Générateur9",
+        "office": "coworking",
+        "website": "http://generateur9.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3679358,
           48.8713674
         ]
@@ -2213,6 +3323,47 @@
         "@type": "node",
         "amenity": "coworking_space",
         "name": "Patch Work"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8612682,
+          45.7635046
+        ]
+      },
+      "properties": {
+        "@id": "node/11837565269",
+        "@type": "node",
+        "check_date:opening_hours": "2025-06-10",
+        "contact:city": "Lyon 3eme Arrondissement",
+        "contact:housenumber": "222",
+        "contact:phone": "+33 1 83 75 15 13",
+        "contact:postcode": "69003",
+        "contact:street": "Cours Lafayette",
+        "name": "Deskeo Part-Dieu",
+        "office": "coworking",
+        "opening_hours:signed": "no",
+        "website": "https://www.deskeo.com/fr/meetings-events/location-salles-de-reunion/part-dieu/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2634074,
+          43.6958852
+        ]
+      },
+      "properties": {
+        "@id": "node/11846675267",
+        "@type": "node",
+        "name": "Le Labo",
+        "office": "coworking",
+        "website": "https://www.lelabocoworking.com/"
       }
     },
     {
@@ -2286,6 +3437,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8342633,
+          45.7622165
+        ]
+      },
+      "properties": {
+        "@id": "node/12036432552",
+        "@type": "node",
+        "addr:full": "57 rue Président Edouard Herriot",
+        "amenity": "coworking_space",
+        "contact:email": "contact@citywork.fr",
+        "contact:phone": "+33 481656020",
+        "contact:website": "https://www.citywork.fr/le-57-lyon-cordeliers/",
+        "name": "Citywork",
+        "operator:type": "private",
+        "project:oif-dfen_carteinnov": "yes",
+        "ref:FR:SIRET": "51049561700035",
+        "source": "oif-dfen_carteinnov"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.321575,
           48.8719959
         ]
@@ -2300,6 +3475,23 @@
         "name": "Regus",
         "office": "coworking",
         "opening_hours": "Mo-Fr 08:30-18:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8451483,
+          45.7514387
+        ]
+      },
+      "properties": {
+        "@id": "node/12155174562",
+        "@type": "node",
+        "name": "Smooth",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 10:00-20:00; Sa 11:00-18:00"
       }
     },
     {
@@ -2327,6 +3519,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          5.37196,
+          43.291877
+        ]
+      },
+      "properties": {
+        "@id": "node/12162471976",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:housenumber": "68",
+        "addr:postcode": "13001",
+        "addr:street": "Rue Sainte",
+        "name": "Le Récif",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3166305,
           48.8738839
         ]
@@ -2341,6 +3553,63 @@
         "name": "Les Communicants",
         "office": "coworking",
         "website": "https://lescommunicants.fr/fr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8214941,
+          45.7386287
+        ]
+      },
+      "properties": {
+        "@id": "node/12162518283",
+        "@type": "node",
+        "addr:city": "Lyon",
+        "addr:housenumber": "60",
+        "addr:postcode": "69002",
+        "addr:street": "Quai Perrache",
+        "name": "Lumen - Cardinal Workside",
+        "office": "coworking",
+        "ref:FR:SIRET": "91404475500017"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8429212,
+          45.7573662
+        ]
+      },
+      "properties": {
+        "@id": "node/12163304157",
+        "@type": "node",
+        "contact:housenumber": "61",
+        "contact:street": "Cours de la Liberté",
+        "name": "La Cordée Liberté-Guillotière",
+        "office": "coworking",
+        "opening_hours": "24/7",
+        "ref:FR:SIRET": "53511306200058",
+        "website": "https://www.la-cordee.net/cordee/lyon/liberte-guillotiere/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8336987,
+          45.7713948
+        ]
+      },
+      "properties": {
+        "@id": "node/12192753457",
+        "@type": "node",
+        "office": "coworking"
       }
     },
     {
@@ -2477,6 +3746,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8430036,
+          45.7511873
+        ]
+      },
+      "properties": {
+        "@id": "node/12898946537",
+        "@type": "node",
+        "name": "Supra cowork",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.397304,
+          43.3121632
+        ]
+      },
+      "properties": {
+        "@id": "node/12905841123",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:housenumber": "15",
+        "name": "Laboratoire d’Intelligence Collective & Artificielle",
+        "office": "coworking",
+        "short_name": "LICA",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "website": "https://lica-europe.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8566472,
+          45.7683111
+        ]
+      },
+      "properties": {
+        "@id": "node/12987337673",
+        "@type": "node",
+        "name": "Les Arches",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3423366,
           48.866631
         ]
@@ -2489,6 +3811,27 @@
         "amenity": "coworking_space",
         "check_date": "2025-10-01",
         "name": "Comet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8586401,
+          45.7591563
+        ]
+      },
+      "properties": {
+        "@id": "node/13039079698",
+        "@type": "node",
+        "brand": "Spaces",
+        "brand:wikidata": "Q87629680",
+        "contact:phone": "+33805543832",
+        "name": "Spaces",
+        "office": "coworking",
+        "opening_hours": "Mo-Su 08:30-18:30",
+        "website": "https://www.spacesworks.com/fr/lyon-fr/part-dieu"
       }
     },
     {
@@ -2541,6 +3884,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8551608,
+          45.765668
+        ]
+      },
+      "properties": {
+        "@id": "node/13125257931",
+        "@type": "node",
+        "air_conditioning": "yes",
+        "contact:housenumber": "27",
+        "contact:mobile": "+33762246470",
+        "internet_access": "yes",
+        "name": "D'un Siège à L'Autre",
+        "office": "coworking",
+        "website": "https://www.dunsiegealautre-lyon.fr/nos3adresses/recamier"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3155456,
           48.8771954
         ]
@@ -2556,6 +3920,23 @@
         "office": "coworking",
         "ref:FR:SIRET": "81180621500455",
         "website": "https://www.morning.fr/espaces-coworking-morning/miromesnil"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.264122,
+          43.6950825
+        ]
+      },
+      "properties": {
+        "@id": "node/13167255812",
+        "@type": "node",
+        "name": "G7 Prom",
+        "office": "coworking",
+        "ref:FR:SIRET": "92795797700014"
       }
     },
     {
@@ -2584,6 +3965,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8307418,
+          45.7766757
+        ]
+      },
+      "properties": {
+        "@id": "node/13374176302",
+        "@type": "node",
+        "name": "L'Igloo",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3751272,
           48.8288941
         ]
@@ -2592,6 +3989,36 @@
         "@id": "node/13391064698",
         "@type": "node",
         "office": "coworking"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.836365,
+          45.7458183
+        ]
+      },
+      "properties": {
+        "@id": "way/47195327",
+        "@type": "way",
+        "addr:city": "Lyon",
+        "addr:housenumber": "2",
+        "addr:postcode": "69007",
+        "addr:street": "Rue du Professeur Zimmermann",
+        "alt_name": "Hévéa - Cité ETIC",
+        "amenity": "coworking_space",
+        "brand": "Étic",
+        "building": "commercial",
+        "building:levels": "3",
+        "email": "hevea@etic.co",
+        "internet_access": "yes",
+        "name": "Hévéa",
+        "phone": "+33 4 26 78 24 69",
+        "roof:shape": "hipped",
+        "website": "http://etic.co/hevea/",
+        "wheelchair": "yes"
       }
     },
     {
@@ -2719,6 +4146,26 @@
         "phone": "+33 6 52 64 52 09",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
         "website": "http://volumesparis.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3775965,
+          43.2919044
+        ]
+      },
+      "properties": {
+        "@id": "way/69129085",
+        "@type": "way",
+        "addr:housenumber": "55",
+        "amenity": "coworking_space",
+        "building": "yes",
+        "contact:website": "http://www.groupunion.fr/",
+        "name": "Group'Union",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
       }
     },
     {
@@ -2870,6 +4317,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8198479,
+          45.737172
+        ]
+      },
+      "properties": {
+        "@id": "way/82202344",
+        "@type": "way",
+        "building": "yes",
+        "name": "H7 - Lyon French Tech (Halle Girard)",
+        "office": "coworking",
+        "short_name": "H7",
+        "start_date": "2019-05-14",
+        "website": "https://www.h-7.eu/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3383538,
           48.8735221
         ]
@@ -2892,6 +4359,31 @@
         "office": "coworking",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "website": "https://www.morning.fr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3583998,
+          43.331836
+        ]
+      },
+      "properties": {
+        "@id": "way/177145995",
+        "@type": "way",
+        "alt_name": "Pôle de l'entrepreneuriat La Cabucelle",
+        "alt_name:oc": "Pòl de l'Entreprenariat de La Cabucèla",
+        "email": "contact@le-carburateur.fr",
+        "landuse": "commercial",
+        "name": "Le Carburateur",
+        "office": "coworking",
+        "phone": "+33 4 13 42 23 70",
+        "source": "survey 2018-08",
+        "source:alt_name:oc": "ieo-bdtopoc",
+        "surveillance": "offices",
+        "website": "https://www.le-carburateur.fr/"
       }
     },
     {
@@ -3019,6 +4511,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          7.2677739,
+          43.7177552
+        ]
+      },
+      "properties": {
+        "@id": "way/836239611",
+        "@type": "way",
+        "addr:city": "Nice",
+        "addr:housenumber": "96",
+        "addr:street": "Avenue Valrose",
+        "building": "yes",
+        "internet_access": "yes",
+        "level": "1",
+        "name": "Co-Learning Montebello",
+        "office": "coworking",
+        "opening_hours": "24/7",
+        "operator": "CROUS",
+        "website": "https://www.crous-nice.fr/co-learning-montebello/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3789977,
           48.8683419
         ]
@@ -3100,6 +4617,24 @@
         "official_name": "Multiburo Paris Gare Montparnasse",
         "opening_hours": "Mo-Fr 08:30-18:00; Sa,Su,PH off",
         "ref:FR:SIRET": "44317921300048"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3791866,
+          43.3037777
+        ]
+      },
+      "properties": {
+        "@id": "way/1166185634",
+        "@type": "way",
+        "amenity": "coworking_space",
+        "indoor": "room",
+        "level": "-1",
+        "name": "Weréso"
       }
     },
     {
