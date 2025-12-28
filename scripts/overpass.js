@@ -76,22 +76,17 @@ async function fetchCoworkingSpots() {
   return response.json();
 }
 
+function saveToFile(data, filename) {
+  const outputPath = path.join(__dirname, "..", "data", filename);
+  fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+}
+
 async function main() {
   try {
     const data = await fetchCoworkingSpots();
     console.log(`✅ ${data.elements.length} éléments récupérés`);
-
     const geojson = toGeoJSON(data.elements);
-
-    const outputPath = path.join(
-      __dirname,
-      "..",
-      "data",
-      "coworking_france.geojson",
-    );
-    fs.writeFileSync(outputPath, JSON.stringify(geojson, null, 2));
-
-    console.log(`💾 Fichier sauvegardé: ${outputPath}`);
+    saveToFile(geojson, "coworking_france.geojson");
     console.log(`📊 Total: ${geojson.features.length} features`);
     console.log("🎉 Terminé !");
   } catch (error) {
