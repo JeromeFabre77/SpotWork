@@ -35,12 +35,31 @@ function saveToFile(data, filename) {
   fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
 }
 
+function markLibrariesWithWifi(wifiData, libraryData) {
+  const tolerance = 0.0001; // ~11 mètres, même bâtiment
+
+  libraryData.features.forEach((library) => {
+    if (!library.geometry?.coordinates) return;
+
+    const [libLon, libLat] = library.geometry.coordinates;
+
+    library.properties.hasWifi = wifiData.features.some((wifi) => {
+      if (!wifi.geometry?.coordinates) return false;
+      const [wifiLon, wifiLat] = wifi.geometry.coordinates;
+      return (
+        Math.abs(libLon - wifiLon) < tolerance &&
+        Math.abs(libLat - wifiLat) < tolerance
+      );
+    });
+  });
+}
+
 async function main() {
   const wifiSites = await fetchWifiSites();
   saveToFile(wifiSites, "pariswifi_sites.geojson");
-
-  const bibliotheques = await fetchBibliotheques();
-  saveToFile(bibliotheques, "bibliotheques.geojson");
+  const libraryData = await fetchBibliotheques();
+  markLibrariesWithWifi(wifiSites, libraryData);
+  saveToFile(libraryData, "bibliotheques.geojson");
 }
 
 main();
