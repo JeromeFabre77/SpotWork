@@ -76,6 +76,40 @@ async function fetchCoworkingSpots() {
   return response.json();
 }
 
+async function fetchCofee() {
+  const areaIds = GRANDES_VILLES.map((v) => 3600000000 + v.relation);
+
+  const query = `
+    [out:json][timeout:120];
+    (
+      ${areaIds
+      .map(
+          (id) => `
+        node["amenity"="cafe"](area:${id});
+        way["amenity"="cafe"](area:${id});
+        relation["amenity"="cafe"](area:${id});
+      `,
+      )
+      .join("")}
+    );
+    out center;
+  `;
+
+  console.log("Récupération des cafés...");
+
+  const response = await fetch(OVERPASS_BASE_URL, {
+    method: "POST",
+    body: `data=${encodeURIComponent(query)}`,
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Erreur HTTP: ${response.status}`);
+  }
+
+  return response.json();
+}
+
 function addTypeOfSites(data, type) {
   data.features.forEach((feature) => {
     feature.properties.spotType = type;
@@ -89,12 +123,20 @@ function saveToFile(data, filename) {
 
 async function main() {
   try {
-    const data = await fetchCoworkingSpots();
-    console.log(`✅ ${data.elements.length} éléments récupérés`);
-    const geojson = toGeoJSON(data.elements);
-    addTypeOfSites(geojson, "coworking");
-    saveToFile(geojson, "coworking_france.geojson");
-    console.log(`Total: ${geojson.features.length} features`);
+    const coworkingData = await fetchCoworkingSpots();
+    console.log(`✅ ${coworkingData.elements.length} éléments récupérés`);
+    const coworkingGeojson = toGeoJSON(coworkingData.elements);
+    addTypeOfSites(coworkingGeojson, "coworking");
+    saveToFile(coworkingGeojson, "coworking_france.geojson");
+    console.log(`Total: ${coworkingGeojson.features.length} features`);
+    console.log("Terminé !");
+
+    const cofeeData = await fetchCofee();
+    console.log(`✅ ${cofeeData.elements.length} éléments récupérés`);
+    const cofeeGeojson = toGeoJSON(cofeeData.elements);
+    addTypeOfSites(cofeeGeojson, "cofee");
+    saveToFile(cofeeGeojson, "cofee_france.geojson");
+    console.log(`Total: ${cofeeGeojson.features.length} features`);
     console.log("Terminé !");
   } catch (error) {
     console.error("Erreur:", error.message);
