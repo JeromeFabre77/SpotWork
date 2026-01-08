@@ -1,0 +1,3063 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.868041,
+          45.737207
+        ]
+      },
+      "properties": {
+        "@id": "node/34991536",
+        "@type": "node",
+        "amenity": "library",
+        "harassment_prevention": "ask_angela",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Médiathèque du Bachut – Marguerite Duras",
+        "opening_hours": "Mo off, Tu 13:00-19:00; We 10:00-19:00; Th 13:00-19:00; Fr 12:00-19:00; Sa 10:00-18:00; Su,PH off; Jul 09-Aug 31: Tu,Fr 13:00-19:00; Jul 09-Aug 31: We 10:00-12:00,13:00-19:00; Jul 09-Aug 31: Th off; Jul 09-Aug 31: Sa 10:00-13:00; Aug 13-17 off",
+        "operator": "Ville de Lyon",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278474",
+        "phone": "+33 4 78 78 12 12;+33 4 78 78 11 97",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/mediatheque-du-bachut/",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8276981,
+          45.7602208
+        ]
+      },
+      "properties": {
+        "@id": "node/246742410",
+        "@type": "node",
+        "amenity": "library",
+        "email": "bib5-saintjean@bm-lyon.fr",
+        "harassment_prevention": "ask_angela",
+        "internet_access": "wlan",
+        "level": "1",
+        "name": "Bibliothèque du 5e Saint-Jean",
+        "opening_hours": "Mo off; Tu,We 10:00-12:00,13:00-19:00; Th-Fr 13:00-19:00; Sa 10:00-13:00,14:00-17:00; Su off; PH off",
+        "operator": "Ville de Lyon",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278474",
+        "phone": "+33478928350;+33478929623",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-5e-saint-jean/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2566071,
+          43.7249994
+        ]
+      },
+      "properties": {
+        "@id": "node/252621275",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque Fontaine du Temple",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3766901,
+          43.2989721
+        ]
+      },
+      "properties": {
+        "@id": "node/395241034",
+        "@type": "node",
+        "addr:housename": "Alcazar",
+        "addr:housenumber": "58",
+        "amenity": "library",
+        "check_date": "2024-12-14",
+        "check_date:opening_hours": "2024-12-14",
+        "name": "Bibliothèque de l'Alcazar",
+        "name:eo": "Alcazar (Marsejlo)",
+        "name:oc": "Bibliotèca de l'Alcazar",
+        "official_name": "Bibliothèque municipale à vocation régionale",
+        "opening_hours": "We,Fr,Sa 10:00-19:00; Tu,Th 13:00-19:00",
+        "operator": "Ville de Marseille",
+        "phone": "+33 4 91 55 90 00",
+        "source": "http://opendata.regionpaca.fr/",
+        "source:name:oc": "ieo-bdtopoc",
+        "website": "https://www.bmvr.marseille.fr/",
+        "wheelchair": "yes",
+        "wikidata": "Q2832096",
+        "wikipedia": "fr:Alcazar (Marseille)",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.430668,
+          43.5987958
+        ]
+      },
+      "properties": {
+        "@id": "node/656946179",
+        "@type": "node",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "63",
+        "addr:postcode": "31300",
+        "addr:street": "Rue Reclusane",
+        "amenity": "library",
+        "contact:phone": "+33 5 62 27 63 30",
+        "name": "Bibliothèque de quartier - Saint-Cyprien",
+        "opening_hours": "Sa 10:00-17:00, Tu-Fr 14:00-18:00, We,Fr 10:00-12:30",
+        "short_name": "Bibliothèque Saint-Cyprien",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "website": "https://bibliotheque.toulouse.fr/",
+        "wikidata": "Q117943389",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8491281,
+          45.7586049
+        ]
+      },
+      "properties": {
+        "@id": "node/1035630761",
+        "@type": "node",
+        "amenity": "library",
+        "harassment_prevention": "ask_angela",
+        "internet_access": "wlan",
+        "name": "Bibliothèque du 3e Duguesclin",
+        "opening_hours": "Mo off; Tu,Th 13:00-19:00; We,Fr 10:00-12:00,13:00-19:00; Sa 10:00-13:00,14:00-17:00; Su off; Jul 09-Aug 31: Th-Sa 9:00-13:00; Jul 09-Aug 31 Su-We off; PH off",
+        "operator": "Bibliothèque municipale de Lyon",
+        "operator:type": "public",
+        "phone": "+33 4 78 95 01 39",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-3e-duguesclin/",
+        "wikimedia_commons": "File:Bibliothèque du 3e Duguesclin - 246 Rue Duguesclin (Lyon).jpg",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8367521,
+          45.7496774
+        ]
+      },
+      "properties": {
+        "@id": "node/1250951926",
+        "@type": "node",
+        "amenity": "library",
+        "contact:city": "Lyon",
+        "contact:country": "FR",
+        "contact:housenumber": "10",
+        "contact:postcode": "69007",
+        "contact:street": "Rue Chevreul",
+        "name": "Bibliothèque universitaire",
+        "opening_hours": "Mo-Fr 09:00-22:00; Sa,Su 10:00-18:00",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
+        "website": "https://bu.univ-lyon2.fr/bu-chevreul",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3877636,
+          43.3002709
+        ]
+      },
+      "properties": {
+        "@id": "node/1684753968",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:country": "FR",
+        "addr:housenumber": "50",
+        "amenity": "library",
+        "name": "Centre International de Recherches sur l'Anarchisme",
+        "official_name": "Centre International de Recherches sur l'Anarchisme",
+        "opening_hours": "Mo, We 15:00-18:30; Fr 10:00-16:00",
+        "short_name": "CIRA",
+        "website": "http://cira.marseille.free.fr/",
+        "wheelchair": "no",
+        "wikidata": "Q2945825",
+        "wikipedia": "fr:Centre international de recherches sur l'anarchisme (Marseille)",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2363933,
+          43.6923242
+        ]
+      },
+      "properties": {
+        "@id": "node/1793047769",
+        "@type": "node",
+        "addr:city": "Nice",
+        "addr:housenumber": "100",
+        "addr:postcode": "06200",
+        "addr:street": "Boulevard Édouard Herriot",
+        "amenity": "library",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "BU Lettres Arts Sciences Humaines - Henri Bosco",
+        "operator": "Université Côte d'Azur",
+        "operator:type": "public",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4342214,
+          43.294263
+        ]
+      },
+      "properties": {
+        "@id": "node/1817578399",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:country": "FR",
+        "addr:housenumber": "2",
+        "amenity": "library",
+        "name": "Bibliothèque municipale de la Grognarde",
+        "name:oc": "Bibliotèca Municipala de La Gronharda",
+        "operator": "Ville de Marseille",
+        "phone": "+33 4 91 89 57 04",
+        "source": "http://opendata.regionpaca.fr/",
+        "source:name:oc": "ieo-bdtopoc",
+        "website": "https://www.bmvr.marseille.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3996638,
+          43.6181892
+        ]
+      },
+      "properties": {
+        "@id": "node/1827276724",
+        "@type": "node",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "2",
+        "addr:postcode": "31300",
+        "addr:street": "Allée du Velay",
+        "amenity": "library",
+        "contact:phone": "+33 5 61 49 05 69",
+        "name": "Bibliothèque municipale - Ancely",
+        "opening_hours": "Tu-We 09:30-12:30, 14:00-18:00; Th 14:00-17:00; Fr 09:30-12:30, 14:00-17:00; Sa 10:00-12:30, 14:00-17:00",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "website": "https://bibliotheque.toulouse.fr/",
+        "wikidata": "Q117869236",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4468526,
+          43.603366
+        ]
+      },
+      "properties": {
+        "@id": "node/1827276725",
+        "@type": "node",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "6",
+        "addr:postcode": "31000",
+        "addr:street": "Rue du Lieutenant-Colonel Pélissier",
+        "amenity": "library",
+        "contact:phone": "+33 5 62 27 42 52",
+        "contact:website": "http://bibliotheque.toulouse.fr/bibliotheque_duranti.html",
+        "level": "2",
+        "name": "Bibliothèque de quartier - Duranti",
+        "opening_hours": "Tu,Fr 10:00-13:00,14:00-18:00; We 10:00-18:00; Th 14:00-18:00; Sa 10:00-17:00",
+        "short_name": "Bibliothèque Duranti",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "wikidata": "Q117923643",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4437091,
+          43.6383141
+        ]
+      },
+      "properties": {
+        "@id": "node/1827276726",
+        "@type": "node",
+        "addr:housenumber": "1",
+        "addr:postcode": "31200",
+        "addr:street": "Place Micoulaud",
+        "amenity": "library",
+        "contact:phone": "+33 5 34 40 21 80",
+        "name": "Bibliothèque de quartier - Les Izards",
+        "opening_hours": "We 10:00-12:30; Fr 10:00-12:30; Tu 10:00-18:00; Th 14:00-18:00; Sa 10:00-17:00",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "website": "https://bibliotheque.toulouse.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4683106,
+          43.6195869
+        ]
+      },
+      "properties": {
+        "@id": "node/1827276727",
+        "@type": "node",
+        "addr:city": "Toulouse",
+        "addr:housename": "170",
+        "addr:postcode": "31500",
+        "addr:street": "Rue de Périole",
+        "amenity": "library",
+        "contact:phone": "+33 5 61 26 00 09",
+        "name": "Bibliothèque de quartier - Roseraie",
+        "opening_hours": "Tu,We,Fr 10:00-12:30,13:30-18:00; Th 13:30-18:00; Sa 09:30-12:30,13:30-17:00",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "website": "https://bibliotheque.toulouse.fr/",
+        "wikidata": "Q117943013",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4778352,
+          43.6083199
+        ]
+      },
+      "properties": {
+        "@id": "node/1827276728",
+        "@type": "node",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "10",
+        "addr:postcode": "31500",
+        "addr:street": "Rue Charles Garnier",
+        "amenity": "library",
+        "check_date": "2025-04-05",
+        "check_date:opening_hours": "2025-04-05",
+        "contact:phone": "+33 5 61 20 35 94",
+        "contact:website": "http://www.bibliotheque.toulouse.fr",
+        "name": "Médiathèque Serveyrolles",
+        "opening_hours": "Th 14:00-18:00; Sa 09:30-12:30,13:30-17:00; Tu 10:00-18:00; We 10:00-12:30,14:00-18:00; Fr 10:00-12:30,14:00-18:00",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "wikidata": "Q117943680",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.425775,
+          43.6024661
+        ]
+      },
+      "properties": {
+        "@id": "node/1827276754",
+        "@type": "node",
+        "addr:housenumber": "1B",
+        "addr:postcode": "31300",
+        "addr:street": "Avenue du Château d'Eau",
+        "alt_name": "ERASME",
+        "amenity": "library",
+        "check_date": "2023-12-25",
+        "contact:phone": "+33 5 62 27 69 11",
+        "name": "Ensemble de Restauration et d'Aide à la Sauvegarde de la Mémoire Écrite",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "website": "http://pro.bibliotheque.toulouse.fr/erasme.html",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3978056,
+          43.5583133
+        ]
+      },
+      "properties": {
+        "@id": "node/1827276773",
+        "@type": "node",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "5",
+        "addr:postcode": "31000",
+        "addr:street": "Chemin de Perpignan - Parc Monlong",
+        "amenity": "library",
+        "contact:phone": "+33 5 61 22 34 41",
+        "contact:website": "http://pro.bibliotheque.toulouse.fr/services_aux_collectivites.html",
+        "name": "Prêts aux Collectivités",
+        "opening_hours": "\"Sur RV\"",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4536203,
+          43.6162171
+        ]
+      },
+      "properties": {
+        "@id": "node/1860881195",
+        "@type": "node",
+        "amenity": "library",
+        "contact:housenumber": "4",
+        "contact:phone": "+33 5 61 26 12 72",
+        "contact:street": "Rue du Faubourg Bonnefoy",
+        "name": "Bibliothèque de quartier - Bonnefoy",
+        "opening_hours": "Tu,We,Fr,Sa 10:00-12:30; Tu,Th,Fr 14:00-18:00; We 14:00-19:00; Sa 14:00-17:00",
+        "ref:FR:SIRET": "21310555403078",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "website": "https://bibliotheque.toulouse.fr/",
+        "wikidata": "Q117869620",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3988759,
+          43.3305643
+        ]
+      },
+      "properties": {
+        "@id": "node/1920263029",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:country": "FR",
+        "addr:housename": "Centre urbain du Merlan",
+        "addr:postcode": "13014",
+        "addr:street": "Avenue Raimu",
+        "amenity": "library",
+        "name": "Bibliothèque du Merlan",
+        "name:oc": "Bibliotèca Dau Merlan",
+        "operator": "Ville de Marseille",
+        "phone": "+33 4 91 12 93 60",
+        "source": "http://opendata.regionpaca.fr/",
+        "source:name:oc": "ieo-bdtopoc",
+        "website": "https://www.bmvr.marseille.fr/",
+        "wheelchair": "limited",
+        "wheelchair:description": "accessible seulement au premier niveau à partir du parking du centre commercial",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8307453,
+          45.7759428
+        ]
+      },
+      "properties": {
+        "@id": "node/2019632296",
+        "@type": "node",
+        "amenity": "library",
+        "description": "Deuxième numéro de téléphone (+33472106543) : espace numérique",
+        "harassment_prevention": "ask_angela",
+        "name": "Bibliothèque du 4e Croix-Rousse",
+        "opening_hours": "Tu-Fr 13:00-19:00; We 10:00-13:00,14:00-19:00; Sa 10:00-18:00",
+        "operator": "Bibliothèque municipale de Lyon",
+        "operator:type": "public",
+        "phone": "+33472106540;+33472106543",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-4e-croix-rousse/",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3954478,
+          43.2848766
+        ]
+      },
+      "properties": {
+        "@id": "node/2062802639",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque O.C.B",
+        "source": "Terrain",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.367483,
+          43.2988864
+        ]
+      },
+      "properties": {
+        "@id": "node/2131063503",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:country": "FR",
+        "addr:postcode": "13002",
+        "addr:street": "Place du Refuge",
+        "amenity": "library",
+        "name": "Bibliothèque municipale du Panier",
+        "operator": "Ville de Marseille",
+        "phone": "+33 4 91 91 20 50",
+        "source": "http://opendata.regionpaca.fr/",
+        "website": "https://www.bmvr.marseille.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3962576,
+          43.3023143
+        ]
+      },
+      "properties": {
+        "@id": "node/2499494870",
+        "@type": "node",
+        "amenity": "library",
+        "contact:email": "dgac-cinq-avenues-bmvr@marseille.fr",
+        "contact:housenumber": "5",
+        "contact:street": "Impasse Fissiaux",
+        "level": "3",
+        "name": "Bibliothèque municipale des Cinq Avenues",
+        "opening_hours": "Tu,Th,Fr 13:00-18:00; We,Sa 10:00-13:00,14:00-18:00",
+        "operator": "Ville de Marseille",
+        "phone": "+33 4 13948250",
+        "source": "http://opendata.regionpaca.fr/",
+        "website": "https://bibliotheques.marseille.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2893975,
+          43.7099195
+        ]
+      },
+      "properties": {
+        "@id": "node/2807715769",
+        "@type": "node",
+        "addr:city": "Nice",
+        "addr:housenumber": "25",
+        "addr:postcode": "06300",
+        "addr:street": "Avenue François Mitterrand",
+        "amenity": "library",
+        "check_date": "2025-03-09",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "BU Saint-Jean d'Angély",
+        "website": "https://bu.univ-cotedazur.fr/fr/bibliotheques/bu-saint-jean-dangely",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3753363,
+          43.2979439
+        ]
+      },
+      "properties": {
+        "@id": "node/2811308902",
+        "@type": "node",
+        "addr:housenumber": "2",
+        "amenity": "library",
+        "email": "musee-histoire@mairie-marseille.fr",
+        "name": "Bibliothèque du Musée d'Histoire de Marseille",
+        "name:oc": "Bibliotèca dau Musèu d'Istòria de Marselha",
+        "opening_hours": "Tu-Su 10:00-18:00",
+        "operator": "Ville de Marseille",
+        "phone": "+33 4 91 55 36 00",
+        "source:name:oc": "ieo-bdtopoc",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8424673,
+          45.7529713
+        ]
+      },
+      "properties": {
+        "@id": "node/2956398528",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque du 7e Guillotière",
+        "opening_hours": "Mo off; Tu,Th,Fr 15:00-19:00; We 14:00-19:00,10:00-12:00; Sa 10:00-13:00,14:00-17:00; Su,PH off; 2024 Jun 04-2024 Sep 28 off",
+        "operator": "Ville de Lyon",
+        "operator:type": "public",
+        "phone": "+33478690115",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-7e-guillotiere/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4408689,
+          43.6076221
+        ]
+      },
+      "properties": {
+        "@id": "node/2994919619",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-01-05",
+        "name": "Bibliothèque du musée Saint-Raymond",
+        "opening_hours": "Mo-Sa 12:00-18:00; Jan 01 off; May 01 off; Dec 25 off",
+        "website": "https://saintraymond.toulouse.fr/La-bibliotheque-du-musee-informations-pratiques_a29.html",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3815991,
+          43.2694476
+        ]
+      },
+      "properties": {
+        "@id": "node/3123841264",
+        "@type": "node",
+        "amenity": "library",
+        "email": "bibliothequesocb@clubinternet.fr",
+        "name": "Office central des bibliothèques",
+        "opening_hours": "Mo 15:00-18:00, We 10:00-12:00,15:00-18:00; Sa 08:00-12:00;Fr 10:00-12:00",
+        "operator": "Office central des bibliothèques",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8260746,
+          45.7999564
+        ]
+      },
+      "properties": {
+        "@id": "node/3201979461",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque du 9e Saint-Rambert",
+        "opening_hours": "Mo off; Tu,Th 13:00-19:00; We,Fr 10:00-12:00,13:00-19:00; Sa 10:00-13:00,14:00-17:00; Su,PH off; Jul 09-Aug 31: Tu-We off; Jul 09-Aug 31: Th-Sa 09:00-13:00; Aug 13-17 off",
+        "operator": "Ville de Lyon",
+        "operator:type": "public",
+        "phone": "+33 4 78 83 11 77",
+        "website": "http://www.bm-lyon.fr/15-bibliotheques-et-un-bibliobus/Bibliotheque-du-9e-St-Rambert/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4687904,
+          43.5699104
+        ]
+      },
+      "properties": {
+        "@id": "node/3231096029",
+        "@type": "node",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "135",
+        "addr:postcode": "31400",
+        "addr:street": "Avenue de Rangueil",
+        "alt_name": "Bibliothèque de l'INSA de Toulouse",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-09-12",
+        "contact:instagram": "bibinsatoulouse",
+        "email": "bibinsa@insa-toulouse.fr",
+        "internet_access": "wlan",
+        "level": "3",
+        "name": "Bib'INSA",
+        "opening_hours": "Jan-Apr,Jun-Jul,Sep-Nov Mo-Fr 09:00-19:30; May,Dec Mo-Fr 09:00-22:00",
+        "phone": "+33 5 61 55 95 63",
+        "ref:isil": "FR-315552106",
+        "website": "https://bib.insa-toulouse.fr/",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3859992,
+          43.3098419
+        ]
+      },
+      "properties": {
+        "@id": "node/3363883932",
+        "@type": "node",
+        "addr:housenumber": "38",
+        "amenity": "library",
+        "contact:website": "https://kiosque13.noblogs.org",
+        "name": "Le Kiosque",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4742621,
+          43.5651056
+        ]
+      },
+      "properties": {
+        "@id": "node/3447156506",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4659977,
+          43.585663
+        ]
+      },
+      "properties": {
+        "@id": "node/3661719704",
+        "@type": "node",
+        "amenity": "library",
+        "contact:city": "Toulouse",
+        "contact:housenumber": "63B",
+        "contact:phone": "+33 5 61 55 42 12",
+        "contact:postcode": "31400",
+        "contact:street": "Avenue Antoine de Saint-Exupéry",
+        "contact:website": "http://www.bibliotheque.toulouse.fr",
+        "name": "Bibliothèque de quartier - Pont des Demoiselles",
+        "start_date": "2014-10-01",
+        "wikidata": "Q117941662",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4809969,
+          43.5654786
+        ]
+      },
+      "properties": {
+        "@id": "node/3663216439",
+        "@type": "node",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "7",
+        "addr:postcode": "31400",
+        "addr:street": "Avenue Édouard Belin",
+        "amenity": "library",
+        "name": "Bibliothèque de l'ENAC",
+        "phone": "+33 5 61 17 41 91",
+        "website": "http://bibliotheque.enac.fr",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3771152,
+          43.3045359
+        ]
+      },
+      "properties": {
+        "@id": "node/4083001390",
+        "@type": "node",
+        "addr:housenumber": "3",
+        "amenity": "library",
+        "ele": "0",
+        "name": "Centre Régional de Formation aux Carrières des Bibliothèques",
+        "opening_hours": "Mo-Fr 13:30-17:30",
+        "website": "https://crfcb.univ-amu.fr/",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.388189,
+          43.2908395
+        ]
+      },
+      "properties": {
+        "@id": "node/4241580477",
+        "@type": "node",
+        "amenity": "library",
+        "name": "DATA médiathèque - fanzinothèque",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3881562,
+          43.3004751
+        ]
+      },
+      "properties": {
+        "@id": "node/4463345818",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Pôle Info Musique",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3890291,
+          43.3010532
+        ]
+      },
+      "properties": {
+        "@id": "node/4475981220",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2024-02-26",
+        "internet_access": "wlan",
+        "name": "Mille Bâbords",
+        "opening_hours": "Mo 15:00-18:00; Th[2,4] 15:00-18:00",
+        "website": "https://www.millebabords.org/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8359693,
+          45.7703318
+        ]
+      },
+      "properties": {
+        "@id": "node/4517237067",
+        "@type": "node",
+        "amenity": "library",
+        "description": "Centre de Documentation et de Recherche sur les Alternatives sociales Michel-Marie Derrion",
+        "fax": "+33 9 59 29 07 86",
+        "internet_access": "yes",
+        "name": "CEDRATS",
+        "office": "association",
+        "opening_hours": "Mo-Fr 14:30-19:30",
+        "phone": "+33 4 78 29 90 67",
+        "ref:FR:SIREN": "493147169",
+        "ref:FR:SIRET": "49314716900012",
+        "short_name": "CEDRATS",
+        "website": "http://www.cedrats.org",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8269365,
+          45.7467773
+        ]
+      },
+      "properties": {
+        "@id": "node/4932054302",
+        "@type": "node",
+        "air_conditioning": "yes",
+        "amenity": "library",
+        "email": "biblio@univ-catholyon.fr",
+        "level": "2",
+        "name": "Bibliothèque universitaire Henri de Lubac - Campus Saint-Paul",
+        "opening_hours": "Mo,We,Th 09:00-19:00; Tu 10:00-19:00; Fr 09:00-17:30",
+        "operator": "Université Catholique de Lyon",
+        "phone": "+33 4 26 84 18 65",
+        "website": "https://bu.ucly.fr/opac/library/BU%20CAMPUS%20ST-PAUL/UCLSP",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8499897,
+          45.7678646
+        ]
+      },
+      "properties": {
+        "@id": "node/4934165076",
+        "@type": "node",
+        "amenity": "library",
+        "email": "bib6@bm-lyon.fr",
+        "harassment_prevention": "ask_angela",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Bibliothèque municipale du 6e Clémence Lortet",
+        "opening_hours": "Mo off; Tu-Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00; Su off; PH off; Jul 09-Aug 31: Tu off; Jul 09-Aug 31 We-Sa 09:00-13:00; Aug 13-17 off",
+        "operator": "Bibliothèque municipale de Lyon",
+        "operator:type": "public",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+33 4 72 53 58 30;+33 4 72 53 58 32",
+        "toilets:wheelchair": "yes",
+        "website": "http://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-6e/",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.367488,
+          43.3004062
+        ]
+      },
+      "properties": {
+        "@id": "node/4945720200",
+        "@type": "node",
+        "amenity": "library",
+        "contact:housenumber": "2",
+        "contact:place": "Centre de la Vieille Charité",
+        "contact:street": "Rue de la Charité",
+        "level": "0",
+        "name": "Bibliothèque du Centre international de poésie",
+        "name:oc": "Bibliotèca dau Centre Internacionau de Poësia",
+        "opening_hours": "We-Sa 13:00-19:00",
+        "source": "survey",
+        "source:name:oc": "ieo-bdtopoc",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3675753,
+          43.3007332
+        ]
+      },
+      "properties": {
+        "@id": "node/4945720202",
+        "@type": "node",
+        "amenity": "library",
+        "contact:housenumber": "2",
+        "contact:phone": "+33 4 91903636",
+        "contact:place": "Centre de la Vieille Charité",
+        "contact:street": "Rue de la Charité",
+        "description": "Bibliothèque spécialisée en sciences sociales, fonds documentaire constitué en liaison avec les activités de recherche et d’enseignement implantées à la Vieille Charité à l’initiative de l’EHESS et du CNRS",
+        "level": "1",
+        "name": "Centre de documentation en Sciences Sociales",
+        "name:oc": "Centre de documenacion en Sciéncias Socialas",
+        "opening_hours": "Mo-Fr 10:00-18:00; Aug off",
+        "operator": "Centre National de la Recherche Scientifique;École des Hautes Études en Sciences Sociales Centre national de la recherche scientifique et de l'École des hautes études en sciences sociales",
+        "short_name": "CDSS",
+        "source:name:oc": "ieo-bdtopoc",
+        "website": "https://www.ehess.fr/fr/centre-documentation-en-sciences-sociales-vieille-charit%C3%A9",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3789207,
+          43.3023225
+        ]
+      },
+      "properties": {
+        "@id": "node/5690849889",
+        "@type": "node",
+        "amenity": "library",
+        "contact:housenumber": "96",
+        "contact:phone": "+334 13 55 26 47",
+        "contact:street": "Rue Longue des Capucins",
+        "name": "Bibliothèque universitaire Bernard du Bois",
+        "operator": "Aix Marseille Université",
+        "website": "https://bu.univ-amu.fr/bu-bernard-du-bois",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.441038,
+          43.2295137
+        ]
+      },
+      "properties": {
+        "@id": "node/5942639699",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:housenumber": "168",
+        "addr:postcode": "13009",
+        "addr:street": "Avenue de Luminy",
+        "amenity": "library",
+        "name": "Bibliothèque Universitaire de Luminy",
+        "operator": "Aix-Marseille Université",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4796122,
+          43.5622035
+        ]
+      },
+      "properties": {
+        "@id": "node/6425816523",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque de l'OMP",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4491973,
+          43.5937542
+        ]
+      },
+      "properties": {
+        "@id": "node/6447394286",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque Emile Cartailhac",
+        "opening_hours": "Tu-Sa 14:00-18:00",
+        "website": "https://www.museum.toulouse.fr/les-bibliotheques",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4001614,
+          43.578169
+        ]
+      },
+      "properties": {
+        "@id": "node/7010954717",
+        "@type": "node",
+        "alt_name": "CRPLM",
+        "amenity": "library",
+        "name": "Centre de ressources de Psychologie Louise Michel",
+        "opening_hours": "Mo-Th 09:00-17:00; Fr 13:30-16:30",
+        "ref:isil": "FR-315552220",
+        "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/centre-de-ressources-de-psychologie-louise-michel",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4236458,
+          43.3181274
+        ]
+      },
+      "properties": {
+        "@id": "node/7409995349",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:housenumber": "422",
+        "addr:postcode": "13012",
+        "addr:street": "Avenue de Montolivet",
+        "amenity": "library",
+        "internet_access": "no",
+        "name": "OCB Montolivet",
+        "opening_hours": "Tu-We 16:00-18:00; Sa 09:30-11:30",
+        "website": "https://mabibliothequeocb.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2453804,
+          43.6927479
+        ]
+      },
+      "properties": {
+        "@id": "node/7731334598",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque de Magnan",
+        "operator": "Ville de Nice",
+        "operator:type": "public",
+        "website": "https://bmvr.nice.fr/bibliotheque-magnan.aspx",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8272305,
+          45.7299304
+        ]
+      },
+      "properties": {
+        "@id": "node/7775130995",
+        "@type": "node",
+        "access": "customers",
+        "amenity": "library",
+        "level": "1",
+        "name": "BDThêk",
+        "operator": "BuL Ens Lyon",
+        "operator:type": "community",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4012376,
+          43.5788521
+        ]
+      },
+      "properties": {
+        "@id": "node/7942796227",
+        "@type": "node",
+        "addr:city": "Toulouse cedex 9",
+        "addr:postcode": "31058",
+        "addr:street": "Bâtiment Olympe de Gouges 5 allées Antonio Machado",
+        "amenity": "library",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "CROG (Centre de ressources Olympe de Gouges)",
+        "opening_hours": "Mo-Fr 08:30-19:00",
+        "operator": "Université Toulouse Jean-Jaurès",
+        "operator:type": "public",
+        "ref:isil": "FR-315552248",
+        "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/centre-de-ressources-olympe-de-gouges",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4032282,
+          43.5782195
+        ]
+      },
+      "properties": {
+        "@id": "node/7950515605",
+        "@type": "node",
+        "alt_name": "CRL",
+        "amenity": "library",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "Centre de Ressources des Langues",
+        "opening_hours": "Mo-Fr 08:15-19:00",
+        "ref:isil": "FR-315552219",
+        "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/centre-de-ressources-des-langues",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4023824,
+          43.5786872
+        ]
+      },
+      "properties": {
+        "@id": "node/7954141101",
+        "@type": "node",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Centre de ressources Lettres Arts Philosophie (CLAP)",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/centre-de-ressources-lettres-arts-philosophie",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8805379,
+          45.7415306
+        ]
+      },
+      "properties": {
+        "@id": "node/8411256286",
+        "@type": "node",
+        "amenity": "library",
+        "name": "BU Santé Rockefeller",
+        "operator": "Université Lyon 1",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4414371,
+          43.6069605
+        ]
+      },
+      "properties": {
+        "@id": "node/8530390324",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Cinémathèque de Toulouse",
+        "opening_hours": "Tu-Fr 14:00-21:00; Sa 14:30-21:00; Su 15:30-18:30",
+        "ref:isil": "FR-315555119",
+        "website": "https://www.lacinemathequedetoulouse.com/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2690734,
+          43.7053729
+        ]
+      },
+      "properties": {
+        "@id": "node/9607452317",
+        "@type": "node",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-07-10",
+        "description": "médiathèque",
+        "name": "Alliance française",
+        "opening_hours:signed": "no",
+        "website": "https://af-nice.fr/fr",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4586468,
+          43.5652872
+        ]
+      },
+      "properties": {
+        "@id": "node/9769380627",
+        "@type": "node",
+        "access": "yes",
+        "addr:city": "Toulouse CEDEX 4",
+        "addr:housenumber": "115 D",
+        "addr:postcode": "31077",
+        "addr:street": "Route de Narbonne",
+        "air_conditioning": "yes",
+        "amenity": "library",
+        "email": "contact.crdoc@iut-tlse3.fr",
+        "internet_access": "terminal",
+        "internet_access:fee": "no",
+        "level": "1",
+        "name": "CRDoc Ponsan",
+        "opening_hours": "Mo-Th 09:00-19:00; Fr 09:00-18:00; PH off",
+        "operator": "Université Toulouse III",
+        "operator:type": "public",
+        "phone": "+33 5 62 25 82 86",
+        "ref:isil": "FR-315552289",
+        "website": "https://bibliotheques.univ-tlse3.fr/venir-la-bibliotheque/bibliotheques-des-iut/toulouse-ponsan",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4646178,
+          43.5704371
+        ]
+      },
+      "properties": {
+        "@id": "node/9769380628",
+        "@type": "node",
+        "access": "yes",
+        "addr:city": "Toulouse CEDEX 4",
+        "addr:housenumber": "133",
+        "addr:postcode": "31077",
+        "addr:street": "Avenue de Rangueil",
+        "air_conditioning": "yes",
+        "amenity": "library",
+        "email": "contact.crdoc@iut-tlse3.fr",
+        "internet_access": "terminal",
+        "internet_access:fee": "no",
+        "level": "1",
+        "name": "CRDoc Rangueil",
+        "opening_hours": "Mo-Th 09:00-19:00; Fr 09:00-18:00; PH off",
+        "operator": "Université Toulouse III",
+        "operator:type": "public",
+        "phone": "+33 5 62 25 89 46",
+        "ref:isil": "FR-315552348",
+        "website": "https://bibliotheques.univ-tlse3.fr/venir-la-bibliotheque/bibliotheques-des-iut/toulouse-rangueil",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4470675,
+          43.5909217
+        ]
+      },
+      "properties": {
+        "@id": "node/10784528694",
+        "@type": "node",
+        "amenity": "library",
+        "internet_access": "yes",
+        "name": "La Turbine",
+        "opening_hours": "Th-Mo 13:00-20:00",
+        "operator": "Université de Toulouse (COMUE)",
+        "operator:type": "public",
+        "source": "local knowledge",
+        "website": "https://welcomedesk.univ-toulouse.fr/actualites/ouverture-turbine-nouveau-lieu-dedie-lengagement-etudiant",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8309468,
+          45.7304057
+        ]
+      },
+      "properties": {
+        "@id": "node/10982790037",
+        "@type": "node",
+        "amenity": "library",
+        "harassment_prevention": "ask_angela",
+        "name": "Bibliothèque du 7e Gerland – Hannah Arendt",
+        "opening_hours": "Mo off; Tu,Th 13:00-19:00; We 10:00-19:00; Fr 12:00-19:00; Sa 01:00-13:00,14:00-19:00; Su,PH off; Jul 09-Aug 31 Tu off; Jul 09-Aug 31 We-Sa 09:00-13:00; Aug 13-17 off",
+        "operator": "Ville de Lyon",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278474",
+        "phone": "+33 4 26 99 77 10;+33 4 26 99 77 27",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-7e-gerland/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.401557,
+          43.287108
+        ]
+      },
+      "properties": {
+        "@id": "node/11037395030",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:housenumber": "27",
+        "addr:postcode": "13005",
+        "addr:street": "Boulevard Jean Moulin",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "name": "Bibliothèque Universitaire de Pharmacie",
+        "operator": "Service Commun de la Documentation, Université d'Aix-Marseille",
+        "operator:type": "university",
+        "ref:isil": "FR-130552105",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4024314,
+          43.2888406
+        ]
+      },
+      "properties": {
+        "@id": "node/11037395031",
+        "@type": "node",
+        "addr:city": "Marseille",
+        "addr:housenumber": "27",
+        "addr:postcode": "13005",
+        "addr:street": "Boulevard Jean Moulin",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "name": "Bibliothèque Universitaire de Médecine",
+        "operator": "Service Commun de la Documentation, Université d'Aix-Marseille",
+        "operator:type": "university",
+        "ref:isil": "FR-130552103",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8202762,
+          45.7749172
+        ]
+      },
+      "properties": {
+        "@id": "node/11056526873",
+        "@type": "node",
+        "amenity": "library",
+        "fixme": "Vérifier la position dans le bâtiment",
+        "name": "Bibliothèque universitaire Éducation Lyon - Croix-Rousse",
+        "opening_hours": "Mo 13:00-19:00; Tu-Th 08:30-19:00; Fr 08:30-18:00; Sa 8:30-11:45; Su off",
+        "operator": "Université Lyon I",
+        "phone": "+33 4 72 07 30 93",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "website": "https://portaildoc.univ-lyon1.fr/bibliotheques/bibliotheques-d-education/bu-education-lyon-croix-rousse-742244.kjsp",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3780199,
+          43.29713
+        ]
+      },
+      "properties": {
+        "@id": "node/11787025172",
+        "@type": "node",
+        "addr:housenumber": "3",
+        "addr:street": "Rue Vincent Scotto",
+        "amenity": "library",
+        "email": "contact@grandelibrairie.com",
+        "mobile": "+33769859152",
+        "name": "Grande librairie internationale de Marseille",
+        "website": "https://www.grandelibrairie.com/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4723141,
+          43.5674622
+        ]
+      },
+      "properties": {
+        "@id": "node/11816355245",
+        "@type": "node",
+        "amenity": "library",
+        "contact:phone": "+33 5 61 33 81 34",
+        "name": "Aérothèque - bibliothèque universitaire",
+        "opening_hours": "Mo-Sa 09:00-22:00",
+        "website": "https://www.isae-supaero.fr/fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2884242,
+          43.6995418
+        ]
+      },
+      "properties": {
+        "@id": "node/11920054052",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque du Port",
+        "operator": "Bibliothèque municipale de Nice",
+        "phone": "+33 4 93 89 09 46",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8575468,
+          45.7717496
+        ]
+      },
+      "properties": {
+        "@id": "node/12038047840",
+        "@type": "node",
+        "access": "private",
+        "amenity": "library",
+        "name": "Lycée du Parc",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4079717,
+          43.2924599
+        ]
+      },
+      "properties": {
+        "@id": "node/12201233951",
+        "@type": "node",
+        "amenity": "library",
+        "name": "OCB",
+        "website": "https://mabibliothequeocb.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4642474,
+          43.6358718
+        ]
+      },
+      "properties": {
+        "@id": "node/12237688686",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-09-12",
+        "contact:city": "Toulouse",
+        "contact:housenumber": "122",
+        "contact:phone": "+33 5 62 15 01 70",
+        "contact:postcode": "31200",
+        "contact:street": "Route d'Albi",
+        "name": "Médiathèque Danièle Damin",
+        "opening_hours": "Tu,We,Fr 10:00-13:00,14:30-19:00; Th 14:30-19:00; Sa 10:00-17:00",
+        "website": "https://bibliotheque.toulouse.fr/",
+        "wikidata": "Q117868616",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3827523,
+          43.2975639
+        ]
+      },
+      "properties": {
+        "@id": "node/12387278678",
+        "@type": "node",
+        "amenity": "library",
+        "contact:website": "https://bu.univ-amu.fr/fr/bibliotheques-universitaires/bu-canebiere",
+        "name": "Bibliothèque Universitaire Canebière",
+        "opening_hours": "Mo-Fr 08:30-18:30",
+        "operator": "Aix-Marseille Université",
+        "short_name": "BU Canebière",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4427352,
+          43.6073032
+        ]
+      },
+      "properties": {
+        "@id": "node/12417229070",
+        "@type": "node",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "56",
+        "addr:postcode": "31000",
+        "addr:street": "Rue du Taur",
+        "amenity": "library",
+        "email": "monique.foissac@univ-tlse2.fr",
+        "name": "Bibliothèque d'Etudes Méridionales",
+        "opening_hours": "Mo-Th 09:00-18:00",
+        "phone": "+33  5 61 50 24 63",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4033416,
+          43.5764898
+        ]
+      },
+      "properties": {
+        "@id": "node/13253811937",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliotheque universitaire centrale",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8327067,
+          45.7319938
+        ]
+      },
+      "properties": {
+        "@id": "way/31264410",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "internet_access": "wlan",
+        "name": "Bibliothèque Diderot de Lyon - Site Descartes D9",
+        "opening_hours": "Mo-Fr 09:00-21:00; Sa 10:00-20:00; Su 10:00-20:00",
+        "operator": "Université de Lyon, Université Lyon 2, Université Lyon 3, ENS",
+        "operator:type": "university",
+        "phone": "+33 4 37 37 65 00",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009",
+        "website": "https://www.bibliotheque-diderot.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4438313,
+          43.607852
+        ]
+      },
+      "properties": {
+        "@id": "way/34712432",
+        "@type": "way",
+        "addr:housenumber": "1",
+        "addr:street": "Rue de Périgord",
+        "alt_name": "Bibliotheque Municipale",
+        "amenity": "library",
+        "building": "civic",
+        "building:levels": "5",
+        "contact:phone": "+33 5 61 22 34 32",
+        "contact:website": "http://www.bibliotheque.toulouse.fr",
+        "heritage": "3",
+        "heritage:operator": "mhs",
+        "mhs:inscription_date": "1994-12-07",
+        "name": "Bibliothèque municipale d'étude et du patrimoine",
+        "opening_hours": "Tu, We, Sa 10:00-19:00; Th, Fr 14:00-19:00",
+        "phone": "+33 5 62 27 40 88",
+        "ref:mhs": "PA00132768",
+        "short_name": "BEP",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2020",
+        "source:date": "2012-05-30",
+        "source:heritage": "Ministère de la Culture - 06/2019",
+        "website": "https://bibliotheque.toulouse.fr/22-bibliotheques/bibliotheque-detude-et-du-patrimoine",
+        "wikidata": "Q2901556",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4367017,
+          43.6079817
+        ]
+      },
+      "properties": {
+        "@id": "way/34923010",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "check_date": "2025-09-05",
+        "name": "Bibliothèque universitaire de l'Arsenal",
+        "opening_hours": "Mo-Fr 08:00-22:00; Sa 09:00-20:00; Su off",
+        "roof:shape": "flat",
+        "short_name": "Bibliothèque de l'Arsenal",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2008",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8436791,
+          45.7464596
+        ]
+      },
+      "properties": {
+        "@id": "way/48227770",
+        "@type": "way",
+        "amenity": "library",
+        "building": "apartments",
+        "building:levels": "7",
+        "internet_access": "yes",
+        "name": "Bilbiothèque du 7e Jean Macé",
+        "opening_hours": "Mo off; Tu-Fr 13:00-19:00; We 10:00-13:00,14:00-19:00; Sa 10:00-18:00; Su off; PH off; Jul 09-Aug 31 Tu-We off; Jul 09-Aug 31 Th-Fr 13:00-19:00; Jul 09-Aug 31 Sa 10:00-13:00; Aug 13-17 off",
+        "operator": "Ville de Lyon",
+        "operator:type": "public",
+        "phone": "+33 4 78 96 48 30",
+        "roof:shape": "flat",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-7e-jean-mace/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4562105,
+          43.5613337
+        ]
+      },
+      "properties": {
+        "@id": "way/50902091",
+        "@type": "way",
+        "addr:housenumber": "65",
+        "addr:street": "Chemin du Vallon",
+        "amenity": "library",
+        "building": "civic",
+        "name": "BU Santé",
+        "ref": "A7",
+        "roof:shape": "flat",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4119293,
+          43.5802312
+        ]
+      },
+      "properties": {
+        "@id": "way/56994034",
+        "@type": "way",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "37",
+        "addr:postcode": "31100",
+        "addr:street": "Rue du Lot",
+        "alt_name": "Bibliothèque Saint-Exupéry",
+        "alt_name:oc": "Bibliotèca Sant Exupèri",
+        "amenity": "library",
+        "building": "civic",
+        "building:levels": "2",
+        "contact:phone": "+33 5 61 40 69 88",
+        "contact:website": "https://www.bibliotheque.toulouse.fr/bibliotheques/reseau-des-bibliotheques-de-quartier2/mediatheque-saint-exupery/",
+        "name": "Bibliothèque Antoine de Saint-Exupéry",
+        "opening_hours": "Tu 10:00-18:00; We,Fr 09:30-12:30,14:00-18:00; Th 14:00-18:00; Sa 10:00-17:00",
+        "roof:shape": "flat",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8572698,
+          45.7604686
+        ]
+      },
+      "properties": {
+        "@id": "way/62338012",
+        "@type": "way",
+        "amenity": "library",
+        "building": "library",
+        "contact:email": "bm@bm-lyon.fr",
+        "contact:phone": "+33 4 78 62 18 00",
+        "internet_access": "wlan",
+        "layer": "1",
+        "name": "Bibliothèque municipale de Lyon",
+        "opening_hours": "Mo off, Tu-Fr 10:00-19:00; Sa 10:00-18:00; Su,PH off; Jul 09-Aug 31 Tu-Fr 13:00-19:00; Jul 09-Aug 31 Sa 13:00-18:00",
+        "operator": "Ville de Lyon",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-de-la-part-dieu/",
+        "wheelchair": "yes",
+        "wikidata": "Q8622",
+        "wikipedia": "fr:Bibliothèque municipale de Lyon",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.882886,
+          45.7408516
+        ]
+      },
+      "properties": {
+        "@id": "way/62347650",
+        "@type": "way",
+        "amenity": "library",
+        "building": "university",
+        "name": "Médiathèque Paul-Zech",
+        "roof:shape": "flat",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4445402,
+          43.6104051
+        ]
+      },
+      "properties": {
+        "@id": "way/64650308",
+        "@type": "way",
+        "amenity": "library",
+        "building": "civic",
+        "full_name": "Centre Régional de Documentation Pédagogique de l'académie de Toulouse",
+        "name": "CRDP de l'académie de Toulouse",
+        "short_name": "CRDP",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4676351,
+          43.6024534
+        ]
+      },
+      "properties": {
+        "@id": "way/64811519",
+        "@type": "way",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "7",
+        "addr:postcode": "31500",
+        "addr:street": "Place Marius Pinel",
+        "amenity": "library",
+        "building": "civic",
+        "contact:phone": "+33 5 61 54 28 93",
+        "contact:website": "http://www.bibliotheque.toulouse.fr",
+        "name": "Bibliothèque de quartier - Pinel",
+        "opening_hours": "Tu-Th 14:30-18:30; Fr 13:30-17:00; Sa 10:00-17:00",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "wikidata": "Q117941176",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4665342,
+          43.5937194
+        ]
+      },
+      "properties": {
+        "@id": "way/64852052",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "level": "2",
+        "name": "Bibliothèque Côte Pavée",
+        "opening_hours": "Tu,We,Fr 10:00-12:30; Tu-Fr 14:00-19:00; Sa 10:00-17:00",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "wikidata": "Q117870001",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3753528,
+          43.3011172
+        ]
+      },
+      "properties": {
+        "@id": "way/67703563",
+        "@type": "way",
+        "addr:city": "Marseille",
+        "addr:housenumber": "52",
+        "addr:postcode": "13001",
+        "addr:street": "Rue d'Aix",
+        "amenity": "library",
+        "building": "apartments",
+        "description": "Mémoire des sexualités est une association dont l'objectif est de conserver, protéger, enrichir et valoriser les fonds d'archives et de documentation dont elle dispose, qui ont trait aux sexualités et identités de genre minoritaires, ou dont les auteurs e",
+        "email": "memoire-des-sexualites@riseup.net",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Mémoire des sexualités",
+        "opening_hours": "Sur rendez-vous, ou pendant les permanences d'accueil",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "start_date": "1992-01-20",
+        "website": "https://www.memoire-sexualites.org/",
+        "wheelchair": "no",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3694894,
+          43.3121488
+        ]
+      },
+      "properties": {
+        "@id": "way/68941860",
+        "@type": "way",
+        "addr:city": "Marseille",
+        "addr:postcode": "13003",
+        "addr:street": "12 rue Mirès",
+        "amenity": "library",
+        "architect": "Corine Vezzoni",
+        "building": "yes",
+        "name": "Archives et bibliothèque départementales Gaston Defferre",
+        "name:etymology:wikidata": "Q608815",
+        "operator": "Conseil départemental des Bouches-du-Rhône",
+        "operator:type": "public",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "wikidata": "Q2860505",
+        "wikipedia": "fr:Archives et bibliothèque départementales Gaston Defferre",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.443158,
+          43.5968525
+        ]
+      },
+      "properties": {
+        "@id": "way/70540859",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "contact:phone": "+33 5 61 53 51 59",
+        "contact:website": "http://www.bibliotheque.toulouse.fr",
+        "name": "Bibliothèque de quartier - Fabre",
+        "opening_hours": "Tu 10:00-19:00; Th 14:00-19:00; Sa 10:00-17:00; We, Fr 10:00-12:30, 14:00-19:00",
+        "short_name": "Bibliothèque Fabre",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3887444,
+          43.5827388
+        ]
+      },
+      "properties": {
+        "@id": "way/74689843",
+        "@type": "way",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "3",
+        "addr:postcode": "31100",
+        "addr:street": "Avenue de la Dépêche",
+        "amenity": "library",
+        "building": "yes",
+        "contact:phone": "+33 5 34 55 46 85",
+        "contact:website": "http://www.bibliotheque.toulouse.fr",
+        "name": "Bibliothèque des Pradettes",
+        "opening_hours": "Tu,We,Fr 10:00-12:30,13:30-19:00; Th 14:00-19:00; Sa 10:00-17:00",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.826787,
+          45.7522292
+        ]
+      },
+      "properties": {
+        "@id": "way/82252969",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "description": "Deuxième numéro de téléphone (+33478386009) : espace numérique",
+        "internet_access": "terminal",
+        "name": "Bibliothèque du 2e arrondissement",
+        "opening_hours": "Tu 13:00-19:00; We 10:00-12:00,14:00-19:00; Th-Fr 15:00-19:00; Sa 10:00-13:00,14:00-18:00; Jul 07-Aug 31: Su-We off, Th-Fr 13:00-19:00, Sa 10:00-13:00; PH off",
+        "operator": "Bibliothèque municipale de Lyon",
+        "phone": "+33478386000",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-2e/",
+        "wheelchair": "yes",
+        "wikidata": "Q115455026",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8345478,
+          45.7690471
+        ]
+      },
+      "properties": {
+        "@id": "way/84631232",
+        "@type": "way",
+        "addr:housenumber": "7",
+        "addr:street": "Rue Saint-Polycarpe",
+        "amenity": "library",
+        "building": "yes",
+        "building:part": "no",
+        "check_date": "2024-08-01",
+        "harassment_prevention": "ask_angela",
+        "name": "Bibliothèque municipale du 1er Arrondissement",
+        "opening_hours": "Tu,Th-Fr 13:00-19:00; We 10:00-13:00,14:00-19:00; Sa 10:00-13:00,14:00-18:00; Su-Mo off; PH off",
+        "phone": "+33 4 78 27 45 55",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-1er/",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4109505,
+          43.3386295
+        ]
+      },
+      "properties": {
+        "@id": "way/112846527",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "name": "Bibliothèque universitaire",
+        "roof:shape": "flat",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8047285,
+          45.7756305
+        ]
+      },
+      "properties": {
+        "@id": "way/125075590",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "internet_access": "wlan",
+        "name": "Médiathèque de Vaise – Marceline Desbordes-Valmore",
+        "opening_hours": "Mo off; Tu-We 10:00-19:00; Th-Fr 14:00-19:00; Sa 10:00-18:00; Su,PH off; Jul 09-Aug 31: Tu,Fr 13:00-19:00; Jul 09-Aug 31: We 10:00-12:00,13:00-19:00; Jul 09-Aug 31: Th off; Jul 09-Aug 31: Sa 10:00-13:00; Aug 13-17 off",
+        "opening_hours:url": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/mediatheque-de-vaise/",
+        "operator": "Ville de Lyon",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278474",
+        "phone": "+33 4 72 85 66 20",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/mediatheque-de-vaise/",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7956435,
+          45.7565358
+        ]
+      },
+      "properties": {
+        "@id": "way/125550817",
+        "@type": "way",
+        "amenity": "library",
+        "building": "public",
+        "harassment_prevention": "ask_angela",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Bibliothèque du 5e Point du Jour",
+        "opening_hours": "Mo off; Tu 13:00-19:00; We 10:00-19:00; Th 13:00-19:00; Fr 10:00-12:00,15:00-19:00; Sa 10:00-13:00,14:00-18:00; Su off; PH off; Jul 09-Aug 31: Tu-We off; Jul 09-Aug 31 Th-Fr 13:00-19:00, Jul 09-Aug 31 Sa 10:00-13:00; Aug 13-17 off",
+        "operator": "Bibliothèque municipale de Lyon",
+        "operator:type": "public",
+        "phone": "+33437201949;+33437201954",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2022",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-5e-point-du-jour/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7960258,
+          45.7859251
+        ]
+      },
+      "properties": {
+        "@id": "way/129829552",
+        "@type": "way",
+        "amenity": "library",
+        "building": "public",
+        "email": "bib9-duchere@bm-lyon.fr",
+        "name": "Bibliothèque du 9e la Duchère – Annie Schwartz",
+        "opening_hours": "Mo off; Tu,Th-Fr 13:00-16:00; We,Sa 10:00-13:00,14:00-16:00; Su,PH off; Jul 09-Aug 31: Tu off; Jul 09-Aug 31: We-Sa 09:00-13:00; Aug 13-17 off",
+        "operator": "Ville de Lyon",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278474",
+        "phone": "+33 4 78 35 43 81;+33 4 78 64 07 45",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2014",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2986711,
+          43.7263696
+        ]
+      },
+      "properties": {
+        "@id": "way/138321368",
+        "@type": "way",
+        "access": "private",
+        "amenity": "library",
+        "building:levels": "2",
+        "building:levels:underground": "1",
+        "building:material": "plaster",
+        "building:part": "yes",
+        "height": "9",
+        "roof:colour": "red",
+        "roof:material": "roof_tiles",
+        "roof:shape": "hipped",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2455215,
+          43.69481
+        ]
+      },
+      "properties": {
+        "@id": "way/139139015",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "contact:website": "https://bu.univ-cotedazur.fr/fr/bibliotheques/bu-droit-et-science-politique",
+        "height": "12",
+        "name": "BU Droit-Science Politique",
+        "opening_hours": "Mo-Th 08:30-20:00; We 08:20-19:00; Sa 09:00-12:30",
+        "operator": "Université Côte d'Azur",
+        "operator:type": "university",
+        "ref:isil": "FR-060882103",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "wheelchair": "limited",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4558403,
+          43.6101812
+        ]
+      },
+      "properties": {
+        "@id": "way/140552729",
+        "@type": "way",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "1",
+        "addr:postcode": "31506",
+        "addr:street": "Allée Jacques Chaban-Delmas",
+        "amenity": "library",
+        "building": "yes",
+        "building:levels": "8",
+        "building:walls": "brick",
+        "check_date:opening_hours": "2025-03-25",
+        "contact:phone": "+33 5 62 27 40 00",
+        "height": "35",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Médiathèque José Cabanis",
+        "opening_hours": "Tu,We,Fr,Sa 10:00-19:00; Th 14:00-19:00; Su 14:00-18:00",
+        "operator": "Mairie de Toulouse",
+        "ref:isil": "FR-315556102",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "toilets": "yes",
+        "website": "https://bibliotheque.toulouse.fr/",
+        "wheelchair": "yes",
+        "wikidata": "Q3332603",
+        "wikipedia": "fr:Médiathèque José-Cabanis",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.29013,
+          43.7144025
+        ]
+      },
+      "properties": {
+        "@id": "way/142258196",
+        "@type": "way",
+        "addr:housenumber": "14",
+        "addr:postcode": "06300",
+        "addr:street": "Rue Acchiardi de Saint-Léger",
+        "amenity": "library",
+        "building": "public",
+        "height": "6",
+        "name": "Bibliothèque de Saint-Roch",
+        "opening_hours": "Tu, Th-Fr 13:30-18:00; We 10:00-12:00, 13:30-18:00; Sa 10:00-12:00, 13:00-16:00",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "website": "https://bmvr.nice.fr/bibliotheque-saint-roch.aspx",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2720095,
+          43.7017045
+        ]
+      },
+      "properties": {
+        "@id": "way/143508732",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "height": "12",
+        "name": "Bibliothèque Romain Gary",
+        "ref:FR:SIRET": "21060088801856",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "wheelchair": "no",
+        "wikidata": "Q114886249",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2176616,
+          43.6775875
+        ]
+      },
+      "properties": {
+        "@id": "way/143819689",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "height": "5",
+        "name": "Caucade",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.279025,
+          43.7021917
+        ]
+      },
+      "properties": {
+        "@id": "way/143921214",
+        "@type": "way",
+        "addr:housenumber": "2",
+        "addr:street": "Place Yves Klein",
+        "amenity": "library",
+        "building": "civic",
+        "check_date": "2025-11-15",
+        "height": "1",
+        "name": "Bibliothèque Louis Nucéra",
+        "name:ko": "루이 누세라 도서관",
+        "ref:FR:SIRET": "53270294100016",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "start_date": "2002-06-29",
+        "wheelchair": "yes",
+        "wikidata": "Q80117161",
+        "wikipedia": "fr:Bibliothèque Louis-Nucéra",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2617105,
+          43.709422
+        ]
+      },
+      "properties": {
+        "@id": "way/144378668",
+        "@type": "way",
+        "amenity": "library",
+        "architect": "Prosper Bobin",
+        "building": "yes",
+        "end_date:railway": "1991-12-09",
+        "height": "13",
+        "heritage": "3",
+        "heritage:operator": "mhs",
+        "mapillary": "542798343384293",
+        "mhs:inscription_date": "2002-09-23",
+        "name": "Bibliothèque Raoul Mille",
+        "old_name": "Gare du Sud",
+        "opening_hours": "Tu-We 10:00-18:00, Th-Fr 14:00-18:00, Sa 10:00-18:00",
+        "operator": "ville de Nice",
+        "ref:mhs": "PA06000023",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "source:heritage": "Ministère de la Culture - 06/2019",
+        "start_date": "1892",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q2676458",
+        "wikipedia": "fr:Gare du Sud",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3883331,
+          43.2490597
+        ]
+      },
+      "properties": {
+        "@id": "way/154482815",
+        "@type": "way",
+        "addr:city": "Marseille",
+        "addr:country": "FR",
+        "addr:housename": "Centre de vie Bonneveine",
+        "addr:housenumber": "124",
+        "addr:postcode": "13008",
+        "addr:street": "Avenue de Hambourg",
+        "amenity": "library",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "Bibliothèque municipale de Bonneveine",
+        "name:oc": "Bibliotèca municipala de Bòna Vèuna",
+        "operator": "Ville de Marseille",
+        "phone": "+33 4 91 25 10 10",
+        "source": "http://opendata.regionpaca.fr/",
+        "source:name:oc": "ieo-bdtopoc",
+        "website": "https://www.bmvr.marseille.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3889129,
+          43.2494305
+        ]
+      },
+      "properties": {
+        "@id": "way/154482825",
+        "@type": "way",
+        "addr:city": "Marseille",
+        "addr:housenumber": "112",
+        "addr:postcode": "13008",
+        "addr:street": "Avenue de Hambourg",
+        "amenity": "library",
+        "building": "yes",
+        "building:levels": "5",
+        "name": "Médiathèque de Bonneveine (DVD/CD)",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.386376,
+          43.2613975
+        ]
+      },
+      "properties": {
+        "@id": "way/154562026",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "name": "CDI",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4006785,
+          43.5673038
+        ]
+      },
+      "properties": {
+        "@id": "way/171744889",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "contact:housenumber": "37",
+        "contact:street": "Avenue de la Reynerie",
+        "contact:website": "http://www.bibliotheque.toulouse.fr",
+        "name": "Médiathèque Grand M",
+        "note": "Accès internet - @telier multimédia DVD : prêt et consultation sur place de certains DVD (3 écrans plasma) CD : prêt et écoute sur place (3 platines d'écoute) PEF (Point Emploi Formation) Ouvrages para- scolaires PPE (Point Parent Enfant)",
+        "opening_hours": "Tu-Fr 10:00-13:00,14:00-19:00;Sa 10:00-19:00;Su 14:00-18:00",
+        "phone": "+33 5 81 91 79 40",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "website": "https://bibliotheque.toulouse.fr/Mediatheque_Grand_M.html",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4419307,
+          43.5788112
+        ]
+      },
+      "properties": {
+        "@id": "way/179189067",
+        "@type": "way",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "40",
+        "addr:postcode": "31400",
+        "addr:street": "Avenue Jean Moulin",
+        "amenity": "library",
+        "building": "public",
+        "building:levels": "1",
+        "check_date:opening_hours": "2021-08-12",
+        "contact:phone": "+33 5 36 25 20 80",
+        "contact:website": "http://www.bibliotheque.toulouse.fr",
+        "name": "Médiathèque d'Empalot",
+        "opening_hours": "Tu 10:00-17:00; We, Fr 10:00-12:30, 14:00-19:00; Th 14:00-19:00; Sa 10:00-17:00",
+        "roof:levels": "0",
+        "roof:shape": "flat",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4346691,
+          43.6204391
+        ]
+      },
+      "properties": {
+        "@id": "way/183070350",
+        "@type": "way",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "3",
+        "addr:postcode": "31200",
+        "addr:street": "Place du Marché Aux Cochons",
+        "amenity": "library",
+        "building": "civic",
+        "building:levels": "2",
+        "contact:phone": "+33 5 61 47 75 69",
+        "name": "Bibliothèque municipale des Minimes",
+        "opening_hours": "Tu,Sa 10:00-17:00;We,Fr 10:00-12:30,14:00-19:00;Th 14:00-19:00",
+        "roof:levels": "0",
+        "roof:shape": "gabled",
+        "source": "GrandToulouse",
+        "source:date": "2012-05-30",
+        "website": "https://bibliotheque.toulouse.fr/",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.35064,
+          43.37008
+        ]
+      },
+      "properties": {
+        "@id": "way/189725745",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "name": "Espace lecture du Plan d'Aou",
+        "source": "Bing + terrain",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2844522,
+          43.7243729
+        ]
+      },
+      "properties": {
+        "@id": "way/257235890",
+        "@type": "way",
+        "addr:city": "Nice",
+        "addr:housenumber": "12",
+        "addr:postcode": "06000",
+        "addr:street": "Rue Maccario",
+        "amenity": "library",
+        "architect": "C. Erades & C. Bouzat",
+        "building": "yes",
+        "internet_access": "wlan",
+        "name": "Bibliothèque Camille Claudel Pasteur",
+        "phone": "+33 4 97 13 49 32",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "website": "https://bmvr.nice.fr//EXPLOITATION/bibliotheque-pasteur-camille-claudel.aspx",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4397356,
+          43.2275159
+        ]
+      },
+      "properties": {
+        "@id": "way/306440933",
+        "@type": "way",
+        "amenity": "library",
+        "name": "Bibliothèque Étudiante de Luminy",
+        "opening_hours": "Tu 18:00-22:00; We 18:00-22:00; Su 18:00-22:00",
+        "short_name": "BEL",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+        "website": "https://www.facebook.com/bel.bel.1213",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.266693,
+          43.7176345
+        ]
+      },
+      "properties": {
+        "@id": "way/363728808",
+        "@type": "way",
+        "amenity": "library",
+        "building": "university",
+        "check_date": "2024-09-01",
+        "height": "12",
+        "name": "Bibliothèque universitaire",
+        "name:de": "Universitätsbibliothek",
+        "name:en": "University Library",
+        "name:fr": "Bibliothèque universitaire",
+        "operator": "Université Côte d'Azur",
+        "operator:type": "university",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "website": "https://bu.univ-cotedazur.fr/fr/bibliotheques/bu-sciences",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7963288,
+          45.7858847
+        ]
+      },
+      "properties": {
+        "@id": "way/380420801",
+        "@type": "way",
+        "amenity": "library",
+        "building": "public",
+        "email": "bib9-duchere@bm-lyon.fr",
+        "name": "Bibliothèque Annie-Schwartz",
+        "opening_hours": "Th,Tu,Fr 15:00-19:00; We,Sa 10:00-12:00,14:00-18:00",
+        "phone": "+33 4 78 35 43 81",
+        "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-9e-la-duchere/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.87711,
+          45.7488961
+        ]
+      },
+      "properties": {
+        "@id": "way/403447732",
+        "@type": "way",
+        "air_conditioning": "yes",
+        "amenity": "library",
+        "building": "yes",
+        "building:colour": "tan",
+        "check_date:opening_hours": "2023-10-17",
+        "description": "Deuxième numéro de téléphone (+33 4 72 53 58 50) : espace numérique",
+        "internet_access": "wlan",
+        "name": "Bibliothèque du 3e Lacassagne - Marguerite Yourcenar",
+        "opening_hours": "Tu 13:00-19:00; We 10:00-19:00; Th-Fr 13:00-19:00; Sa 10:00-18:00; Jul 09-Aug 31: Tu off; Jul 09-Aug 31: We-Sa 09:00-13:00; PH off",
+        "operator": "Bibliothèque municipale de Lyon",
+        "operator:type": "public",
+        "phone": "+33 4 72 10 54 81;+33 4 72 53 58 50",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4035289,
+          43.5765822
+        ]
+      },
+      "properties": {
+        "@id": "way/412449613",
+        "@type": "way",
+        "addr:housenumber": "5",
+        "addr:street": "Allées Antonio Machado",
+        "amenity": "library",
+        "building": "yes",
+        "building:levels": "4",
+        "contact:facebook": "bibut2j",
+        "contact:instagram": "bibut2j",
+        "contact:phone": "+33 5 61 50 39 60",
+        "email": "bumirail@univ-tlse2.fr",
+        "internet_access": "wlan",
+        "name": "Bibliothèque Universitaire Centrale",
+        "name:en": "Mirail Main Library",
+        "opening_hours": "Mo-Fr 10:00-18:00",
+        "ref:isil": "FR-315552102",
+        "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/bibliotheque-universitaire-centrale",
+        "wikidata": "Q117866350",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3842013,
+          43.2856073
+        ]
+      },
+      "properties": {
+        "@id": "way/422075675",
+        "@type": "way",
+        "addr:city": "Marseille",
+        "addr:country": "FR",
+        "addr:postcode": "13006",
+        "addr:street": "Station de Métro \"Castellane\"",
+        "amenity": "library",
+        "level": "-1",
+        "name": "Bibliothèque municipale de Castellane",
+        "opening_hours": "Mo, Tu, Th 13:00-18:00; We, Fr 10:00-18:00",
+        "operator": "Ville de Marseille",
+        "phone": "+33 4 91 42 92 09",
+        "room": "library",
+        "source": "http://opendata.regionpaca.fr/",
+        "website": "https://www.bmvr.marseille.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.860361,
+          45.7479413
+        ]
+      },
+      "properties": {
+        "@id": "way/694531442",
+        "@type": "way",
+        "addr:housenumber": "6",
+        "addr:street": "Rue du Professeur Rollet",
+        "amenity": "library",
+        "building:part": "yes",
+        "email": "bu@univ-lyon3.fr",
+        "internet_access": "wlan",
+        "name": "Bibliothèque universitaire de la Manufacture",
+        "opening_hours": "Mo-Fr 08:30-22:00; Sa 09:30-17:00; Su 09:00-18:00",
+        "operator": "Université Jean Moulin Lyon 3",
+        "operator:type": "university",
+        "phone": "+33 478787940",
+        "ref": "H",
+        "short_name": "BU",
+        "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2017",
+        "website": "https://bu.univ-lyon3.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.454785,
+          43.6022404
+        ]
+      },
+      "properties": {
+        "@id": "way/777305906",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "check_date": "2024-11-16",
+        "layer": "1",
+        "name": "Bibliothèque INP ENSEEIHT",
+        "opening_hours": "Mo-Th 08:00-20:00; Fr 08:00-19:00",
+        "operator": "INP Toulouse - ENSEEIHT",
+        "operator:type": "university",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3521369,
+          43.3686342
+        ]
+      },
+      "properties": {
+        "@id": "way/846159047",
+        "@type": "way",
+        "addr:housenumber": "1",
+        "amenity": "library",
+        "building": "yes",
+        "name": "Médiathèque Salim-Hatubou",
+        "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2020",
+        "wheelchair": "yes",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8805227,
+          45.7415379
+        ]
+      },
+      "properties": {
+        "@id": "way/1049960244",
+        "@type": "way",
+        "amenity": "library",
+        "indoor": "room",
+        "level": "2;3",
+        "name": "Bibliothèque Universitaire",
+        "room": "library",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3830311,
+          43.5996064
+        ]
+      },
+      "properties": {
+        "@id": "way/1123200508",
+        "@type": "way",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "23",
+        "addr:postcode": "31300",
+        "addr:street": "Chemin des Capelles",
+        "amenity": "library",
+        "building": "university",
+        "internet_access": "wlan",
+        "name": "1.4 Bibliothèque de l'Ecole Nationale Vétérinaire de Toulouse",
+        "phone": "+33561193202",
+        "website": "https://envt.fr/bibliotheque/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4722603,
+          43.5677228
+        ]
+      },
+      "properties": {
+        "@id": "way/1156905095",
+        "@type": "way",
+        "amenity": "library",
+        "building": "university",
+        "building:levels": "2",
+        "height": "7",
+        "name": "Aérothèque Marie Marvingt",
+        "roof:shape": "flat",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3427976,
+          43.3575568
+        ]
+      },
+      "properties": {
+        "@id": "way/1340091234",
+        "@type": "way",
+        "addr:city": "Marseille",
+        "addr:country": "FR",
+        "addr:housenumber": "6",
+        "amenity": "library",
+        "area": "yes",
+        "name": "Bibliothèque municipale de Saint-André",
+        "operator": "Ville de Marseille",
+        "phone": "+33 4 91 03 72 72",
+        "source": "http://opendata.regionpaca.fr/",
+        "website": "https://www.bmvr.marseille.fr/",
+        "spotType": "libraries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4651011,
+          43.5637744
+        ]
+      },
+      "properties": {
+        "@id": "relation/8519727",
+        "@type": "relation",
+        "addr:city": "Toulouse",
+        "addr:housenumber": "187",
+        "addr:street": "Cours Eugène Cosserat",
+        "amenity": "library",
+        "building": "civic",
+        "name": "BU SCD",
+        "type": "multipolygon",
+        "spotType": "libraries"
+      }
+    }
+  ]
+}

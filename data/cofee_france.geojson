@@ -24134,7 +24134,6 @@
         "amenity": "cafe",
         "check_date": "2023-09-24",
         "name": "L'Estaminet",
-        "name:fr": "L'Estaminet",
         "opening_hours": "Mo-Sa 10:00-19:00",
         "tobacco": "yes",
         "spotType": "cofee"
@@ -59923,6 +59922,7 @@
         "@id": "node/9545303202",
         "@type": "node",
         "amenity": "cafe",
+        "check_date": "2026-01-05",
         "cuisine": "japanese",
         "description": "Une épicerie japonaise où l'on peut prendre un café",
         "name": "Kurashi cafe & mart",

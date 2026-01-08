@@ -76,6 +76,40 @@ async function fetchCoworkingSpots() {
   return response.json();
 }
 
+async function fetchLibraries() {
+  const areaIds = GRANDES_VILLES.filter((v) => v.name !== "Paris").map((v) => 3600000000 + v.relation);
+
+  const query = `
+    [out:json][timeout:120];
+    (
+      ${areaIds
+      .map(
+          (id) => `
+        node["amenity"="library"](area:${id});
+        way["amenity"="library"](area:${id});
+        relation["amenity"="library"](area:${id});
+      `,
+      )
+      .join("")}
+    );
+    out center;
+  `;
+
+  console.log("Récupération des bibliothèques...");
+
+  const response = await fetch(OVERPASS_BASE_URL, {
+    method: "POST",
+    body: `data=${encodeURIComponent(query)}`,
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Erreur HTTP: ${response.status}`);
+  }
+
+  return response.json();
+}
+
 async function fetchCofee() {
   const areaIds = GRANDES_VILLES.map((v) => 3600000000 + v.relation);
 
@@ -137,6 +171,14 @@ async function main() {
     addTypeOfSites(cofeeGeojson, "cofee");
     saveToFile(cofeeGeojson, "cofee_france.geojson");
     console.log(`Total: ${cofeeGeojson.features.length} features`);
+    console.log("Terminé !");
+
+    const librariesData = await fetchLibraries();
+    console.log(`✅ ${librariesData.elements.length} éléments récupérés`);
+    const librariesGeojson = toGeoJSON(librariesData.elements);
+    addTypeOfSites(librariesGeojson, "libraries");
+    saveToFile(librariesGeojson, "libraries_france.geojson");
+    console.log(`Total: ${librariesGeojson.features.length} features`);
     console.log("Terminé !");
   } catch (error) {
     console.error("Erreur:", error.message);
