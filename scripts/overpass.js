@@ -50,10 +50,10 @@ async function fetchCoworkingSpots() {
       ${areaIds
         .map(
           (id) => `
-        node["amenity"="coworking_space"](area:${id});
-        way["amenity"="coworking_space"](area:${id});
-        node["office"="coworking"](area:${id});
-        way["office"="coworking"](area:${id});
+        node["amenity"="coworking_space"][name](area:${id});
+        way["amenity"="coworking_space"][name](area:${id});
+        node["office"="coworking"][name](area:${id});
+        way["office"="coworking"][name](area:${id});
       `,
         )
         .join("")}
@@ -87,9 +87,9 @@ async function fetchLibraries() {
       ${areaIds
         .map(
           (id) => `
-        node["amenity"="library"](area:${id});
-        way["amenity"="library"](area:${id});
-        relation["amenity"="library"](area:${id});
+        node["amenity"="library"][name](area:${id});
+        way["amenity"="library"][name](area:${id});
+        relation["amenity"="library"][name](area:${id});
       `,
         )
         .join("")}
@@ -121,10 +121,10 @@ async function fetchCofee() {
       ${areaIds
         .map(
           (id) => `
-        node["amenity"="cafe"]["internet_access"](area:${id});
-        way["amenity"="cafe"]["internet_access"](area:${id});
-        node["amenity"="cafe"]["socket"](area:${id});
-        way["amenity"="cafe"]["socket"](area:${id});
+        node["amenity"="cafe"]["internet_access"][name](area:${id});
+        way["amenity"="cafe"]["internet_access"][name](area:${id});
+        node["amenity"="cafe"]["socket"][name](area:${id});
+        way["amenity"="cafe"]["socket"][name](area:${id});
       `,
         )
         .join("")}

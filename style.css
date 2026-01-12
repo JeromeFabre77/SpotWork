@@ -44,6 +44,7 @@ header {
     display: grid;
     grid-template-columns: 20% 1fr;
     width: 100%;
+    max-width: 100%;
     height: calc(100vh - 7rem);
     overflow: hidden;
 }
@@ -84,7 +85,11 @@ header {
 }
 
 .spots {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
     margin: 0 0.5rem;
@@ -119,6 +124,8 @@ header {
 }
 
 .tile {
+    max-width: 100%;
+    width: 100%;
     padding: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ddd;

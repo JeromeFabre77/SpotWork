@@ -3603,8 +3603,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3597029,
-          48.870937
+          2.3597183,
+          48.8709493
         ]
       },
       "properties": {
@@ -5727,6 +5727,7 @@
         "internet_access:fee": "no",
         "level": "0",
         "name": "Poésie",
+        "opening_hours": "We-Fr 09:00-18:00, Sa-Su 10:00-18:00",
         "outdoor_seating": "no",
         "smoking": "no",
         "takeaway": "yes",
@@ -6793,6 +6794,41 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.38243,
+          48.8905861
+        ]
+      },
+      "properties": {
+        "@id": "node/7659450753",
+        "@type": "node",
+        "amenity": "cafe",
+        "changing_table": "no",
+        "check_date": "2026-01-10",
+        "contact:facebook": "Kaffee-bar-19-1519957718261175",
+        "cuisine": "coffee_shop",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "0",
+        "name": "Kaffee Bar 19",
+        "name:fr": "Kaffebar 19",
+        "opening_hours": "Mo-Fr 08:30-17:00; Sa,Su 09:30-18:00",
+        "outdoor_seating": "yes",
+        "ref:FR:SIRET": "80494672100011",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no",
+        "spotType": "Cofee"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.3564623,
           48.8873176
         ]
@@ -7126,33 +7162,6 @@
         "ref:FR:SIRET": "84932029600015",
         "website": "https://bullcafe.eatbu.com/",
         "wikidata": "Q109930522",
-        "spotType": "Cofee"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3765791,
-          48.8274217
-        ]
-      },
-      "properties": {
-        "@id": "node/8842970054",
-        "@type": "node",
-        "amenity": "cafe",
-        "cuisine": "sandwich;coffee",
-        "highchair": "no",
-        "internet_access": "wlan",
-        "internet_access:fee": "no",
-        "kids_area": "no",
-        "level": "1",
-        "operator": "CROUS",
-        "outdoor_seating": "yes",
-        "smoking": "outside",
-        "takeaway": "yes",
-        "wheelchair": "yes",
         "spotType": "Cofee"
       }
     },
@@ -8258,7 +8267,7 @@
         "amenity": "cafe",
         "brand": "Starbucks",
         "brand:wikidata": "Q37158",
-        "check_date": "2025-11-05",
+        "check_date": "2026-01-12",
         "cuisine": "coffee_shop",
         "diet:vegetarian": "yes",
         "indoor_seating": "yes",
@@ -8625,7 +8634,7 @@
         "addr:street": "Rue Saint-Denis",
         "amenity": "cafe",
         "changing_table": "no",
-        "check_date": "2025-10-31",
+        "check_date": "2026-01-12",
         "diet:vegan": "yes",
         "diet:vegetarian": "yes",
         "email": "fabio.grazioli@frogpubs.com",
@@ -9127,8 +9136,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3622678,
-          48.8740428
+          2.3622551,
+          48.8740843
         ]
       },
       "properties": {
@@ -9147,6 +9156,7 @@
         "ref:FR:NAF": "56.10C",
         "ref:FR:SIRET": "91801088500039",
         "takeaway": "yes",
+        "website": "https://www.hoctloca.com/",
         "spotType": "Cofee"
       }
     },

@@ -2285,31 +2285,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2986711,
-          43.7263696
-        ]
-      },
-      "properties": {
-        "@id": "way/138321368",
-        "@type": "way",
-        "access": "private",
-        "amenity": "library",
-        "building:levels": "2",
-        "building:levels:underground": "1",
-        "building:material": "plaster",
-        "building:part": "yes",
-        "height": "9",
-        "roof:colour": "red",
-        "roof:material": "roof_tiles",
-        "roof:shape": "hipped",
-        "spotType": "Library"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           7.2455215,
           43.69481
         ]

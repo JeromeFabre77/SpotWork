@@ -2361,22 +2361,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3091918,
-          48.8338976
-        ]
-      },
-      "properties": {
-        "@id": "node/9469292784",
-        "@type": "node",
-        "amenity": "coworking_space",
-        "spotType": "Coworking"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3358582,
           48.872323
         ]
@@ -3109,25 +3093,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3140655,
-          48.8622617
-        ]
-      },
-      "properties": {
-        "@id": "node/11053126940",
-        "@type": "node",
-        "amenity": "coworking_space",
-        "level": "-1",
-        "socket:device:USB-A": "yes",
-        "socket:typee": "yes",
-        "spotType": "Coworking"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3709129,
           48.8460196
         ]
@@ -3347,26 +3312,6 @@
         "name": "Off Road",
         "office": "coworking",
         "ref:FR:SIRET": "79892917000024",
-        "spotType": "Coworking"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3764365,
-          48.8447082
-        ]
-      },
-      "properties": {
-        "@id": "node/11414542528",
-        "@type": "node",
-        "amenity": "coworking_space",
-        "level": "2",
-        "name:signed": "no",
-        "socket:device:USB-A": "yes",
-        "socket:typee": "yes",
         "spotType": "Coworking"
       }
     },
@@ -3775,22 +3720,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          4.8336987,
-          45.7713948
-        ]
-      },
-      "properties": {
-        "@id": "node/12192753457",
-        "@type": "node",
-        "office": "coworking",
-        "spotType": "Coworking"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3277925,
           48.8732114
         ]
@@ -4165,22 +4094,6 @@
         "@id": "node/13374176302",
         "@type": "node",
         "name": "L'Igloo",
-        "office": "coworking",
-        "spotType": "Coworking"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3751272,
-          48.8288941
-        ]
-      },
-      "properties": {
-        "@id": "node/13391064698",
-        "@type": "node",
         "office": "coworking",
         "spotType": "Coworking"
       }
@@ -4601,26 +4514,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.44183,
-          43.5914315
-        ]
-      },
-      "properties": {
-        "@id": "way/226440698",
-        "@type": "way",
-        "building": "yes",
-        "office": "coworking",
-        "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2013",
-        "was:name": "Le Pier Toulouse;Ortus Hôtel",
-        "was:tourism": "hotel",
-        "spotType": "Coworking"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.3580834,
           48.8310686
         ]
@@ -4791,27 +4684,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3740441,
-          48.8964973
-        ]
-      },
-      "properties": {
-        "@id": "way/1024889268",
-        "@type": "way",
-        "amenity": "coworking_space",
-        "level": "0",
-        "name:signed": "no",
-        "socket:device:USB-A": "yes",
-        "socket:typee": "yes",
-        "wheelchair": "yes",
-        "spotType": "Coworking"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.321219,
           48.8405271
         ]
@@ -4854,24 +4726,6 @@
         "indoor": "room",
         "level": "-1",
         "name": "Weréso",
-        "spotType": "Coworking"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3252815,
-          48.8603401
-        ]
-      },
-      "properties": {
-        "@id": "way/1209756315",
-        "@type": "way",
-        "amenity": "coworking_space",
-        "indoor": "area",
-        "level": "-1",
         "spotType": "Coworking"
       }
     }
