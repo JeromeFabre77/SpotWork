@@ -25,7 +25,7 @@
         "phone": "+33 4 78 78 12 12;+33 4 78 78 11 97",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/mediatheque-du-bachut/",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -52,7 +52,7 @@
         "operator:wikidata": "Q3278474",
         "phone": "+33478928350;+33478929623",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-5e-saint-jean/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -69,7 +69,7 @@
         "@type": "node",
         "amenity": "library",
         "name": "Bibliothèque Fontaine du Temple",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -102,7 +102,7 @@
         "wheelchair": "yes",
         "wikidata": "Q2832096",
         "wikipedia": "fr:Alcazar (Marseille)",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -130,7 +130,7 @@
         "source:date": "2012-05-30",
         "website": "https://bibliotheque.toulouse.fr/",
         "wikidata": "Q117943389",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -155,7 +155,7 @@
         "phone": "+33 4 78 95 01 39",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-3e-duguesclin/",
         "wikimedia_commons": "File:Bibliothèque du 3e Duguesclin - 246 Rue Duguesclin (Lyon).jpg",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -180,7 +180,7 @@
         "opening_hours": "Mo-Fr 09:00-22:00; Sa,Su 10:00-18:00",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
         "website": "https://bu.univ-lyon2.fr/bu-chevreul",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -207,7 +207,7 @@
         "wheelchair": "no",
         "wikidata": "Q2945825",
         "wikipedia": "fr:Centre international de recherches sur l'anarchisme (Marseille)",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -232,7 +232,7 @@
         "name": "BU Lettres Arts Sciences Humaines - Henri Bosco",
         "operator": "Université Côte d'Azur",
         "operator:type": "public",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -258,7 +258,7 @@
         "source": "http://opendata.regionpaca.fr/",
         "source:name:oc": "ieo-bdtopoc",
         "website": "https://www.bmvr.marseille.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -285,7 +285,7 @@
         "source:date": "2012-05-30",
         "website": "https://bibliotheque.toulouse.fr/",
         "wikidata": "Q117869236",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -314,7 +314,7 @@
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
         "wikidata": "Q117923643",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -339,7 +339,7 @@
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
         "website": "https://bibliotheque.toulouse.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -366,7 +366,7 @@
         "source:date": "2012-05-30",
         "website": "https://bibliotheque.toulouse.fr/",
         "wikidata": "Q117943013",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -395,7 +395,7 @@
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
         "wikidata": "Q117943680",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -421,7 +421,7 @@
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
         "website": "http://pro.bibliotheque.toulouse.fr/erasme.html",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -447,7 +447,7 @@
         "opening_hours": "\"Sur RV\"",
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -473,7 +473,7 @@
         "source:date": "2012-05-30",
         "website": "https://bibliotheque.toulouse.fr/",
         "wikidata": "Q117869620",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -503,7 +503,7 @@
         "website": "https://www.bmvr.marseille.fr/",
         "wheelchair": "limited",
         "wheelchair:description": "accessible seulement au premier niveau à partir du parking du centre commercial",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -528,7 +528,7 @@
         "phone": "+33472106540;+33472106543",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-4e-croix-rousse/",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -546,7 +546,7 @@
         "amenity": "library",
         "name": "Bibliothèque O.C.B",
         "source": "Terrain",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -571,7 +571,7 @@
         "phone": "+33 4 91 91 20 50",
         "source": "http://opendata.regionpaca.fr/",
         "website": "https://www.bmvr.marseille.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -597,7 +597,7 @@
         "phone": "+33 4 13948250",
         "source": "http://opendata.regionpaca.fr/",
         "website": "https://bibliotheques.marseille.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -623,7 +623,7 @@
         "name": "BU Saint-Jean d'Angély",
         "website": "https://bu.univ-cotedazur.fr/fr/bibliotheques/bu-saint-jean-dangely",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -647,7 +647,7 @@
         "operator": "Ville de Marseille",
         "phone": "+33 4 91 55 36 00",
         "source:name:oc": "ieo-bdtopoc",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -669,7 +669,7 @@
         "operator:type": "public",
         "phone": "+33478690115",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-7e-guillotiere/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -689,7 +689,7 @@
         "name": "Bibliothèque du musée Saint-Raymond",
         "opening_hours": "Mo-Sa 12:00-18:00; Jan 01 off; May 01 off; Dec 25 off",
         "website": "https://saintraymond.toulouse.fr/La-bibliotheque-du-musee-informations-pratiques_a29.html",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -709,7 +709,7 @@
         "name": "Office central des bibliothèques",
         "opening_hours": "Mo 15:00-18:00, We 10:00-12:00,15:00-18:00; Sa 08:00-12:00;Fr 10:00-12:00",
         "operator": "Office central des bibliothèques",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -731,7 +731,7 @@
         "operator:type": "public",
         "phone": "+33 4 78 83 11 77",
         "website": "http://www.bm-lyon.fr/15-bibliotheques-et-un-bibliobus/Bibliotheque-du-9e-St-Rambert/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -763,7 +763,7 @@
         "ref:isil": "FR-315552106",
         "website": "https://bib.insa-toulouse.fr/",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -782,7 +782,7 @@
         "amenity": "library",
         "contact:website": "https://kiosque13.noblogs.org",
         "name": "Le Kiosque",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -799,7 +799,7 @@
         "@type": "node",
         "amenity": "library",
         "name": "Bibliothèque",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -824,7 +824,7 @@
         "name": "Bibliothèque de quartier - Pont des Demoiselles",
         "start_date": "2014-10-01",
         "wikidata": "Q117941662",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -847,7 +847,7 @@
         "name": "Bibliothèque de l'ENAC",
         "phone": "+33 5 61 17 41 91",
         "website": "http://bibliotheque.enac.fr",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -869,7 +869,7 @@
         "opening_hours": "Mo-Fr 13:30-17:30",
         "website": "https://crfcb.univ-amu.fr/",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -886,7 +886,7 @@
         "@type": "node",
         "amenity": "library",
         "name": "DATA médiathèque - fanzinothèque",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -903,7 +903,7 @@
         "@type": "node",
         "amenity": "library",
         "name": "Pôle Info Musique",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -924,7 +924,7 @@
         "name": "Mille Bâbords",
         "opening_hours": "Mo 15:00-18:00; Th[2,4] 15:00-18:00",
         "website": "https://www.millebabords.org/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -951,7 +951,7 @@
         "ref:FR:SIRET": "49314716900012",
         "short_name": "CEDRATS",
         "website": "http://www.cedrats.org",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -976,7 +976,7 @@
         "phone": "+33 4 26 84 18 65",
         "website": "https://bu.ucly.fr/opac/library/BU%20CAMPUS%20ST-PAUL/UCLSP",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1006,7 +1006,7 @@
         "toilets:wheelchair": "yes",
         "website": "http://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-6e/",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1031,7 +1031,7 @@
         "opening_hours": "We-Sa 13:00-19:00",
         "source": "survey",
         "source:name:oc": "ieo-bdtopoc",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1060,7 +1060,7 @@
         "short_name": "CDSS",
         "source:name:oc": "ieo-bdtopoc",
         "website": "https://www.ehess.fr/fr/centre-documentation-en-sciences-sociales-vieille-charit%C3%A9",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1082,7 +1082,7 @@
         "name": "Bibliothèque universitaire Bernard du Bois",
         "operator": "Aix Marseille Université",
         "website": "https://bu.univ-amu.fr/bu-bernard-du-bois",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1104,7 +1104,7 @@
         "amenity": "library",
         "name": "Bibliothèque Universitaire de Luminy",
         "operator": "Aix-Marseille Université",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1121,7 +1121,7 @@
         "@type": "node",
         "amenity": "library",
         "name": "Bibliothèque de l'OMP",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1140,7 +1140,7 @@
         "name": "Bibliothèque Emile Cartailhac",
         "opening_hours": "Tu-Sa 14:00-18:00",
         "website": "https://www.museum.toulouse.fr/les-bibliotheques",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1162,7 +1162,7 @@
         "ref:isil": "FR-315552220",
         "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/centre-de-ressources-de-psychologie-louise-michel",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1186,7 +1186,7 @@
         "name": "OCB Montolivet",
         "opening_hours": "Tu-We 16:00-18:00; Sa 09:30-11:30",
         "website": "https://mabibliothequeocb.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1206,7 +1206,7 @@
         "operator": "Ville de Nice",
         "operator:type": "public",
         "website": "https://bmvr.nice.fr/bibliotheque-magnan.aspx",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1227,7 +1227,7 @@
         "name": "BDThêk",
         "operator": "BuL Ens Lyon",
         "operator:type": "community",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1254,7 +1254,7 @@
         "operator:type": "public",
         "ref:isil": "FR-315552248",
         "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/centre-de-ressources-olympe-de-gouges",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1277,7 +1277,7 @@
         "opening_hours": "Mo-Fr 08:15-19:00",
         "ref:isil": "FR-315552219",
         "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/centre-de-ressources-des-langues",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1298,7 +1298,7 @@
         "name": "Centre de ressources Lettres Arts Philosophie (CLAP)",
         "opening_hours": "Mo-Fr 08:00-18:00",
         "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/centre-de-ressources-lettres-arts-philosophie",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1316,7 +1316,7 @@
         "amenity": "library",
         "name": "BU Santé Rockefeller",
         "operator": "Université Lyon 1",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1336,7 +1336,7 @@
         "opening_hours": "Tu-Fr 14:00-21:00; Sa 14:30-21:00; Su 15:30-18:30",
         "ref:isil": "FR-315555119",
         "website": "https://www.lacinemathequedetoulouse.com/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1357,7 +1357,7 @@
         "name": "Alliance française",
         "opening_hours:signed": "no",
         "website": "https://af-nice.fr/fr",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1391,7 +1391,7 @@
         "ref:isil": "FR-315552289",
         "website": "https://bibliotheques.univ-tlse3.fr/venir-la-bibliotheque/bibliotheques-des-iut/toulouse-ponsan",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1425,7 +1425,7 @@
         "ref:isil": "FR-315552348",
         "website": "https://bibliotheques.univ-tlse3.fr/venir-la-bibliotheque/bibliotheques-des-iut/toulouse-rangueil",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1448,7 +1448,7 @@
         "operator:type": "public",
         "source": "local knowledge",
         "website": "https://welcomedesk.univ-toulouse.fr/actualites/ouverture-turbine-nouveau-lieu-dedie-lengagement-etudiant",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1472,7 +1472,7 @@
         "operator:wikidata": "Q3278474",
         "phone": "+33 4 26 99 77 10;+33 4 26 99 77 27",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-7e-gerland/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1497,7 +1497,7 @@
         "operator": "Service Commun de la Documentation, Université d'Aix-Marseille",
         "operator:type": "university",
         "ref:isil": "FR-130552105",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1522,7 +1522,7 @@
         "operator": "Service Commun de la Documentation, Université d'Aix-Marseille",
         "operator:type": "university",
         "ref:isil": "FR-130552103",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1545,7 +1545,7 @@
         "phone": "+33 4 72 07 30 93",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
         "website": "https://portaildoc.univ-lyon1.fr/bibliotheques/bibliotheques-d-education/bu-education-lyon-croix-rousse-742244.kjsp",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1567,7 +1567,7 @@
         "mobile": "+33769859152",
         "name": "Grande librairie internationale de Marseille",
         "website": "https://www.grandelibrairie.com/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1587,7 +1587,7 @@
         "name": "Aérothèque - bibliothèque universitaire",
         "opening_hours": "Mo-Sa 09:00-22:00",
         "website": "https://www.isae-supaero.fr/fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1606,7 +1606,7 @@
         "name": "Bibliothèque du Port",
         "operator": "Bibliothèque municipale de Nice",
         "phone": "+33 4 93 89 09 46",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1624,7 +1624,7 @@
         "access": "private",
         "amenity": "library",
         "name": "Lycée du Parc",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1642,7 +1642,7 @@
         "amenity": "library",
         "name": "OCB",
         "website": "https://mabibliothequeocb.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1668,7 +1668,7 @@
         "opening_hours": "Tu,We,Fr 10:00-13:00,14:30-19:00; Th 14:30-19:00; Sa 10:00-17:00",
         "website": "https://bibliotheque.toulouse.fr/",
         "wikidata": "Q117868616",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1689,7 +1689,7 @@
         "opening_hours": "Mo-Fr 08:30-18:30",
         "operator": "Aix-Marseille Université",
         "short_name": "BU Canebière",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1713,7 +1713,7 @@
         "name": "Bibliothèque d'Etudes Méridionales",
         "opening_hours": "Mo-Th 09:00-18:00",
         "phone": "+33  5 61 50 24 63",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1730,7 +1730,7 @@
         "@type": "node",
         "amenity": "library",
         "name": "Bibliotheque universitaire centrale",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1755,7 +1755,7 @@
         "phone": "+33 4 37 37 65 00",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009",
         "website": "https://www.bibliotheque-diderot.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1791,7 +1791,7 @@
         "source:heritage": "Ministère de la Culture - 06/2019",
         "website": "https://bibliotheque.toulouse.fr/22-bibliotheques/bibliotheque-detude-et-du-patrimoine",
         "wikidata": "Q2901556",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1814,7 +1814,7 @@
         "roof:shape": "flat",
         "short_name": "Bibliothèque de l'Arsenal",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2008",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1840,7 +1840,7 @@
         "phone": "+33 4 78 96 48 30",
         "roof:shape": "flat",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-7e-jean-mace/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1862,7 +1862,7 @@
         "name": "BU Santé",
         "ref": "A7",
         "roof:shape": "flat",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1893,7 +1893,7 @@
         "roof:shape": "flat",
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1922,7 +1922,7 @@
         "wheelchair": "yes",
         "wikidata": "Q8622",
         "wikipedia": "fr:Bibliothèque municipale de Lyon",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1942,7 +1942,7 @@
         "name": "Médiathèque Paul-Zech",
         "roof:shape": "flat",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1963,7 +1963,7 @@
         "name": "CRDP de l'académie de Toulouse",
         "short_name": "CRDP",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -1991,7 +1991,7 @@
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
         "wikidata": "Q117941176",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2013,7 +2013,7 @@
         "opening_hours": "Tu,We,Fr 10:00-12:30; Tu-Fr 14:00-19:00; Sa 10:00-17:00",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
         "wikidata": "Q117870001",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2044,7 +2044,7 @@
         "start_date": "1992-01-20",
         "website": "https://www.memoire-sexualites.org/",
         "wheelchair": "no",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2072,7 +2072,7 @@
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
         "wikidata": "Q2860505",
         "wikipedia": "fr:Archives et bibliothèque départementales Gaston Defferre",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2096,7 +2096,7 @@
         "short_name": "Bibliothèque Fabre",
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2123,7 +2123,7 @@
         "opening_hours": "Tu,We,Fr 10:00-12:30,13:30-19:00; Th 14:00-19:00; Sa 10:00-17:00",
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2149,7 +2149,7 @@
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-2e/",
         "wheelchair": "yes",
         "wikidata": "Q115455026",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2176,7 +2176,7 @@
         "phone": "+33 4 78 27 45 55",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-1er/",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2197,7 +2197,7 @@
         "roof:shape": "flat",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2225,7 +2225,7 @@
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/mediatheque-de-vaise/",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2252,7 +2252,7 @@
         "phone": "+33437201949;+33437201954",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2022",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-5e-point-du-jour/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2277,7 +2277,7 @@
         "operator:wikidata": "Q3278474",
         "phone": "+33 4 78 35 43 81;+33 4 78 64 07 45",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2014",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2302,7 +2302,7 @@
         "roof:colour": "red",
         "roof:material": "roof_tiles",
         "roof:shape": "hipped",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2328,7 +2328,7 @@
         "ref:isil": "FR-060882103",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "wheelchair": "limited",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2367,7 +2367,7 @@
         "wheelchair": "yes",
         "wikidata": "Q3332603",
         "wikipedia": "fr:Médiathèque José-Cabanis",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2392,7 +2392,7 @@
         "opening_hours": "Tu, Th-Fr 13:30-18:00; We 10:00-12:00, 13:30-18:00; Sa 10:00-12:00, 13:00-16:00",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "website": "https://bmvr.nice.fr/bibliotheque-saint-roch.aspx",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2415,7 +2415,7 @@
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "wheelchair": "no",
         "wikidata": "Q114886249",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2435,7 +2435,7 @@
         "height": "5",
         "name": "Caucade",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2464,7 +2464,7 @@
         "wheelchair": "yes",
         "wikidata": "Q80117161",
         "wikipedia": "fr:Bibliothèque Louis-Nucéra",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2500,7 +2500,7 @@
         "wheelchair": "yes",
         "wikidata": "Q2676458",
         "wikipedia": "fr:Gare du Sud",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2531,7 +2531,7 @@
         "source": "http://opendata.regionpaca.fr/",
         "source:name:oc": "ieo-bdtopoc",
         "website": "https://www.bmvr.marseille.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2555,7 +2555,7 @@
         "building:levels": "5",
         "name": "Médiathèque de Bonneveine (DVD/CD)",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2574,7 +2574,7 @@
         "building": "yes",
         "name": "CDI",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2602,7 +2602,7 @@
         "source:date": "2012-05-30",
         "website": "https://bibliotheque.toulouse.fr/Mediatheque_Grand_M.html",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2633,7 +2633,7 @@
         "roof:shape": "flat",
         "source": "GrandToulouse",
         "source:date": "2012-05-30",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2664,7 +2664,7 @@
         "source:date": "2012-05-30",
         "website": "https://bibliotheque.toulouse.fr/",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2683,7 +2683,7 @@
         "building": "yes",
         "name": "Espace lecture du Plan d'Aou",
         "source": "Bing + terrain",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2710,7 +2710,7 @@
         "phone": "+33 4 97 13 49 32",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "website": "https://bmvr.nice.fr//EXPLOITATION/bibliotheque-pasteur-camille-claudel.aspx",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2731,7 +2731,7 @@
         "short_name": "BEL",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
         "website": "https://www.facebook.com/bel.bel.1213",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2759,7 +2759,7 @@
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "website": "https://bu.univ-cotedazur.fr/fr/bibliotheques/bu-sciences",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2781,7 +2781,7 @@
         "opening_hours": "Th,Tu,Fr 15:00-19:00; We,Sa 10:00-12:00,14:00-18:00",
         "phone": "+33 4 78 35 43 81",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-9e-la-duchere/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2809,7 +2809,7 @@
         "operator:type": "public",
         "phone": "+33 4 72 10 54 81;+33 4 72 53 58 50",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2840,7 +2840,7 @@
         "ref:isil": "FR-315552102",
         "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/bibliotheque-universitaire-centrale",
         "wikidata": "Q117866350",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2868,7 +2868,7 @@
         "room": "library",
         "source": "http://opendata.regionpaca.fr/",
         "website": "https://www.bmvr.marseille.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2898,7 +2898,7 @@
         "short_name": "BU",
         "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2017",
         "website": "https://bu.univ-lyon3.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2922,7 +2922,7 @@
         "operator": "INP Toulouse - ENSEEIHT",
         "operator:type": "university",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2943,7 +2943,7 @@
         "name": "Médiathèque Salim-Hatubou",
         "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2020",
         "wheelchair": "yes",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2963,7 +2963,7 @@
         "level": "2;3",
         "name": "Bibliothèque Universitaire",
         "room": "library",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -2988,7 +2988,7 @@
         "name": "1.4 Bibliothèque de l'Ecole Nationale Vétérinaire de Toulouse",
         "phone": "+33561193202",
         "website": "https://envt.fr/bibliotheque/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -3009,7 +3009,7 @@
         "height": "7",
         "name": "Aérothèque Marie Marvingt",
         "roof:shape": "flat",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -3034,7 +3034,7 @@
         "phone": "+33 4 91 03 72 72",
         "source": "http://opendata.regionpaca.fr/",
         "website": "https://www.bmvr.marseille.fr/",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     },
     {
@@ -3056,7 +3056,7 @@
         "building": "civic",
         "name": "BU SCD",
         "type": "multipolygon",
-        "spotType": "libraries"
+        "spotType": "Library"
       }
     }
   ]

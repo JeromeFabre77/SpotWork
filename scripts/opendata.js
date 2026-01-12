@@ -62,10 +62,10 @@ function addTypeOfSites(data, type) {
 async function main() {
   const wifiSites = await fetchWifiSites();
   saveToFile(wifiSites, "pariswifi_sites.geojson");
-  addTypeOfSites(wifiSites, "wifi");
+  addTypeOfSites(wifiSites, "Wifi");
   const libraryData = await fetchBibliotheques();
   markLibrariesWithWifi(wifiSites, libraryData);
-  addTypeOfSites(libraryData, "library");
+  addTypeOfSites(libraryData, "Library");
   saveToFile(libraryData, "bibliotheques.geojson");
 }
 

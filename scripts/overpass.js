@@ -77,20 +77,22 @@ async function fetchCoworkingSpots() {
 }
 
 async function fetchLibraries() {
-  const areaIds = GRANDES_VILLES.filter((v) => v.name !== "Paris").map((v) => 3600000000 + v.relation);
+  const areaIds = GRANDES_VILLES.filter((v) => v.name !== "Paris").map(
+    (v) => 3600000000 + v.relation,
+  );
 
   const query = `
     [out:json][timeout:120];
     (
       ${areaIds
-      .map(
+        .map(
           (id) => `
         node["amenity"="library"](area:${id});
         way["amenity"="library"](area:${id});
         relation["amenity"="library"](area:${id});
       `,
-      )
-      .join("")}
+        )
+        .join("")}
     );
     out center;
   `;
@@ -117,14 +119,14 @@ async function fetchCofee() {
     [out:json][timeout:120];
     (
       ${areaIds
-      .map(
+        .map(
           (id) => `
         node["amenity"="cafe"](area:${id});
         way["amenity"="cafe"](area:${id});
         relation["amenity"="cafe"](area:${id});
       `,
-      )
-      .join("")}
+        )
+        .join("")}
     );
     out center;
   `;
@@ -160,7 +162,7 @@ async function main() {
     const coworkingData = await fetchCoworkingSpots();
     console.log(`✅ ${coworkingData.elements.length} éléments récupérés`);
     const coworkingGeojson = toGeoJSON(coworkingData.elements);
-    addTypeOfSites(coworkingGeojson, "coworking");
+    addTypeOfSites(coworkingGeojson, "Coworking");
     saveToFile(coworkingGeojson, "coworking_france.geojson");
     console.log(`Total: ${coworkingGeojson.features.length} features`);
     console.log("Terminé !");
@@ -168,7 +170,7 @@ async function main() {
     const cofeeData = await fetchCofee();
     console.log(`✅ ${cofeeData.elements.length} éléments récupérés`);
     const cofeeGeojson = toGeoJSON(cofeeData.elements);
-    addTypeOfSites(cofeeGeojson, "cofee");
+    addTypeOfSites(cofeeGeojson, "Cofee");
     saveToFile(cofeeGeojson, "cofee_france.geojson");
     console.log(`Total: ${cofeeGeojson.features.length} features`);
     console.log("Terminé !");
@@ -176,7 +178,7 @@ async function main() {
     const librariesData = await fetchLibraries();
     console.log(`✅ ${librariesData.elements.length} éléments récupérés`);
     const librariesGeojson = toGeoJSON(librariesData.elements);
-    addTypeOfSites(librariesGeojson, "libraries");
+    addTypeOfSites(librariesGeojson, "Library");
     saveToFile(librariesGeojson, "libraries_france.geojson");
     console.log(`Total: ${librariesGeojson.features.length} features`);
     console.log("Terminé !");

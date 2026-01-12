@@ -3679,28 +3679,6 @@
       "type": "Feature",
       "geometry": {
         "coordinates": [
-          2.3398723673854613,
-          48.82451919846644
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "nom_site": "PARC MONTSOURIS - GARDE COTY",
-        "arc_adresse": "2 RUE GAZAN",
-        "cp": "75014",
-        "idpw": "PW0212",
-        "nombre_de_borne_wifi": 1,
-        "etat2": "Opérationnel",
-        "geo_point_2d": {
-          "lon": 2.3398723673854613,
-          "lat": 48.82451919846644
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "coordinates": [
           2.3200964902595502,
           48.83129620230284
         ],
@@ -3738,6 +3716,28 @@
         "geo_point_2d": {
           "lon": 2.3267672261372168,
           "lat": 48.8328511609528
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          2.3398723673854613,
+          48.82451919846644
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "nom_site": "PARC MONTSOURIS - GARDE COTY",
+        "arc_adresse": "2 RUE GAZAN",
+        "cp": "75014",
+        "idpw": "PW0212",
+        "nombre_de_borne_wifi": 1,
+        "etat2": "Opérationnel",
+        "geo_point_2d": {
+          "lon": 2.3398723673854613,
+          "lat": 48.82451919846644
         }
       }
     },
@@ -4009,6 +4009,28 @@
       "type": "Feature",
       "geometry": {
         "coordinates": [
+          2.311662332111939,
+          48.83123124818045
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "nom_site": "BIBLIOTHEQUE AIME CESAIRE",
+        "arc_adresse": "5 RUE DE RIDDER",
+        "cp": "75014",
+        "idpw": "PW0053",
+        "nombre_de_borne_wifi": 3,
+        "etat2": "Opérationnel",
+        "geo_point_2d": {
+          "lon": 2.311662332111939,
+          "lat": 48.83123124818045
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
           2.325814319838129,
           48.83252306871405
         ],
@@ -4046,28 +4068,6 @@
         "geo_point_2d": {
           "lon": 2.332369291641684,
           "lat": 48.83379546023932
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "coordinates": [
-          2.311662332111939,
-          48.83123124818045
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "nom_site": "BIBLIOTHEQUE AIME CESAIRE",
-        "arc_adresse": "5 RUE DE RIDDER",
-        "cp": "75014",
-        "idpw": "PW0053",
-        "nombre_de_borne_wifi": 3,
-        "etat2": "Opérationnel",
-        "geo_point_2d": {
-          "lon": 2.311662332111939,
-          "lat": 48.83123124818045
         }
       }
     },
