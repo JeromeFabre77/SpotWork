@@ -121,9 +121,10 @@ async function fetchCofee() {
       ${areaIds
         .map(
           (id) => `
-        node["amenity"="cafe"](area:${id});
-        way["amenity"="cafe"](area:${id});
-        relation["amenity"="cafe"](area:${id});
+        node["amenity"="cafe"]["internet_access"](area:${id});
+        way["amenity"="cafe"]["internet_access"](area:${id});
+        node["amenity"="cafe"]["socket"](area:${id});
+        way["amenity"="cafe"]["socket"](area:${id});
       `,
         )
         .join("")}
