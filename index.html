@@ -1,67 +1,67 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/lib/leaflet/dist/leaflet.css" />
-        <script src="/lib/leaflet/dist/leaflet.js"></script>
-        <title>SpotWork</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <div class="navbar-content">
-                    <img src="assets/spot_work_logo.svg" alt="SpotWork-logo" />
-                    <form>
-                        <input
-                            type="text"
-                            placeholder="Rechercher par villes, types de lieux, ..."
-                        />
-                    </form>
-                </div>
-            </nav>
-        </header>
-        <div class="content-container">
-            <aside class="side-navigation">
-                <div class="filter-nav">
-                    <span>Filtres :</span>
-                    <div class="filter">
-                        <select id="city">
-                            <option value="">Villes</option>
-                            <option value="Paris">Paris</option>
-                            <option value="Lyon">Lyon</option>
-                            <option value="Marseille">Marseille</option>
-                            <option value="Toulouse">Toulouse</option>
-                            <option value="Nice">Nice</option>
-                        </select>
-                        <select id="type">
-                            <option value="">Type</option>
-                            <option value="restaurant">Restaurant</option>
-                            <option value="bar">Bar</option>
-                            <option value="cafe">Café</option>
-                        </select>
-                        <select id="wifi">
-                            <option value="">Wifi</option>
-                            <option value="available">Disponible</option>
-                            <option value="not-available">
-                                Non disponible
-                            </option>
-                        </select>
-                        <button id="reset">Réinitialiser les filtres</button>
-                    </div>
-                </div>
-                <div class="spots"></div>
-                <div id="comparison-tile">
-                    <div>
-                        <span id="comparison-count">0</span>
-                        <button>Vider</button>
-                    </div>
-                    <button>Effectuer une comparaison</button>
-                </div>
-            </aside>
-            <div id="map"></div>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/lib/leaflet/dist/leaflet.css"/>
+    <script src="/lib/leaflet/dist/leaflet.js"></script>
+    <title>SpotWork</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <img src="assets/spot_work_logo.svg" alt="SpotWork-logo"/>
+            <form>
+                <input
+                        type="text"
+                        placeholder="Rechercher par villes, types de lieux, ..."
+                />
+            </form>
         </div>
-        <script src="app.js"></script>
-    </body>
+    </nav>
+</header>
+<div class="content-container">
+    <aside class="side-navigation">
+        <div class="filter-nav">
+            <span>Filtres :</span>
+            <div class="filter">
+                <select id="city">
+                    <option value="">Villes</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Lyon">Lyon</option>
+                    <option value="Marseille">Marseille</option>
+                    <option value="Toulouse">Toulouse</option>
+                    <option value="Nice">Nice</option>
+                </select>
+                <select id="type">
+                    <option value="">Type</option>
+                    <option value="Coworking">Coworking</option>
+                    <option value="Library">Bibliotheque</option>
+                    <option value="Cofee">Cafe</option>
+                </select>
+                <select id="wifi">
+                    <option value="">Wifi</option>
+                    <option value="available">Disponible</option>
+                    <option value="not-available">
+                        Non disponible
+                    </option>
+                </select>
+                <button id="reset">Réinitialiser les filtres</button>
+            </div>
+        </div>
+        <div class="spots"></div>
+        <div id="comparison-tile">
+            <div>
+                <span id="comparison-count">0</span>
+                <button>Vider</button>
+            </div>
+            <button>Effectuer une comparaison</button>
+        </div>
+    </aside>
+    <div id="map"></div>
+</div>
+<script src="app.js"></script>
+</body>
 </html>
