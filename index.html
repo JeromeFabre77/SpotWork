@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,11 +12,11 @@
         <header>
             <nav class="navbar">
                 <div class="navbar-content">
-                    <img src="assets/spot_work_logo.svg" alt="SpotWork-logo" />
+                    <img src="assets/spot_work_logo.svg" alt="SpotWork" />
                     <form>
                         <input
                             type="text"
-                            placeholder="Rechercher par villes, types de lieux, ..."
+                            placeholder="Rechercher par villes, types de lieux..."
                         />
                     </form>
                 </div>
@@ -25,7 +25,7 @@
         <div class="content-container">
             <aside class="side-navigation">
                 <div class="filter-nav">
-                    <span>Filtres :</span>
+                    <span>Filtres</span>
                     <div class="filter">
                         <select id="city">
                             <option value="">Villes</option>
@@ -37,18 +37,16 @@
                         </select>
                         <select id="type">
                             <option value="">Type</option>
-                            <option value="restaurant">Restaurant</option>
-                            <option value="bar">Bar</option>
-                            <option value="cafe">Café</option>
+                            <option value="Coworking">Coworking</option>
+                            <option value="Library">Bibliothèque</option>
+                            <option value="Cofee">Café</option>
                         </select>
                         <select id="wifi">
                             <option value="">Wifi</option>
-                            <option value="available">Disponible</option>
-                            <option value="not-available">
-                                Non disponible
-                            </option>
+                            <option value="true">Disponible</option>
+                            <option value="false">Non disponible</option>
                         </select>
-                        <button id="reset">Réinitialiser les filtres</button>
+                        <button id="reset">Réinitialiser</button>
                     </div>
                 </div>
                 <div class="spots"></div>
@@ -57,7 +55,7 @@
                         <span id="comparison-count">0</span>
                         <button>Vider</button>
                     </div>
-                    <button>Effectuer une comparaison</button>
+                    <button>Comparer</button>
                 </div>
             </aside>
             <div id="map"></div>
