@@ -3,24 +3,27 @@
 // =============================================================================
 
 const state = {
-  filters: {
-    city: "",
-    type: "",
-    wifi: "",
-  },
-  map: null,
-  allMarkers: [],
-  allTiles: [],
-  markerGroup: null,
+    filters: {
+        city: "",
+        type: "",
+        wifi: "",
+    },
+    map: null,
+    allMarkers: [],
+    allTilesData: [],
+    markerGroup: null,
+    pagination: {
+        currentCount: 20,
+        increment: 20,
+    },
 };
 
-// Coordonnées des villes
 const CITY_COORDINATES = {
-  Paris: [48.8566, 2.3522],
-  Lyon: [45.764, 4.8357],
-  Marseille: [43.2965, 5.3698],
-  Toulouse: [43.6047, 1.4442],
-  Nice: [43.7102, 7.262],
+    Paris: [48.8566, 2.3522],
+    Lyon: [45.764, 4.8357],
+    Marseille: [43.2965, 5.3698],
+    Toulouse: [43.6047, 1.4442],
+    Nice: [43.7102, 7.262],
 };
 
 // =============================================================================
@@ -28,38 +31,36 @@ const CITY_COORDINATES = {
 // =============================================================================
 
 const debounce = (func, delay) => {
-  let timeoutId;
-  return (...args) => {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => func(...args), delay);
-  };
+    let timeoutId;
+    return (...args) => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => func(...args), delay);
+    };
 };
 
 const hasValidProperties = (feature) =>
-  feature.properties?.name || feature.properties?.nometablissement;
+    feature.properties?.name || feature.properties?.nometablissement;
 
 const hasValidGeometry = (feature) => {
-  const coords = feature?.geometry?.coordinates;
-  return (
-    feature?.geometry?.type === "Point" &&
-    Array.isArray(coords) &&
-    coords.length >= 2
-  );
+    const coords = feature?.geometry?.coordinates;
+    return (
+        feature?.geometry?.type === "Point" &&
+        Array.isArray(coords) &&
+        coords.length >= 2
+    );
 };
 
-// Extraire la ville d'un feature
 const getCity = (props) => {
-  return props.commune || props.city || props["addr:city"] || "";
+    return props.commune || props.city || props["addr:city"] || "";
 };
 
-// Vérifier si un spot a le WiFi
 const hasWifi = (props) => {
-  return (
-    props.hasWifi === true ||
-    props.wifi === true ||
-    props.internet_access === "wlan" ||
-    props.internet_access === "yes"
-  );
+    return (
+        props.hasWifi === true ||
+        props.wifi === true ||
+        props.internet_access === "wlan" ||
+        props.internet_access === "yes"
+    );
 };
 
 // =============================================================================
@@ -67,101 +68,103 @@ const hasWifi = (props) => {
 // =============================================================================
 
 const fetchCoworkingData = () =>
-  fetch("data/coworking_france.geojson").then((res) => res.json());
+    fetch("data/coworking_france.geojson").then((res) => res.json());
 
 const fetchLibraryData = () =>
-  fetch("data/bibliotheques.geojson").then((res) => res.json());
+    fetch("data/bibliotheques.geojson").then((res) => res.json());
 
 const fetchCofeeData = () =>
-  fetch("data/cofee_france.geojson").then((res) => res.json());
+    fetch("data/cofee_france.geojson").then((res) => res.json());
 
 // =============================================================================
 // FILTERS
 // =============================================================================
 
 const matchesFilters = (feature) => {
-  const props = feature.properties;
-  const filters = state.filters;
+    const props = feature.properties;
+    const filters = state.filters;
 
-  if (filters.city) {
-    const city = getCity(props);
-    if (!city || !city.toLowerCase().includes(filters.city.toLowerCase())) {
-      return false;
+    if (filters.city) {
+        const city = getCity(props);
+        if (!city || !city.toLowerCase().includes(filters.city.toLowerCase())) {
+            return false;
+        }
     }
-  }
 
-  if (filters.type && props.spotType !== filters.type) {
-    return false;
-  }
-
-  if (filters.wifi !== "") {
-    const spotHasWifi = hasWifi(props);
-    const wifiRequired = filters.wifi === "true";
-    if (spotHasWifi !== wifiRequired) {
-      return false;
+    if (filters.type && props.spotType !== filters.type) {
+        return false;
     }
-  }
 
-  return true;
+    if (filters.wifi !== "") {
+        const spotHasWifi = hasWifi(props);
+        const wifiRequired = filters.wifi === "true";
+        if (spotHasWifi !== wifiRequired) {
+            return false;
+        }
+    }
+
+    return true;
 };
 
 const getFilteredMarkers = () => {
-  return state.allMarkers.filter(({ feature }) => matchesFilters(feature));
+    return state.allMarkers.filter(({ feature }) => matchesFilters(feature));
 };
 
 const applyFilters = () => {
-  console.log("Filtres appliqués:", state.filters);
+    state.pagination.currentCount = 20;
 
-  const filteredMarkers = getFilteredMarkers();
-  console.log(
-    `${filteredMarkers.length} / ${state.allMarkers.length} spots trouvés`,
-  );
-  updateMapMarkers(filteredMarkers);
-
-  updateTilesVisibility();
-
-  centerMapOnFilters(filteredMarkers);
+    const filteredMarkers = getFilteredMarkers();
+    centerMapOnFilters(filteredMarkers);
+    requestAnimationFrame(() => {
+        updateMapMarkers(filteredMarkers);
+        rebuildTilesList();
+    });
 };
 
 const centerMapOnFilters = (filteredMarkers) => {
-  if (state.filters.city && CITY_COORDINATES[state.filters.city]) {
-    state.map.setView(CITY_COORDINATES[state.filters.city], 12);
-  } else if (filteredMarkers.length > 0) {
-    const bounds = L.latLngBounds(filteredMarkers.map((m) => m.coords));
-    state.map.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
-  }
+    if (state.filters.city && CITY_COORDINATES[state.filters.city]) {
+        state.map.setView(CITY_COORDINATES[state.filters.city], 12);
+        return;
+    }
+
+    if (filteredMarkers.length > 0) {
+        const bounds = L.latLngBounds(filteredMarkers.map((m) => m.coords));
+        state.map.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
+    }
 };
 
 const resetFilters = () => {
-  state.filters.city = "";
-  state.filters.type = "";
-  state.filters.wifi = "";
+    state.filters.city = "";
+    state.filters.type = "";
+    state.filters.wifi = "";
 
-  document.getElementById("city").value = "";
-  document.getElementById("type").value = "";
-  document.getElementById("wifi").value = "";
+    document.getElementById("city").value = "";
+    document.getElementById("type").value = "";
+    document.getElementById("wifi").value = "";
 
-  applyFilters();
-  state.map.setView([48.8566, 2.3522], 13);
+    applyFilters();
+    state.map.setView([48.8566, 2.3522], 13);
 };
 
+const debouncedApplyFilters = debounce(applyFilters, 150);
+
 const initializeFilters = () => {
-  document.getElementById("city").addEventListener("change", (e) => {
-    state.filters.city = e.target.value;
-    applyFilters();
-  });
+    document.getElementById("city").addEventListener("change", (e) => {
+        state.filters.city = e.target.value;
+        debouncedApplyFilters();
+    });
 
-  document.getElementById("type").addEventListener("change", (e) => {
-    state.filters.type = e.target.value;
-    applyFilters();
-  });
+    document.getElementById("type").addEventListener("change", (e) => {
+        state.filters.type = e.target.value;
+        debouncedApplyFilters();
+    });
 
-  document.getElementById("wifi").addEventListener("change", (e) => {
-    state.filters.wifi = e.target.value;
-    applyFilters();
-  });
+    document.getElementById("wifi").addEventListener("change", (e) => {
+        state.filters.wifi = e.target.value;
+        debouncedApplyFilters();
+    });
 
-  document.getElementById("reset").addEventListener("click", resetFilters);
+    document.getElementById("reset").addEventListener("click", resetFilters);
 };
 
 // =============================================================================
@@ -169,177 +172,215 @@ const initializeFilters = () => {
 // =============================================================================
 
 const defineIcon = (type) => {
-  const icons = {
-    Library: "./assets/icons/markers/Library.png",
-    Cofee: "./assets/icons/markers/Cofee.png",
-    Coworking: "./assets/icons/markers/Coworking.png",
-    Wifi: "./assets/icons/markers/Wifi.png",
-  };
-  return icons[type];
+    const icons = {
+        Library: "./assets/icons/markers/Library.png",
+        Cofee: "./assets/icons/markers/Cofee.png",
+        Coworking: "./assets/icons/markers/Coworking.png",
+        Wifi: "./assets/icons/markers/Wifi.png",
+    };
+    return icons[type];
 };
 
 const createMarker = (feature) => {
-  const { coordinates } = feature.geometry;
-  const [lng, lat] = coordinates;
-  const props = feature.properties;
+    const { coordinates } = feature.geometry;
+    const [lng, lat] = coordinates;
+    const props = feature.properties;
 
-  const marker = L.marker([lat, lng], {
-    title: props.name || props.nometablissement,
-  });
+    const marker = L.marker([lat, lng], {
+        title: props.name || props.nometablissement,
+    });
 
-  marker.bindPopup(props.name || props.nometablissement);
+    marker.bindPopup(props.name || props.nometablissement);
 
-  marker.setIcon(
-    L.icon({
-      iconUrl: defineIcon(props.spotType),
-      iconSize: [32, 32],
-      iconAnchor: [16, 32],
-      popupAnchor: [0, -32],
-    }),
-  );
+    marker.setIcon(
+        L.icon({
+            iconUrl: defineIcon(props.spotType),
+            iconSize: [32, 32],
+            iconAnchor: [16, 32],
+            popupAnchor: [0, -32],
+        }),
+    );
 
-  return marker;
+    return marker;
 };
 
 const initializeMarkers = () => {
-  state.markerGroup = L.layerGroup().addTo(state.map);
-  const markerCache = new Map();
+    state.markerGroup = L.layerGroup().addTo(state.map);
+    const markerCache = new Map();
 
-  const updateVisibleMarkers = () => {
-    const bounds = state.map.getBounds();
-    const zoom = state.map.getZoom();
+    const updateVisibleMarkers = () => {
+        const bounds = state.map.getBounds();
+        const zoom = state.map.getZoom();
 
-    state.markerGroup.clearLayers();
+        state.markerGroup.clearLayers();
 
-    const maxMarkers =
-      zoom < 10 ? 100 : zoom < 12 ? 300 : zoom < 14 ? 600 : 1000;
+        const maxMarkers =
+            zoom < 10 ? 100 : zoom < 12 ? 300 : zoom < 14 ? 600 : 1000;
 
-    const filteredMarkers = getFilteredMarkers();
-    const visibleMarkers = filteredMarkers
-      .filter((m) => bounds.contains(m.coords))
-      .slice(0, maxMarkers);
+        const filteredMarkers = getFilteredMarkers();
+        const visibleMarkers = filteredMarkers
+            .filter((m) => bounds.contains(m.coords))
+            .slice(0, maxMarkers);
 
-    visibleMarkers.forEach((markerData) => {
-      const key = `${markerData.coords.lat}_${markerData.coords.lng}`;
+        visibleMarkers.forEach((markerData) => {
+            const key = `${markerData.coords.lat}_${markerData.coords.lng}`;
 
-      if (!markerCache.has(key)) {
-        markerCache.set(key, createMarker(markerData.feature));
-      }
+            if (!markerCache.has(key)) {
+                markerCache.set(key, createMarker(markerData.feature));
+            }
 
-      markerCache.get(key).addTo(state.markerGroup);
-    });
-  };
+            markerCache.get(key).addTo(state.markerGroup);
+        });
+    };
 
-  const debouncedUpdate = debounce(updateVisibleMarkers, 200);
+    const debouncedUpdate = debounce(updateVisibleMarkers, 200);
 
-  state.map.on("moveend", debouncedUpdate);
-  state.map.on("zoomend", debouncedUpdate);
+    state.map.on("moveend", debouncedUpdate);
+    state.map.on("zoomend", debouncedUpdate);
 
-  updateVisibleMarkers();
+    updateVisibleMarkers();
 };
 
 const updateMapMarkers = (filteredMarkers) => {
-  if (!state.markerGroup) return;
+    if (!state.markerGroup) return;
 
-  const bounds = state.map.getBounds();
-  const zoom = state.map.getZoom();
-  const maxMarkers = zoom < 10 ? 100 : zoom < 12 ? 300 : zoom < 14 ? 600 : 1000;
+    const bounds = state.map.getBounds();
+    const zoom = state.map.getZoom();
+    const maxMarkers = zoom < 10 ? 100 : zoom < 12 ? 300 : zoom < 14 ? 600 : 1000;
 
-  state.markerGroup.clearLayers();
+    state.markerGroup.clearLayers();
 
-  const markerCache = new Map();
-  const visibleMarkers = filteredMarkers
-    .filter((m) => bounds.contains(m.coords))
-    .slice(0, maxMarkers);
+    const markerCache = new Map();
+    const visibleMarkers = filteredMarkers
+        .filter((m) => bounds.contains(m.coords))
+        .slice(0, maxMarkers);
 
-  visibleMarkers.forEach((markerData) => {
-    const key = `${markerData.coords.lat}_${markerData.coords.lng}`;
-    if (!markerCache.has(key)) {
-      markerCache.set(key, createMarker(markerData.feature));
+    visibleMarkers.forEach((markerData) => {
+        const key = `${markerData.coords.lat}_${markerData.coords.lng}`;
+        if (!markerCache.has(key)) {
+            markerCache.set(key, createMarker(markerData.feature));
+        }
+        markerCache.get(key).addTo(state.markerGroup);
+    });
+};
+
+// =============================================================================
+// TILES - PAGINATION
+// =============================================================================
+
+const createTileElement = (data) => {
+    const div = document.createElement("div");
+    div.className = "tile";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "tile-checkbox";
+    div.appendChild(checkbox);
+
+    const title = document.createElement("h3");
+    title.textContent = data.title;
+    div.appendChild(title);
+
+    if (data.type) {
+        const p = document.createElement("p");
+        p.textContent = `Type: ${data.type}`;
+        div.appendChild(p);
     }
-    markerCache.get(key).addTo(state.markerGroup);
-  });
+
+    if (data.hours) {
+        const p = document.createElement("p");
+        p.textContent = `Horaires: ${data.hours}`;
+        div.appendChild(p);
+    }
+
+    if (data.phone) {
+        const p = document.createElement("p");
+        p.textContent = `Téléphone: ${data.phone}`;
+        div.appendChild(p);
+    }
+
+    if (data.address) {
+        const p = document.createElement("p");
+        p.textContent = data.address;
+        div.appendChild(p);
+    }
+
+    if (data.wifi) {
+        const p = document.createElement("p");
+        p.textContent = "Wifi: Oui";
+        div.appendChild(p);
+    }
+
+    if (data.website) {
+        const a = document.createElement("a");
+        a.href = data.website;
+        a.textContent = data.website;
+        a.target = "_blank";
+        div.appendChild(a);
+    }
+
+    if (data.websiteUrl) {
+        const button = document.createElement("button");
+        button.textContent = "Site web";
+        button.addEventListener("click", () =>
+            window.open(data.websiteUrl, "_blank"),
+        );
+        div.appendChild(button);
+    }
+
+    if (data.description) {
+        const p = document.createElement("p");
+        p.textContent = data.description;
+        div.appendChild(p);
+    }
+
+    return div;
 };
 
-// =============================================================================
-// TILES
-// =============================================================================
+const storeTileData = (data, feature) => {
+    state.allTilesData.push({ data, feature });
+};
 
-const createTile = (data, feature) => {
-  const div = document.createElement("div");
-  div.className = "tile";
-  div.style.animationDelay = `${state.allTiles.length * 0.03}s`;
+const rebuildTilesList = () => {
+    const container = document.querySelector(".spots");
 
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-  checkbox.className = "tile-checkbox";
-  div.appendChild(checkbox);
-
-  const title = document.createElement("h3");
-  title.textContent = data.title;
-  div.appendChild(title);
-
-  if (data.type) {
-    const p = document.createElement("p");
-    p.textContent = `Type: ${data.type}`;
-    div.appendChild(p);
-  }
-
-  if (data.hours) {
-    const p = document.createElement("p");
-    p.textContent = `Horaires: ${data.hours}`;
-    div.appendChild(p);
-  }
-
-  if (data.phone) {
-    const p = document.createElement("p");
-    p.textContent = `Téléphone: ${data.phone}`;
-    div.appendChild(p);
-  }
-
-  if (data.address) {
-    const p = document.createElement("p");
-    p.textContent = data.address;
-    div.appendChild(p);
-  }
-
-  if (data.wifi) {
-    const p = document.createElement("p");
-    p.textContent = "Wifi: Oui";
-    div.appendChild(p);
-  }
-
-  if (data.website) {
-    const a = document.createElement("a");
-    a.href = data.website;
-    a.textContent = data.website;
-    a.target = "_blank";
-    div.appendChild(a);
-  }
-
-  if (data.websiteUrl) {
-    const button = document.createElement("button");
-    button.textContent = "Site web";
-    button.addEventListener("click", () =>
-      window.open(data.websiteUrl, "_blank"),
+    container.innerHTML = "";
+    const filteredData = state.allTilesData.filter(({ feature }) =>
+        matchesFilters(feature),
     );
-    div.appendChild(button);
-  }
 
-  if (data.description) {
-    const p = document.createElement("p");
-    p.textContent = data.description;
-    div.appendChild(p);
-  }
+    const tilesToShow = filteredData.slice(0, state.pagination.currentCount);
 
-  document.querySelector(".spots").appendChild(div);
-  state.allTiles.push({ div, feature });
+    const fragment = document.createDocumentFragment();
+
+    tilesToShow.forEach(({ data }) => {
+        fragment.appendChild(createTileElement(data));
+    });
+
+    container.appendChild(fragment);
+
+    if (filteredData.length > state.pagination.currentCount) {
+        const loadMoreBtn = document.createElement("button");
+        loadMoreBtn.className = "load-more-btn";
+        loadMoreBtn.textContent = `Charger plus (${filteredData.length - state.pagination.currentCount} restants)`;
+        loadMoreBtn.addEventListener("click", loadMoreTiles);
+        container.appendChild(loadMoreBtn);
+    } else if (filteredData.length > 0) {
+        const endMessage = document.createElement("div");
+        endMessage.className = "end-message";
+        endMessage.textContent = "Tous les résultats sont affichés";
+        container.appendChild(endMessage);
+    }
 };
 
-const updateTilesVisibility = () => {
-  state.allTiles.forEach(({ div, feature }) => {
-    div.style.display = matchesFilters(feature) ? "block" : "none";
-  });
+const loadMoreTiles = () => {
+    state.pagination.currentCount += state.pagination.increment;
+    rebuildTilesList();
+    const container = document.querySelector(".spots");
+    const lastTile = container.querySelector(".tile:last-of-type");
+    if (lastTile) {
+        lastTile.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
 };
 
 // =============================================================================
@@ -347,98 +388,98 @@ const updateTilesVisibility = () => {
 // =============================================================================
 
 const processCoworkingData = (data) => {
-  if (!data?.features) return;
+    if (!data?.features) return;
 
-  data.features.forEach((feature) => {
-    if (!hasValidProperties(feature) || !hasValidGeometry(feature)) return;
+    data.features.forEach((feature) => {
+        if (!hasValidProperties(feature) || !hasValidGeometry(feature)) return;
 
-    const props = feature.properties;
+        const props = feature.properties;
 
-    state.allMarkers.push({
-      feature,
-      coords: L.latLng(
-        feature.geometry.coordinates[1],
-        feature.geometry.coordinates[0],
-      ),
+        state.allMarkers.push({
+            feature,
+            coords: L.latLng(
+                feature.geometry.coordinates[1],
+                feature.geometry.coordinates[0],
+            ),
+        });
+
+        storeTileData(
+            {
+                title: props.name,
+                type: props.spotType,
+                hours: props.opening_hours,
+                phone: props.phone,
+                website: props.website,
+                description: props.description,
+                wifi: hasWifi(props),
+            },
+            feature,
+        );
     });
-
-    createTile(
-      {
-        title: props.name,
-        type: props.spotType,
-        hours: props.opening_hours,
-        phone: props.phone,
-        website: props.website,
-        description: props.description,
-        wifi: hasWifi(props),
-      },
-      feature,
-    );
-  });
 };
 
 const processLibraryData = (data) => {
-  if (!data?.features) return;
+    if (!data?.features) return;
 
-  data.features.forEach((feature) => {
-    if (!hasValidProperties(feature) || !hasValidGeometry(feature)) return;
+    data.features.forEach((feature) => {
+        if (!hasValidProperties(feature) || !hasValidGeometry(feature)) return;
 
-    const props = feature.properties;
+        const props = feature.properties;
 
-    state.allMarkers.push({
-      feature,
-      coords: L.latLng(
-        feature.geometry.coordinates[1],
-        feature.geometry.coordinates[0],
-      ),
+        state.allMarkers.push({
+            feature,
+            coords: L.latLng(
+                feature.geometry.coordinates[1],
+                feature.geometry.coordinates[0],
+            ),
+        });
+
+        storeTileData(
+            {
+                title: props.nometablissement,
+                type: props.spotType,
+                hours: props.heuresouverture,
+                phone: props.telephone,
+                address:
+                    props.nomrue && props.codepostal && props.commune
+                        ? `${props.nomrue}, ${props.codepostal} ${props.commune}`
+                        : null,
+                wifi: hasWifi(props),
+                websiteUrl: props.accesweb,
+            },
+            feature,
+        );
     });
-
-    createTile(
-      {
-        title: props.nometablissement,
-        type: props.spotType,
-        hours: props.heuresouverture,
-        phone: props.telephone,
-        address:
-          props.nomrue && props.codepostal && props.commune
-            ? `${props.nomrue}, ${props.codepostal} ${props.commune}`
-            : null,
-        wifi: hasWifi(props),
-        websiteUrl: props.accesweb,
-      },
-      feature,
-    );
-  });
 };
 
 const processCofeeData = (data) => {
-  if (!data?.features) return;
+    if (!data?.features) return;
 
-  data.features.forEach((feature) => {
-    if (!hasValidProperties(feature) || !hasValidGeometry(feature)) return;
+    data.features.forEach((feature) => {
+        if (!hasValidProperties(feature) || !hasValidGeometry(feature)) return;
 
-    const props = feature.properties;
+        const props = feature.properties;
 
-    state.allMarkers.push({
-      feature,
-      coords: L.latLng(
-        feature.geometry.coordinates[1],
-        feature.geometry.coordinates[0],
-      ),
+        state.allMarkers.push({
+            feature,
+            coords: L.latLng(
+                feature.geometry.coordinates[1],
+                feature.geometry.coordinates[0],
+            ),
+        });
+
+        storeTileData(
+            {
+                title: props.name,
+                type: props.spotType,
+                hours: props.opening_hours,
+                phone: props.phone,
+                website: props.website,
+                wifi: hasWifi(props),
+            },
+            feature,
+        );
     });
-
-    createTile(
-      {
-        title: props.name,
-        type: props.spotType,
-        hours: props.opening_hours,
-        phone: props.phone,
-        website: props.website,
-        wifi: hasWifi(props),
-      },
-      feature,
-    );
-  });
 };
 
 // =============================================================================
@@ -446,39 +487,38 @@ const processCofeeData = (data) => {
 // =============================================================================
 
 window.onload = () => {
-  // Créer la carte
-  state.map = L.map("map", {
-    renderer: L.canvas(),
-    preferCanvas: true,
-    zoomAnimation: true,
-    fadeAnimation: true,
-    markerZoomAnimation: true,
-  }).setView([48.8566, 2.3522], 13);
+    state.map = L.map("map", {
+        renderer: L.canvas(),
+        preferCanvas: true,
+        zoomAnimation: true,
+        fadeAnimation: true,
+        markerZoomAnimation: true,
+    }).setView([48.8566, 2.3522], 13);
 
-  // Ajouter les tuiles de la carte
-  L.tileLayer(
-    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-    {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
-      subdomains: "abcd",
-      maxZoom: 19,
-      updateWhenIdle: true,
-      updateWhenZooming: false,
-      keepBuffer: 2,
-    },
-  ).addTo(state.map);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+            subdomains: "abcd",
+            maxZoom: 19,
+            updateWhenIdle: true,
+            updateWhenZooming: false,
+            keepBuffer: 2,
+        },
+    ).addTo(state.map);
 
-  initializeFilters();
+    initializeFilters();
 
-  Promise.all([
-    fetchCoworkingData(),
-    fetchLibraryData(),
-    fetchCofeeData(),
-  ]).then(([coworkingData, libraryData, cofeeData]) => {
-    processCoworkingData(coworkingData);
-    processLibraryData(libraryData);
-    processCofeeData(cofeeData);
-    initializeMarkers();
-  });
+    Promise.all([
+        fetchCoworkingData(),
+        fetchLibraryData(),
+        fetchCofeeData(),
+    ]).then(([coworkingData, libraryData, cofeeData]) => {
+        processCoworkingData(coworkingData);
+        processLibraryData(libraryData);
+        processCofeeData(cofeeData);
+        initializeMarkers();
+        rebuildTilesList();
+    });
 };

@@ -233,16 +233,16 @@ header {
     animation: slideUp 0.4s ease-out;
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+/*@keyframes slideUp {*/
+/*    from {*/
+/*        transform: translateY(100%);*/
+/*        opacity: 0;*/
+/*    }*/
+/*    to {*/
+/*        transform: translateY(0);*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
 
 #comparison-tile > div {
     display: flex;
@@ -387,6 +387,41 @@ header {
     transform: scale(0.98);
 }
 
+.tile.hidden {
+    display: none;
+}
+
+.load-more-btn {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    padding: 0.75rem;
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    border: none;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.load-more-btn:hover {
+    background-color: hsl(var(--primary) / 0.9);
+    transform: translateY(-1px);
+}
+
+.load-more-btn:active {
+    transform: scale(0.98);
+}
+
+.end-message {
+    padding: 1rem;
+    text-align: center;
+    color: hsl(var(--muted-foreground));
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -394,3 +429,5 @@ header {
         transition-duration: 0.01ms !important;
     }
 }
+
+
