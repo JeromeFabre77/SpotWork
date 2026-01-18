@@ -60,6 +60,53 @@
             </aside>
             <div id="map"></div>
         </div>
+
+        <div id="spot-modal" class="modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="modal-body">
+                    <!-- Header -->
+                    <div class="modal-header">
+                        <div class="modal-title-container">
+                            <span
+                                class="modal-type-icon"
+                                id="modal-icon"
+                            ></span>
+                            <h2 id="modal-title"></h2>
+                        </div>
+                        <span class="modal-type-badge" id="modal-type"></span>
+                    </div>
+                    <div class="modal-info-grid" id="modal-info-grid"></div>
+                    <div
+                        class="modal-section"
+                        id="modal-description-section"
+                        style="display: none"
+                    >
+                        <h3>Description</h3>
+                        <p id="modal-description"></p>
+                    </div>
+                    <div
+                        class="modal-section"
+                        id="modal-collections-section"
+                        style="display: none"
+                    >
+                        <h3>Collections disponibles</h3>
+                        <p id="modal-collections"></p>
+                    </div>
+                    <div
+                        class="modal-section"
+                        id="modal-services-section"
+                        style="display: none"
+                    >
+                        <h3>Services proposés</h3>
+                        <ul id="modal-services-list"></ul>
+                    </div>
+                    <div class="modal-actions" id="modal-actions"></div>
+                </div>
+            </div>
+        </div>
+
         <script src="app.js"></script>
     </body>
 </html>
