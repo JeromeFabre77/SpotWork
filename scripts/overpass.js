@@ -4,189 +4,204 @@ const path = require("path");
 const OVERPASS_BASE_URL = "https://overpass.kumi.systems/api/interpreter";
 
 const GRANDES_VILLES = [
-  { name: "Paris", relation: 71525 },
-  { name: "Marseille", relation: 76469 },
-  { name: "Lyon", relation: 120965 },
-  { name: "Toulouse", relation: 35738 },
-  { name: "Nice", relation: 170100 },
+    {name: "Paris", relation: 3600071525},
+    {name: "Marseille", relation: 3600076469},
+    {name: "Lyon", relation: 3600120965},
+    {name: "Toulouse", relation: 3600035738},
+    {name: "Nice", relation: 3600170100},
 ];
 
-function toGeoJSON(elements) {
-  const features = [];
+function toGeoJSON(elements, cityName) {
+    const features = [];
 
-  for (const el of elements) {
-    const lon = el.lon ?? el.center?.lon;
-    const lat = el.lat ?? el.center?.lat;
+    for (const el of elements) {
+        const lon = el.lon ?? el.center?.lon;
+        const lat = el.lat ?? el.center?.lat;
 
-    if (lon === undefined || lat === undefined) continue;
-    const properties = {
-      "@id": `${el.type}/${el.id}`,
-      "@type": el.type,
-      ...el.tags,
+        if (lon === undefined || lat === undefined) continue;
+        const properties = {
+            "@id": `${el.type}/${el.id}`,
+            "@type": el.type,
+            ...el.tags,
+        };
+
+        if (!properties["addr:city"] && cityName) {
+            properties["addr:city"] = cityName;
+        }
+
+        features.push({
+            type: "Feature",
+            geometry: {
+                type: "Point",
+                coordinates: [lon, lat],
+            },
+            properties,
+        });
+    }
+
+    return {
+        type: "FeatureCollection",
+        features,
     };
-
-    features.push({
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [lon, lat],
-      },
-      properties,
-    });
-  }
-
-  return {
-    type: "FeatureCollection",
-    features,
-  };
 }
 
 async function fetchCoworkingSpots() {
-  const areaIds = GRANDES_VILLES.map((v) => 3600000000 + v.relation);
+    const allFeatures = [];
 
-  const query = `
-    [out:json][timeout:120];
-    (
-      ${areaIds
-        .map(
-          (id) => `
-        node["amenity"="coworking_space"][name](area:${id});
-        way["amenity"="coworking_space"][name](area:${id});
-        node["office"="coworking"][name](area:${id});
-        way["office"="coworking"][name](area:${id});
-      `,
-        )
-        .join("")}
-    );
-    out center;
-  `;
+    for (const ville of GRANDES_VILLES) {
+        const areaId = ville.relation;
 
-  console.log("Récupération des spots de coworking...");
+        const query = `
+      [out:json][timeout:120];
+      (
+        node["amenity"="coworking_space"][name](area:${areaId});
+        way["amenity"="coworking_space"][name](area:${areaId});
+        node["office"="coworking"][name](area:${areaId});
+        way["office"="coworking"][name](area:${areaId});
+      );
+      out center;
+    `;
 
-  const response = await fetch(OVERPASS_BASE_URL, {
-    method: "POST",
-    body: `data=${encodeURIComponent(query)}`,
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  });
+        console.log(`Récupération des spots de coworking pour ${ville.name}...`);
 
-  if (!response.ok) {
-    throw new Error(`Erreur HTTP: ${response.status}`);
-  }
+        const response = await fetch(OVERPASS_BASE_URL, {
+            method: "POST",
+            body: `data=${encodeURIComponent(query)}`,
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        });
 
-  return response.json();
+        if (!response.ok) {
+            throw new Error(`Erreur HTTP: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const geojson = toGeoJSON(data.elements, ville.name);
+        allFeatures.push(...geojson.features);
+        console.log(`  ✅ ${geojson.features.length} éléments pour ${ville.name}`);
+    }
+
+    return {
+        type: "FeatureCollection",
+        features: allFeatures,
+    };
 }
 
 async function fetchLibraries() {
-  const areaIds = GRANDES_VILLES.filter((v) => v.name !== "Paris").map(
-    (v) => 3600000000 + v.relation,
-  );
+    const allFeatures = [];
 
-  const query = `
-    [out:json][timeout:120];
-    (
-      ${areaIds
-        .map(
-          (id) => `
-        node["amenity"="library"][name](area:${id});
-        way["amenity"="library"][name](area:${id});
-        relation["amenity"="library"][name](area:${id});
-      `,
-        )
-        .join("")}
-    );
-    out center;
-  `;
+    for (const ville of GRANDES_VILLES) {
 
-  console.log("Récupération des bibliothèques...");
+        const areaId = ville.relation;
 
-  const response = await fetch(OVERPASS_BASE_URL, {
-    method: "POST",
-    body: `data=${encodeURIComponent(query)}`,
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  });
+        const query = `
+      [out:json][timeout:120];
+      (
+        node["amenity"="library"][name](area:${areaId});
+        way["amenity"="library"][name](area:${areaId});
+        relation["amenity"="library"][name](area:${areaId});
+      );
+      out center;
+    `;
 
-  if (!response.ok) {
-    throw new Error(`Erreur HTTP: ${response.status}`);
-  }
+        console.log(`Récupération des bibliothèques pour ${ville.name}...`);
 
-  return response.json();
+        const response = await fetch(OVERPASS_BASE_URL, {
+            method: "POST",
+            body: `data=${encodeURIComponent(query)}`,
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        });
+
+        if (!response.ok) {
+            throw new Error(`Erreur HTTP: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const geojson = toGeoJSON(data.elements, ville.name);
+        allFeatures.push(...geojson.features);
+        console.log(`  ✅ ${geojson.features.length} éléments pour ${ville.name}`);
+    }
+
+    return {
+        type: "FeatureCollection",
+        features: allFeatures,
+    };
 }
 
 async function fetchCofee() {
-  const areaIds = GRANDES_VILLES.map((v) => 3600000000 + v.relation);
+    const allFeatures = [];
 
-  const query = `
-    [out:json][timeout:120];
-    (
-      ${areaIds
-        .map(
-          (id) => `
-        node["amenity"="cafe"]["internet_access"][name](area:${id});
-        way["amenity"="cafe"]["internet_access"][name](area:${id});
-        node["amenity"="cafe"]["socket"][name](area:${id});
-        way["amenity"="cafe"]["socket"][name](area:${id});
-      `,
-        )
-        .join("")}
-    );
-    out center;
-  `;
+    for (const ville of GRANDES_VILLES) {
+        const areaId = ville.relation;
 
-  console.log("Récupération des cafés...");
+        const query = `
+      [out:json][timeout:120];
+      (
+        node["amenity"="cafe"]["internet_access"][name](area:${areaId});
+        way["amenity"="cafe"]["internet_access"][name](area:${areaId});
+        node["amenity"="cafe"]["socket"][name](area:${areaId});
+        way["amenity"="cafe"]["socket"][name](area:${areaId});
+      );
+      out center;
+    `;
 
-  const response = await fetch(OVERPASS_BASE_URL, {
-    method: "POST",
-    body: `data=${encodeURIComponent(query)}`,
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  });
+        console.log(`Récupération des cafés pour ${ville.name}...`);
 
-  if (!response.ok) {
-    throw new Error(`Erreur HTTP: ${response.status}`);
-  }
+        const response = await fetch(OVERPASS_BASE_URL, {
+            method: "POST",
+            body: `data=${encodeURIComponent(query)}`,
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        });
 
-  return response.json();
+        if (!response.ok) {
+            throw new Error(`Erreur HTTP: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const geojson = toGeoJSON(data.elements, ville.name);
+        allFeatures.push(...geojson.features);
+        console.log(`  ✅ ${geojson.features.length} éléments pour ${ville.name}`);
+    }
+
+    return {
+        type: "FeatureCollection",
+        features: allFeatures,
+    };
 }
 
 function addTypeOfSites(data, type) {
-  data.features.forEach((feature) => {
-    feature.properties.spotType = type;
-  });
+    data.features.forEach((feature) => {
+        feature.properties.spotType = type;
+    });
 }
 
 function saveToFile(data, filename) {
-  const outputPath = path.join(__dirname, "..", "data", filename);
-  fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+    const outputPath = path.join(__dirname, "..", "data", filename);
+    fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
 }
 
 async function main() {
-  try {
-    const coworkingData = await fetchCoworkingSpots();
-    console.log(`✅ ${coworkingData.elements.length} éléments récupérés`);
-    const coworkingGeojson = toGeoJSON(coworkingData.elements);
-    addTypeOfSites(coworkingGeojson, "Coworking");
-    saveToFile(coworkingGeojson, "coworking_france.geojson");
-    console.log(`Total: ${coworkingGeojson.features.length} features`);
-    console.log("Terminé !");
+    try {
+        // const coworkingGeojson = await fetchCoworkingSpots();
+        // addTypeOfSites(coworkingGeojson, "Coworking");
+        // saveToFile(coworkingGeojson, "coworking_france.geojson");
+        // console.log(`📁 Total coworking: ${coworkingGeojson.features.length} features`);
+        // console.log("✅ Terminé !");
+        //
+        // const cofeeGeojson = await fetchCofee();
+        // addTypeOfSites(cofeeGeojson, "Cofee");
+        // saveToFile(cofeeGeojson, "cofee_france.geojson");
+        // console.log(`📁 Total cafés: ${cofeeGeojson.features.length} features`);
+        // console.log("✅ Terminé !");
 
-    const cofeeData = await fetchCofee();
-    console.log(`✅ ${cofeeData.elements.length} éléments récupérés`);
-    const cofeeGeojson = toGeoJSON(cofeeData.elements);
-    addTypeOfSites(cofeeGeojson, "Cofee");
-    saveToFile(cofeeGeojson, "cofee_france.geojson");
-    console.log(`Total: ${cofeeGeojson.features.length} features`);
-    console.log("Terminé !");
-
-    const librariesData = await fetchLibraries();
-    console.log(`✅ ${librariesData.elements.length} éléments récupérés`);
-    const librariesGeojson = toGeoJSON(librariesData.elements);
-    addTypeOfSites(librariesGeojson, "Library");
-    saveToFile(librariesGeojson, "libraries_france.geojson");
-    console.log(`Total: ${librariesGeojson.features.length} features`);
-    console.log("Terminé !");
-  } catch (error) {
-    console.error("Erreur:", error.message);
-    process.exit(1);
-  }
+        const librariesGeojson = await fetchLibraries();
+        addTypeOfSites(librariesGeojson, "Library");
+        saveToFile(librariesGeojson, "libraries_france.geojson");
+        console.log(`📁 Total bibliothèques: ${librariesGeojson.features.length} features`);
+        console.log("✅ Terminé !");
+    } catch (error) {
+        console.error("❌ Erreur: ", error.message);
+        process.exit(1);
+    }
 }
 
 main();

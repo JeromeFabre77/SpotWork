@@ -6,6 +6,41 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3034488,
+          48.8883391
+        ]
+      },
+      "properties": {
+        "@id": "node/27415805",
+        "@type": "node",
+        "addr:housenumber": "11",
+        "addr:postcode": "75017",
+        "addr:street": "Rue Nicolas Chuquet",
+        "amenity": "library",
+        "email": "mediatheque.edmond-rostand@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Médiathèque Edmond Rostand",
+        "opening_hours": "Tu, Th-Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00; Su 13:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 48 88 07 17",
+        "source:internet_access": "Paris Open Data",
+        "start_date": "1992",
+        "website": "https://www.paris.fr/lieux/mediatheque-edmond-rostand-1741",
+        "wheelchair": "no",
+        "wikidata": "Q30752684",
+        "wikipedia": "fr:Médiathèque Edmond-Rostand",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.868041,
           45.737207
         ]
@@ -25,6 +60,36 @@
         "phone": "+33 4 78 78 12 12;+33 4 78 78 11 97",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/mediatheque-du-bachut/",
         "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2993385,
+          48.8417324
+        ]
+      },
+      "properties": {
+        "@id": "node/241110355",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-06-07",
+        "contact:city": "Paris",
+        "contact:email": "bibliotheque.vaugirard@paris.fr",
+        "contact:housenumber": "154",
+        "contact:phone": "+33 1 48 28 77 42",
+        "contact:postcode": "75015",
+        "contact:street": "Rue Lecourbe",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Vaugirard",
+        "opening_hours": "Tu,Th-Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00",
+        "source:internet_access": "Paris Open Data",
+        "wheelchair": "no",
         "spotType": "Library"
       }
     },
@@ -60,6 +125,45 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3526163,
+          48.8608795
+        ]
+      },
+      "properties": {
+        "@id": "node/251132401",
+        "@type": "node",
+        "amenity": "library",
+        "amenity:visitors": "1500000",
+        "closed": "yes",
+        "closed:description": "fermé pour travaux jusqu'en 2030",
+        "contact:city": "Paris",
+        "contact:housenumber": "1",
+        "contact:postcode": "75004",
+        "contact:street": "Rue Beaubourg",
+        "end_date": "2025-03-02",
+        "fax": "+33 1 44 78 12 15",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "Wifi-bpi",
+        "level": "1;2;3",
+        "name": "Bibliothèque Publique d'Information",
+        "opening_date": "2030-01-01",
+        "opening_hours": "Mo, We-Fr 12:00-22:00; Sa-Su 11:00-22:00",
+        "phone": "+33 1 44 78 12 75",
+        "short_name": "BPI",
+        "source": "survey",
+        "temporary": "yes",
+        "website": "https://www.bpi.fr/",
+        "wheelchair": "yes",
+        "wikidata": "Q2901506",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           7.2566071,
           43.7249994
         ]
@@ -69,6 +173,98 @@
         "@type": "node",
         "amenity": "library",
         "name": "Bibliothèque Fontaine du Temple",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3618413,
+          48.8424666
+        ]
+      },
+      "properties": {
+        "@id": "node/263262712",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-10-03",
+        "check_date:opening_hours": "2025-10-03",
+        "contact:email": "bibliotheque.buffon@paris.fr",
+        "contact:phone": "+33 1 55 43 25 25",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Buffon",
+        "name:etymology:wikidata": "Q229264",
+        "note": "fermée pour travaux. Réouverture prévue fin octobre 2025",
+        "opening_hours": "closed",
+        "operator": "Ville de Paris",
+        "operator:type": "public",
+        "operator:wikidata": "Q3278478",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-buffon-1682",
+        "wheelchair": "yes",
+        "wikidata": "Q42172266",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3115582,
+          48.8312882
+        ]
+      },
+      "properties": {
+        "@id": "node/301864359",
+        "@type": "node",
+        "air_conditioning": "yes",
+        "amenity": "library",
+        "check_date": "2025-05-06",
+        "internet_access": "no",
+        "name": "Bibliothèque municipale Aimé Césaire",
+        "name:etymology:wikidata": "Q223955",
+        "old_name": "Bibliothèque municipale Plaisance",
+        "opening_hours": "Tu,Th,Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00; PH off",
+        "operator": "Ville de Paris",
+        "phone": "+33 1 45 41 24 74",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3570791,
+          48.8308701
+        ]
+      },
+      "properties": {
+        "@id": "node/320992935",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "213",
+        "addr:postcode": "75013",
+        "addr:street": "Boulevard Vincent Auriol",
+        "amenity": "library",
+        "check_date": "2025-12-13",
+        "check_date:opening_hours": "2025-12-13",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Bibliothèque Italie",
+        "opening_hours": "Mo-Th 08:30-12:30,13:30-17:30; Fr 08:30-12:30,13:30-16:30",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "source": "survey",
+        "website": "https://www.paris.fr/lieux/bibliotheque-italie-1729",
+        "wheelchair": "yes",
         "spotType": "Library"
       }
     },
@@ -110,6 +306,142 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3871278,
+          48.8454696
+        ]
+      },
+      "properties": {
+        "@id": "node/428037980",
+        "@type": "node",
+        "amenity": "library",
+        "description:fr": "bibliothèque municipale",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Saint-Éloi",
+        "source:internet_access": "Paris Open Data",
+        "wheelchair": "no",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3777264,
+          48.8459092
+        ]
+      },
+      "properties": {
+        "@id": "node/428038496",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2024-10-28",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Diderot",
+        "opening_hours": "Sep-Jun: Tu-Sa 14:00-18:00; Jul-Aug: Tu,Th,Fr 15:00-18:00; Jul-Aug: We,Sa 14:00-18:00",
+        "source:internet_access": "Paris Open Data",
+        "wheelchair": "no",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3841021,
+          48.8515576
+        ]
+      },
+      "properties": {
+        "@id": "node/428038700",
+        "@type": "node",
+        "addr:housenumber": "18",
+        "addr:postcode": "75011",
+        "addr:street": "Rue Faidherbe",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-05-29",
+        "email": "mediatheque.violette-leduc@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Médiathèque Violette Leduc",
+        "name:etymology:wikidata": "Q766716",
+        "opening_hours": "Tu 13:00-19:00; We 10:00-18:00; Th-Fr 13:00-19:00; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 55 25 80 20",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://bibliotheques.paris.fr",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3791681,
+          48.860236
+        ]
+      },
+      "properties": {
+        "@id": "node/428039006",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "20 bis",
+        "addr:postcode": "75011",
+        "addr:street": "Avenue Parmentier",
+        "amenity": "library",
+        "check_date": "2025-06-12",
+        "contact:email": "bibliotheque.toni-morrison@paris.fr",
+        "contact:phone": "+33 1 55 28 30 15",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Toni Morrison",
+        "opening_hours": "Tu,Th-Fr 13:00-19:00; We,Sa 13:00-18:00",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-toni-morrison-1723",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3591424,
+          48.8534078
+        ]
+      },
+      "properties": {
+        "@id": "node/428059039",
+        "@type": "node",
+        "amenity": "library",
+        "description": "municipale specialisée arts graphiques",
+        "name": "Bibliothèque Forney",
+        "opening_hours": "Tu-Fr 11:00-19:00; Sa 12:00-19:00",
+        "phone": "+33 1 42 78 14 60",
+        "website": "http://equipement.paris.fr/bibliotheque-forney-18",
+        "wheelchair": "yes",
+        "wikidata": "Q2901277",
+        "wikipedia": "fr:Bibliothèque Forney",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.430668,
           43.5987958
         ]
@@ -130,6 +462,217 @@
         "source:date": "2012-05-30",
         "website": "https://bibliotheque.toulouse.fr/",
         "wikidata": "Q117943389",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383053,
+          48.8848656
+        ]
+      },
+      "properties": {
+        "@id": "node/725283191",
+        "@type": "node",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "internet_access:ssid": "Paris Wi-Fi",
+        "name": "Bibliothèque Astrid Lindgren",
+        "old_name": "Bibliothèque jeunesse Crimée",
+        "opening_hours": "Tu,Th,Fr 15:30-17:30; We 14:00-17:30; Sa 10:00-13:00,14:00-17:30",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 42 45 56 40",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-astrid-lindgren-1749",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3556751,
+          48.8513211
+        ]
+      },
+      "properties": {
+        "@id": "node/726583209",
+        "@type": "node",
+        "addr:housenumber": "6",
+        "addr:street": "Quai d'Orléans",
+        "amenity": "library",
+        "check_date": "2025-06-20",
+        "name": "Bibliothèque polonaise",
+        "name:pl": "Biblioteka polska",
+        "opening_hours": "Tu-Fr 14:00-18:00",
+        "website": "https://www.bibliotheque-polonaise-paris-shlp.fr/",
+        "wikidata": "Q2357520",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3275248,
+          48.8479961
+        ]
+      },
+      "properties": {
+        "@id": "node/727779861",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque André Malraux",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3089956,
+          48.8580602
+        ]
+      },
+      "properties": {
+        "@id": "node/913936257",
+        "@type": "node",
+        "addr:housenumber": "164",
+        "addr:street": "Rue de Grenelle",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-02-01",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Amélie",
+        "opening_hours": "Tu,Th,Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00",
+        "phone": "+33 1 47 05 89 66",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:internet_access": "Paris Open Data",
+        "website": "http://equipement.paris.fr/bibliotheque-amelie-1692",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3939914,
+          48.890542
+        ]
+      },
+      "properties": {
+        "@id": "node/952053470",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "16",
+        "addr:postcode": "75019",
+        "addr:street": "Place de la Fontaines aux Lions",
+        "alt_name": "CDMC",
+        "amenity": "library",
+        "contact:phone": "+33 1 47 15 49 86",
+        "contact:website": "http://www.cdmc.asso.fr/",
+        "name": "Centre de Documentation de la Musique Contemporaine",
+        "opening_hours": "Tu-Su 13:00-18:00",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375279,
+          48.86995
+        ]
+      },
+      "properties": {
+        "@id": "node/1019354012",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "19bis",
+        "addr:postcode": "75011",
+        "addr:street": "Rue de l'Orillon",
+        "amenity": "library",
+        "check_date": "2024-08-18",
+        "contact:email": "eie.paris1120@idemu.org",
+        "contact:fax": "+33 1 47 00 57 16",
+        "description": "Le Bouquin qui bulle est un espace animé par La Cie par Has’Arts,un lieu dédié à la lecture, l'écriture, l'oralité et la citoyenneté.",
+        "name": "Le Bouquin qui bulle",
+        "opening_hours:signed": "no",
+        "operator": "La Cie par Has'Arts",
+        "phone": "+33 973233282",
+        "website": "https://hasarts.wixsite.com/deambulle/le-bouquin-qui-bulle",
+        "wheelchair": "no",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3447374,
+          48.8624222
+        ]
+      },
+      "properties": {
+        "@id": "node/1028573132",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "4",
+        "addr:postcode": "75001",
+        "addr:street": "Rue du Cinéma",
+        "amenity": "library",
+        "check_date": "2025-07-06",
+        "check_date:opening_hours": "2025-07-06",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "level": "-3",
+        "library": "cinema",
+        "name": "Bibliothèque du cinéma François-Truffaut",
+        "opening_hours": "Sep-Jun: Tu-Sa 12:00-19:00; Jul-Aug: Tu-Sa 14:00-19:00; Sep-Jun: Mo,PH off; Jul-Aug: Su,Mo,PH off",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-du-cinema-francois-truffaut-3371",
+        "wheelchair": "yes",
+        "wikidata": "Q2901422",
+        "wikipedia": "fr:Bibliothèque du cinéma François-Truffaut",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.387096,
+          48.8949558
+        ]
+      },
+      "properties": {
+        "@id": "node/1033227628",
+        "@type": "node",
+        "alt_name": "BSI",
+        "amenity": "library",
+        "level": "0;-1;-2",
+        "name": "Bibliothèque des Sciences et de l'Industrie",
+        "source": "survey",
+        "website": "https://www.cite-sciences.fr/fr/au-programme/lieux-ressources/bibliotheque",
+        "wheelchair": "yes",
         "spotType": "Library"
       }
     },
@@ -163,6 +706,40 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3673219,
+          48.8850502
+        ]
+      },
+      "properties": {
+        "@id": "node/1036043623",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "2",
+        "addr:postcode": "75019",
+        "addr:street": "Rue du Département",
+        "amenity": "library",
+        "email": "bibliotheque.herge@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "internet_access:ssid": "Paris Wi-Fi",
+        "name": "Bibliothèque Hergé",
+        "name:etymology:wikidata": "Q52985",
+        "opening_hours": "Tu 13:00-18:30; We 10:00-13:00,14:00-18:00; Th-Fr 13:00-18:30; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 40 38 18 08",
+        "website": "https://www.paris.fr/lieux/bibliotheque-herge-1747",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.8367521,
           45.7496774
         ]
@@ -180,6 +757,120 @@
         "opening_hours": "Mo-Fr 09:00-22:00; Sa,Su 10:00-18:00",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
         "website": "https://bu.univ-lyon2.fr/bu-chevreul",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3027106,
+          48.8780917
+        ]
+      },
+      "properties": {
+        "@id": "node/1292063071",
+        "@type": "node",
+        "alt_name": "Bibliothèque Courcelles",
+        "amenity": "library",
+        "contact:city": "Paris",
+        "contact:housenumber": "17",
+        "contact:phone": "+33 1 47 63 22 81",
+        "contact:postcode": "75008",
+        "contact:street": "Avenue Beaucour",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Agustina Bessa-Luis",
+        "opening_hours": "Tu,Th,Fr 16:00-18:30; We,Sa 10:00-12:30,13:30-18:00",
+        "source:internet_access": "Paris Open Data",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3109746,
+          48.8460501
+        ]
+      },
+      "properties": {
+        "@id": "node/1298881170",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque Pour Tous",
+        "opening_hours": "Mo-We,Fr 14:30-18:30; Th 10:00-12:30,14:30-18:30; Sa 10:00-12:30,14:30-17:30",
+        "phone": "+33 1 47 83 36 73",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360116,
+          48.8694469
+        ]
+      },
+      "properties": {
+        "@id": "node/1670282076",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "11",
+        "addr:postcode": "75010",
+        "addr:street": "Rue de Lancry",
+        "amenity": "library",
+        "check_date": "2025-08-11",
+        "email": "bibliotheque.lancry@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Claire Bretécher",
+        "old_name": "Bibliothèque Lancry",
+        "opening_hours": "Tu-Fr 13:00-19:00; We,Sa 10:00-18:00",
+        "phone": "+33 1 42 03 25 98",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/equipements/bibliotheque-lancry-1721",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4010825,
+          48.8533051
+        ]
+      },
+      "properties": {
+        "@id": "node/1676861745",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "29-35",
+        "addr:postcode": "75020",
+        "addr:street": "Rue des Haies",
+        "amenity": "library",
+        "check_date": "2025-07-19",
+        "check_date:opening_hours": "2025-09-25",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Louise Michel",
+        "old_name": "Bibliothèque Réunion",
+        "opening_hours": "Tu-Fr 14:00-19:00; Sa 10:00-12:00, 13:00-18:00",
+        "operator": "Ville de Paris",
+        "phone": "+33 1 58 39 32 10",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-louise-michel-6320",
+        "wheelchair": "yes",
         "spotType": "Library"
       }
     },
@@ -207,6 +898,43 @@
         "wheelchair": "no",
         "wikidata": "Q2945825",
         "wikipedia": "fr:Centre international de recherches sur l'anarchisme (Marseille)",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3712948,
+          48.886684
+        ]
+      },
+      "properties": {
+        "@id": "node/1724373372",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "41",
+        "addr:postcode": "75019",
+        "addr:street": "Avenue de Flandre",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-03-14",
+        "email": "bibliotheque.claude.levi-strauss@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "internet_access:ssid": "Paris Wi-Fi",
+        "name": "Bibliothèque Claude Lévi-Strauss",
+        "name:etymology:wikidata": "Q128126",
+        "old_name": "Bibliothèque Flandre",
+        "opening_hours": "Tu 13:00-19:00; We 10:00-19:00; Th-Fr 13:00-19:00; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 40 35 96 46",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-claude-levi-strauss-6280",
+        "wheelchair": "yes",
         "spotType": "Library"
       }
     },
@@ -455,6 +1183,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3450959,
+          48.8779906
+        ]
+      },
+      "properties": {
+        "@id": "node/1836870626",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-09-28",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Valeyre",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-valeyre-1711",
+        "wheelchair": "no",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4536203,
           43.6162171
         ]
@@ -473,6 +1225,61 @@
         "source:date": "2012-05-30",
         "website": "https://bibliotheque.toulouse.fr/",
         "wikidata": "Q117869620",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2894102,
+          48.8340824
+        ]
+      },
+      "properties": {
+        "@id": "node/1901078409",
+        "@type": "node",
+        "amenity": "library",
+        "brand": "Culture et bibliothèques pour tous",
+        "contact:city": "Paris",
+        "contact:housenumber": "11 ter",
+        "contact:phone": "+33 1 48 28 82 83",
+        "contact:postcode": "75015",
+        "contact:street": "Rue de Cadix",
+        "name": "Culture et Bibliothèques pour Tous",
+        "opening_hours": "Mo-We,Fr 15:00-19:00; Sa 10:00-12:30",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38163,
+          48.8301517
+        ]
+      },
+      "properties": {
+        "@id": "node/1915653894",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-10-28",
+        "check_date:opening_hours": "2025-10-28",
+        "contact:housenumber": "59",
+        "contact:street": "Quai Panhard et Levassor",
+        "internet_access": "terminal",
+        "name": "Bibliothèque des Grands Moulins",
+        "note": "Ferme pendant une partie des vacances d’été. Mettre à jour opening_hours quand les dates seront connues.",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 11:00-19:00; Su off",
+        "operator": "Université Paris-Cité",
+        "operator:type": "university",
+        "phone": "+33 1 57 27 66 71",
+        "ref:isil": "FR-751132105",
+        "short_name": "BU Grands Moulins",
+        "website": "https://u-paris.fr/bibliotheques/bu-grands-moulins/",
+        "wheelchair": "yes",
         "spotType": "Library"
       }
     },
@@ -579,6 +1386,195 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2631956,
+          48.8421613
+        ]
+      },
+      "properties": {
+        "@id": "node/2265947144",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "20",
+        "addr:postcode": "75016",
+        "addr:street": "Rue de Musset",
+        "amenity": "library",
+        "changing_table": "no",
+        "defibrillator": "no",
+        "email": "bibliotheque.musset@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Musset",
+        "opening_hours": "Tu,Th,Fr 14:00-18:00; We,Sa 10:00-13:00,14:00-18:00; PH off",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "pets_allowed": "no",
+        "phone": "+33 1 45 25 69 83",
+        "toilets": "yes",
+        "vending_machine": "no",
+        "website": "https://www.paris.fr/lieux/bibliotheque-musset-1738",
+        "wheelchair": "no",
+        "wikidata": "Q105710474",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364846,
+          48.8585418
+        ]
+      },
+      "properties": {
+        "@id": "node/2271538532",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque des Amis de l'instruction",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3663163,
+          48.8267781
+        ]
+      },
+      "properties": {
+        "@id": "node/2301505857",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-09-27",
+        "name": "Bibliothèque Marguerite Durand",
+        "opening_hours": "Tu,Th,Fr,Sat 13:00-18:00; We 10:00-18:00",
+        "wheelchair": "yes",
+        "wikidata": "Q2901309",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3601006,
+          48.8637097
+        ]
+      },
+      "properties": {
+        "@id": "node/2448397328",
+        "@type": "node",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Marguerite Audoux",
+        "opening_hours": "Tu-Fr 13:00-19:00; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+331 44 78 55 20",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-marguerite-audoux-1665",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3419023,
+          48.827357
+        ]
+      },
+      "properties": {
+        "@id": "node/2460475973",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-10-05",
+        "email": "bibliotheque.glaciere@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Glacière - Marina Tsvetaïeva",
+        "name:etymology:wikidata": "Q188526",
+        "opening_hours": "Tu,Th,Fr 14:00-19:00; We 10:00-12:30,14:00-19:00; Sa 10:00-12:30,14:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:wikidata": "Q3278478",
+        "operator:wikipedia": "fr:Mairie de Paris",
+        "phone": "+33 1 45 89 55 47",
+        "source": "https://www.paris.fr/equipements/bibliotheque-glaciere-marina-tsvetaieva-1730",
+        "source:internet_access": "Paris Open Data",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3973637,
+          48.8787879
+        ]
+      },
+      "properties": {
+        "@id": "node/2486263630",
+        "@type": "node",
+        "amenity": "library",
+        "contact:housenumber": "45",
+        "contact:postcode": "75020",
+        "contact:street": "Rue du Pré Saint-Gervais",
+        "contact:website": "https://lesfleursarctiques.noblogs.org",
+        "name": "Les Fleurs Arctiques",
+        "source": "survey:2013-10-05",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3706998,
+          48.8772247
+        ]
+      },
+      "properties": {
+        "@id": "node/2493496614",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2024-08-18",
+        "contact:city": "Paris",
+        "contact:housenumber": "81",
+        "contact:postcode": "75010",
+        "contact:street": "Boulevard de la Villette",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque François Villon",
+        "opening_hours": "We 10:00-19:00; Tu,Th-Fr 14:00-19:00; Sa 10:00-18:00; Dec 25,Jan 1 off",
+        "operator": "Maire de Paris",
+        "ref:FR:SIRET": "21750001611743",
+        "source": "survey",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/equipements/bibliotheque-francois-villon-1722",
+        "wheelchair": "no",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.3962576,
           43.3023143
         ]
@@ -597,6 +1593,226 @@
         "phone": "+33 4 13948250",
         "source": "http://opendata.regionpaca.fr/",
         "website": "https://bibliotheques.marseille.fr/",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3637139,
+          48.894909
+        ]
+      },
+      "properties": {
+        "@id": "node/2526842432",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:country": "FR",
+        "addr:housenumber": "19",
+        "addr:postcode": "75018",
+        "addr:street": "Rue Tristan Tzara",
+        "amenity": "library",
+        "contact:facebook": "https://fr-fr.facebook.com/BibliothequeMauriceGenevoix",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Maurice Genevoix",
+        "opening_hours": "Tu, Th, Fr 14:00-18:00; We, Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 46 07 35 05",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-maurice-genevoix-1743",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2863669,
+          48.8500551
+        ]
+      },
+      "properties": {
+        "@id": "node/2556966391",
+        "@type": "node",
+        "addr:housenumber": "36",
+        "addr:postcode": "75015",
+        "addr:street": "Rue Emeriau",
+        "alt_name": "Bibliothèque Andrée Chedid",
+        "amenity": "library",
+        "email": "bibliotheque.andree-chedid@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Andrée Chedid",
+        "opening_hours": "Tu-Fr 14:00-19:00; Sa 10:00-18:00",
+        "phone": "+33 1 45 77 63 40",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2013",
+        "website": "https://www.paris.fr/equipements/bibliotheque-andree-chedid-1734",
+        "wheelchair": "no",
+        "wikimedia_commons": "File:Bibliothèque Andrée Chedid, 36 Rue Emeriau, 75015 Paris.jpg",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34496,
+          48.8520109
+        ]
+      },
+      "properties": {
+        "@id": "node/2575207495",
+        "@type": "node",
+        "alt_name": "Crèche Bibliothèque pour enfants",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Heure Joyeuse",
+        "name:fr": "Bibliothèque L’Heure Joyeuse",
+        "opening_hours": "Tu, Th-Fr 16:00-19:00; We, Sa 10:00-18:00",
+        "source:internet_access": "Paris Open Data",
+        "wikidata": "Q3203491",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3928863,
+          48.8659982
+        ]
+      },
+      "properties": {
+        "@id": "node/2606045504",
+        "@type": "node",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-09-25",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Maryse Condé",
+        "old_name": "Bibliothèque Sorbier",
+        "opening_hours": "Tu,Th,Fr 13:30-18:30; We,Sa 10:00-12:30, 13:30-18:00",
+        "source": "survey:2014",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-maryse-conde-1753",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267205,
+          48.8463242
+        ]
+      },
+      "properties": {
+        "@id": "node/2685210459",
+        "@type": "node",
+        "access": "private",
+        "addr:city": "Paris",
+        "addr:housenumber": "11 bis",
+        "addr:postcode": "75016",
+        "addr:street": "Rue d'Auteuil",
+        "amenity": "library",
+        "name": "CDI",
+        "operator": "Ministère de l'Education Nationale",
+        "operator:type": "public",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4083505,
+          48.8714
+        ]
+      },
+      "properties": {
+        "@id": "node/2696844615",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "113",
+        "addr:postcode": "75020",
+        "addr:street": "Boulevard Mortier",
+        "amenity": "library",
+        "name": "Bibliothèque Jeunesse Mortier",
+        "opening_hours": "Sep-Jun: Tu,Th,Fr 14:00-18:15; Sep-Jun: We 10:30-18:15; Sep-Jun: Sa 14:00-18:00; Jul-Aug: Tu-Fr 14:00-18:15; Jul-Aug: Sa 14:00-18:00; Sep-Jun: Su,Mo off; Jul-Aug: Su,Mo off; PH off",
+        "phone": "+33 1 43 61 74 64",
+        "source": "survey:2014",
+        "website": "https://www.paris.fr/lieux/bibliotheque-jeunesse-mortier-6309",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3852126,
+          48.8700484
+        ]
+      },
+      "properties": {
+        "@id": "node/2719066031",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2024-02-16",
+        "check_date:opening_hours": "2025-09-25",
+        "facebook": "https://www.facebook.com/bibliotheque.couronnes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Naguib Mahfouz",
+        "name:etymology:wikidata": "Q7176",
+        "old_name": "Bibliothèque Couronnes",
+        "opening_hours": "Tu,Th,Fr 13:00-19:00; We,Sa 10:00-18:00",
+        "source": "survey:2014",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-naguib-mahfouz-1750",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3496593,
+          48.8424593
+        ]
+      },
+      "properties": {
+        "@id": "node/2788471674",
+        "@type": "node",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Mohammed Arkoun",
+        "opening_hours": "Tu,Th-Fr 13:00-19:00, We 10:00-19:00, Sa 10:00-18:00",
+        "source:internet_access": "Paris Open Data",
+        "wikidata": "Q54965407",
+        "wikimedia_commons": "File:Bibliothèque Mohammed-Arkoun, Paris 6 July 2015.jpg",
         "spotType": "Library"
       }
     },
@@ -655,6 +1871,91 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3756326,
+          48.827088
+        ]
+      },
+      "properties": {
+        "@id": "node/2823241502",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "65",
+        "addr:postcode": "75013",
+        "addr:street": "Rue des Grands Moulins",
+        "alt_name": "BULAC",
+        "amenity": "library",
+        "contact:bluesky": "@bulac.bsky.social",
+        "contact:city": "Paris",
+        "contact:housenumber": "65",
+        "contact:mastodon": "@bulac@mastodon.social",
+        "contact:postcode": "75013",
+        "contact:street": "Rue des Grands Moulins",
+        "contact:website": "https://www.bulac.fr/",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "Bibliothèque universitaire des langues et civilisations (BULAC)",
+        "name:etymology:wikidata": "Q2901548",
+        "opening_hours": "Mo-Sa 10:00-22:00; Dec 24-Jan01 off; Apr 17 off; May 1 off; May 8 off; May 13 off; May 24 off; Jul 14 off; Jul 31-Aug 15 off; Sept 5 off; Nov 1 off",
+        "ref:isil": "FR-751132108",
+        "source": "survey",
+        "wheelchair": "yes",
+        "wikidata": "Q2901548",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3998952,
+          48.8720638
+        ]
+      },
+      "properties": {
+        "@id": "node/2884911015",
+        "@type": "node",
+        "amenity": "library",
+        "contact:city": "Paris",
+        "contact:email": "bibliotheque.oscar-wilde@paris.fr",
+        "contact:housenumber": "12",
+        "contact:phone": "+33 1 43 66 84 29",
+        "contact:postcode": "75020",
+        "contact:street": "Rue du Télégraphe",
+        "contact:website": "https://www.paris.fr/lieux/bibliotheque-oscar-wilde-1754",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Oscar Wilde",
+        "old_name": "Bibliothèque Saint-Fargeau",
+        "opening_hours": "Tu,Th,Fr 13:00-19:00; We,Sa 10:00-13:00, 14:00-18:00",
+        "source:internet_access": "Paris Open Data",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3896455,
+          48.8761137
+        ]
+      },
+      "properties": {
+        "@id": "node/2939830892",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque paroissiale",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.8424673,
           45.7529713
         ]
@@ -677,6 +1978,68 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3223684,
+          48.8842796
+        ]
+      },
+      "properties": {
+        "@id": "node/2990854919",
+        "@type": "node",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "level": "3",
+        "name": "Bibliothèque des Batignolles",
+        "opening_hours": "Tu,Th 13:00-19:00; We,Fr 10:00-19:00; Sa 10:00-12:30",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 44 69 18 30",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-des-batignolles-1739",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3404139,
+          48.8665219
+        ]
+      },
+      "properties": {
+        "@id": "node/2990854920",
+        "@type": "node",
+        "addr:city": "Paris",
+        "amenity": "library",
+        "check_date": "2025-10-01",
+        "contact:phone": "+33 1 53 29 74 30",
+        "contact:website": "https://www.paris.fr/equipements/bibliotheque-charlotte-delbo-1664",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "level": "3",
+        "name": "Bibliothèque Charlotte Delbo",
+        "name:etymology:wikidata": "Q452272",
+        "opening_hours": "Mo,Su off; Tu-Fr 13:00-19:00; Sa 10:00-18:00",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014",
+        "source:internet_access": "Paris Open Data",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q112649162",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4408689,
           43.6076221
         ]
@@ -689,6 +2052,186 @@
         "name": "Bibliothèque du musée Saint-Raymond",
         "opening_hours": "Mo-Sa 12:00-18:00; Jan 01 off; May 01 off; Dec 25 off",
         "website": "https://saintraymond.toulouse.fr/La-bibliotheque-du-musee-informations-pratiques_a29.html",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3199849,
+          48.838246
+        ]
+      },
+      "properties": {
+        "@id": "node/2996094534",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "25",
+        "addr:postcode": "75014",
+        "addr:street": "Rue du Commandant René Mouchotte",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-09-19",
+        "email": "benoite-groult@paris.fr",
+        "internet_access": "yes",
+        "name": "Bibliothèque Benoîte Groult",
+        "opening_hours": "Sa 10:00-18:00; Tu-Fr 12:00-19:00",
+        "phone": "+33 1 43 22 42 18",
+        "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014;paris.fr/equipements/bibliotheque-benoite-groult-19532",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3790539,
+          48.892783
+        ]
+      },
+      "properties": {
+        "@id": "node/2997913291",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "141",
+        "addr:postcode": "75019",
+        "addr:street": "Avenue de Flandre",
+        "amenity": "library",
+        "email": "bibliotheque.benjamin-rabier@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "internet_access:ssid": "Paris Wi-Fi",
+        "name": "Bibliothèque Benjamin Rabier",
+        "opening_hours": "Tu-Fr 14:00-18:00; Sa 10:00-13:00,14:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 42 09 31 24",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-benjamin-rabier-6277",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3196463,
+          48.8897843
+        ]
+      },
+      "properties": {
+        "@id": "node/2997913292",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2024-03-19",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Colette Vivier",
+        "old_name": "Bibliothèque Brochant",
+        "opening_hours": "Tu,Th,Fr 16:00-18:30; We,Sa 10:00-12:30,13:30-18:00; Su,Mo,PH off",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 42 28 69 94",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-colette-vivier-1740",
+        "wheelchair": "limited",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3532017,
+          48.8567195
+        ]
+      },
+      "properties": {
+        "@id": "node/2997913294",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "5",
+        "addr:postcode": "75004",
+        "addr:street": "Rue de Lobau",
+        "amenity": "library",
+        "email": "bhdv@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque de l'Hôtel de Ville",
+        "old_name": "Bibliothèque Administrative de la Ville de Paris",
+        "opening_hours": "Mo-Fr 09:30-18:00; Jul 06-Sep 01: Mo-Fr 09:30-17:00",
+        "phone": "+33 1 42 76 48 87",
+        "short_name": "BHDV",
+        "source:internet_access": "Paris Open Data",
+        "website": "http://equipement.paris.fr/bibliotheque-de-l-hotel-de-ville-bhdv-17",
+        "wheelchair": "yes",
+        "wikidata": "Q2901369",
+        "wikipedia": "fr:Bibliothèque de l'hôtel de ville de Paris",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3452788,
+          48.8328125
+        ]
+      },
+      "properties": {
+        "@id": "node/3024753268",
+        "@type": "node",
+        "amenity": "library",
+        "contact:city": "Paris",
+        "contact:housenumber": "43 bis",
+        "contact:phone": "+33 1 44 08 71 90",
+        "contact:postcode": "75013",
+        "contact:street": "Rue de la Glacière",
+        "contact:website": "http://www.bibliothequedusaulchoir.org",
+        "name": "Bibliothèque du Saulchoir",
+        "opening_hours": "Mo 14:00-18:00; Tu,Th,Fr 10:00-18:00; We 10:00-21:00",
+        "operator": "Dominicains Province de France",
+        "operator:type": "religious",
+        "religion": "christian",
+        "wikidata": "Q2901417",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3543264,
+          48.8473087
+        ]
+      },
+      "properties": {
+        "@id": "node/3098006626",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "4",
+        "addr:postcode": "75005",
+        "addr:street": "Place Jussieu",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "level": "0",
+        "name": "Bibliothèque Mathématiques Informatique Recherche",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "+33144278577",
+        "short_name": "BMIR",
+        "website": "https://www.sorbonne-universite.fr/offre-de-formation/la-bibliotheque-de-sorbonne-universite/decouvrir-nos-bibliotheques/la-7",
         "spotType": "Library"
       }
     },
@@ -790,6 +2333,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3459483,
+          48.8441077
+        ]
+      },
+      "properties": {
+        "@id": "node/3405331001",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2024-07-28",
+        "email": "mediatheque@centreculturelirlandais.com",
+        "level": "0;1",
+        "name": "Médiathèque - Archives",
+        "opening_hours": "Mo-Fr 14:00-18:00; We 14:00-20:00",
+        "operator": "Centre culturel irlandais",
+        "phone": "+33158521083",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4742621,
           43.5651056
         ]
@@ -855,6 +2422,89 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2845474,
+          48.8619235
+        ]
+      },
+      "properties": {
+        "@id": "node/3693423611",
+        "@type": "node",
+        "alt_name": "Bibliothèque du Tourisme et des Voyages - Germaine Tillion",
+        "amenity": "library",
+        "contact:city": "Paris",
+        "contact:housenumber": "6",
+        "contact:postcode": "75016",
+        "contact:street": "Rue du Commandant Schloesing",
+        "name": "Médiathèque Germaine Tillion",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q2901430",
+        "wikipedia": "fr:Bibliothèque du tourisme et des voyages",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341186,
+          48.8516295
+        ]
+      },
+      "properties": {
+        "@id": "node/3886232155",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "12",
+        "addr:postcode": "75006",
+        "addr:street": "Rue de l'École de Médecine",
+        "amenity": "library",
+        "name": "BIU Santé Médecine",
+        "opening_hours": "Mo-Sa 09:00-20:00",
+        "operator": "Université Paris Cité",
+        "operator:type": "public",
+        "phone": "+33 1 76 53 19 69",
+        "short_name": "BIU Santé",
+        "website": "https://u-paris.fr/bibliotheques/biu-sante-medecine/",
+        "wheelchair": "yes",
+        "wikidata": "Q867925",
+        "wikipedia": "fr:Bibliothèque interuniversitaire de santé",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3359232,
+          48.8433202
+        ]
+      },
+      "properties": {
+        "@id": "node/3886233243",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "4",
+        "addr:postcode": "75006",
+        "addr:street": "Avenue de l'Observatoire",
+        "amenity": "library",
+        "layer": "3",
+        "name": "BIU Santé Pharmacie",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00",
+        "phone": "+33 1 53 73 95 23",
+        "website": "https://www.biusante.parisdescartes.fr/",
+        "wikidata": "Q867925",
+        "wikipedia": "fr:Bibliothèque interuniversitaire de santé",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.3771152,
           43.3045359
         ]
@@ -886,6 +2536,64 @@
         "@type": "node",
         "amenity": "library",
         "name": "DATA médiathèque - fanzinothèque",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3646661,
+          48.8269854
+        ]
+      },
+      "properties": {
+        "@id": "node/4407011414",
+        "@type": "node",
+        "amenity": "library",
+        "check_date:opening_hours": "2024-04-07",
+        "contact:city": "Paris",
+        "contact:housenumber": "90",
+        "contact:phone": "+33 1 44 07 89 08",
+        "contact:postcode": "75013",
+        "contact:street": "Rue de Tolbiac",
+        "contact:website": "http://www.univ-paris1.fr/bibliotheques/trouver/une-bibliotheque/bibliotheque-pierre-mendes-france/",
+        "description": "Horaires d'ouverture Lundi-vendredi : 9h-20h Samedi : 9h-13h Fermeture Congés universitaires de fin d'année et d'été Horaires réduits Vacances de printemps",
+        "level": "5-6",
+        "name": "Bibliothèque universitaire Pierre Mendès France",
+        "name:etymology:wikidata": "Q314265",
+        "opening_hours:signed": "no",
+        "operator": "Université Paris 1 Panthéon-Sorbonne",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3404264,
+          48.8733857
+        ]
+      },
+      "properties": {
+        "@id": "node/4448519356",
+        "@type": "node",
+        "addr:housenumber": "11",
+        "addr:postcode": "75009",
+        "addr:street": "Rue Drouot",
+        "amenity": "library",
+        "contact:instagram": "bibdu9paris",
+        "email": "bibliotheque.drouot@paris.fr",
+        "internet_access": "wlan",
+        "name": "Bibliothèque Drouot",
+        "name:fr": "Bibliothèque Drouot",
+        "name:pt": "Biblioteca Drouot",
+        "opening_hours": "Tu,Th,Fr 12:30-19:00; We,Sa 10:00-18:00",
+        "phone": "+33 1 42 46 97 78",
+        "website": "https://www.paris.fr/equipements/bibliotheque-drouot-1719",
+        "wheelchair": "no",
         "spotType": "Library"
       }
     },
@@ -951,6 +2659,104 @@
         "ref:FR:SIRET": "49314716900012",
         "short_name": "CEDRATS",
         "website": "http://www.cedrats.org",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358959,
+          48.8707058
+        ]
+      },
+      "properties": {
+        "@id": "node/4537714188",
+        "@type": "node",
+        "addr:housenumber": "29",
+        "addr:street": "Rue du Château d'Eau",
+        "amenity": "library",
+        "check_date": "2026-01-02",
+        "check_date:opening_hours": "2026-01-02",
+        "name": "Bibliothèque Medem",
+        "opening_hours": "Mo-Tu,Th 13:30-18:30; We,Sa 14:00-17:00",
+        "website": "https://bibliotheque-centre-medem.org/",
+        "wikidata": "Q1769851",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3382508,
+          48.8674547
+        ]
+      },
+      "properties": {
+        "@id": "node/4556939396",
+        "@type": "node",
+        "amenity": "library",
+        "contact:city": "Paris",
+        "contact:housenumber": "58",
+        "contact:postcode": "75002",
+        "contact:street": "Rue de Richelieu",
+        "contact:website": "http://bibliotheque.inha.fr/",
+        "description": "Salle Labrouste de la Bibliothèque nationale de France, occupée par la bibliothèque de l'INHA depuis le 15 décembre 2016",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Bibliothèque de l'Institut national d'histoire de l'art (INHA)",
+        "opening_hours": "Mo 14:00-19:30; Tu-Fr 9:00-19:30; Sa 9:00-18:30",
+        "operator": "Institut national d'histoire de l'art",
+        "operator:type": "public",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3439522,
+          48.8492047
+        ]
+      },
+      "properties": {
+        "@id": "node/4757783979",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "17",
+        "addr:postcode": "75005",
+        "addr:street": "Rue de la Sorbonne",
+        "amenity": "library",
+        "email": "info@bis-sorbonne.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Bibliothèque interuniversitaire de la Sorbonne",
+        "operator": "Université Paris 1 Panthéon-Sorbonne",
+        "operator:type": "public",
+        "ref:isil": "FR-751052105",
+        "website": "https://www.bis-sorbonne.fr",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3998743,
+          48.8695333
+        ]
+      },
+      "properties": {
+        "@id": "node/4810311389",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque historique des Postes et des Télécommunications",
+        "website": "https://www.bhpt.org/",
         "spotType": "Library"
       }
     },
@@ -1068,6 +2874,122 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.4121327,
+          48.8492175
+        ]
+      },
+      "properties": {
+        "@id": "node/5137238077",
+        "@type": "node",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-09-25",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "internet_access:ssid": "Paris Wi-Fi",
+        "name": "Bibliothèque Assia Djebar",
+        "opening_hours": "Tu,Th,Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 84 82 19 50",
+        "start_date": "2018-01-09",
+        "website": "https://www.paris.fr/lieux/bibliotheque-assia-djebar-19114",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.356322,
+          48.8560527
+        ]
+      },
+      "properties": {
+        "@id": "node/5359804284",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "2",
+        "addr:postcode": "75004",
+        "addr:street": "Place Baudoyer",
+        "amenity": "library",
+        "email": "bibliotheque.arthur-rimbaud@paris.fr",
+        "level": "1",
+        "name": "Bibliothèque Arthur Rimbaud",
+        "name:etymology:wikidata": "Q493",
+        "opening_hours": "Tu-Fr 13:00-19:00; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 44 54 76 70",
+        "website": "https://bibliotheques.paris.fr",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34682,
+          48.8624488
+        ]
+      },
+      "properties": {
+        "@id": "node/5423023020",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "10",
+        "addr:postcode": "75001",
+        "addr:street": "Passage de la Canopée",
+        "amenity": "library",
+        "check_date": "2025-01-13",
+        "email": "mediatheque.canopee@paris.fr",
+        "level": "0",
+        "name": "Médiathèque de la Canopée la fontaine",
+        "opening_hours": "Tu-Fr 12:00-19:00; Sa 10:00-19:00; Su 13:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "operator:wikipedia": "fr:Mairie de Paris",
+        "phone": "+33 1 44 50 76 56",
+        "website": "http://equipement.paris.fr/mediatheque-de-la-canopee-la-fontaine-16634",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3415469,
+          48.8525019
+        ]
+      },
+      "properties": {
+        "@id": "node/5583148549",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "28",
+        "addr:postcode": "75006",
+        "addr:street": "Rue Serpente",
+        "amenity": "library",
+        "check_date": "2024-04-04",
+        "internet_access": "wlan",
+        "name": "Bibliothèque Serpente",
+        "operator": "Sorbonne Universités",
+        "website": "http://documentation.sorbonne-universites.fr/bibliotheques/paris-sorbonne/bibliotheque-serpente.html#jfmulticontent_c4035-4",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.3789207,
           43.3023225
         ]
@@ -1148,6 +3070,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3620932,
+          48.8637084
+        ]
+      },
+      "properties": {
+        "@id": "node/6469235288",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2023-04-18",
+        "name": "Paris Boutik",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4001614,
           43.578169
         ]
@@ -1162,6 +3102,59 @@
         "ref:isil": "FR-315552220",
         "website": "https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/bibliotheques/bibliotheques-du-campus-mirail/centre-de-ressources-de-psychologie-louise-michel",
         "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3175191,
+          48.8777273
+        ]
+      },
+      "properties": {
+        "@id": "node/7075874108",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "3",
+        "addr:postcode": "75008",
+        "addr:street": "Rue de Lisbonne",
+        "amenity": "library",
+        "level": "1",
+        "name": "Bibliothèque Europe",
+        "opening_hours": "Tu 13:00-18:00; We 10:00-12:00,13:00-18:00; Th-Fr 13:00-19:00; Sa 10:00-13:00",
+        "phone": "+33 1 44 90 75 45",
+        "website": "https://www.paris.fr/lieux/bibliotheque-jean-d-ormesson-1704",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3364756,
+          48.8994635
+        ]
+      },
+      "properties": {
+        "@id": "node/7076549761",
+        "@type": "node",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "internet_access:ssid": "Paris Wi-Fi",
+        "name": "Bibliothèque Jacqueline de Romilly",
+        "old_name": "Bibliothèque Porte Montmartre",
+        "opening_hours": "Tu-Fr 14:00-19:00; We 10:00-19:00; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 42 55 60 20",
+        "website": "https://www.paris.fr/lieux/bibliotheque-jacqueline-de-romilly-1745",
         "spotType": "Library"
       }
     },
@@ -1186,6 +3179,31 @@
         "name": "OCB Montolivet",
         "opening_hours": "Tu-We 16:00-18:00; Sa 09:30-11:30",
         "website": "https://mabibliothequeocb.fr/",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3964955,
+          48.8451182
+        ]
+      },
+      "properties": {
+        "@id": "node/7473981422",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "10",
+        "addr:postcode": "75012",
+        "addr:street": "Avenue de Saint-Mandé",
+        "amenity": "library",
+        "name": "Bibliothèque universitaire pluridisciplinaire de Sorbonne Nouvelle",
+        "opening_hours": "Mo-Fr 08:30-21:00; Sa 09:00-19:00",
+        "operator": "Université Sorbonne Nouvelle - Paris 3",
+        "operator:type": "public",
+        "wikidata": "Q127805430",
         "spotType": "Library"
       }
     },
@@ -1227,6 +3245,34 @@
         "name": "BDThêk",
         "operator": "BuL Ens Lyon",
         "operator:type": "community",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3373594,
+          48.8572708
+        ]
+      },
+      "properties": {
+        "@id": "node/7885176674",
+        "@type": "node",
+        "addr:housenumber": "23",
+        "addr:street": "Quai de Conti",
+        "amenity": "library",
+        "email": "contact@bibliotheque-mazarine.fr",
+        "fax": "+33 1 44 41 44 07",
+        "name": "Bibliothèque Mazarine",
+        "opening_hours": "Mo-Fr 10:00-18:00 ; Aug 1-15 off",
+        "phone": "+33 1 44 41 44 06",
+        "ref:isil": "FR-751063002",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "website": "https://www.bibliotheque-mazarine.fr/",
+        "wikidata": "Q774570",
+        "wikipedia": "fr:Bibliothèque Mazarine",
         "spotType": "Library"
       }
     },
@@ -1306,6 +3352,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.4591392,
+          48.8239291
+        ]
+      },
+      "properties": {
+        "@id": "node/8205219141",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.8805379,
           45.7415306
         ]
@@ -1316,6 +3379,34 @@
         "amenity": "library",
         "name": "BU Santé Rockefeller",
         "operator": "Université Lyon 1",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3512935,
+          48.8465706
+        ]
+      },
+      "properties": {
+        "@id": "node/8450702345",
+        "@type": "node",
+        "addr:housenumber": "48",
+        "addr:street": "Rue du Cardinal Lemoine",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque des littératures policières",
+        "short_name": "BiLiPo",
+        "source:internet_access": "Paris Open Data",
+        "start_date": "1995",
+        "website": "https://www.paris.fr/lieux/bibliotheque-des-litteratures-policieres-bilipo-2879",
+        "wikidata": "Q2901397",
+        "wikipedia": "fr:Bibliothèque des littératures policières",
         "spotType": "Library"
       }
     },
@@ -1344,6 +3435,90 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3565934,
+          48.8467859
+        ]
+      },
+      "properties": {
+        "@id": "node/8531386462",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "4",
+        "addr:postcode": "75005",
+        "addr:street": "Place Jussieu",
+        "amenity": "library",
+        "covered": "yes",
+        "fixme": "Vérifier l'emplacement exact et l'emprise physique",
+        "internet_access": "wlan",
+        "name": "bibliothèque de Géosciences et environnement",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "+33144275283",
+        "website": "https://www.sorbonne-universite.fr/offre-de-formation/la-bibliotheque-de-sorbonne-universite/decouvrir-nos-bibliotheques/la-0",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3429045,
+          48.845797
+        ]
+      },
+      "properties": {
+        "@id": "node/9004567314",
+        "@type": "node",
+        "amenity": "library",
+        "description": "La bibliothèque de Port-Royal est une bibliothèque privée dont le fond est essentiellement spécialisé dans l'histoire religieuse de la France moderne.",
+        "name": "Bibliothèque Port-Royal",
+        "official_name": "Bibliothèque de la Société de Port-Royal",
+        "website": "https://www.bib-port-royal.com",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3893446,
+          48.8701764
+        ]
+      },
+      "properties": {
+        "@id": "node/9146738810",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-01-02",
+        "name": "Jargon libre",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3390564,
+          48.8667358
+        ]
+      },
+      "properties": {
+        "@id": "node/9182022018",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque Gernet-Glotz",
+        "operator": "Anthropologie et histoire des mondes antiques (ANHIMA)",
+        "website": "https://www.inha.fr/fr/bibliotheque/repertoire-des-bibliotheques/ile-de-france/bibliotheque-gernet-glotz.html",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           7.2690734,
           43.7053729
         ]
@@ -1357,6 +3532,57 @@
         "name": "Alliance française",
         "opening_hours:signed": "no",
         "website": "https://af-nice.fr/fr",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3509515,
+          48.8503641
+        ]
+      },
+      "properties": {
+        "@id": "node/9685319988",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque des Bernardins",
+        "opening_hours": "Mo,We,Th 14:30-16:30 ; Tu,Sa 10:30-12:30",
+        "operator": "Culture et Bibliothèque Pour Tous",
+        "website": "http://www.cbpt-paris.org/index.php/14-adresses/38-bibliotheque-des-bernardins",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2821279,
+          48.843005
+        ]
+      },
+      "properties": {
+        "@id": "node/9739432419",
+        "@type": "node",
+        "addr:housenumber": "142",
+        "addr:street": "Rue Saint-Charles",
+        "amenity": "library",
+        "check_date": "2024-06-15",
+        "contact:city": "Paris",
+        "contact:housenumber": "142",
+        "contact:phone": "+33 1 45 78 92 95",
+        "contact:postcode": "75015",
+        "contact:street": "Rue Saint-Charles",
+        "email": "lartdelajoie3@orange.fr",
+        "name": "L’Art de la Joie",
+        "opening_hours": "Mo-Sa 09:30-19:30; Su 10:00-13:30",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "wheelchair": "yes",
         "spotType": "Library"
       }
     },
@@ -1433,6 +3659,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.314758,
+          48.8383274
+        ]
+      },
+      "properties": {
+        "@id": "node/10181547561",
+        "@type": "node",
+        "amenity": "library",
+        "description": "Bibliothèque sonore de Paris",
+        "name": "Albert Ross",
+        "phone": "+33 1 45 67 03 74",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4007778,
+          48.8546234
+        ]
+      },
+      "properties": {
+        "@id": "node/10536400363",
+        "@type": "node",
+        "addr:housenumber": "48",
+        "addr:street": "Rue des Vignoles",
+        "amenity": "library",
+        "books": "fanzine",
+        "check_date": "2025-10-26",
+        "description": "fanzinothèque",
+        "name": "Fanzinarium",
+        "opening_hours": "We 18:30-20:30; Su 15:00-19:00",
+        "operator:type": "association",
+        "ref:FR:SIRET": "92315179900015",
+        "website": "https://www.fanzinarium.fr/",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3325958,
+          48.8555043
+        ]
+      },
+      "properties": {
+        "@id": "node/10657252715",
+        "@type": "node",
+        "amenity": "library",
+        "name": "BU Saint-Germain-des-Prés",
+        "opening_hours": "Mo-Fr 09:00-22:00; Sa 10:00-19:00",
+        "operator": "Université Paris-Cité",
+        "website": "https://u-paris.fr/bibliotheques/bu-st-germain-des-pres/",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4470675,
           43.5909217
         ]
@@ -1448,6 +3739,33 @@
         "operator:type": "public",
         "source": "local knowledge",
         "website": "https://welcomedesk.univ-toulouse.fr/actualites/ouverture-turbine-nouveau-lieu-dedie-lengagement-etudiant",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3461374,
+          48.8211689
+        ]
+      },
+      "properties": {
+        "@id": "node/10897713630",
+        "@type": "node",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-11-11",
+        "contact:housenumber": "39",
+        "contact:street": "Rue des Longues Raies",
+        "level": "0",
+        "name": "Bibliothèque Charléty",
+        "network": "Culture et Bibliothèques Pour Tous",
+        "network:wikidata": "Q3007419",
+        "network:wikipedia": "fr:Culture et bibliothèques pour tous",
+        "opening_hours": "Tu-Fr 15:00-19:00; PH closed",
+        "website": "https://www.cbpt75.com/index.php?lvl=cmspage&pageid=6&id_rubrique=135",
+        "wheelchair": "yes",
         "spotType": "Library"
       }
     },
@@ -1553,6 +3871,49 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3741853,
+          48.8763584
+        ]
+      },
+      "properties": {
+        "@id": "node/11178302837",
+        "@type": "node",
+        "addr:housenumber": "19",
+        "addr:street": "Rue Burnouf",
+        "amenity": "library",
+        "name": "Libertad",
+        "opening_hours": "Tu 17:00-20:00",
+        "website": "https://bibliothequelibertad.noblogs.org/",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2990589,
+          48.8588694
+        ]
+      },
+      "properties": {
+        "@id": "node/11238211395",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "10",
+        "addr:postcode": "75007",
+        "addr:street": "Rue du Général Camou",
+        "amenity": "library",
+        "name": "The American Library in Paris",
+        "website": "https://americanlibraryinparis.org/",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.3780199,
           43.29713
         ]
@@ -1606,6 +3967,25 @@
         "name": "Bibliothèque du Port",
         "operator": "Bibliothèque municipale de Nice",
         "phone": "+33 4 93 89 09 46",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3452848,
+          48.843277
+        ]
+      },
+      "properties": {
+        "@id": "node/11941090998",
+        "@type": "node",
+        "amenity": "library",
+        "level": "1",
+        "name": "Bibliothèque de l'Institut Jean Nicod",
+        "website": "https://explore.psl.eu/fr/institution/biblioth%C3%A8que-de-linstitut-jean-nicod-ehess-ens-cnrs",
         "spotType": "Library"
       }
     },
@@ -1676,6 +4056,58 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3205427,
+          48.8570846
+        ]
+      },
+      "properties": {
+        "@id": "node/12277327287",
+        "@type": "node",
+        "addr:housenumber": "116",
+        "addr:postcode": "75007",
+        "addr:street": "Rue de Grenelle",
+        "amenity": "library",
+        "email": "bibliotheque.saint-simon@paris.fr",
+        "name": "Bibliothèque Saint-Simon",
+        "opening_hours": "Tu-Fr 12:00-19:00; Sa 10:00-13:00",
+        "phone": "+33 1 53 58 76 40",
+        "website": "https://www.paris.fr/lieux/bibliotheque-saint-simon-1693",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2681949,
+          48.8421285
+        ]
+      },
+      "properties": {
+        "@id": "node/12318640273",
+        "@type": "node",
+        "access_simple": "private",
+        "amenity": "library",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "internet_access:ssid": "eduroam",
+        "level": "3",
+        "name": "Bibliothèque Universitaire IUT",
+        "opening_hours": "Mo-Fr 09:00-19:00",
+        "operator": "Université Paris Cité",
+        "operator:type": "university",
+        "survey:date": "2024-11-06",
+        "website": "https://u-paris.fr/bibliotheques/bu-iut/",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.3827523,
           43.2975639
         ]
@@ -1721,6 +4153,294 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3452552,
+          48.8429904
+        ]
+      },
+      "properties": {
+        "@id": "node/12616680120",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque de l'ENSAD",
+        "website": "https://bibliotheque.ensad.fr/exl-php/accueil",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3885639,
+          48.831523
+        ]
+      },
+      "properties": {
+        "@id": "node/12635894867",
+        "@type": "node",
+        "access": "yes",
+        "addr:city": "Paris",
+        "addr:housenumber": "40",
+        "addr:postcode": "75012",
+        "addr:street": "Avenue des Terroirs de France",
+        "amenity": "library",
+        "check_date": "2025-09-26",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "3;4",
+        "level:ref": "2;3",
+        "name": "Bibliothèque Publique d'Information",
+        "opening_hours": "Mo 12:00-22:00; We-Fr 12:00-22:00; Sa-Su 11:00-22:00",
+        "operator:type": "public",
+        "phone": "+33 1 44 78 12 75",
+        "rental": "no",
+        "short_name": "BPI",
+        "website": "https://www.bpi.fr",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3646233,
+          48.8353147
+        ]
+      },
+      "properties": {
+        "@id": "node/12719009902",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque Charcot",
+        "opening_hours": "Mo-Fr 13:30-17:30",
+        "operator": "Sorbonne Université",
+        "operator:type": "university",
+        "operator:wikidata": "Q41497113",
+        "phone": "+33 1 57 27 46 16",
+        "ref:isil": "FR-751132103",
+        "website": "https://www.sorbonne-universite.fr/bu/decouvrir-nos-bibliotheques/la-bibliotheque-charcot",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3287514,
+          48.8542008
+        ]
+      },
+      "properties": {
+        "@id": "node/12753433333",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque de SciencesPo",
+        "opening_hours": "Mo-Fr 08:00-21:30",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2884266,
+          48.8626018
+        ]
+      },
+      "properties": {
+        "@id": "node/12766701247",
+        "@type": "node",
+        "amenity": "library",
+        "name": "Bibliothèque d'architecture contemporaine",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345789,
+          48.8626842
+        ]
+      },
+      "properties": {
+        "@id": "node/12782079808",
+        "@type": "node",
+        "addr:door": "Saint-Eustache",
+        "amenity": "library",
+        "check_date": "2025-08-14",
+        "email": "mmp@paris.fr",
+        "level": "-2",
+        "name": "Médiathèque musicale de Paris",
+        "opening_hours": "Mo,Su off; Tu-Sa 12:00-19:00",
+        "phone": "+33 1 55 80 75 30",
+        "website": "https://www.paris.fr/lieux/mediatheque-musicale-de-paris-mmp-2883",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3591163,
+          48.8173258
+        ]
+      },
+      "properties": {
+        "@id": "node/12957281496",
+        "@type": "node",
+        "amenity": "library",
+        "contact:facebook": "https://www.facebook.com/p/M%C3%A9diath%C3%A8que-Virginia-Woolf-100095232668975/",
+        "contact:instagram": "https://www.instagram.com/mediathequevirginiawoolf/",
+        "description": "Médiathèque de 1 000 m², sur 2 étages : prêt gratuit, espace de travail, accompagnement, ateliers, programmation culturelle variée...",
+        "email": "mediatheque.virginia.woolf@paris.fr",
+        "image": "https://cdn.paris.fr/eqpts-prod/2025/06/07/6ba4aba4cb33bc8a29516f4ffd2cf29c.jpg",
+        "name": "Médiathèque Virginia Woolf",
+        "opening_hours": "Tu,Fr 14:00-19:00; Sa 10:00-18:00",
+        "phone": "+33 1 44 08 12 71",
+        "start_date": "2025-07-04",
+        "website": "https://www.paris.fr/lieux/mediatheque-virginia-woolf-20602",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3801523,
+          48.8405146
+        ]
+      },
+      "properties": {
+        "@id": "node/12966392156",
+        "@type": "node",
+        "access": "yes",
+        "amenity": "library",
+        "name": "Centre de documentation Économie - Finances",
+        "opening_hours": "Tu-Fr 13:00-17:00",
+        "phone": "+33 1 53 18 72 00",
+        "ref:isil": "FR-751125202",
+        "short_name": "Cedef",
+        "website": "https://www.economie.gouv.fr/cedef",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3800793,
+          48.8911952
+        ]
+      },
+      "properties": {
+        "@id": "node/13008643553",
+        "@type": "node",
+        "addr:housenumber": "59",
+        "addr:street": "Rue de l'Ourcq",
+        "amenity": "library",
+        "check_date": "2025-07-18",
+        "name": "Matéo Maximoff",
+        "opening_hours": "Mo-Tu,Th 14:00-18:00; We 10:00-13:00,14:00-18:00; Fr-Su off",
+        "phone": "+33 1 40 35 12 17",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3465172,
+          48.8998766
+        ]
+      },
+      "properties": {
+        "@id": "node/13149484925",
+        "@type": "node",
+        "access": "customers",
+        "addr:city": "Paris",
+        "addr:housenumber": "2",
+        "addr:postcode": "75018",
+        "addr:street": "Rue Francis de Croisset",
+        "alt_name": "Bibliothèque universitaire Clignancourt",
+        "amenity": "library",
+        "email": "bu-clignancourt@sorbonne-universite.fr",
+        "internet_access:fee": "customers",
+        "internet_access:ssid": "eduroam",
+        "level": "0;1;2",
+        "name": "Bibliothèque Clignancourt",
+        "opening_hours": "Mo, We-Fr 09:00-19:00; Tu 09:00-20:00; Sa 10:00-17:30",
+        "operator": "Bibliothèque de Sorbonne Université",
+        "operator:type": "university",
+        "ref:isil": "FR-751182102",
+        "short_name": "BU Clignancourt",
+        "website": "https://www.sorbonne-universite.fr/bu/decouvrir-nos-bibliotheques/la-bibliotheque-clignancourt",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3381977,
+          48.8191159
+        ]
+      },
+      "properties": {
+        "@id": "node/13200989364",
+        "@type": "node",
+        "amenity": "library",
+        "check_date": "2025-10-07",
+        "fee": "yes",
+        "level": "4",
+        "level:ref": "2",
+        "name": "Bibliothèque centrale",
+        "opening_hours": "Sep-Jun Mo-Fr 10:00-22:00; Sa-Su 13:00-19:00; Jul-Aug Mo-Fr 10:00-22:00",
+        "operator": "Cité internationale universitaire de Paris",
+        "operator:wikidata": "Q1094300",
+        "website": "https://www.ciup.fr/services/bibliotheque-centrale/",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2678253,
+          48.8494822
+        ]
+      },
+      "properties": {
+        "@id": "node/13231654468",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "63",
+        "addr:postcode": "75016",
+        "addr:street": "Rue Jean de La Fontaine",
+        "amenity": "library",
+        "name": "Bibliothèque Pour Tous - Théophile Gautier - Adulte et Jeunesse",
+        "opening_hours": "Mo-Th 14:30-18:30; Fr 14:30-17:00; Sa 10:00-12:00",
+        "phone": "+33 1 71 60 60 14",
+        "website": "https://www.cbpt-paris.org/index.php/14-adresses/23-bibliotheque-theophile-gautier",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4033416,
           43.5764898
         ]
@@ -1730,6 +4450,165 @@
         "@type": "node",
         "amenity": "library",
         "name": "Bibliotheque universitaire centrale",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3548227,
+          48.8666125
+        ]
+      },
+      "properties": {
+        "@id": "node/13284777561",
+        "@type": "node",
+        "access": "permit",
+        "amenity": "library",
+        "name": "Bibliothèque du CNAM",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343096,
+          48.8427274
+        ]
+      },
+      "properties": {
+        "@id": "node/13289917825",
+        "@type": "node",
+        "amenity": "library",
+        "name": "CNAM, bibliothèque Gay-Lussac",
+        "website": "https://bibliotheques.cnam.fr/opac/library/BIBLIOTHEQUE%20GAY-LUSSAC/CNA08",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3359976,
+          48.8506786
+        ]
+      },
+      "properties": {
+        "@id": "node/13304771963",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "5",
+        "addr:postcode": "75006",
+        "addr:street": "Rue Garancière",
+        "amenity": "library",
+        "name": "BU Garancière",
+        "operator": "Université Paris Cité",
+        "operator:type": "public",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2908027,
+          48.8340829
+        ]
+      },
+      "properties": {
+        "@id": "node/13304771993",
+        "@type": "node",
+        "addr:housenumber": "1",
+        "addr:street": "Rue Lacretelle",
+        "amenity": "library",
+        "name": "BU STAPS",
+        "operator": "Université Paris Cité",
+        "operator:type": "government_facility-public",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3296361,
+          48.8539633
+        ]
+      },
+      "properties": {
+        "@id": "node/13332663131",
+        "@type": "node",
+        "addr:city": "Paris",
+        "addr:housenumber": "54",
+        "addr:postcode": "75007",
+        "addr:street": "Rue des Saints-Pères",
+        "amenity": "library",
+        "name": "Bibliothèque du protestantisme français",
+        "opening_hours": "We-Fr 09:30-17:30",
+        "phone": "+33 1 45 48 62 07",
+        "website": "https://www.shpf.fr/bibliotheque/",
+        "wikidata": "Q62064974",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3257494,
+          48.8337911
+        ]
+      },
+      "properties": {
+        "@id": "way/16928638",
+        "@type": "way",
+        "amenity": "library",
+        "check_date:opening_hours": "2024-08-27",
+        "name": "Bibliothèque Georges Brassens",
+        "name:etymology:wikidata": "Q449",
+        "opening_hours": "Tu-We 10:00-19:00; Th-Fr 13:00-19:00; Sa 10:00-18:00",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3558949,
+          48.8426154
+        ]
+      },
+      "properties": {
+        "@id": "way/21999238",
+        "@type": "way",
+        "amenity": "library",
+        "architect": "H. M. Delaage",
+        "building": "civic",
+        "building:levels": "4",
+        "check_date": "2025-06-22",
+        "description": "RdC : médiathèque (grand public) ; 2ème étage : bibliothèque de recherche",
+        "name": "Bibliothèque centrale du Muséum",
+        "name:en": "Library of Natural history national Museum",
+        "name:zh": "自然历史博物馆图书馆",
+        "opening_hours": "Mo-Fr 09:00-19:00; Tu 13:00-19:00; Sa 10:00-19:00",
+        "operator": "Muséum national d'Histoire naturelle",
+        "phone": "+33140793627",
+        "start_date": "1963",
+        "toilets:wheelchair": "no",
+        "website": "https://www.mnhn.fr/fr/visitez/lieux/bibliotheques-museum",
+        "wheelchair": "yes",
+        "wikipedia": "fr:Muséum national d'histoire naturelle#Biblioth.C3.A8ques",
         "spotType": "Library"
       }
     },
@@ -1822,6 +4701,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3442872,
+          48.8915823
+        ]
+      },
+      "properties": {
+        "@id": "way/37133740",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "email": "bibliotheque.robert-sabatier@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Robert Sabatier",
+        "old_name": "Bibliothèque Clignancourt",
+        "opening_hours": "Tu 13:00-19:00; We 10:00-19:00; Th 13:00-19:00; Fr 13:00-19:00; Sa 10:00-18:00; Su 13:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 53 41 35 60",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour :2008",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-robert-sabatier-1742",
+        "wheelchair": "no",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.8436791,
           45.7464596
         ]
@@ -1862,6 +4773,198 @@
         "name": "BU Santé",
         "ref": "A7",
         "roof:shape": "flat",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3463367,
+          48.8477244
+        ]
+      },
+      "properties": {
+        "@id": "way/55353485",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "building:levels": "6",
+        "name": "Bibliothèque Sainte-Barbe - Université Sorbonne-Nouvelle",
+        "operator": "Université Sorbonne-Nouvelle",
+        "roof:levels": "1",
+        "short_name": "BSB",
+        "website": "https://www.bsb.univ-paris3.fr/accueil-bsb",
+        "wikidata": "Q2901315",
+        "wikipedia": "fr:Bibliothèque Sainte-Barbe",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3459545,
+          48.8471624
+        ]
+      },
+      "properties": {
+        "@id": "way/55353486",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:housenumber": "10",
+        "addr:postcode": "75005",
+        "addr:street": "Place du Panthéon",
+        "amenity": "library",
+        "building": "yes",
+        "check_date": "2025-12-08",
+        "contact:phone": "+33144419797",
+        "internet_access": "wlan",
+        "name": "Bibliothèque Sainte-Geneviève",
+        "name:ru": "Библиотека Святой Женевьевы",
+        "opening_hours": "Mo-Sa 10:00-22:00 ; Jul28 - Aug16 off",
+        "operator": "Université Sorbonne Nouvelle",
+        "operator:type": "public",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2010",
+        "website": "https://www.bsg.univ-paris3.fr/",
+        "wheelchair": "limited",
+        "wikidata": "Q517249",
+        "wikipedia": "fr:Bibliothèque Sainte-Geneviève",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3454676,
+          48.8473764
+        ]
+      },
+      "properties": {
+        "@id": "way/55353487",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:housenumber": "2",
+        "addr:postcode": "75005",
+        "addr:street": "Rue Cujas",
+        "amenity": "library",
+        "building": "yes",
+        "name": "Bibliothèque Cujas - Université Paris 1 Panthéon-Sorbonne",
+        "operator": "Université Paris 1 Panthéon-Sorbonne",
+        "operator:type": "public",
+        "phone": "+33 1 44 07 79 87",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "website": "https://biu-cujas.univ-paris1.fr/",
+        "wikidata": "Q2901279",
+        "wikipedia": "fr:Bibliothèque Cujas",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3619825,
+          48.8568691
+        ]
+      },
+      "properties": {
+        "@id": "way/56040613",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:housenumber": "24",
+        "addr:postcode": "75004",
+        "addr:street": "Rue Pavée",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Historique de la Ville de Paris",
+        "opening_hours": "Mo-Sa 10:00-18:00",
+        "phone": "+33 1 44 59 29 40",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-historique-de-la-ville-de-paris-bhvp-16",
+        "wheelchair": "no",
+        "wikidata": "Q2901443",
+        "wikipedia": "fr:Bibliothèque historique de la ville de Paris",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3758389,
+          48.8336355
+        ]
+      },
+      "properties": {
+        "@id": "way/56132291",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:postcode": "75706",
+        "addr:street": "Quai François Mauriac",
+        "amenity": "library",
+        "check_date": "2025-08-01",
+        "check_date:opening_hours": "2024-05-21",
+        "name": "Bibliothèque nationale de France - François Mitterrand",
+        "name:etymology:wikidata": "Q2038",
+        "name:zh": "法国国家图书馆密特朗馆",
+        "opening_hours": "Mo 14:00-19:00; Tu-Sa 09:00-20:00; Su 13:00-19:00; PH off",
+        "panoramax": "9604d9af-3b75-41c5-a846-ffc595048967",
+        "phone": "+33 1 53 79 59 59",
+        "short_name": "BnF",
+        "website": "https://www.bnf.fr/fr/francois-mitterrand",
+        "wheelchair": "yes",
+        "wikidata": "Q24192554",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3636287,
+          48.8502323
+        ]
+      },
+      "properties": {
+        "@id": "way/56217774",
+        "@type": "way",
+        "amenity": "library",
+        "architect": "Théodore Labrouste;Germain Boffrand",
+        "architect:wikidata": "Q3526446",
+        "architect:wikipedia": "fr:Théodore Labrouste",
+        "building": "yes",
+        "building:levels": "4",
+        "check_date:opening_hours": "2025-04-21",
+        "heritage": "2",
+        "heritage:operator": "mhs",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "mhs:inscription_date": "2003-10-27",
+        "name": "Bibliothèque de l'Arsenal",
+        "name:zh": "阿瑟纳尔图书馆",
+        "opening_hours": "Mo 14:00-19:00; Tu-Fr 10:00-19:00; Sa 10:00-18:00; PH closed",
+        "ref:mhs": "PA00086239",
+        "roof:material": "slate",
+        "roof:shape": "hipped",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:architect": "data.gouv.fr:Ministère de la culture et de la communication - 05/2016",
+        "source:heritage": "data.gouv.fr:Ministère de la Culture - 03/2018",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.bnf.fr/fr/la_bnf/sites/a.site_bibliotheque_arsenal.html",
+        "wikidata": "Q2256147",
+        "wikipedia": "fr:Bibliothèque de l'Arsenal",
         "spotType": "Library"
       }
     },
@@ -1942,6 +5045,203 @@
         "name": "Médiathèque Paul-Zech",
         "roof:shape": "flat",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3741389,
+          48.83413
+        ]
+      },
+      "properties": {
+        "@id": "way/62379530",
+        "@type": "way",
+        "amenity": "library",
+        "architect": "Dominique Perrault",
+        "building": "yes",
+        "building:cladding": "glass",
+        "building:colour": "#68613c",
+        "building:facade:material": "glass",
+        "building:levels": "22",
+        "diff:ref:FR:RNB": "multiple",
+        "height": "79",
+        "layer": "1",
+        "name": "Tour des lettres",
+        "name:zh": "字母之塔",
+        "panoramax": "c172fe13-2ba5-43b5-b2f5-a6a92c5d4949",
+        "ref": "T4",
+        "ref:FR:RNB": "6GJ5DEVBJB95;P6TT8ZYYNRR6",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:architect": "data.culture.gouv.fr:Ministère de la Culture - Direction générale du Patrimoine et de l’Architecture - 2021-05",
+        "start_date": "1995",
+        "wikidata": "Q26994728",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3752986,
+          48.8347818
+        ]
+      },
+      "properties": {
+        "@id": "way/62379535",
+        "@type": "way",
+        "amenity": "library",
+        "architect": "Dominique Perrault",
+        "architect:wikidata": "Q504358",
+        "architect:wikipedia": "fr:Dominique Perrault",
+        "building": "yes",
+        "building:cladding": "glass",
+        "building:colour": "#68613c",
+        "building:facade:material": "glass",
+        "building:levels": "22",
+        "description": "Labellisé Architecture contemporaine remarquable ACR0000701",
+        "height": "79",
+        "layer": "1",
+        "name": "Tour des temps",
+        "name:zh": "时代之塔",
+        "panoramax": "99accc97-cb78-4d73-8088-54d276ae6659",
+        "ref:FR:RNB": "JT1NH76KP8ZS",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:architect": "data.culture.gouv.fr:Ministère de la Culture - Direction générale du Patrimoine et de l’Architecture - 2021-05",
+        "start_date": "1995",
+        "wikidata": "Q26994679",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3762548,
+          48.8324683
+        ]
+      },
+      "properties": {
+        "@id": "way/62379550",
+        "@type": "way",
+        "amenity": "library",
+        "architect": "Dominique Perrault",
+        "building": "yes",
+        "building:cladding": "glass",
+        "building:colour": "#68613c",
+        "building:facade:material": "glass",
+        "building:levels": "22",
+        "height": "79",
+        "layer": "1",
+        "name": "Tour des nombres",
+        "name:zh": "数字之塔",
+        "panoramax": "c172fe13-2ba5-43b5-b2f5-a6a92c5d4949",
+        "ref:FR:RNB": "CXVRVPBGGDZA",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:architect": "data.culture.gouv.fr:Ministère de la Culture - Direction générale du Patrimoine et de l’Architecture - 2021-05",
+        "start_date": "1995",
+        "wikidata": "Q26994727",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3774143,
+          48.8331206
+        ]
+      },
+      "properties": {
+        "@id": "way/62379561",
+        "@type": "way",
+        "amenity": "library",
+        "architect": "Dominique Perrault",
+        "building": "yes",
+        "building:cladding": "glass",
+        "building:colour": "#68613c",
+        "building:facade:material": "glass",
+        "building:levels": "22",
+        "height": "79",
+        "layer": "1",
+        "name": "Tour des lois",
+        "name:zh": "法律之塔",
+        "panoramax": "c172fe13-2ba5-43b5-b2f5-a6a92c5d4949",
+        "ref:FR:RNB": "NPV6FZ7F1GEP",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:architect": "data.culture.gouv.fr:Ministère de la Culture - Direction générale du Patrimoine et de l’Architecture - 2021-05",
+        "start_date": "1995",
+        "wikidata": "Q26994725",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3967159,
+          48.8766435
+        ]
+      },
+      "properties": {
+        "@id": "way/63212513",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "building:levels": "4",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "internet_access:ssid": "Paris Wi-Fi",
+        "name": "Médiathèque James Baldwin",
+        "old_name": "Lycée Hôtelier Jean Quarré",
+        "opening_hours": "Tu-Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00; Su 13:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 44 52 27 70",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "website": "https://www.paris.fr/lieux/mediatheque-james-baldwin-20205",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3881904,
+          48.87629
+        ]
+      },
+      "properties": {
+        "@id": "way/63243833",
+        "@type": "way",
+        "amenity": "library",
+        "building": "civic",
+        "building:levels": "2",
+        "check_date:opening_hours": "2025-10-29",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Jacqueline Dreyfus-Weill",
+        "old_name": "Bibliothèque Municipale Fessart",
+        "opening_hours": "Tu 14:00-19:00; We-Fr 14:00-18:00; Sa 10:00-12:30,14:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 42 08 49 15",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:internet_access": "Paris Open Data",
+        "start_date": "1931",
+        "wheelchair": "no",
         "spotType": "Library"
       }
     },
@@ -2131,6 +5431,112 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3537558,
+          48.8756263
+        ]
+      },
+      "properties": {
+        "@id": "way/76928239",
+        "@type": "way",
+        "addr:housenumber": "8",
+        "addr:postcode": "75010",
+        "addr:street": "Rue Léon Schwartzenberg",
+        "amenity": "library",
+        "architect": "Louis-Pierre Baltard",
+        "building": "civic",
+        "building:levels": "4",
+        "check_date": "2024-09-15",
+        "email": "mediatheque.francoise-sagan@paris.fr",
+        "heritage": "3",
+        "heritage:operator": "mhs",
+        "internet_access": "wlan",
+        "mhs:inscription_date": "2005-11-28",
+        "name": "Médiathèque Françoise-Sagan",
+        "name:zh": "弗朗索瓦丝·萨冈媒体图书馆",
+        "old_name": "ex-Hôpital Saint-Lazare",
+        "opening_hours": "Tu,Th,Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00; Su 13:00-18:00",
+        "phone": "+33 1 53 24 69 70",
+        "ref:mhs": "PA75100008",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "start_date": "1834",
+        "wheelchair": "yes",
+        "wikidata": "Q75829198",
+        "wikipedia": "fr:Médiathèque Françoise-Sagan",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3972916,
+          48.8424785
+        ]
+      },
+      "properties": {
+        "@id": "way/78006800",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "check_date": "2025-07-04",
+        "image": "https://www.api-site.paris.fr/equipements/2019/11/15/12/30/02/79a77f88-7709-4e42-b04d-db1621478a1b/P1010075.JPG",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Médiathèque Hélène Berr",
+        "note": "Fermeture pour travaux jusqu’en 2026",
+        "opening_hours": "closed",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/equipements/mediatheque-helene-berr-1726",
+        "wheelchair": "yes",
+        "wikidata": "Q112655802",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3662979,
+          48.8266925
+        ]
+      },
+      "properties": {
+        "@id": "way/79082858",
+        "@type": "way",
+        "addr:housenumber": "79",
+        "addr:street": "Rue Nationale",
+        "amenity": "library",
+        "building": "yes",
+        "check_date:opening_hours": "2025-10-27",
+        "contact:facebook": "mediatheque.jeanpierre.melville",
+        "contact:instagram": "mediathequemelville",
+        "email": "mediatheque.jean-pierre.melville@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Médiathèque Jean-Pierre Melville",
+        "opening_hours": "Sa 10:00-18:00; Su 13:00-18:00; Tu-Fr 13:00-19:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33153827676",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/mediatheque-jean-pierre-melville-1728",
+        "wheelchair": "yes",
+        "wikidata": "Q3332597",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.826787,
           45.7522292
         ]
@@ -2176,6 +5582,41 @@
         "phone": "+33 4 78 27 45 55",
         "website": "https://www.bm-lyon.fr/16-bibliotheques-et-un-bibliobus/bibliotheque-du-1er/",
         "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3036518,
+          48.8370022
+        ]
+      },
+      "properties": {
+        "@id": "way/85048462",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:housenumber": "41",
+        "addr:postcode": "75015",
+        "addr:street": "Rue d'Alleray",
+        "amenity": "library",
+        "check_date": "2025-09-28",
+        "check_date:opening_hours": "2025-09-28",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Médiathèque Marguerite Yourcenar",
+        "name:etymology:wikidata": "Q163118",
+        "note": "Fermée pour travaux à partir du 28 septembre 2025 au soir. Réouverture prévue pour mars 2026.",
+        "opening_hours": "off",
+        "phone": "+33 1 45 30 71 41",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/mediatheque-marguerite-yourcenar-6218",
+        "wheelchair": "yes",
+        "wikidata": "Q110100570",
         "spotType": "Library"
       }
     },
@@ -2585,6 +6026,33 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3323814,
+          48.8815115
+        ]
+      },
+      "properties": {
+        "@id": "way/172674926",
+        "@type": "way",
+        "amenity": "library",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Louise Walser-Gaillard",
+        "old_name": "Bibliothèque Chaptal",
+        "opening_hours": "Tu,Th,Fr 13:00-18:00; We,Sa 10:00-13:00,14:00-18:00",
+        "phone": "+33 1 49 70 92 80",
+        "source:internet_access": "Paris Open Data",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.paris.fr/equipements/bibliotheque-louise-walser-gaillard-ex-chaptal-6094",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4419307,
           43.5788112
         ]
@@ -2666,6 +6134,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3542498,
+          48.8844014
+        ]
+      },
+      "properties": {
+        "@id": "way/232589074",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:housenumber": "2",
+        "addr:postcode": "75018",
+        "addr:street": "Rue Fleury",
+        "amenity": "library",
+        "building": "yes",
+        "building:levels": "6",
+        "email": "bibliotheque.goutte-dor@paris.fr",
+        "name": "Bibliothèque Goutte d’Or",
+        "opening_hours": "Tu 13:00-19:00; We 10:00-18:00; Th-Fr 13:00-19:00; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 53 09 26 10",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "website": "https://www.paris.fr/lieux/bibliotheque-goutte-d-or-1744",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           7.2844522,
           43.7243729
         ]
@@ -2685,6 +6185,111 @@
         "phone": "+33 4 97 13 49 32",
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "website": "https://bmvr.nice.fr//EXPLOITATION/bibliotheque-pasteur-camille-claudel.aspx",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3632054,
+          48.8889581
+        ]
+      },
+      "properties": {
+        "@id": "way/272389977",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:housenumber": "26",
+        "addr:postcode": "75018",
+        "addr:street": "Esplanade Nathalie Sarraute",
+        "alt_name": "Bibliothèque Vaclav Havel",
+        "amenity": "library",
+        "building": "yes",
+        "email": "bibliotheque.vaclav-havel@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "internet_access:ssid": "Paris Wi-Fi",
+        "name": "Bibliothèque Václav Havel",
+        "name:etymology:wikidata": "Q36233",
+        "opening_hours": "Tu-Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 40 38 65 40",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2016",
+        "website": "https://www.paris.fr/lieux/bibliotheque-vaclav-havel-8693",
+        "wikidata": "Q104033931",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3451499,
+          48.8416996
+        ]
+      },
+      "properties": {
+        "@id": "way/304437711",
+        "@type": "way",
+        "amenity": "library",
+        "check_date:opening_hours": "2023-02-20",
+        "indoor": "room",
+        "level": "0",
+        "name": "Bibliothèque d'Archéologie",
+        "opening_hours": "Tu-Fr 09:30-12:30,13:30-17:30, Mo 13:30-17:30",
+        "room": "library",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3455994,
+          48.8418628
+        ]
+      },
+      "properties": {
+        "@id": "way/304437712",
+        "@type": "way",
+        "amenity": "library",
+        "check_date:opening_hours": "2025-02-27",
+        "indoor": "room",
+        "level": "0",
+        "name": "Bibliothèque des Lettres",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00",
+        "room": "library",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3454838,
+          48.8416292
+        ]
+      },
+      "properties": {
+        "@id": "way/304437713",
+        "@type": "way",
+        "amenity": "library",
+        "indoor": "room",
+        "level": "0",
+        "name": "Bibliothèque des Mathématiques",
+        "opening_hours": "Mo-Fr 10:00-17:00,09:30-19:00",
+        "room": "library",
+        "wheelchair": "yes",
         "spotType": "Library"
       }
     },
@@ -2714,6 +6319,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.4028795,
+          48.8601141
+        ]
+      },
+      "properties": {
+        "@id": "way/307595292",
+        "@type": "way",
+        "addr:street": "Rue de Bagnolet",
+        "amenity": "library",
+        "building": "civic",
+        "building:levels": "4",
+        "check_date": "2025-07-12",
+        "contact:housenumber": "115",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "internet_access:ssid": "Paris Wi-Fi",
+        "layer": "-1",
+        "location": "surface",
+        "name": "Médiathèque Marguerite Duras",
+        "opening_hours": "Tu,Th,Fr 13:00-19:00; We 10:00-19:00; Sa 10:00-18:00; Su 13:00-18:00; Jul-Aug Tu-Fr 13:00-19:00; Sa 10:00-18:00",
+        "operator": "Mairie de Paris",
+        "operator:type": "government",
+        "operator:wikidata": "Q3278478",
+        "phone": "+33 1 55 25 49 10",
+        "source": "survey:2014",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/mediatheque-marguerite-duras-1752",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           7.266693,
           43.7176345
         ]
@@ -2734,6 +6376,35 @@
         "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
         "website": "https://bu.univ-cotedazur.fr/fr/bibliotheques/bu-sciences",
         "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.352234,
+          48.8600802
+        ]
+      },
+      "properties": {
+        "@id": "way/365737093",
+        "@type": "way",
+        "amenity": "library",
+        "building:levelPlan": "3",
+        "check_date": "2023-05-13",
+        "email": "bibliotheque.kandinsky@centrepompidou.fr",
+        "fax": "+33 1 44 78 12 08",
+        "indoor": "room",
+        "level": "3",
+        "name": "Bibliothèque Kandinsky",
+        "opening_hours": "Mo, We, Th, Fr 11:00-17:30",
+        "operator": "RMN-Grand Palais",
+        "phone": "+33 1 44 78 12 33",
+        "source": "survey",
+        "wheelchair": "yes",
+        "wikidata": "Q20670712",
         "spotType": "Library"
       }
     },
@@ -2851,6 +6522,63 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3568112,
+          48.8469071
+        ]
+      },
+      "properties": {
+        "@id": "way/426888479",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "building:levels": "1",
+        "contact:city": "Paris",
+        "contact:housenumber": "4",
+        "contact:phone": "+33 1 44 27 38 38",
+        "contact:postcode": "75005",
+        "contact:street": "Place Jussieu",
+        "contact:website": "https://www.sorbonne-universite.fr/offre-de-formation/la-bibliotheque-de-sorbonne-universite/decouvrir-nos-bibliotheques/la-15",
+        "covered": "yes",
+        "description": "Bibliothèque universitaire scientifique pluridisciplinaire. Patios 33/54, RDC 4 place Jussieu, 75005 Paris",
+        "level": "-2",
+        "location": "surface",
+        "name": "Bibliothèque des licences",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3552895,
+          48.8479263
+        ]
+      },
+      "properties": {
+        "@id": "way/678151249",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:housenumber": "4",
+        "addr:postcode": "75005",
+        "addr:street": "Place Jussieu",
+        "amenity": "library",
+        "building": "yes",
+        "covered": "yes",
+        "internet_access": "wlan",
+        "name": "Bibliothèque Biologie-Chimie-Physique recherche",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "+33144275576",
+        "short_name": "bibliothèque BCPR",
+        "website": "https://www.sorbonne-universite.fr/offre-de-formation/la-bibliotheque-de-sorbonne-universite/decouvrir-nos-bibliotheques/la-8",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.860361,
           45.7479413
         ]
@@ -2926,6 +6654,66 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3577828,
+          48.8460609
+        ]
+      },
+      "properties": {
+        "@id": "way/913102975",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:housenumber": "4",
+        "addr:postcode": "75005",
+        "addr:street": "Place Jussieu",
+        "amenity": "library",
+        "covered": "yes",
+        "description": "Bibliothèque universitaire scientifique pluridisciplinaire. Atrium , RDC 4 place Jussieu, 75005 Paris",
+        "level": "-1",
+        "location": "surface",
+        "name": "Bibliothèque de l'atrium",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "+33144275755",
+        "website": "https://www.sorbonne-universite.fr/offre-de-formation/la-bibliotheque-de-sorbonne-universite/decouvrir-nos-bibliotheques/la-6",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3561499,
+          48.8460889
+        ]
+      },
+      "properties": {
+        "@id": "way/913102977",
+        "@type": "way",
+        "addr:city": "Paris",
+        "addr:housenumber": "4",
+        "addr:postcode": "75005",
+        "addr:street": "Place Jussieu",
+        "amenity": "library",
+        "building": "yes",
+        "building:levels": "1",
+        "covered": "yes",
+        "description": "Bibliothèque universitaire scientifique pluridisciplinaire. Patios 45/46, RDC 4 place Jussieu, 75005 Paris",
+        "level": "-1",
+        "location": "surface",
+        "name": "Bibliothèque des licences 1",
+        "opening_hours": "Mo-Fr 09:00-21:00",
+        "phone": "+33 1 44 27 38 38",
+        "website": "https://www.sorbonne-universite.fr/offre-de-formation/la-bibliotheque-de-sorbonne-universite/decouvrir-nos-bibliotheques/la-5",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.8805227,
           45.7415379
         ]
@@ -2963,6 +6751,59 @@
         "name": "1.4 Bibliothèque de l'Ecole Nationale Vétérinaire de Toulouse",
         "phone": "+33561193202",
         "website": "https://envt.fr/bibliotheque/",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3388452,
+          48.8393953
+        ]
+      },
+      "properties": {
+        "@id": "way/1153053258",
+        "@type": "way",
+        "alt_name": "Bibliothèque de Port Royal",
+        "amenity": "library",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "layer": "1",
+        "name": "Bibliothèque Rainer Maria Rilke",
+        "opening_hours": "Tu,Th,Fr 13:00-19:00; Sa 10:00-18:00; We 10:00-19:00",
+        "phone": "+33 1 56 81 10 70",
+        "source:internet_access": "Paris Open Data",
+        "website": "https://www.paris.fr/lieux/bibliotheque-rainer-maria-rilke-1672",
+        "wheelchair": "yes",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4415662,
+          48.8396457
+        ]
+      },
+      "properties": {
+        "@id": "way/1155244208",
+        "@type": "way",
+        "amenity": "library",
+        "building": "yes",
+        "description": "Bibliothèque spécialisée nature",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "ParisWifi du Parc Floral",
+        "name": "Bibliothèque de la Maison Paris Nature",
+        "operator": "Mairie de Paris",
+        "operator:type": "public",
+        "website": "https://www.paris.fr/lieux/bibliotheque-de-la-maison-paris-nature-6620",
         "spotType": "Library"
       }
     },
@@ -3017,6 +6858,86 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3384559,
+          48.8672834
+        ]
+      },
+      "properties": {
+        "@id": "relation/545655",
+        "@type": "relation",
+        "addr:city": "Paris",
+        "addr:housenumber": "58",
+        "addr:postcode": "75002",
+        "addr:street": "Rue de Richelieu",
+        "amenity": "library",
+        "building": "yes",
+        "heritage": "2",
+        "heritage:operator": "mhs",
+        "mhs:inscription_date": "1983",
+        "name": "Bibliothèque nationale de France, Richelieu",
+        "name:zh": "法国国家图书馆黎塞留馆",
+        "opening_hours": "Mo 14:00-19:30; Tu 9:00-20:00; We-Fr 9:00-19:30; Sa 9:00-18:30; Su 10:00-18:00",
+        "ref:mhs": "PA00086009",
+        "short_name": "BnF, Richelieu",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:heritage": "data.gouv.fr:Ministère de la Culture - 08/2011",
+        "type": "multipolygon",
+        "wikidata": "Q3145692",
+        "wikipedia": "fr:Bibliothèque nationale de France#Site Richelieu / Louvois",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341703,
+          48.8398444
+        ]
+      },
+      "properties": {
+        "@id": "relation/931378",
+        "@type": "relation",
+        "amenity": "library",
+        "building": "yes",
+        "building:part": "no",
+        "name": "Bibliothèque Centrale du Service de Santé des Armées",
+        "opening_hours": "Mo-Th 10:00-18:00, Fr 10:00-16:00",
+        "type": "multipolygon",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3350178,
+          48.8431501
+        ]
+      },
+      "properties": {
+        "@id": "relation/1004404",
+        "@type": "relation",
+        "amenity": "library",
+        "building": "university",
+        "internet_access": "yes",
+        "name": "Faculté de Pharmacie de Paris",
+        "operator": "Université Paris Cité",
+        "operator:type": "public",
+        "type": "multipolygon",
+        "website": "https://u-paris.fr/",
+        "wikidata": "Q3064295",
+        "wikipedia": "fr:Faculté de pharmacie de Paris",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.4651011,
           43.5637744
         ]
@@ -3031,6 +6952,42 @@
         "building": "civic",
         "name": "BU SCD",
         "type": "multipolygon",
+        "spotType": "Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2788752,
+          48.8401059
+        ]
+      },
+      "properties": {
+        "@id": "relation/12548215",
+        "@type": "relation",
+        "addr:housenumber": "8",
+        "addr:postcode": "75015",
+        "addr:street": "Rue de la Montagne d'Aulas",
+        "amenity": "library",
+        "building": "public",
+        "check_date": "2025-03-11",
+        "contact:city": "Paris",
+        "contact:housenumber": "8",
+        "contact:postcode": "75015",
+        "contact:street": "Rue de la Montagne d'Aulas",
+        "contact:website": "https://www.paris.fr/equipements/bibliotheque-gutenberg-1736",
+        "email": "bibliotheque.gutenberg@paris.fr",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:operator": "Mairie de Paris",
+        "name": "Bibliothèque Gutenberg",
+        "opening_hours": "Tu, Th 13:30-17:30; We, Fr-Sa 10:00-12:30, 13:30-17:30",
+        "phone": "+33 1 45 54 69 76",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2010",
+        "type": "multipolygon",
+        "wheelchair": "yes",
         "spotType": "Library"
       }
     }

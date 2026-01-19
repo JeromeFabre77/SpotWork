@@ -71,7 +71,7 @@ const fetchCoworkingData = () =>
     fetch("data/coworking_france.geojson").then((res) => res.json());
 
 const fetchLibraryData = () =>
-    fetch("data/bibliotheques.geojson").then((res) => res.json());
+    fetch("data/libraries_france.geojson").then((res) => res.json());
 
 const fetchCofeeData = () =>
     fetch("data/cofee_france.geojson").then((res) => res.json());
