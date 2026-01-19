@@ -181,17 +181,17 @@ function saveToFile(data, filename) {
 
 async function main() {
     try {
-        // const coworkingGeojson = await fetchCoworkingSpots();
-        // addTypeOfSites(coworkingGeojson, "Coworking");
-        // saveToFile(coworkingGeojson, "coworking_france.geojson");
-        // console.log(`📁 Total coworking: ${coworkingGeojson.features.length} features`);
-        // console.log("✅ Terminé !");
-        //
-        // const cofeeGeojson = await fetchCofee();
-        // addTypeOfSites(cofeeGeojson, "Cofee");
-        // saveToFile(cofeeGeojson, "cofee_france.geojson");
-        // console.log(`📁 Total cafés: ${cofeeGeojson.features.length} features`);
-        // console.log("✅ Terminé !");
+        const coworkingGeojson = await fetchCoworkingSpots();
+        addTypeOfSites(coworkingGeojson, "Coworking");
+        saveToFile(coworkingGeojson, "coworking_france.geojson");
+        console.log(`📁 Total coworking: ${coworkingGeojson.features.length} features`);
+        console.log("✅ Terminé !");
+
+        const cofeeGeojson = await fetchCofee();
+        addTypeOfSites(cofeeGeojson, "Cofee");
+        saveToFile(cofeeGeojson, "cofee_france.geojson");
+        console.log(`📁 Total cafés: ${cofeeGeojson.features.length} features`);
+        console.log("✅ Terminé !");
 
         const librariesGeojson = await fetchLibraries();
         addTypeOfSites(librariesGeojson, "Library");
