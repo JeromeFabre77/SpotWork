@@ -43,7 +43,7 @@ const debounce = (func, delay) => {
 };
 
 const hasValidProperties = (feature) =>
-  feature.properties?.name || feature.properties?.nometablissement;
+  feature.properties?.name && feature.properties?.opening_hours !== "closed";
 
 const hasValidGeometry = (feature) => {
   const coords = feature?.geometry?.coordinates;
@@ -55,7 +55,13 @@ const hasValidGeometry = (feature) => {
 };
 
 const getCity = (props) => {
-  return props.commune || props.city || props["addr:city"] || "";
+  return (
+    props["addr:city"] ||
+    props["contact:city"] ||
+    props.city ||
+    props.commune ||
+    ""
+  );
 };
 
 const hasWifi = (props) => {
@@ -233,7 +239,7 @@ const fetchCoworkingData = () =>
   fetch("data/coworking_france.geojson").then((res) => res.json());
 
 const fetchLibraryData = () =>
-  fetch("data/bibliotheques.geojson").then((res) => res.json());
+  fetch("data/libraries_france.geojson").then((res) => res.json());
 
 const fetchCofeeData = () =>
   fetch("data/cofee_france.geojson").then((res) => res.json());
@@ -349,10 +355,10 @@ const createMarker = (feature) => {
   const props = feature.properties;
 
   const marker = L.marker([lat, lng], {
-    title: props.name || props.nometablissement,
+    title: props.name,
   });
 
-  marker.bindPopup(props.name || props.nometablissement);
+  marker.bindPopup(props.name);
 
   marker.setIcon(
     L.icon({
@@ -618,7 +624,6 @@ const processCoworkingData = (data) => {
     );
   });
 };
-
 const processLibraryData = (data) => {
   if (!data?.features) return;
 
@@ -635,19 +640,26 @@ const processLibraryData = (data) => {
       ),
     });
 
+    const street = props["addr:street"] || props["contact:street"] || "";
+    const postcode = props["addr:postcode"] || props["contact:postcode"] || "";
+    const city = getCity(props);
+    const address =
+      street && postcode && city
+        ? `${street}, ${postcode} ${city}`
+        : street && city
+          ? `${street}, ${city}`
+          : null;
+
     storeTileData(
       {
-        title: props.nometablissement,
+        title: props.name,
         type: props.spotType,
-        hours: props.heuresouverture,
-        phone: props.telephone,
-        address:
-          props.nomrue && props.codepostal && props.commune
-            ? `${props.nomrue}, ${props.codepostal} ${props.commune}`
-            : null,
+        hours: props.opening_hours,
+        phone: props.phone || props["contact:phone"],
+        address: address,
         wifi: hasWifi(props),
-        websiteUrl: props.accesweb,
-        description: props.descoll,
+        websiteUrl: props.website || props["contact:website"],
+        description: props.description,
       },
       feature,
     );
