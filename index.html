@@ -15,6 +15,7 @@
                     <img src="assets/spot_work_logo.svg" alt="SpotWork" />
                     <form>
                         <input
+                            id="search-input"
                             type="text"
                             placeholder="Rechercher par villes, types de lieux..."
                         />
@@ -103,6 +104,45 @@
                         <ul id="modal-services-list"></ul>
                     </div>
                     <div class="modal-actions" id="modal-actions"></div>
+                </div>
+            </div>
+        </div>
+        <div id="comparison-modal" class="modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-content comparison-modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <h2>Comparaison des lieux</h2>
+                        <div class="comparison-subtitle">
+                            <span id="comparison-modal-count">0</span> lieux
+                            sélectionnés
+                        </div>
+                    </div>
+                    <div
+                        id="comparison-recommendation"
+                        class="comparison-recommendation"
+                    ></div>
+
+                    <div
+                        class="comparison-graphs-container"
+                        id="comparison-graphs"
+                    ></div>
+
+                    <div class="modal-actions">
+                        <button
+                            id="clear-comparison-btn"
+                            class="modal-btn modal-btn-secondary"
+                        >
+                            Vider la sélection
+                        </button>
+                        <button
+                            id="close-comparison-btn"
+                            class="modal-btn modal-btn-primary"
+                        >
+                            Fermer
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
