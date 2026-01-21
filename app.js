@@ -73,6 +73,33 @@ const hasWifi = (props) => {
   );
 };
 
+const getWifiFeeStatus = (props) => {
+  const fee = props["internet_access:fee"];
+  if (fee === "no") return "gratuit";
+  if (fee === "customers") return "clients";
+  if (fee === "yes") return "payant";
+  return null;
+};
+
+const getWheelchairStatus = (props) => {
+  const status = props.wheelchair;
+  if (status === "yes") return "accessible";
+  if (status === "limited") return "partiel";
+  if (status === "no") return "non accessible";
+  return null;
+};
+
+const getSeatingInfo = (props) => {
+  const indoor = props.indoor_seating === "yes";
+  const outdoor =
+    props.outdoor_seating === "yes" || props.outdoor_seating === "sidewalk";
+  return { indoor, outdoor };
+};
+
+const isTemporarilyClosed = (props) => {
+  return props.closed === "yes" || props.temporary === "yes";
+};
+
 const getTypeIconPath = (type) => {
   const icons = {
     Library: "./assets/icons/library.svg",
@@ -88,17 +115,8 @@ const getTypeIconPath = (type) => {
 
 const initializeModal = () => {
   const modal = document.getElementById("spot-modal");
-  const overlay = modal.querySelector(".modal-overlay");
   const closeBtn = modal.querySelector(".modal-close");
-
-  overlay.addEventListener("click", closeModal);
   closeBtn.addEventListener("click", closeModal);
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && state.modal.isOpen) {
-      closeModal();
-    }
-  });
 };
 
 const createInfoItem = (label, value) => {
@@ -151,10 +169,48 @@ const openModal = (data, feature) => {
     );
   }
 
+  if (data.email) {
+    infoHTML += createInfoItem(
+      "Email",
+      `<a href="mailto:${data.email}">${data.email}</a>`,
+    );
+  }
+
   const wifiStatus = data.wifi
     ? '<span class="wifi-available">✓ Disponible</span>'
     : '<span class="wifi-unavailable">✗ Non disponible</span>';
   infoHTML += createInfoItem("Wifi", wifiStatus);
+
+  if (data.wheelchair) {
+    infoHTML += createInfoItem("Accessibilité", data.wheelchair);
+  }
+
+  if (data.operator) {
+    infoHTML += createInfoItem("Type", data.operator);
+  }
+
+  if (data.seating) {
+    const seatingText = [];
+    if (data.seating.indoor) seatingText.push("Intérieur");
+    if (data.seating.outdoor) seatingText.push("Terrasse");
+    if (seatingText.length > 0) {
+      infoHTML += createInfoItem("Places", seatingText.join(", "));
+    }
+  }
+
+  if (data.airConditioning) {
+    infoHTML += createInfoItem("Climatisation", "Oui");
+  }
+
+  if (data.smoking) {
+    const smokingText =
+      data.smoking === "outside"
+        ? "Fumoir extérieur"
+        : data.smoking === "no"
+          ? "Non-fumeur"
+          : data.smoking;
+    infoHTML += createInfoItem("Fumeur", smokingText);
+  }
 
   infoGrid.innerHTML = infoHTML;
 
@@ -166,36 +222,6 @@ const openModal = (data, feature) => {
   } else {
     descSection.style.display = "none";
   }
-
-  const collectionsSection = document.getElementById(
-    "modal-collections-section",
-  );
-  const collectionsText = document.getElementById("modal-collections");
-  if (feature.properties.voltyp) {
-    const collectionFormatted = feature.properties.voltyp.replace(
-      /\n/g,
-      "<br>",
-    );
-    collectionsText.innerHTML = collectionFormatted;
-    collectionsSection.style.display = "";
-  } else {
-    collectionsSection.style.display = "none";
-  }
-
-  const servicesSection = document.getElementById("modal-services-section");
-  const servicesList = document.getElementById("modal-services-list");
-  if (
-    feature.properties.services_proposes &&
-    feature.properties.services_proposes.length > 0
-  ) {
-    servicesList.innerHTML = feature.properties.services_proposes
-      .map((service) => `<li>${service}</li>`)
-      .join("");
-    servicesSection.style.display = "";
-  } else {
-    servicesSection.style.display = "none";
-  }
-
   const actionsContainer = document.getElementById("modal-actions");
   actionsContainer.innerHTML = "";
 
@@ -207,6 +233,29 @@ const openModal = (data, feature) => {
       window.open(data.website || data.websiteUrl, "_blank");
     });
     actionsContainer.appendChild(websiteBtn);
+  }
+
+  if (data.wikipedia) {
+    const wikiBtn = document.createElement("button");
+    wikiBtn.className = "modal-btn modal-btn-secondary";
+    wikiBtn.textContent = "Wikipedia";
+    wikiBtn.addEventListener("click", () => {
+      const wikiUrl = data.wikipedia.startsWith("http")
+        ? data.wikipedia
+        : `https://fr.wikipedia.org/wiki/${data.wikipedia.replace("fr:", "")}`;
+      window.open(wikiUrl, "_blank");
+    });
+    actionsContainer.appendChild(wikiBtn);
+  }
+
+  if (data.wikidata) {
+    const wikidataBtn = document.createElement("button");
+    wikidataBtn.className = "modal-btn modal-btn-secondary";
+    wikidataBtn.textContent = "Wikidata";
+    wikidataBtn.addEventListener("click", () => {
+      window.open(`https://www.wikidata.org/wiki/${data.wikidata}`, "_blank");
+    });
+    actionsContainer.appendChild(wikidataBtn);
   }
 
   const mapBtn = document.createElement("button");
@@ -440,6 +489,14 @@ const createTileElement = (data, feature) => {
   const div = document.createElement("div");
   div.className = "tile";
 
+  if (data.temporarilyClosed) {
+    const closedWarning = document.createElement("div");
+    closedWarning.className = "tile-warning";
+    closedWarning.textContent =
+      data.closedDescription || "Temporairement fermé";
+    div.appendChild(closedWarning);
+  }
+
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.className = "tile-checkbox";
@@ -501,14 +558,69 @@ const createTileElement = (data, feature) => {
     infoContainer.appendChild(hoursP);
   }
 
+  if (data.email) {
+    const emailP = document.createElement("p");
+    emailP.className = "tile-email";
+    emailP.innerHTML = `<span class="tile-label"></span><a href="mailto:${data.email}">${data.email}</a>`;
+    infoContainer.appendChild(emailP);
+  }
+
   const quickInfo = document.createElement("div");
   quickInfo.className = "tile-quick-info";
 
   if (data.wifi !== undefined) {
     const wifiSpan = document.createElement("span");
     wifiSpan.className = `tile-wifi ${data.wifi ? "wifi-yes" : "wifi-no"}`;
-    wifiSpan.textContent = data.wifi ? "Wifi" : "Pas de wifi";
+    let wifiText = data.wifi ? "Wifi" : "Pas de wifi";
+    if (data.wifi && data.wifiFee) {
+      wifiText += ` (${data.wifiFee})`;
+    }
+    wifiSpan.textContent = wifiText;
     quickInfo.appendChild(wifiSpan);
+  }
+
+  if (data.wheelchair) {
+    const wheelchairSpan = document.createElement("span");
+    wheelchairSpan.className = `tile-badge tile-wheelchair wheelchair-${data.wheelchair.replace(" ", "-")}`;
+    wheelchairSpan.textContent = data.wheelchair;
+    quickInfo.appendChild(wheelchairSpan);
+  }
+
+  if (data.seating) {
+    if (data.seating.indoor) {
+      const indoorSpan = document.createElement("span");
+      indoorSpan.className = "tile-badge tile-seating";
+      indoorSpan.textContent = "Intérieur";
+      quickInfo.appendChild(indoorSpan);
+    }
+    if (data.seating.outdoor) {
+      const outdoorSpan = document.createElement("span");
+      outdoorSpan.className = "tile-badge tile-seating";
+      outdoorSpan.textContent = "Terrasse";
+      quickInfo.appendChild(outdoorSpan);
+    }
+  }
+
+  if (data.airConditioning) {
+    const acSpan = document.createElement("span");
+    acSpan.className = "tile-badge tile-ac";
+    acSpan.textContent = "Climatisé";
+    quickInfo.appendChild(acSpan);
+  }
+
+  if (data.smoking) {
+    const smokingSpan = document.createElement("span");
+    smokingSpan.className = "tile-badge tile-smoking";
+    smokingSpan.textContent =
+      data.smoking === "outside" ? "Fumoir ext." : "Non-fumeur";
+    quickInfo.appendChild(smokingSpan);
+  }
+
+  if (data.operator) {
+    const operatorSpan = document.createElement("span");
+    operatorSpan.className = "tile-badge tile-operator";
+    operatorSpan.textContent = data.operator;
+    quickInfo.appendChild(operatorSpan);
   }
 
   if (data.phone) {
@@ -579,11 +691,6 @@ const rebuildTilesList = () => {
 const loadMoreTiles = () => {
   state.pagination.currentCount += state.pagination.increment;
   rebuildTilesList();
-  const container = document.querySelector(".spots");
-  const lastTile = container.querySelector(".tile:last-of-type");
-  if (lastTile) {
-    lastTile.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }
 };
 
 // =============================================================================
@@ -612,9 +719,25 @@ const processCoworkingData = (data) => {
         type: props.spotType,
         hours: props.opening_hours,
         phone: props.phone,
+        email: props.email || props["contact:email"],
         website: props.website,
         description: props.description,
         wifi: hasWifi(props),
+        wifiFee: getWifiFeeStatus(props),
+        wheelchair: getWheelchairStatus(props),
+        seating: getSeatingInfo(props),
+        airConditioning: props.air_conditioning === "yes",
+        smoking: props.smoking,
+        operator:
+          props["operator:type"] === "government"
+            ? "Public"
+            : props["operator:type"] === "private"
+              ? "Privé"
+              : null,
+        temporarilyClosed: isTemporarilyClosed(props),
+        closedDescription: props["closed:description"],
+        wikipedia: props.wikipedia,
+        wikidata: props.wikidata,
         address:
           props["addr:street"] && props["addr:postcode"] && getCity(props)
             ? `${props["addr:street"]}, ${props["addr:postcode"]} ${getCity(props)}`
@@ -624,6 +747,7 @@ const processCoworkingData = (data) => {
     );
   });
 };
+
 const processLibraryData = (data) => {
   if (!data?.features) return;
 
@@ -656,8 +780,21 @@ const processLibraryData = (data) => {
         type: props.spotType,
         hours: props.opening_hours,
         phone: props.phone || props["contact:phone"],
+        email: props.email || props["contact:email"],
         address: address,
         wifi: hasWifi(props),
+        wifiFee: getWifiFeeStatus(props),
+        wheelchair: getWheelchairStatus(props),
+        operator:
+          props["operator:type"] === "government"
+            ? "Public"
+            : props["operator:type"] === "private"
+              ? "Privé"
+              : null,
+        temporarilyClosed: isTemporarilyClosed(props),
+        closedDescription: props["closed:description"],
+        wikipedia: props.wikipedia,
+        wikidata: props.wikidata,
         websiteUrl: props.website || props["contact:website"],
         description: props.description,
       },
@@ -688,8 +825,18 @@ const processCofeeData = (data) => {
         type: props.spotType,
         hours: props.opening_hours,
         phone: props.phone,
+        email: props.email || props["contact:email"],
         website: props.website,
         wifi: hasWifi(props),
+        wifiFee: getWifiFeeStatus(props),
+        wheelchair: getWheelchairStatus(props),
+        seating: getSeatingInfo(props),
+        airConditioning: props.air_conditioning === "yes",
+        smoking: props.smoking,
+        temporarilyClosed: isTemporarilyClosed(props),
+        closedDescription: props["closed:description"],
+        wikipedia: props.wikipedia,
+        wikidata: props.wikidata,
         address:
           props["addr:street"] && props["addr:postcode"] && getCity(props)
             ? `${props["addr:street"]}, ${props["addr:postcode"]} ${getCity(props)}`
@@ -718,7 +865,6 @@ window.onload = () => {
     {
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
-      subdomains: "abcd",
       maxZoom: 19,
       updateWhenIdle: true,
       updateWhenZooming: false,
