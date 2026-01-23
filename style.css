@@ -656,7 +656,7 @@ header {
 }
 
 .modal-body {
-    padding: 2.5rem;
+    padding: 4.5rem;
 }
 
 .modal-header {
@@ -788,13 +788,6 @@ header {
     color: hsl(var(--foreground));
 }
 
-.modal-section li::before {
-    content: "✓ ";
-    color: hsl(var(--primary));
-    font-weight: 700;
-    margin-right: 0.5rem;
-}
-
 .modal-actions {
     display: flex;
     gap: 1rem;
@@ -842,29 +835,7 @@ header {
 }
 
 /* =============================================================================
-   ANIMATIONS
-   ============================================================================= */
-
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-/* =============================================================================
-   COMPARISON MODAL - Graphs Style (Pure CSS/SVG)
+   COMPARISON MODAL
    ============================================================================= */
 
 .comparison-modal-content {
@@ -881,13 +852,8 @@ header {
     font-weight: 400;
 }
 
-/* Recommendation Card */
 .comparison-recommendation {
-    background: linear-gradient(
-        to bottom right,
-        hsl(var(--primary)),
-        hsl(var(--primary) / 0.8)
-    );
+    background-color: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
     padding: 1.25rem;
     border-radius: var(--radius);
@@ -929,7 +895,6 @@ header {
     line-height: 1.5;
 }
 
-/* Graphs Container */
 .comparison-graphs-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -937,7 +902,6 @@ header {
     margin: 1.5rem 0;
 }
 
-/* Graph Card */
 .comparison-graph-card {
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
@@ -962,7 +926,6 @@ header {
     gap: 0.5rem;
 }
 
-/* Score Bars */
 .score-comparison {
     display: flex;
     flex-direction: column;
@@ -1006,11 +969,7 @@ header {
 
 .score-bar {
     height: 100%;
-    background: linear-gradient(
-        to right,
-        hsl(var(--primary)),
-        hsl(var(--primary) / 0.8)
-    );
+    background: hsl(var(--primary));
     border-radius: var(--radius);
     transition: width 0.6s cubic-bezier(0.65, 0, 0.35, 1);
     display: flex;
@@ -1023,10 +982,9 @@ header {
 }
 
 .score-bar.best {
-    background: linear-gradient(to right, hsl(142 76% 36%), hsl(142 76% 46%));
+    background: hsl(142 76% 36%);
 }
 
-/* Best Badge */
 .best-badge {
     display: inline-flex;
     align-items: center;
@@ -1042,7 +1000,6 @@ header {
     border: 1px solid hsl(142 76% 36% / 0.2);
 }
 
-/* Features Grid */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1104,7 +1061,6 @@ header {
     color: hsl(var(--muted-foreground));
 }
 
-/* Comparison Place Cards */
 .comparison-place-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1121,7 +1077,7 @@ header {
 }
 
 .comparison-place-card.best-place {
-    border-color: hsl(142 76% 36%);
+    border-color: #a8df8e;
     background: linear-gradient(
         to bottom,
         hsl(var(--card)),
@@ -1176,22 +1132,6 @@ header {
     letter-spacing: 0.05em;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .comparison-graphs-container {
-        grid-template-columns: 1fr;
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .comparison-place-cards {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Empty State */
 .comparison-empty {
     text-align: center;
     padding: 4rem 2rem;

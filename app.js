@@ -21,6 +21,10 @@ const CITY_COORDINATES = {
   Nice: [43.7102, 7.262],
 };
 
+const FRENCH_CITIES = new Set(
+  Object.keys(CITY_COORDINATES).map((city) => city.toLowerCase()),
+);
+
 // =============================================================================
 // UTILITIES
 // =============================================================================
@@ -158,8 +162,8 @@ const buildModalInfo = (data) => {
     );
 
   const wifiStatus = data.wifi
-    ? '<span class="wifi-available">✓ Disponible</span>'
-    : '<span class="wifi-unavailable">✗ Non disponible</span>';
+    ? '<span class="wifi-available">Disponible</span>'
+    : '<span class="wifi-unavailable">Non disponible</span>';
   html += createInfoItem("Wifi", wifiStatus);
 
   if (data.wheelchair) html += createInfoItem("Accessibilité", data.wheelchair);
@@ -291,18 +295,21 @@ const matchesFilters = (feature) => {
 
   if (search) {
     const searchLower = search.toLowerCase();
-    const spotName = (props.name || "").toLowerCase();
     const spotCity = getCity(props).toLowerCase();
-    const spotType = (props.spotType || "").toLowerCase();
-    const spotAddress = formatAddress(props)?.toLowerCase() || "";
+    if (FRENCH_CITIES.has(searchLower)) {
+      if (spotCity !== searchLower) return false;
+    } else {
+      const spotName = (props.name || "").toLowerCase();
+      const spotType = (props.spotType || "").toLowerCase();
+      const spotAddress = formatAddress(props)?.toLowerCase() || "";
 
-    const matchesSearch =
-      spotName.includes(searchLower) ||
-      spotCity.includes(searchLower) ||
-      spotType.includes(searchLower) ||
-      spotAddress.includes(searchLower);
+      const matchesSearch =
+        spotName.includes(searchLower) ||
+        spotType.includes(searchLower) ||
+        spotAddress.includes(searchLower);
 
-    if (!matchesSearch) return false;
+      if (!matchesSearch) return false;
+    }
   }
 
   if (city) {
@@ -793,14 +800,16 @@ const getComparisonValue = (value, type) => {
 
 const buildFeatureItem = (name, value, extra = null) => {
   let status = "unavailable";
-  let icon = "✗";
+  let icon =
+    "<img src='assets/icons/close.svg' alt='Informations' width='20' height='20'>";
   let displayValue = "Non disponible";
 
   switch (name) {
     case "WiFi":
       if (value === true) {
         status = "available";
-        icon = "📶";
+        icon =
+          "<img src='assets/icons/wifi.svg' alt='WiFi' width='20' height='20'>";
         displayValue = extra ? `Disponible (${extra})` : "Disponible";
       } else {
         displayValue = "Non disponible";
@@ -810,11 +819,13 @@ const buildFeatureItem = (name, value, extra = null) => {
     case "Accessibilité":
       if (value === "accessible") {
         status = "available";
-        icon = "♿";
+        icon =
+          "<img src='assets/icons/wheelchair.svg' alt='Accessibilité' width='20' height='20'>";
         displayValue = "Accessible";
       } else if (value === "partiel") {
         status = "partial";
-        icon = "⚠️";
+        icon =
+          "<img src='assets/icons/warning.svg' alt='Accessibilité' width='20' height='20'>";
         displayValue = "Partiel";
       } else {
         displayValue = "Non accessible";
@@ -824,7 +835,8 @@ const buildFeatureItem = (name, value, extra = null) => {
     case "Climatisation":
       if (value === true) {
         status = "available";
-        icon = "❄️";
+        icon =
+          "<img src='assets/icons/clim.svg' alt='Climatisation' width='20' height='20'>";
         displayValue = "Disponible";
       }
       break;
@@ -832,7 +844,8 @@ const buildFeatureItem = (name, value, extra = null) => {
     case "Places":
       if (value && (value.indoor || value.outdoor)) {
         status = "available";
-        icon = "💺";
+        icon =
+          "<map src='assets/icons/place.svg' alt='Places' width='20' height='20'>";
         const places = [];
         if (value.indoor) places.push("Intérieur");
         if (value.outdoor) places.push("Terrasse");
@@ -865,7 +878,7 @@ const buildCriteriaComparison = (places, bestPlace) => {
   ];
 
   let html = '<div class="comparison-graph-card">';
-  html += "<h3>🎯 Critères Clés</h3>";
+  html += "<h3>Critères Clés</h3>";
   html += '<div class="score-comparison">';
 
   criteria.forEach((criterion) => {
@@ -873,7 +886,6 @@ const buildCriteriaComparison = (places, bestPlace) => {
       criterion.getValue(p.data),
     ).length;
     const percentage = (placesWithFeature / places.length) * 100;
-
     html += `
       <div class="score-item">
         <div class="score-item-header">
@@ -895,7 +907,6 @@ const buildComparisonGraphs = (places) => {
   if (places.length === 0) {
     return `
       <div class="comparison-empty">
-        <div class="comparison-empty-icon">📊</div>
         <div class="comparison-empty-text">Aucun lieu sélectionné</div>
         <div class="comparison-empty-subtext">Sélectionnez au moins 2 lieux pour les comparer</div>
       </div>
@@ -916,7 +927,7 @@ const buildComparisonGraphs = (places) => {
           <div>
             <h4 class="comparison-place-title">${data.title}</h4>
             <div class="comparison-place-type">${data.type || "Non spécifié"}</div>
-            ${isBest ? '<span class="best-badge">🏆 Meilleur choix</span>' : ""}
+            ${isBest ? '<span class="best-badge"><img src="assets/icons/best.svg" alt="Meilleur choix" width="20" height="20"> Meilleur choix</span>' : ""}
           </div>
           <div class="comparison-place-score">
             <div class="comparison-place-score-value">${score}</div>
@@ -950,7 +961,7 @@ const buildComparisonGraphs = (places) => {
         <div class="score-item-header">
           <div class="score-item-name">
             ${data.title}
-            ${isBest ? '<span class="best-badge">🏆 Meilleur</span>' : ""}
+            ${isBest ? '<span class="best-badge"><img src="assets/icons/best.svg" alt="Meilleur choix" width="20" height="20">Meilleur</span>' : ""}
           </div>
           <div class="score-item-value">${score}/100</div>
         </div>
@@ -1046,23 +1057,20 @@ const initializeComparison = () => {
   clearBtn.addEventListener("click", clearComparison);
 
   const comparisonModal = document.getElementById("comparison-modal");
-  if (comparisonModal) {
-    const closeBtn = comparisonModal.querySelector(".modal-close");
-    if (closeBtn) closeBtn.addEventListener("click", closeComparisonModal);
+  const closeBtn = comparisonModal.querySelector(".modal-close");
+  if (closeBtn) closeBtn.addEventListener("click", closeComparisonModal);
 
-    const clearModalBtn = document.getElementById("clear-comparison-btn");
-    if (clearModalBtn) clearModalBtn.addEventListener("click", clearComparison);
+  const clearModalBtn = document.getElementById("clear-comparison-btn");
+  if (clearModalBtn) clearModalBtn.addEventListener("click", clearComparison);
 
-    const closeModalBtn = document.getElementById("close-comparison-btn");
-    if (closeModalBtn)
-      closeModalBtn.addEventListener("click", closeComparisonModal);
-  }
+  const closeModalBtn = document.getElementById("close-comparison-btn");
+  closeModalBtn.addEventListener("click", closeComparisonModal);
 
   updateComparisonCount();
 };
 
 // =============================================================================
-// DATA PROCESSING - UNIFIED
+// DATA PROCESSING
 // =============================================================================
 
 const processFeatureData = (feature, additionalFields = {}) => {
