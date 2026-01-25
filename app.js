@@ -838,7 +838,7 @@ const buildFeatureItem = (name, value, extra = null) => {
       if (value && (value.indoor || value.outdoor)) {
         status = "available";
         icon =
-          "<map src='assets/icons/place.svg' alt='Places' width='20' height='20'>";
+          "<img src='assets/icons/chair.svg' alt='Places' width='20' height='20'>";
         const places = [];
         if (value.indoor) places.push("Intérieur");
         if (value.outdoor) places.push("Terrasse");
