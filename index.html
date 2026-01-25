@@ -47,16 +47,18 @@
                             <option value="true">Disponible</option>
                             <option value="false">Non disponible</option>
                         </select>
-                        <button id="reset">Réinitialiser</button>
+                        <button id="reset" onclick="resetFilters()">
+                            Réinitialiser
+                        </button>
                     </div>
                 </div>
                 <div class="spots"></div>
                 <div id="comparison-tile">
                     <div>
                         <span id="comparison-count">0</span>
-                        <button>Vider</button>
+                        <button onclick="clearComparison()">Vider</button>
                     </div>
-                    <button>Comparer</button>
+                    <button onclick="openComparisonModal()">Comparer</button>
                 </div>
             </aside>
             <div id="map"></div>
@@ -65,7 +67,9 @@
         <div id="spot-modal" class="modal">
             <div class="modal-overlay"></div>
             <div class="modal-content">
-                <button class="modal-close">&times;</button>
+                <button class="modal-close" onclick="closeModal()">
+                    &times;
+                </button>
                 <div class="modal-body">
                     <div class="modal-header">
                         <div class="modal-title-container">
@@ -109,7 +113,9 @@
         <div id="comparison-modal" class="modal">
             <div class="modal-overlay"></div>
             <div class="modal-content comparison-modal-content">
-                <button class="modal-close">&times;</button>
+                <button class="modal-close" onclick="closeComparisonModal()">
+                    &times;
+                </button>
                 <div class="modal-body">
                     <div class="modal-header">
                         <h2>Comparaison des lieux</h2>
@@ -130,12 +136,14 @@
                         <button
                             id="clear-comparison-btn"
                             class="modal-btn modal-btn-secondary"
+                            onclick="clearComparison()"
                         >
                             Vider la sélection
                         </button>
                         <button
                             id="close-comparison-btn"
                             class="modal-btn modal-btn-primary"
+                            onclick="closeComparisonModal()"
                         >
                             Fermer
                         </button>

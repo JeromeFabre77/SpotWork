@@ -132,11 +132,6 @@ const createActionButton = (className, text, url) => {
 // MODAL
 // =============================================================================
 
-const initializeModal = () => {
-  const modal = document.getElementById("spot-modal");
-  modal.querySelector(".modal-close").addEventListener("click", closeModal);
-};
-
 const createInfoItem = (label, value) => `
   <div class="modal-info-item">
     <div class="modal-info-label">${label}</div>
@@ -401,8 +396,6 @@ const initializeFilters = () => {
       debouncedSearchApplyFilters();
     });
   }
-
-  document.getElementById("reset").addEventListener("click", resetFilters);
 };
 
 // =============================================================================
@@ -1045,27 +1038,6 @@ const clearComparison = () => {
   closeComparisonModal();
 };
 const initializeComparison = () => {
-  const compareBtn = document.querySelector(
-    "#comparison-tile > button:last-child",
-  );
-  compareBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    openComparisonModal();
-  });
-
-  const clearBtn = document.querySelector("#comparison-tile > div > button");
-  clearBtn.addEventListener("click", clearComparison);
-
-  const comparisonModal = document.getElementById("comparison-modal");
-  const closeBtn = comparisonModal.querySelector(".modal-close");
-  if (closeBtn) closeBtn.addEventListener("click", closeComparisonModal);
-
-  const clearModalBtn = document.getElementById("clear-comparison-btn");
-  if (clearModalBtn) clearModalBtn.addEventListener("click", clearComparison);
-
-  const closeModalBtn = document.getElementById("close-comparison-btn");
-  closeModalBtn.addEventListener("click", closeComparisonModal);
-
   updateComparisonCount();
 };
 
@@ -1160,9 +1132,7 @@ window.onload = () => {
       keepBuffer: 2,
     },
   ).addTo(state.map);
-
   initializeFilters();
-  initializeModal();
   initializeComparison();
 
   Promise.all([
