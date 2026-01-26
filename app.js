@@ -6,6 +6,7 @@ const state = {
   filters: { city: "", type: "", wifi: "", search: "" },
   map: null,
   allMarkers: [],
+  markerCache: new Map(),
   allTilesData: [],
   markerGroup: null,
   pagination: { currentCount: 20, increment: 20 },
@@ -361,11 +362,6 @@ const centerMapOnFilters = (filteredMarkers) => {
     state.map.setView(CITY_COORDINATES[state.filters.city], 14);
     return;
   }
-
-  if (filteredMarkers.length > 0) {
-    const bounds = L.latLngBounds(filteredMarkers.map((m) => m.coords));
-    state.map.fitBounds(bounds, { padding: [30, 30], maxZoom: 16 });
-  }
 };
 
 const resetFilters = () => {
@@ -418,6 +414,9 @@ const createMarker = (feature) => {
 
   const marker = L.marker([lat, lng], { title: name });
   marker.bindPopup(name);
+  marker.feature = feature;
+  marker.spotType = spotType;
+
   marker.setIcon(
     L.icon({
       iconUrl: defineIcon(spotType),
@@ -430,56 +429,24 @@ const createMarker = (feature) => {
   return marker;
 };
 
-const initializeMarkers = () => {
-  state.markerGroup = L.layerGroup().addTo(state.map);
-  const markerCache = new Map();
-
-  const updateVisibleMarkers = () => {
-    const bounds = state.map.getBounds();
-    const zoom = state.map.getZoom();
-    state.markerGroup.clearLayers();
-
-    const maxMarkers =
-      zoom < 10 ? 100 : zoom < 12 ? 300 : zoom < 14 ? 600 : 1000;
-    const filteredMarkers = getFilteredMarkers();
-    const visibleMarkers = filteredMarkers
-      .filter((m) => bounds.contains(m.coords))
-      .slice(0, maxMarkers);
-
-    visibleMarkers.forEach((markerData) => {
-      const key = `${markerData.coords.lat}_${markerData.coords.lng}`;
-      if (!markerCache.has(key)) {
-        markerCache.set(key, createMarker(markerData.feature));
-      }
-      markerCache.get(key).addTo(state.markerGroup);
-    });
-  };
-
-  const debouncedUpdate = debounce(updateVisibleMarkers, 200);
-  state.map.on("moveend", debouncedUpdate);
-  state.map.on("zoomend", debouncedUpdate);
-  updateVisibleMarkers();
-};
-
 const updateMapMarkers = (filteredMarkers) => {
-  if (!state.markerGroup) return;
-
+  if (!state.markerGroup) state.markerGroup = L.layerGroup().addTo(state.map);
   const bounds = state.map.getBounds();
   const zoom = state.map.getZoom();
   const maxMarkers = zoom < 10 ? 100 : zoom < 12 ? 300 : zoom < 14 ? 600 : 1000;
 
   state.markerGroup.clearLayers();
-  const markerCache = new Map();
+  if (filteredMarkers === undefined) filteredMarkers = getFilteredMarkers();
   const visibleMarkers = filteredMarkers
     .filter((m) => bounds.contains(m.coords))
     .slice(0, maxMarkers);
 
   visibleMarkers.forEach((markerData) => {
     const key = `${markerData.coords.lat}_${markerData.coords.lng}`;
-    if (!markerCache.has(key)) {
-      markerCache.set(key, createMarker(markerData.feature));
+    if (!state.markerCache.has(key)) {
+      state.markerCache.set(key, createMarker(markerData.feature));
     }
-    markerCache.get(key).addTo(state.markerGroup);
+    state.markerCache.get(key).addTo(state.markerGroup);
   });
 };
 
@@ -605,13 +572,6 @@ const createTileElement = (data, feature) => {
   addQuickInfo(infoContainer, data);
   div.appendChild(infoContainer);
 
-  const moreBtn = createElement("button", "tile-more-btn", "Voir les détails");
-  moreBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    openModal(data, feature);
-  });
-  div.appendChild(moreBtn);
-
   div.addEventListener("click", () => openModal(data, feature));
 
   return div;
@@ -671,11 +631,43 @@ const updateComparisonCount = () => {
   compareBtn.disabled = count < 2;
 };
 
+const updateMarkerHighlight = () => {
+  const selectedIds = new Set(state.comparison.selectedPlaces.map((p) => p.id));
+  const hasSelection = selectedIds.size > 0;
+
+  state.markerCache.forEach((marker, key) => {
+    if (!marker.feature || !marker.spotType) return;
+
+    const isSelected = selectedIds.has(key);
+
+    if (hasSelection && !isSelected) {
+      marker.setOpacity(0.2);
+    } else {
+      marker.setOpacity(1);
+    }
+    const iconSize = isSelected ? [48, 48] : [32, 32];
+    const iconAnchor = isSelected ? [24, 48] : [16, 32];
+    const popupAnchor = isSelected ? [0, -48] : [0, -32];
+    marker.setIcon(
+      L.icon({
+        iconUrl: defineIcon(marker.spotType),
+        iconSize: iconSize,
+        iconAnchor: iconAnchor,
+        popupAnchor: popupAnchor,
+        className: isSelected ? "marker-selected" : "",
+      }),
+    );
+    if (isSelected) {
+      marker._icon?.classList.add("marker-selected");
+    } else {
+      marker._icon?.classList.remove("marker-selected");
+    }
+  });
+};
+
 const togglePlaceSelection = (data, feature, checkbox) => {
-  const placeId = `${feature.geometry.coordinates[0]}_${feature.geometry.coordinates[1]}`;
-  const index = state.comparison.selectedPlaces.findIndex(
-    (p) => p.id === placeId,
-  );
+  const [lng, lat] = feature.geometry.coordinates;
+  const placeId = `${lat}_${lng}`;
 
   if (checkbox.checked) {
     if (
@@ -694,12 +686,16 @@ const togglePlaceSelection = (data, feature, checkbox) => {
       feature,
     });
   } else {
-    if (index > -1) {
+    const index = state.comparison.selectedPlaces.findIndex(
+      (p) => p.id === placeId,
+    );
+    if (index !== -1) {
       state.comparison.selectedPlaces.splice(index, 1);
     }
   }
 
   updateComparisonCount();
+  updateMarkerHighlight();
 };
 
 const calculatePlaceScore = (data) => {
@@ -1030,6 +1026,7 @@ const closeComparisonModal = () => {
 const clearComparison = () => {
   state.comparison.selectedPlaces = [];
   updateComparisonCount();
+  updateMarkerHighlight();
 
   document.querySelectorAll(".tile-checkbox").forEach((checkbox) => {
     checkbox.checked = false;
@@ -1143,7 +1140,7 @@ window.onload = () => {
     processCoworkingData(coworkingData);
     processLibraryData(libraryData);
     processCofeeData(cofeeData);
-    initializeMarkers();
+    updateMapMarkers();
     rebuildTilesList();
   });
 };
