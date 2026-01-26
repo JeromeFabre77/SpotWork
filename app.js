@@ -352,7 +352,6 @@ const centerOnSearchResults = (filteredMarkers) => {
 };
 
 const centerMapOnFilters = (filteredMarkers) => {
-  // Ne recentrer que si une ville est sélectionnée
   if (state.filters.city && filteredMarkers.length > 0) {
     const bounds = L.latLngBounds(filteredMarkers.map((m) => m.coords));
     state.map.fitBounds(bounds, { padding: [30, 30], maxZoom: 16 });
@@ -363,9 +362,6 @@ const centerMapOnFilters = (filteredMarkers) => {
     state.map.setView(CITY_COORDINATES[state.filters.city], 14);
     return;
   }
-
-  // Si aucune ville n'est sélectionnée, ne pas recentrer la carte
-  // L'utilisateur garde sa vue actuelle
 };
 
 const resetFilters = () => {
