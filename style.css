@@ -44,7 +44,6 @@ body {
 }
 
 header {
-    padding: 1.25rem 2rem;
     border-bottom: 1px solid hsl(var(--border));
     background-color: hsl(var(--background));
     animation: slideDown 0.4s ease-out;
@@ -63,10 +62,9 @@ header {
 
 .navbar-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     max-width: 1400px;
-    margin: 0 auto;
 }
 
 .navbar-content img {
@@ -109,7 +107,7 @@ header {
     grid-template-columns: 380px 1fr;
     width: 100%;
     max-width: 100%;
-    height: calc(100vh - 6.5rem);
+    height: calc(100vh - 4.5rem);
     overflow: hidden;
     gap: 1rem;
     padding: 1rem;
@@ -911,11 +909,6 @@ header {
     transition: all 0.2s ease;
 }
 
-.comparison-graph-card:hover {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    border-color: hsl(var(--ring) / 0.5);
-}
-
 .comparison-graph-card h3 {
     font-size: 1rem;
     font-weight: 600;
@@ -1065,7 +1058,6 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
-    margin-bottom: 1.5rem;
 }
 
 .comparison-place-card {
@@ -1078,16 +1070,12 @@ header {
 
 .comparison-place-card.best-place {
     border-color: #a8df8e;
+    border-width: 3px;
     background: linear-gradient(
         to bottom,
         hsl(var(--card)),
         hsl(142 76% 36% / 0.05)
     );
-}
-
-.comparison-place-card:hover {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    transform: translateY(-2px);
 }
 
 .comparison-place-header {

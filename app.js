@@ -438,7 +438,7 @@ const updateMapMarkers = (filteredMarkers) => {
   const maxMarkers = zoom < 10 ? 100 : zoom < 12 ? 300 : zoom < 14 ? 600 : 1000;
 
   state.markerGroup.clearLayers();
-  if(filteredMarkers === undefined) filteredMarkers = getFilteredMarkers();
+  if (filteredMarkers === undefined) filteredMarkers = getFilteredMarkers();
   const visibleMarkers = filteredMarkers
     .filter((m) => bounds.contains(m.coords))
     .slice(0, maxMarkers);
@@ -574,13 +574,6 @@ const createTileElement = (data, feature) => {
   addQuickInfo(infoContainer, data);
   div.appendChild(infoContainer);
 
-  const moreBtn = createElement("button", "tile-more-btn", "Voir les détails");
-  moreBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    openModal(data, feature);
-  });
-  div.appendChild(moreBtn);
-
   div.addEventListener("click", () => openModal(data, feature));
 
   return div;
@@ -660,9 +653,7 @@ const togglePlaceSelection = (data, feature, checkbox) => {
       feature,
     });
   } else {
-    const index = state.comparison.selectedPlaces.find(
-        (p) => p.id === placeId,
-    );
+    const index = state.comparison.selectedPlaces.find((p) => p.id === placeId);
     state.comparison.selectedPlaces.splice(index, 1);
   }
 
