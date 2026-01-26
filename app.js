@@ -6,6 +6,7 @@ const state = {
   filters: { city: "", type: "", wifi: "", search: "" },
   map: null,
   allMarkers: [],
+  markerCache: new Map(),
   allTilesData: [],
   markerGroup: null,
   pagination: { currentCount: 20, increment: 20 },
@@ -430,56 +431,24 @@ const createMarker = (feature) => {
   return marker;
 };
 
-const initializeMarkers = () => {
-  state.markerGroup = L.layerGroup().addTo(state.map);
-  const markerCache = new Map();
-
-  const updateVisibleMarkers = () => {
-    const bounds = state.map.getBounds();
-    const zoom = state.map.getZoom();
-    state.markerGroup.clearLayers();
-
-    const maxMarkers =
-      zoom < 10 ? 100 : zoom < 12 ? 300 : zoom < 14 ? 600 : 1000;
-    const filteredMarkers = getFilteredMarkers();
-    const visibleMarkers = filteredMarkers
-      .filter((m) => bounds.contains(m.coords))
-      .slice(0, maxMarkers);
-
-    visibleMarkers.forEach((markerData) => {
-      const key = `${markerData.coords.lat}_${markerData.coords.lng}`;
-      if (!markerCache.has(key)) {
-        markerCache.set(key, createMarker(markerData.feature));
-      }
-      markerCache.get(key).addTo(state.markerGroup);
-    });
-  };
-
-  const debouncedUpdate = debounce(updateVisibleMarkers, 200);
-  state.map.on("moveend", debouncedUpdate);
-  state.map.on("zoomend", debouncedUpdate);
-  updateVisibleMarkers();
-};
-
 const updateMapMarkers = (filteredMarkers) => {
-  if (!state.markerGroup) return;
-
+  if (!state.markerGroup) state.markerGroup = L.layerGroup().addTo(state.map);
   const bounds = state.map.getBounds();
   const zoom = state.map.getZoom();
   const maxMarkers = zoom < 10 ? 100 : zoom < 12 ? 300 : zoom < 14 ? 600 : 1000;
 
   state.markerGroup.clearLayers();
-  const markerCache = new Map();
+  if(filteredMarkers === undefined) filteredMarkers = getFilteredMarkers();
   const visibleMarkers = filteredMarkers
     .filter((m) => bounds.contains(m.coords))
     .slice(0, maxMarkers);
 
   visibleMarkers.forEach((markerData) => {
     const key = `${markerData.coords.lat}_${markerData.coords.lng}`;
-    if (!markerCache.has(key)) {
-      markerCache.set(key, createMarker(markerData.feature));
+    if (!state.markerCache.has(key)) {
+      state.markerCache.set(key, createMarker(markerData.feature));
     }
-    markerCache.get(key).addTo(state.markerGroup);
+    state.markerCache.get(key).addTo(state.markerGroup);
   });
 };
 
@@ -673,9 +642,6 @@ const updateComparisonCount = () => {
 
 const togglePlaceSelection = (data, feature, checkbox) => {
   const placeId = `${feature.geometry.coordinates[0]}_${feature.geometry.coordinates[1]}`;
-  const index = state.comparison.selectedPlaces.findIndex(
-    (p) => p.id === placeId,
-  );
 
   if (checkbox.checked) {
     if (
@@ -694,9 +660,10 @@ const togglePlaceSelection = (data, feature, checkbox) => {
       feature,
     });
   } else {
-    if (index > -1) {
-      state.comparison.selectedPlaces.splice(index, 1);
-    }
+    const index = state.comparison.selectedPlaces.find(
+        (p) => p.id === placeId,
+    );
+    state.comparison.selectedPlaces.splice(index, 1);
   }
 
   updateComparisonCount();
@@ -1143,7 +1110,7 @@ window.onload = () => {
     processCoworkingData(coworkingData);
     processLibraryData(libraryData);
     processCofeeData(cofeeData);
-    initializeMarkers();
+    updateMapMarkers();
     rebuildTilesList();
   });
 };
