@@ -43,6 +43,24 @@ body {
     border-radius: var(--radius);
 }
 
+.marker-selected {
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8))
+        drop-shadow(0 0 4px rgba(59, 130, 246, 0.6));
+    animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%,
+    100% {
+        filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8))
+            drop-shadow(0 0 4px rgba(59, 130, 246, 0.6));
+    }
+    50% {
+        filter: drop-shadow(0 0 12px rgba(59, 130, 246, 1))
+            drop-shadow(0 0 6px rgba(59, 130, 246, 0.8));
+    }
+}
+
 header {
     border-bottom: 1px solid hsl(var(--border));
     background-color: hsl(var(--background));
@@ -70,11 +88,6 @@ header {
 .navbar-content img {
     height: 4.5rem;
     margin-right: 1rem;
-    transition: transform 0.2s ease;
-}
-
-.navbar-content img:hover {
-    transform: scale(1.05);
 }
 
 .navbar-content form {
