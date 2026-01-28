@@ -4,27 +4,26 @@
     box-sizing: border-box;
 }
 
-/* theme css de shadcn */
 :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --popover: #ffffff;
+    --popover-foreground: #0f172a;
+    --primary: #1e293b;
+    --primary-foreground: #f8fafc;
+    --secondary: #f1f5f9;
+    --secondary-foreground: #1e293b;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --accent: #f1f5f9;
+    --accent-foreground: #1e293b;
+    --destructive: #ef4444;
+    --destructive-foreground: #f8fafc;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #0f172a;
     --radius: 0.5rem;
 }
 
@@ -32,8 +31,8 @@ body {
     font-family:
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
         Arial, sans-serif;
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    background-color: var(--background);
+    color: var(--foreground);
 }
 
 #map {
@@ -62,8 +61,8 @@ body {
 }
 
 header {
-    border-bottom: 1px solid hsl(var(--border));
-    background-color: hsl(var(--background));
+    border-bottom: 1px solid var(--border);
+    background-color: var(--background);
     animation: slideDown 0.4s ease-out;
 }
 
@@ -97,22 +96,22 @@ header {
 
 .navbar-content input {
     padding: 0.75rem 1.25rem;
-    border: 1px solid hsl(var(--input));
+    border: 1px solid var(--input);
     border-radius: var(--radius);
     width: 650px;
     font-size: 1rem;
-    background-color: hsl(var(--background));
+    background-color: var(--background);
     transition: all 0.2s ease;
 }
 
 .navbar-content input:focus {
     outline: none;
-    border-color: hsl(var(--ring));
-    box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2);
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.2);
 }
 
 .navbar-content input::placeholder {
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
 }
 
 .content-container {
@@ -131,8 +130,8 @@ header {
     flex-direction: column;
     height: 100%;
     overflow: hidden;
-    background-color: hsl(var(--card));
-    border: 1px solid hsl(var(--border));
+    background-color: var(--card);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     animation: slideInLeft 0.4s ease-out;
 }
@@ -151,13 +150,13 @@ header {
 .filter-nav {
     padding: 1.5rem;
     flex-shrink: 0;
-    border-bottom: 1px solid hsl(var(--border));
+    border-bottom: 1px solid var(--border);
 }
 
 .filter-nav > span {
     font-size: 0.875rem;
     font-weight: 600;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -171,39 +170,39 @@ header {
 
 .filter select {
     padding: 0.5rem 0.75rem;
-    border: 1px solid hsl(var(--input));
+    border: 1px solid var(--input);
     border-radius: var(--radius);
     font-size: 0.875rem;
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    background-color: var(--background);
+    color: var(--foreground);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .filter select:hover {
-    background-color: hsl(var(--accent));
+    background-color: var(--accent);
 }
 
 .filter select:focus {
     outline: none;
-    border-color: hsl(var(--ring));
-    box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2);
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.2);
 }
 
 #reset {
     grid-column: 1 / -1;
     padding: 0.5rem;
-    border: 1px solid hsl(var(--input));
+    border: 1px solid var(--input);
     border-radius: var(--radius);
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    background-color: var(--background);
+    color: var(--foreground);
     font-size: 0.875rem;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 #reset:hover {
-    background-color: hsl(var(--accent));
+    background-color: var(--accent);
 }
 
 #reset:active {
@@ -229,24 +228,35 @@ header {
 }
 
 .spots::-webkit-scrollbar-thumb {
-    background: hsl(var(--border));
+    background: var(--border);
     border-radius: 4px;
 }
 
 .spots::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--muted-foreground));
+    background: var(--muted-foreground);
 }
 
-/* =============================================================================
-   COMPARISON TILE
-   ============================================================================= */
+/* ============================================================================= */
+/* COMPARISON TILE                                                               */
+/* ============================================================================= */
 
 #comparison-tile {
     flex-shrink: 0;
     padding: 1rem 1.5rem;
-    border-top: 1px solid hsl(var(--border));
-    background-color: hsl(var(--card));
+    border-top: 1px solid var(--border);
+    background-color: var(--card);
     animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 #comparison-tile > div {
@@ -259,12 +269,12 @@ header {
 #comparison-count {
     font-size: 1.5rem;
     font-weight: 700;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
 }
 
 #comparison-tile button {
     padding: 0.5rem 1rem;
-    border: 1px solid hsl(var(--input));
+    border: 1px solid var(--input);
     border-radius: var(--radius);
     font-size: 0.875rem;
     font-weight: 500;
@@ -273,39 +283,39 @@ header {
 }
 
 #comparison-tile > div button {
-    background-color: hsl(var(--background));
-    color: hsl(var(--muted-foreground));
+    background-color: var(--background);
+    color: var(--muted-foreground);
 }
 
 #comparison-tile > div button:hover {
-    background-color: hsl(var(--accent));
-    color: hsl(var(--foreground));
+    background-color: var(--accent);
+    color: var(--foreground);
 }
 
 #comparison-tile > button {
     width: 100%;
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    background-color: var(--primary);
+    color: var(--primary-foreground);
     border: none;
 }
 
 #comparison-tile > button:hover {
-    background-color: hsl(var(--primary) / 0.9);
+    background-color: rgba(30, 41, 59, 0.9);
 }
 
 #comparison-tile button:active {
     transform: scale(0.98);
 }
 
-/* =============================================================================
-   TILES
-   ============================================================================= */
+/* ============================================================================= */
+/* TILES                                                                         */
+/* ============================================================================= */
 
 .tile {
     padding: 1rem;
-    border: 1px solid hsl(var(--border));
+    border: 1px solid var(--border);
     border-radius: var(--radius);
-    background-color: hsl(var(--card));
+    background-color: var(--card);
     cursor: pointer;
     transition: all 0.2s ease;
     opacity: 0;
@@ -325,7 +335,7 @@ header {
 }
 
 .tile:hover {
-    border-color: hsl(var(--ring));
+    border-color: var(--ring);
     box-shadow:
         0 4px 6px -1px rgb(0 0 0 / 0.1),
         0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -342,7 +352,7 @@ header {
     width: 16px;
     height: 16px;
     cursor: pointer;
-    accent-color: hsl(var(--primary));
+    accent-color: var(--primary);
 }
 
 .tile-warning {
@@ -377,7 +387,7 @@ header {
     margin: 0;
     font-size: 1rem;
     font-weight: 600;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     line-height: 1.25;
 }
 
@@ -387,8 +397,8 @@ header {
 }
 
 .tile-type-badge {
-    background-color: hsl(var(--primary) / 0.1);
-    color: hsl(var(--primary));
+    background-color: rgba(30, 41, 59, 0.1);
+    color: var(--primary);
     padding: 0.25rem 0.625rem;
     border-radius: calc(var(--radius) - 2px);
     font-size: 0.75rem;
@@ -407,7 +417,7 @@ header {
 .tile-hours,
 .tile-email {
     font-size: 0.875rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     display: flex;
     align-items: flex-start;
     gap: 0.375rem;
@@ -439,7 +449,6 @@ header {
     margin-top: 0.25rem;
 }
 
-/* Badges de base */
 .tile-badge {
     font-size: 0.75rem;
     padding: 0.25rem 0.625rem;
@@ -448,7 +457,6 @@ header {
     white-space: nowrap;
 }
 
-/* Wifi */
 .tile-wifi {
     font-size: 0.75rem;
     padding: 0.25rem 0.625rem;
@@ -466,7 +474,6 @@ header {
     color: #991b1b;
 }
 
-/* Accessibilité */
 .tile-wheelchair.wheelchair-accessible {
     background-color: #e8f5e9;
     color: #2e7d32;
@@ -482,34 +489,29 @@ header {
     color: #c62828;
 }
 
-/* Places assises */
 .tile-seating {
     background-color: #e3f2fd;
     color: #1565c0;
 }
 
-/* Climatisation */
 .tile-ac {
     background-color: #e1f5fe;
     color: #0277bd;
 }
 
-/* Fumeur */
 .tile-smoking {
     background-color: #f3e5f5;
     color: #6a1b9a;
 }
 
-/* Opérateur */
 .tile-operator {
     background-color: #fce4ec;
     color: #880e4f;
 }
 
-/* Téléphone */
 .tile-phone {
-    background-color: hsl(var(--secondary));
-    color: hsl(var(--foreground));
+    background-color: var(--secondary);
+    color: var(--foreground);
     font-size: 0.75rem;
     padding: 0.25rem 0.625rem;
     border-radius: calc(var(--radius) - 2px);
@@ -519,8 +521,8 @@ header {
 .tile-more-btn {
     width: 100%;
     padding: 0.625rem;
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    background-color: var(--primary);
+    color: var(--primary-foreground);
     border: none;
     border-radius: calc(var(--radius) - 2px);
     font-size: 0.875rem;
@@ -531,7 +533,7 @@ header {
 }
 
 .tile-more-btn:hover {
-    background-color: hsl(var(--primary) / 0.9);
+    background-color: rgba(30, 41, 59, 0.9);
     transform: translateY(-1px);
 }
 
@@ -539,16 +541,16 @@ header {
     transform: scale(0.98);
 }
 
-/* =============================================================================
-   PAGINATION
-   ============================================================================= */
+/* ============================================================================= */
+/* PAGINATION                                                                    */
+/* ============================================================================= */
 
 .load-more-btn {
     width: calc(100% - 2rem);
     margin: 1rem;
     padding: 0.75rem;
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    background-color: var(--primary);
+    color: var(--primary-foreground);
     border: none;
     border-radius: var(--radius);
     font-size: 0.875rem;
@@ -558,7 +560,7 @@ header {
 }
 
 .load-more-btn:hover {
-    background-color: hsl(var(--primary) / 0.9);
+    background-color: rgba(30, 41, 59, 0.9);
     transform: translateY(-1px);
 }
 
@@ -569,14 +571,14 @@ header {
 .end-message {
     padding: 1rem;
     text-align: center;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     font-size: 0.875rem;
     font-style: italic;
 }
 
-/* =============================================================================
-   MODAL
-   ============================================================================= */
+/* ============================================================================= */
+/* MODAL                                                                         */
+/* ============================================================================= */
 
 .modal {
     position: fixed;
@@ -616,7 +618,7 @@ header {
 
 .modal-content {
     position: relative;
-    background-color: hsl(var(--card));
+    background-color: var(--card);
     border-radius: 2px;
     max-width: 700px;
     width: 90%;
@@ -646,12 +648,12 @@ header {
     right: 1.5rem;
     width: 40px;
     height: 40px;
-    background-color: hsl(var(--secondary));
+    background-color: var(--secondary);
     border: none;
     border-radius: 50%;
     font-size: 1.75rem;
     line-height: 1;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     cursor: pointer;
     transition: all 0.2s ease;
     display: flex;
@@ -661,8 +663,8 @@ header {
 }
 
 .modal-close:hover {
-    background-color: hsl(var(--destructive));
-    color: hsl(var(--destructive-foreground));
+    background-color: var(--destructive);
+    color: var(--destructive-foreground);
     transform: rotate(90deg);
 }
 
@@ -676,7 +678,7 @@ header {
     align-items: flex-start;
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 2px solid hsl(var(--border));
+    border-bottom: 2px solid var(--border);
 }
 
 .modal-title-container {
@@ -694,15 +696,15 @@ header {
 .modal-header h2 {
     font-size: 1.75rem;
     font-weight: 700;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     line-height: 1.3;
     margin: 0;
     padding-right: 1rem;
 }
 
 .modal-type-badge {
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    background-color: var(--primary);
+    color: var(--primary-foreground);
     padding: 0.375rem 0.875rem;
     border-radius: var(--radius);
     font-size: 0.875rem;
@@ -719,20 +721,20 @@ header {
 
 .modal-info-item {
     padding: 1rem;
-    background-color: hsl(var(--secondary));
+    background-color: var(--secondary);
     border-radius: var(--radius);
     transition: all 0.2s ease;
 }
 
 .modal-info-item:hover {
-    background-color: hsl(var(--accent));
+    background-color: var(--accent);
     transform: translateY(-2px);
 }
 
 .modal-info-label {
     font-size: 0.8125rem;
     font-weight: 600;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 0.5rem;
@@ -740,18 +742,18 @@ header {
 
 .modal-info-value {
     font-size: 1rem;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     line-height: 1.6;
 }
 
 .modal-info-value a {
-    color: hsl(var(--primary));
+    color: var(--primary);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .modal-info-value a:hover {
-    color: hsl(var(--primary) / 0.8);
+    color: rgba(30, 41, 59, 0.8);
     text-decoration: underline;
 }
 
@@ -772,14 +774,14 @@ header {
 .modal-section h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     margin-bottom: 1rem;
 }
 
 .modal-section p {
     font-size: 0.9375rem;
     line-height: 1.7;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
 }
 
 .modal-section ul {
@@ -793,10 +795,10 @@ header {
 
 .modal-section li {
     padding: 0.5rem 0.75rem;
-    background-color: hsl(var(--secondary));
+    background-color: var(--secondary);
     border-radius: calc(var(--radius) - 2px);
     font-size: 0.875rem;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
 }
 
 .modal-actions {
@@ -805,7 +807,7 @@ header {
     flex-wrap: wrap;
     margin-top: 2rem;
     padding-top: 1.5rem;
-    border-top: 1px solid hsl(var(--border));
+    border-top: 1px solid var(--border);
 }
 
 .modal-btn {
@@ -821,23 +823,23 @@ header {
 }
 
 .modal-btn-primary {
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    background-color: var(--primary);
+    color: var(--primary-foreground);
 }
 
 .modal-btn-primary:hover {
-    background-color: hsl(var(--primary) / 0.9);
+    background-color: rgba(30, 41, 59, 0.9);
     transform: translateY(-2px);
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2);
 }
 
 .modal-btn-secondary {
-    background-color: hsl(var(--secondary));
-    color: hsl(var(--secondary-foreground));
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
 }
 
 .modal-btn-secondary:hover {
-    background-color: hsl(var(--accent));
+    background-color: var(--accent);
     transform: translateY(-2px);
 }
 
@@ -845,9 +847,9 @@ header {
     transform: scale(0.98);
 }
 
-/* =============================================================================
-   COMPARISON MODAL
-   ============================================================================= */
+/* ============================================================================= */
+/* COMPARISON MODAL                                                              */
+/* ============================================================================= */
 
 .comparison-modal-content {
     max-width: 1400px;
@@ -857,20 +859,20 @@ header {
 }
 
 .comparison-subtitle {
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     font-size: 0.875rem;
     margin-top: 0.25rem;
     font-weight: 400;
 }
 
 .comparison-recommendation {
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    background-color: var(--primary);
+    color: var(--primary-foreground);
     padding: 1.25rem;
     border-radius: var(--radius);
     margin-bottom: 1.5rem;
     display: none;
-    border: 1px solid hsl(var(--border));
+    border: 1px solid var(--border);
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
 }
 
@@ -914,8 +916,8 @@ header {
 }
 
 .comparison-graph-card {
-    background: hsl(var(--card));
-    border: 1px solid hsl(var(--border));
+    background: var(--card);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 1.5rem;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
@@ -925,7 +927,7 @@ header {
 .comparison-graph-card h3 {
     font-size: 1rem;
     font-weight: 600;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     margin: 0 0 1rem 0;
     display: flex;
     align-items: center;
@@ -953,7 +955,7 @@ header {
 .score-item-name {
     font-size: 0.875rem;
     font-weight: 500;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -962,12 +964,12 @@ header {
 .score-item-value {
     font-size: 0.875rem;
     font-weight: 600;
-    color: hsl(var(--primary));
+    color: var(--primary);
 }
 
 .score-bar-container {
     height: 2rem;
-    background: hsl(var(--muted));
+    background: var(--muted);
     border-radius: var(--radius);
     overflow: hidden;
     position: relative;
@@ -975,35 +977,35 @@ header {
 
 .score-bar {
     height: 100%;
-    background: hsl(var(--primary));
+    background: var(--primary);
     border-radius: var(--radius);
     transition: width 0.6s cubic-bezier(0.65, 0, 0.35, 1);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 0.75rem;
-    color: hsl(var(--primary-foreground));
+    color: var(--primary-foreground);
     font-weight: 600;
     font-size: 0.8125rem;
 }
 
 .score-bar.best {
-    background: hsl(142 76% 36%);
+    background: #22c55e;
 }
 
 .best-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
-    background: hsl(142 76% 36% / 0.1);
-    color: hsl(142 76% 36%);
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
     padding: 0.125rem 0.5rem;
     border-radius: calc(var(--radius) - 2px);
     font-size: 0.6875rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.025em;
-    border: 1px solid hsl(142 76% 36% / 0.2);
+    border: 1px solid rgba(34, 197, 94, 0.2);
 }
 
 .features-grid {
@@ -1017,9 +1019,9 @@ header {
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem;
-    background: hsl(var(--muted) / 0.5);
+    background: rgba(241, 245, 249, 0.5);
     border-radius: var(--radius);
-    border: 1px solid hsl(var(--border));
+    border: 1px solid var(--border);
 }
 
 .feature-icon {
@@ -1034,21 +1036,21 @@ header {
 }
 
 .feature-icon.available {
-    background: hsl(142 76% 36% / 0.1);
-    color: hsl(142 76% 36%);
-    border: 1px solid hsl(142 76% 36% / 0.2);
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.2);
 }
 
 .feature-icon.unavailable {
-    background: hsl(var(--muted));
-    color: hsl(var(--muted-foreground));
-    border: 1px solid hsl(var(--border));
+    background: var(--muted);
+    color: var(--muted-foreground);
+    border: 1px solid var(--border);
 }
 
 .feature-icon.partial {
-    background: hsl(45 93% 47% / 0.1);
-    color: hsl(45 93% 47%);
-    border: 1px solid hsl(45 93% 47% / 0.2);
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.2);
 }
 
 .feature-details {
@@ -1058,13 +1060,13 @@ header {
 .feature-name {
     font-size: 0.8125rem;
     font-weight: 500;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     margin-bottom: 0.125rem;
 }
 
 .feature-value {
     font-size: 0.75rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
 }
 
 .comparison-place-cards {
@@ -1074,8 +1076,8 @@ header {
 }
 
 .comparison-place-card {
-    background: hsl(var(--card));
-    border: 2px solid hsl(var(--border));
+    background: var(--card);
+    border: 2px solid var(--border);
     border-radius: var(--radius);
     padding: 1.25rem;
     transition: all 0.2s ease;
@@ -1084,11 +1086,7 @@ header {
 .comparison-place-card.best-place {
     border-color: #a8df8e;
     border-width: 3px;
-    background: linear-gradient(
-        to bottom,
-        hsl(var(--card)),
-        hsl(142 76% 36% / 0.05)
-    );
+    background: linear-gradient(to bottom, #ffffff, rgba(34, 197, 94, 0.05));
 }
 
 .comparison-place-header {
@@ -1097,19 +1095,19 @@ header {
     align-items: flex-start;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid hsl(var(--border));
+    border-bottom: 1px solid var(--border);
 }
 
 .comparison-place-title {
     font-size: 1rem;
     font-weight: 600;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     margin: 0;
 }
 
 .comparison-place-type {
     font-size: 0.75rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     margin-top: 0.25rem;
 }
 
@@ -1122,13 +1120,13 @@ header {
 .comparison-place-score-value {
     font-size: 2rem;
     font-weight: 700;
-    color: hsl(var(--primary));
+    color: var(--primary);
     line-height: 1;
 }
 
 .comparison-place-score-label {
     font-size: 0.6875rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -1136,7 +1134,7 @@ header {
 .comparison-empty {
     text-align: center;
     padding: 4rem 2rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
 }
 
 .comparison-empty-icon {
