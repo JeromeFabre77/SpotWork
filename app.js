@@ -620,15 +620,20 @@ const loadMoreTiles = () => {
 // =============================================================================
 // COMPARISON FEATURE
 // =============================================================================
-
 const updateComparisonCount = () => {
   const count = state.comparison.selectedPlaces.length;
   document.getElementById("comparison-count").textContent = count;
 
-  const compareBtn = document.querySelector(
-    "#comparison-tile button:last-of-type",
-  );
-  compareBtn.disabled = count < 2;
+  const compareBtn = document.querySelector("#comparison-tile > button");
+  if (compareBtn) {
+    compareBtn.disabled = count < 2;
+  }
+  const clearBtn = document.querySelector("#comparison-tile > div button");
+  if (clearBtn) {
+    clearBtn.disabled = count === 0;
+  }
+
+  updateMarkerHighlight();
 };
 
 const updateMarkerHighlight = () => {
