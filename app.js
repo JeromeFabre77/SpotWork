@@ -854,7 +854,7 @@ const buildFeatureItem = (name, value, extra = null) => {
   `;
 };
 
-const buildCriteriaComparison = (places, bestPlace) => {
+const buildCriteriaComparison = (places) => {
   const criteria = [
     {
       name: "WiFi Gratuit",
@@ -936,7 +936,7 @@ const buildComparisonGraphs = (places) => {
   html += "</div>";
   html += `
     <div class="comparison-graph-card">
-      <h3>📊 Score Global</h3>
+      <h3>Score Global</h3>
       <div class="score-comparison">
   `;
 
@@ -1104,43 +1104,3 @@ const processCofeeData = (data) =>
     airConditioning: props.air_conditioning === "yes",
     smoking: props.smoking,
   }));
-
-// =============================================================================
-// INITIALIZATION
-// =============================================================================
-
-window.onload = () => {
-  state.map = L.map("map", {
-    renderer: L.canvas(),
-    preferCanvas: true,
-    zoomAnimation: true,
-    fadeAnimation: true,
-    markerZoomAnimation: true,
-  }).setView([48.8566, 2.3522], 13);
-
-  L.tileLayer(
-    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-    {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
-      maxZoom: 19,
-      updateWhenIdle: true,
-      updateWhenZooming: false,
-      keepBuffer: 2,
-    },
-  ).addTo(state.map);
-  initializeFilters();
-  initializeComparison();
-
-  Promise.all([
-    fetchData("data/coworking_france.geojson"),
-    fetchData("data/libraries_france.geojson"),
-    fetchData("data/cofee_france.geojson"),
-  ]).then(([coworkingData, libraryData, cofeeData]) => {
-    processCoworkingData(coworkingData);
-    processLibraryData(libraryData);
-    processCofeeData(cofeeData);
-    updateMapMarkers();
-    rebuildTilesList();
-  });
-};

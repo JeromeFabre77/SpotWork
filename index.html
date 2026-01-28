@@ -4,11 +4,48 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/lib/leaflet/dist/leaflet.css" />
-        <script src="/lib/leaflet/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="lib/leaflet/dist/leaflet.css" />
+        <script src="lib/leaflet/dist/leaflet.js"></script>
         <title>SpotWork</title>
     </head>
     <body>
+        <script>
+            window.onload = () => {
+                state.map = L.map("map", {
+                    renderer: L.canvas(),
+                    preferCanvas: true,
+                    zoomAnimation: true,
+                    fadeAnimation: true,
+                    markerZoomAnimation: true,
+                }).setView([48.8566, 2.3522], 13);
+
+                L.tileLayer(
+                    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    {
+                        attribution:
+                            '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+                        maxZoom: 19,
+                        updateWhenIdle: true,
+                        updateWhenZooming: false,
+                        keepBuffer: 2,
+                    },
+                ).addTo(state.map);
+                initializeFilters();
+                initializeComparison();
+
+                Promise.all([
+                    fetchData("data/coworking_france.geojson"),
+                    fetchData("data/libraries_france.geojson"),
+                    fetchData("data/cofee_france.geojson"),
+                ]).then(([coworkingData, libraryData, cofeeData]) => {
+                    processCoworkingData(coworkingData);
+                    processLibraryData(libraryData);
+                    processCofeeData(cofeeData);
+                    updateMapMarkers();
+                    rebuildTilesList();
+                });
+            };
+        </script>
         <header>
             <nav class="navbar">
                 <div class="navbar-content">
