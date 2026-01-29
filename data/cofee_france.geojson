@@ -8022,46 +8022,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          4.8355753,
-          45.769286
-        ]
-      },
-      "properties": {
-        "@id": "node/6407340023",
-        "@type": "node",
-        "addr:housenumber": "5",
-        "addr:street": "rue Romain",
-        "amenity": "cafe",
-        "changing_table": "yes",
-        "changing_table:count": "1",
-        "changing_table:location": "unisex_toilet",
-        "check_date:opening_hours": "2025-11-29",
-        "contact:city": "Lyon",
-        "contact:instagram": "tome.lyon",
-        "contact:phone": "+33 4 78 72 86 61",
-        "contact:postcode": "69001",
-        "contact:street": "Rue Romarin",
-        "contact:website": "https://www.tome-cafe.com",
-        "cuisine": "teahouse",
-        "internet_access": "yes",
-        "name": "Tomé",
-        "opening_hours": "Lundi, Mardi, Jeudi, Vendredi 12:00-18:30\nSamedi 11:30-19:00\nDimanche 11:00-18:30",
-        "outdoor_seating": "no",
-        "ref:FR:SIRET": "84059027700025",
-        "toilets": "yes",
-        "toilets:access": "customers",
-        "toilets:unisex": "yes",
-        "toilets:wheelchair": "yes",
-        "wheelchair": "yes",
-        "addr:city": "Lyon",
-        "spotType": "Cofee"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           4.8371975,
           45.7717106
         ]
@@ -8913,7 +8873,6 @@
         "contact:housenumber": "29",
         "contact:phone": "+33 5 81 97 03 45",
         "contact:street": "Grande Rue Saint-Michel",
-        "diet:vegetarian": "yes",
         "indoor_seating": "yes",
         "internet_access": "wlan",
         "name": "L'Évasion",
@@ -9443,6 +9402,30 @@
         "ref:FR:SIRET": "82972501900030",
         "was:shop": "pastry",
         "website": "https://cacoucafe.eatbu.com/",
+        "spotType": "Cofee"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.40027,
+          43.5783677
+        ]
+      },
+      "properties": {
+        "@id": "node/7010954718",
+        "@type": "node",
+        "amenity": "cafe",
+        "cuisine": "cafeteria",
+        "delivery": "no",
+        "internet_access": "wlan",
+        "name": "Curupira",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "yes",
+        "addr:city": "Toulouse",
         "spotType": "Cofee"
       }
     },

@@ -79,11 +79,15 @@ const getWheelchairStatus = (props) => {
   return null;
 };
 
-const getSeatingInfo = (props) => ({
-  indoor: props.indoor_seating === "yes",
-  outdoor:
-    props.outdoor_seating === "yes" || props.outdoor_seating === "sidewalk",
-});
+const getSeatingInfo = (props, spotType) => {
+  const indoor =
+    props.indoor_seating === "yes" ||
+    spotType === "Coworking" ||
+    spotType === "Library";
+  const outdoor =
+    props.outdoor_seating === "yes" || props.outdoor_seating === "sidewalk";
+  return { indoor, outdoor };
+};
 
 const isTemporarilyClosed = (props) =>
   props.closed === "yes" || props.temporary === "yes";
@@ -1093,19 +1097,20 @@ const processGeoJSONData = (data, additionalFields = () => ({})) => {
 
 const processCoworkingData = (data) =>
   processGeoJSONData(data, (props) => ({
-    seating: getSeatingInfo(props),
+    seating: getSeatingInfo(props, "Coworking"),
     airConditioning: props.air_conditioning === "yes",
     smoking: props.smoking,
   }));
 
 const processLibraryData = (data) =>
   processGeoJSONData(data, (props) => ({
+    seating: getSeatingInfo(props, "Library"),
     websiteUrl: props.website || props["contact:website"],
   }));
 
 const processCofeeData = (data) =>
   processGeoJSONData(data, (props) => ({
-    seating: getSeatingInfo(props),
+    seating: getSeatingInfo(props, "Cofee"),
     airConditioning: props.air_conditioning === "yes",
     smoking: props.smoking,
   }));
